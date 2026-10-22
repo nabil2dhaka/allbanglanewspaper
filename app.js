@@ -2259,8 +2259,6 @@ const newspaperGrid = document.getElementById('newspaperGrid');
 const searchInput = document.getElementById('searchInput');
 const clearSearchBtn = document.getElementById('clearSearch');
 const categoryTabs = document.getElementById('categoryTabs');
-const divisionFilterWrap = document.getElementById('divisionFilterWrap');
-const divisionTabs = document.getElementById('divisionTabs');
 const resultsCount = document.getElementById('resultsCount');
 const totalCountBadge = document.getElementById('totalCountBadge');
 const favCountBadge = document.getElementById('favCountBadge');
@@ -2270,6 +2268,118 @@ const themeToggle = document.getElementById('themeToggle');
 const viewGridBtn = document.getElementById('viewGridBtn');
 const viewListBtn = document.getElementById('viewListBtn');
 const backToTopBtn = document.getElementById('backToTopBtn');
+
+// Category Metadata Configuration for Block-Based Homepage
+const CATEGORY_CONFIG = [
+  {
+    id: 'daily',
+    nameBn: 'জাতীয় দৈনিক সংবাদপত্র',
+    nameEn: 'National Daily Newspapers of Bangladesh',
+    icon: '📰',
+    color: '#006A4E',
+    bgColor: 'rgba(0, 106, 78, 0.09)',
+    filter: (p) => p.category === 'daily'
+  },
+  {
+    id: 'online',
+    nameBn: 'অনলাইন নিউজ পোর্টাল',
+    nameEn: '24/7 Bangla Online News Portals',
+    icon: '⚡',
+    color: '#F42A41',
+    bgColor: 'rgba(244, 42, 65, 0.09)',
+    filter: (p) => p.category === 'online'
+  },
+  {
+    id: 'stock',
+    nameBn: 'শেয়ার বাজার ও স্টক মার্কেট',
+    nameEn: 'Stock Market, DSE & Financial Media',
+    icon: '📊',
+    color: '#2563EB',
+    bgColor: 'rgba(37, 99, 235, 0.09)',
+    filter: (p) => p.category === 'stock'
+  },
+  {
+    id: 'tv',
+    nameBn: 'টিভি ও স্যাটেলাইট নিউজ',
+    nameEn: 'Television & Live Satellite News Channels',
+    icon: '📺',
+    color: '#7C3AED',
+    bgColor: 'rgba(124, 58, 237, 0.09)',
+    filter: (p) => p.category === 'tv'
+  },
+  {
+    id: 'epaper',
+    nameBn: 'ই-পেপার ডিজিটাল সংস্করণ',
+    nameEn: 'Digital Print E-Paper Editions',
+    icon: '🗞️',
+    color: '#EA580C',
+    bgColor: 'rgba(234, 88, 12, 0.09)',
+    filter: (p) => Boolean(p.epaperUrl)
+  },
+  {
+    id: 'english',
+    nameBn: 'ইংরেজি জাতীয় দৈনিক',
+    nameEn: 'Leading English Daily Newspapers',
+    icon: '🌐',
+    color: '#0D9488',
+    bgColor: 'rgba(13, 148, 136, 0.09)',
+    filter: (p) => p.category === 'english'
+  },
+  {
+    id: 'local',
+    nameBn: 'বিভাগীয় ও জেলা সংবাদপত্র',
+    nameEn: 'Regional & District Press Across 8 Divisions',
+    icon: '📍',
+    color: '#0284C7',
+    bgColor: 'rgba(2, 132, 199, 0.09)',
+    filter: (p) => p.category === 'local' && (currentDivision === 'all' || p.division === currentDivision)
+  },
+  {
+    id: 'business',
+    nameBn: 'ব্যবসা ও অর্থনীতি',
+    nameEn: 'Commerce, Trade & Business Media',
+    icon: '📈',
+    color: '#16A34A',
+    bgColor: 'rgba(22, 163, 74, 0.09)',
+    filter: (p) => p.category === 'business'
+  },
+  {
+    id: 'sports',
+    nameBn: 'খেলাধুলা ও বিনোদন',
+    nameEn: 'Sports, Cricket & Entertainment Portals',
+    icon: '⚽',
+    color: '#D97706',
+    bgColor: 'rgba(217, 119, 6, 0.09)',
+    filter: (p) => p.category === 'sports'
+  },
+  {
+    id: 'jobs_tech',
+    nameBn: 'চাকরি, প্রযুক্তি ও শিক্ষা',
+    nameEn: 'Job Circulars, Technology & Science',
+    icon: '💼',
+    color: '#4F46E5',
+    bgColor: 'rgba(79, 70, 229, 0.09)',
+    filter: (p) => p.category === 'jobs_tech'
+  },
+  {
+    id: 'radio',
+    nameBn: 'এফএম ও জাতীয় বেতার',
+    nameEn: 'FM Radios & Broadcasting Networks',
+    icon: '📻',
+    color: '#E11D48',
+    bgColor: 'rgba(225, 29, 72, 0.09)',
+    filter: (p) => p.category === 'radio'
+  },
+  {
+    id: 'kolkata',
+    nameBn: 'কলকাতা ও পশ্চিমবঙ্গ মিডিয়া',
+    nameEn: 'Leading Kolkata & West Bengal Newspapers',
+    icon: '🏛️',
+    color: '#9333EA',
+    bgColor: 'rgba(147, 51, 234, 0.09)',
+    filter: (p) => p.category === 'kolkata'
+  }
+];
 
 // Initialize Theme
 function initTheme() {
@@ -2305,8 +2415,10 @@ viewListBtn.addEventListener('click', () => updateView('list'));
 
 // Toggle Favorite
 function toggleFavorite(id, event) {
-  event.preventDefault();
-  event.stopPropagation();
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
 
   if (favorites.includes(id)) {
     favorites = favorites.filter(favId => favId !== id);
@@ -2317,6 +2429,15 @@ function toggleFavorite(id, event) {
   localStorage.setItem('abn_favorites', JSON.stringify(favorites));
   updateBadges();
   renderNewspapers();
+}
+
+function clearAllFavoritesPrompt() {
+  if (confirm('আপনি কি আপনার প্রিয় তালিকা খালি করতে চান?')) {
+    favorites = [];
+    localStorage.setItem('abn_favorites', JSON.stringify(favorites));
+    updateBadges();
+    renderNewspapers();
+  }
 }
 
 function updateBadges() {
@@ -2335,158 +2456,418 @@ function getLogoUrl(paper) {
   }
 }
 
-// Filter and Render Newspapers
-function renderNewspapers() {
-  // Show / hide division subfilter if category is 'local'
-  if (currentCategory === 'local') {
-    divisionFilterWrap.style.display = 'flex';
-  } else {
-    divisionFilterWrap.style.display = 'none';
-  }
+// Matches search query helper
+function matchesSearchQuery(paper, query) {
+  if (!query || query.trim() === '') return true;
+  const q = query.toLowerCase().trim();
+  const searchTarget = `${paper.nameBn} ${paper.nameEn} ${paper.categoryLabel} ${paper.division || ''} ${paper.tags || ''}`.toLowerCase();
+  return searchTarget.includes(q);
+}
 
-  const filtered = newspapers.filter(paper => {
-    // 1. Category filter
-    let matchesCategory = true;
-    if (currentCategory === 'favorites') {
-      matchesCategory = favorites.includes(paper.id);
-    } else if (currentCategory === 'epaper') {
-      matchesCategory = Boolean(paper.epaperUrl);
-    } else if (currentCategory !== 'all') {
-      matchesCategory = paper.category === currentCategory;
-    }
+// Create Card Element
+function createCard(paper) {
+  const isFav = favorites.includes(paper.id);
+  const card = document.createElement('a');
+  card.className = 'newspaper-card';
+  card.href = paper.url;
+  card.target = '_blank';
+  card.rel = 'noopener noreferrer';
 
-    // 2. Division subfilter (when viewing local news)
-    let matchesDivision = true;
-    if (currentCategory === 'local' && currentDivision !== 'all') {
-      matchesDivision = paper.division === currentDivision;
-    }
+  const logoUrl = getLogoUrl(paper);
+  const avatarHtml = logoUrl
+    ? `<div class="newspaper-avatar">
+        <img 
+          src="${logoUrl}" 
+          alt="${paper.nameBn}" 
+          class="newspaper-logo-img" 
+          loading="lazy" 
+          onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';" 
+        />
+        <span class="avatar-fallback" style="background-color: ${paper.color}; display: none;">${paper.icon}</span>
+      </div>`
+    : `<div class="newspaper-avatar" style="background-color: ${paper.color};">
+        <span class="avatar-fallback" style="background-color: ${paper.color};">${paper.icon}</span>
+      </div>`;
 
-    // 3. Search match
-    let matchesSearch = true;
-    if (searchQuery.trim() !== '') {
-      const q = searchQuery.toLowerCase().trim();
-      const searchTarget = `${paper.nameBn} ${paper.nameEn} ${paper.categoryLabel} ${paper.division || ''} ${paper.tags || ''}`.toLowerCase();
-      matchesSearch = searchTarget.includes(q);
-    }
+  const epaperButton = paper.epaperUrl 
+    ? `<a href="${paper.epaperUrl}" target="_blank" rel="noopener noreferrer" class="btn-epaper-pill" onclick="event.stopPropagation();" title="${paper.nameBn} সরাসরি ই-পেপার পড়ুন">🗞️ ই-পেপার</a>`
+    : '';
 
-    return matchesCategory && matchesDivision && matchesSearch;
-  });
+  const divisionTag = paper.division 
+    ? `<span class="district-tag">${paper.categoryLabel}</span>` 
+    : '';
 
-  // Update status count
-  if (currentCategory === 'favorites') {
-    resultsCount.textContent = `প্রিয় তালিকা: ${filtered.length} টি সংবাদপত্র`;
-  } else if (currentCategory === 'epaper') {
-    resultsCount.textContent = `ই-পেপার সংস্করণ রয়েছে: ${filtered.length} টি`;
-  } else if (currentCategory === 'online') {
-    resultsCount.textContent = `অনলাইন পোর্টাল: ${filtered.length} টি ওয়েবসাইট`;
-  } else if (currentCategory === 'stock') {
-    resultsCount.textContent = `Stock Market: ${filtered.length} টি শেয়ার বাজার ওয়েবসাইট`;
-  } else if (currentCategory === 'business') {
-    resultsCount.textContent = `ব্যবসা ও বাণিজ্য: ${filtered.length} টি ওয়েবসাইট`;
-  } else if (currentCategory === 'local' && currentDivision !== 'all') {
-    resultsCount.textContent = `নির্বাচিত বিভাগ: ${filtered.length} টি পত্রিকা`;
-  } else {
-    resultsCount.textContent = `মোট ${filtered.length} টি ওয়েবসাইট প্রদর্শিত হচ্ছে`;
-  }
-
-  // Clear container
-  newspaperGrid.innerHTML = '';
-
-  if (filtered.length === 0) {
-    emptyState.style.display = 'block';
-  } else {
-    emptyState.style.display = 'none';
-
-    filtered.forEach(paper => {
-      const isFav = favorites.includes(paper.id);
-      const card = document.createElement('a');
-      card.className = 'newspaper-card';
-      card.href = paper.url;
-      card.target = '_blank';
-      card.rel = 'noopener noreferrer';
-
-      const logoUrl = getLogoUrl(paper);
-      const avatarHtml = logoUrl
-        ? `<div class="newspaper-avatar">
-            <img 
-              src="${logoUrl}" 
-              alt="${paper.nameBn}" 
-              class="newspaper-logo-img" 
-              loading="lazy" 
-              onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';" 
-            />
-            <span class="avatar-fallback" style="background-color: ${paper.color}; display: none;">${paper.icon}</span>
-          </div>`
-        : `<div class="newspaper-avatar" style="background-color: ${paper.color};">
-            <span class="avatar-fallback" style="background-color: ${paper.color};">${paper.icon}</span>
-          </div>`;
-
-      const epaperButton = paper.epaperUrl 
-        ? `<a href="${paper.epaperUrl}" target="_blank" rel="noopener noreferrer" class="btn-epaper-pill" onclick="event.stopPropagation();" title="${paper.nameBn} ই-পেপার পড়ুন">🗞️ ই-পেপার</a>`
-        : '';
-
-      const divisionTag = paper.division 
-        ? `<span class="district-tag">${paper.categoryLabel}</span>` 
-        : '';
-
-      if (currentView === 'list') {
-        // Compact List Layout
-        card.innerHTML = `
-          <div class="card-layout-list">
-            <div class="card-left">
-              ${avatarHtml}
-              <div class="newspaper-info">
-                <h3 class="newspaper-name-bn">${paper.nameBn}</h3>
-                <p class="newspaper-name-en">${paper.nameEn}</p>
-              </div>
-            </div>
-            <div class="card-right">
-              ${epaperButton}
-              <span class="category-tag">${paper.categoryLabel}</span>
-              <button 
-                class="favorite-btn ${isFav ? 'favorited' : ''}" 
-                onclick="toggleFavorite('${paper.id}', event)"
-                title="${isFav ? 'প্রিয় তালিকা থেকে সরান' : 'প্রিয় তালিকায় যুক্ত করুন'}"
-                aria-label="Favorite toggle"
-              >
-                ${isFav ? '★' : '☆'}
-              </button>
-            </div>
-          </div>
-        `;
-      } else {
-        // Standard Grid Layout
-        card.innerHTML = `
-          <div>
-            <div class="card-top">
-              ${avatarHtml}
-              <div class="card-actions">
-                ${epaperButton}
-                <button 
-                  class="favorite-btn ${isFav ? 'favorited' : ''}" 
-                  onclick="toggleFavorite('${paper.id}', event)"
-                  title="${isFav ? 'প্রিয় তালিকা থেকে সরান' : 'প্রিয় তালিকায় যুক্ত করুন'}"
-                  aria-label="Favorite toggle"
-                >
-                  ${isFav ? '★' : '☆'}
-                </button>
-              </div>
-            </div>
+  if (currentView === 'list') {
+    card.innerHTML = `
+      <div class="card-layout-list">
+        <div class="card-left">
+          ${avatarHtml}
+          <div class="newspaper-info">
             <h3 class="newspaper-name-bn">${paper.nameBn}</h3>
             <p class="newspaper-name-en">${paper.nameEn}</p>
           </div>
-          <div class="card-footer">
-            <div class="badges-group">
-              <span class="category-tag">${paper.categoryLabel}</span>
-              ${divisionTag}
-            </div>
-            <span class="visit-link">পড়ুন ➔</span>
+        </div>
+        <div class="card-right">
+          ${epaperButton}
+          <span class="category-tag">${paper.categoryLabel}</span>
+          <button 
+            class="favorite-btn ${isFav ? 'favorited' : ''}" 
+            onclick="toggleFavorite('${paper.id}', event)"
+            title="${isFav ? 'প্রিয় তালিকা থেকে সরান' : 'প্রিয় তালিকায় যুক্ত করুন'}"
+            aria-label="Favorite toggle"
+          >
+            ${isFav ? '★' : '☆'}
+          </button>
+        </div>
+      </div>
+    `;
+  } else {
+    card.innerHTML = `
+      <div>
+        <div class="card-top">
+          ${avatarHtml}
+          <div class="card-actions">
+            ${epaperButton}
+            <button 
+              class="favorite-btn ${isFav ? 'favorited' : ''}" 
+              onclick="toggleFavorite('${paper.id}', event)"
+              title="${isFav ? 'প্রিয় তালিকা থেকে সরান' : 'প্রিয় তালিকায় যুক্ত করুন'}"
+              aria-label="Favorite toggle"
+            >
+              ${isFav ? '★' : '☆'}
+            </button>
           </div>
-        `;
-      }
+        </div>
+        <h3 class="newspaper-name-bn">${paper.nameBn}</h3>
+        <p class="newspaper-name-en">${paper.nameEn}</p>
+      </div>
+      <div class="card-footer">
+        <div class="badges-group">
+          <span class="category-tag">${paper.categoryLabel}</span>
+          ${divisionTag}
+        </div>
+        <span class="visit-link">পড়ুন ➔</span>
+      </div>
+    `;
+  }
 
-      newspaperGrid.appendChild(card);
+  return card;
+}
+
+// Filter and Render Newspapers into Category Blocks
+function renderNewspapers() {
+  newspaperGrid.innerHTML = '';
+  const isSearchActive = searchQuery.trim() !== '';
+  let totalVisibleCards = 0;
+  let visibleBlocksCount = 0;
+
+  // 1. Focus Mode Banner (if user focused a single category)
+  if (currentCategory !== 'all' && currentCategory !== 'favorites') {
+    const activeConfig = CATEGORY_CONFIG.find(c => c.id === currentCategory);
+    if (activeConfig) {
+      const banner = document.createElement('div');
+      banner.className = 'focus-banner';
+      banner.innerHTML = `
+        <div class="focus-banner-info">
+          <span class="focus-banner-icon">${activeConfig.icon}</span>
+          <div>
+            <div class="focus-banner-title">আপনি <strong>${activeConfig.nameBn}</strong> ব্লকে আছেন</div>
+            <div class="focus-banner-subtitle">${activeConfig.nameEn}</div>
+          </div>
+        </div>
+        <button class="btn-exit-focus" onclick="showAllBlocks()">
+          ← সকল ক্যাটাগরি ব্লকে ফিরে যান
+        </button>
+      `;
+      newspaperGrid.appendChild(banner);
+    }
+  }
+
+  // 2. Favorites Block (Featured on top if user has favorites or if favorites view selected)
+  const favPapers = newspapers.filter(p => favorites.includes(p.id) && matchesSearchQuery(p, searchQuery));
+  if (currentCategory === 'favorites' || (currentCategory === 'all' && favorites.length > 0 && favPapers.length > 0)) {
+    const favBlock = document.createElement('section');
+    favBlock.className = 'category-block block-favorites-featured';
+    favBlock.id = 'block-favorites';
+    favBlock.dataset.category = 'favorites';
+
+    favBlock.innerHTML = `
+      <div class="block-header">
+        <div class="block-title-group">
+          <div class="block-icon-wrap" style="background-color: rgba(234, 179, 8, 0.16); color: #ca8a04;">
+            ⭐
+          </div>
+          <div class="block-title-text">
+            <div class="block-heading-row">
+              <h2 class="block-title">আপনার প্রিয় সংবাদপত্র</h2>
+              <span class="block-badge" style="background: rgba(234, 179, 8, 0.16); color: #854d0e; border-color: rgba(234, 179, 8, 0.3);">${favPapers.length} টি সংরক্ষিত</span>
+            </div>
+            <p class="block-subtitle">Your Pinned & Bookmarked Newspapers</p>
+          </div>
+        </div>
+        <div class="block-actions">
+          <button class="btn-block-action" onclick="clearAllFavoritesPrompt()" title="প্রিয় তালিকা পরিষ্কার করুন">
+            মুছে ফেলুন
+          </button>
+          <button class="btn-block-action btn-block-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" title="উপরে যান">
+            ↑ শীর্ষে
+          </button>
+        </div>
+      </div>
+    `;
+
+    const cardsGrid = document.createElement('div');
+    cardsGrid.className = 'newspaper-cards-grid';
+    favPapers.forEach(paper => {
+      cardsGrid.appendChild(createCard(paper));
     });
+    favBlock.appendChild(cardsGrid);
+    newspaperGrid.appendChild(favBlock);
+
+    totalVisibleCards += favPapers.length;
+    visibleBlocksCount++;
+  } else if (currentCategory === 'favorites' && favorites.length === 0) {
+    const favBlock = document.createElement('section');
+    favBlock.className = 'category-block block-favorites-featured';
+    favBlock.id = 'block-favorites';
+    favBlock.innerHTML = `
+      <div class="block-header">
+        <div class="block-title-group">
+          <div class="block-icon-wrap" style="background-color: rgba(234, 179, 8, 0.16); color: #ca8a04;">
+            ⭐
+          </div>
+          <div class="block-title-text">
+            <h2 class="block-title">আপনার প্রিয় সংবাদপত্র</h2>
+            <p class="block-subtitle">Your Pinned & Bookmarked Newspapers</p>
+          </div>
+        </div>
+      </div>
+      <div class="empty-favorites-hint">
+        <span class="hint-star-big">⭐</span>
+        <h3>প্রিয় তালিকায় কোনো পত্রিকা যোগ করা নেই</h3>
+        <p>যেকোনো সংবাদপত্রের কার্ডে থাকা তারকা (☆) আইকনে ক্লিক করে আপনার পছন্দের পত্রিকাগুলো এখানে পিন করুন।</p>
+        <button class="btn-exit-focus" onclick="showAllBlocks()">সকল ক্যাটাগরি ব্রাউজ করুন</button>
+      </div>
+    `;
+    newspaperGrid.appendChild(favBlock);
+    visibleBlocksCount++;
+  }
+
+  // 3. Category Blocks
+  CATEGORY_CONFIG.forEach(cat => {
+    // If user selected a specific category (not 'all' and not 'favorites'), only render that category
+    if (currentCategory !== 'all' && currentCategory !== cat.id) {
+      return;
+    }
+
+    // Filter newspapers for this category
+    const papersInBlock = newspapers.filter(p => cat.filter(p) && matchesSearchQuery(p, searchQuery));
+
+    // If searching and no matches in this block, skip rendering it
+    if (isSearchActive && papersInBlock.length === 0) {
+      return;
+    }
+
+    const block = document.createElement('section');
+    block.className = 'category-block';
+    block.id = `block-${cat.id}`;
+    block.dataset.category = cat.id;
+
+    const countText = isSearchActive 
+      ? `${papersInBlock.length} টি ফলাফল` 
+      : `${papersInBlock.length} টি ওয়েবসাইট`;
+
+    const focusBtnHtml = currentCategory === 'all'
+      ? `<button class="btn-block-action btn-block-focus" onclick="focusCategory('${cat.id}')" title="${cat.nameBn} একক ভিউ দেখুন">একক ভিউ ➔</button>`
+      : '';
+
+    // Division subfilter HTML if local news block
+    let divisionSubfilterHtml = '';
+    if (cat.id === 'local') {
+      const divisionChips = [
+        { id: 'all', label: 'সকল বিভাগ', count: 30 },
+        { id: 'dhaka', label: 'ঢাকা', count: 3 },
+        { id: 'chittagong', label: 'চট্টগ্রাম', count: 7 },
+        { id: 'sylhet', label: 'সিলেট', count: 4 },
+        { id: 'rajshahi', label: 'রাজশাহী', count: 4 },
+        { id: 'khulna', label: 'খুলনা', count: 4 },
+        { id: 'barisal', label: 'বরিশাল', count: 3 },
+        { id: 'rangpur', label: 'রংপুর', count: 3 },
+        { id: 'mymensingh', label: 'ময়মনসিংহ', count: 2 }
+      ];
+
+      divisionSubfilterHtml = `
+        <div class="block-subfilter">
+          <span class="block-subfilter-label">বিভাগ ফিল্টার:</span>
+          <div class="block-subfilter-chips" id="blockDivisionTabs">
+            ${divisionChips.map(d => `
+              <button 
+                class="subfilter-chip ${currentDivision === d.id ? 'active' : ''}" 
+                data-division="${d.id}"
+                onclick="setLocalDivision('${d.id}', event)"
+              >
+                ${d.label} (${d.count})
+              </button>
+            `).join('')}
+          </div>
+        </div>
+      `;
+    }
+
+    block.innerHTML = `
+      <div class="block-header">
+        <div class="block-title-group">
+          <div class="block-icon-wrap" style="background-color: ${cat.bgColor}; color: ${cat.color};">
+            ${cat.icon}
+          </div>
+          <div class="block-title-text">
+            <div class="block-heading-row">
+              <h2 class="block-title">${cat.nameBn}</h2>
+              <span class="block-badge">${countText}</span>
+            </div>
+            <p class="block-subtitle">${cat.nameEn}</p>
+          </div>
+        </div>
+        <div class="block-actions">
+          ${focusBtnHtml}
+          <button class="btn-block-action btn-block-top" onclick="window.scrollTo({ top: 0, behavior: 'smooth' })" title="উপরে যান">
+            ↑ শীর্ষে
+          </button>
+        </div>
+      </div>
+      ${divisionSubfilterHtml}
+    `;
+
+    const cardsGrid = document.createElement('div');
+    cardsGrid.className = 'newspaper-cards-grid';
+    papersInBlock.forEach(paper => {
+      cardsGrid.appendChild(createCard(paper));
+    });
+
+    block.appendChild(cardsGrid);
+    newspaperGrid.appendChild(block);
+
+    totalVisibleCards += papersInBlock.length;
+    visibleBlocksCount++;
+  });
+
+  // 4. Update Status Bar
+  if (isSearchActive) {
+    if (totalVisibleCards === 0) {
+      resultsCount.innerHTML = `অনুসন্ধানে কোনো ওয়েবসাইট পাওয়া যায়নি`;
+      emptyState.style.display = 'block';
+    } else {
+      resultsCount.innerHTML = `অনুসন্ধানের ফলাফল: <strong>${totalVisibleCards} টি ওয়েবসাইট</strong> (${visibleBlocksCount} টি ব্লকে)`;
+      emptyState.style.display = 'none';
+    }
+  } else if (currentCategory === 'favorites') {
+    resultsCount.innerHTML = `প্রিয় তালিকা: <strong>${favorites.length} টি সংবাদপত্র</strong>`;
+    emptyState.style.display = 'none';
+  } else if (currentCategory !== 'all') {
+    const activeConfig = CATEGORY_CONFIG.find(c => c.id === currentCategory);
+    const catName = activeConfig ? activeConfig.nameBn : '';
+    resultsCount.innerHTML = `নির্বাচিত ক্যাটাগরি: <strong>${catName}</strong> (${totalVisibleCards} টি ওয়েবসাইট)`;
+    emptyState.style.display = 'none';
+  } else {
+    resultsCount.innerHTML = `মোট <strong>১২ টি ক্যাটাগরি ব্লকে ১৯৪ টি ওয়েবসাইট</strong> সাজানো রয়েছে`;
+    emptyState.style.display = 'none';
+  }
+
+  // 5. Setup ScrollSpy
+  setupScrollSpy();
+}
+
+// ScrollSpy: highlight active category tab when scrolling down blocks
+let scrollSpyObserver = null;
+
+function setupScrollSpy() {
+  if (scrollSpyObserver) {
+    scrollSpyObserver.disconnect();
+    scrollSpyObserver = null;
+  }
+  if (currentCategory !== 'all') return;
+
+  const blocks = document.querySelectorAll('.category-block');
+  if (!blocks.length) return;
+
+  scrollSpyObserver = new IntersectionObserver((entries) => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && entry.intersectionRatio >= 0.22) {
+        const catId = entry.target.dataset.category;
+        if (catId) {
+          document.querySelectorAll('.category-btn').forEach(btn => {
+            const isMatch = btn.dataset.category === catId;
+            btn.classList.toggle('active', isMatch);
+            if (isMatch) {
+              btn.scrollIntoView({ behavior: 'smooth', inline: 'nearest', block: 'nearest' });
+            }
+          });
+        }
+      }
+    });
+  }, {
+    rootMargin: '-120px 0px -60% 0px',
+    threshold: [0.22]
+  });
+
+  blocks.forEach(b => scrollSpyObserver.observe(b));
+}
+
+// Focus on a single category
+function focusCategory(catId) {
+  currentCategory = catId;
+  document.querySelectorAll('.category-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.category === catId);
+  });
+  renderNewspapers();
+  window.scrollTo({ top: 120, behavior: 'smooth' });
+}
+
+// Show all blocks on homepage
+function showAllBlocks() {
+  currentCategory = 'all';
+  currentDivision = 'all';
+  document.querySelectorAll('.category-btn').forEach(b => {
+    b.classList.toggle('active', b.dataset.category === 'all');
+  });
+  renderNewspapers();
+  window.scrollTo({ top: 0, behavior: 'smooth' });
+}
+
+// Smooth scroll to a block with highlight pulse
+function scrollToBlock(blockId) {
+  const el = document.getElementById(blockId);
+  if (!el) return;
+  const headerOffset = 130;
+  const elementPosition = el.getBoundingClientRect().top;
+  const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+  window.scrollTo({
+    top: offsetPosition,
+    behavior: 'smooth'
+  });
+
+  el.classList.add('block-pulse');
+  setTimeout(() => {
+    el.classList.remove('block-pulse');
+  }, 1200);
+}
+
+// Set local division subfilter inside Local block
+function setLocalDivision(divisionId, event) {
+  if (event) {
+    event.preventDefault();
+    event.stopPropagation();
+  }
+  currentDivision = divisionId;
+  renderNewspapers();
+
+  const localBlock = document.getElementById('block-local');
+  if (localBlock) {
+    const headerOffset = 130;
+    const elementPosition = localBlock.getBoundingClientRect().top;
+    const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+    window.scrollTo({ top: offsetPosition, behavior: 'auto' });
   }
 }
 
@@ -2509,38 +2890,45 @@ resetSearchBtn.addEventListener('click', () => {
   searchInput.value = '';
   searchQuery = '';
   clearSearchBtn.style.display = 'none';
-  currentCategory = 'all';
-  currentDivision = 'all';
-  document.querySelectorAll('.category-btn').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.category === 'all');
-  });
-  document.querySelectorAll('.subfilter-chip').forEach(btn => {
-    btn.classList.toggle('active', btn.dataset.division === 'all');
-  });
-  renderNewspapers();
+  showAllBlocks();
 });
 
-// Category Switch Listener
+// Category Tabs Click Listener
 categoryTabs.addEventListener('click', (e) => {
   const btn = e.target.closest('.category-btn');
-  if (btn) {
-    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    currentCategory = btn.dataset.category;
-    currentDivision = 'all';
-    document.querySelectorAll('.subfilter-chip').forEach(b => b.classList.toggle('active', b.dataset.division === 'all'));
-    renderNewspapers();
-  }
-});
+  if (!btn) return;
+  const targetCategory = btn.dataset.category;
 
-// Division Subfilter Listener
-divisionTabs.addEventListener('click', (e) => {
-  const btn = e.target.closest('.subfilter-chip');
-  if (btn) {
-    document.querySelectorAll('.subfilter-chip').forEach(b => b.classList.remove('active'));
-    btn.classList.add('active');
-    currentDivision = btn.dataset.division;
-    renderNewspapers();
+  if (targetCategory === 'all') {
+    showAllBlocks();
+    return;
+  }
+
+  if (targetCategory === 'favorites') {
+    if (currentCategory !== 'all') {
+      focusCategory('favorites');
+    } else {
+      const favBlock = document.getElementById('block-favorites');
+      if (favBlock) {
+        scrollToBlock('block-favorites');
+      } else {
+        focusCategory('favorites');
+      }
+    }
+    return;
+  }
+
+  if (currentCategory === 'all') {
+    const targetBlock = document.getElementById(`block-${targetCategory}`);
+    if (targetBlock) {
+      document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+      btn.classList.add('active');
+      scrollToBlock(`block-${targetCategory}`);
+    } else {
+      focusCategory(targetCategory);
+    }
+  } else {
+    focusCategory(targetCategory);
   }
 });
 
@@ -2559,6 +2947,14 @@ backToTopBtn.addEventListener('click', () => {
     behavior: 'smooth'
   });
 });
+
+// Expose global methods for inline HTML onclick handlers
+window.toggleFavorite = toggleFavorite;
+window.focusCategory = focusCategory;
+window.showAllBlocks = showAllBlocks;
+window.scrollToBlock = scrollToBlock;
+window.setLocalDivision = setLocalDivision;
+window.clearAllFavoritesPrompt = clearAllFavoritesPrompt;
 
 // Initial boot
 initTheme();

@@ -98,12 +98,12 @@
 
   <!-- Main Content -->
   <main class="container main-content">
-    <!-- Category Tabs Navigation -->
+    <!-- Category Tabs Navigation (Block Jump Links) -->
     <div class="categories-wrapper">
       <nav class="categories-nav" aria-label="Newspaper Categories">
         <div class="categories-list" id="categoryTabs">
           <button class="category-btn active" data-category="all">
-            <span class="cat-icon">📑</span> সকল ক্যাটাগরি (<span id="totalCountBadge">0</span>)
+            <span class="cat-icon">📑</span> সকল ব্লক (<span id="totalCountBadge">0</span>)
           </button>
           <button class="category-btn" data-category="favorites">
             <span class="cat-icon">⭐</span> প্রিয় তালিকা (<span id="favCountBadge">0</span>)
@@ -114,26 +114,26 @@
           <button class="category-btn" data-category="online">
             <span class="cat-icon">⚡</span> অনলাইন পোর্টাল
           </button>
-          <button class="category-btn" data-category="epaper">
-            <span class="cat-icon">🗞️</span> ই-পেপার (E-Papers)
+          <button class="category-btn" data-category="stock">
+            <span class="cat-icon">📊</span> শেয়ার বাজার
           </button>
           <button class="category-btn" data-category="tv">
             <span class="cat-icon">📺</span> টিভি ও লাইভ নিউজ
           </button>
-          <button class="category-btn" data-category="stock">
-            <span class="cat-icon">📊</span> শেয়ার বাজার (Stock Market)
+          <button class="category-btn" data-category="epaper">
+            <span class="cat-icon">🗞️</span> ই-পেপার
+          </button>
+          <button class="category-btn" data-category="english">
+            <span class="cat-icon">🌐</span> English
           </button>
           <button class="category-btn" data-category="local">
             <span class="cat-icon">📍</span> বিভাগীয় ও জেলা
           </button>
-          <button class="category-btn" data-category="english">
-            <span class="cat-icon">🌐</span> English Dailies
-          </button>
           <button class="category-btn" data-category="business">
-            <span class="cat-icon">📈</span> ব্যবসা ও অর্থনীতি
+            <span class="cat-icon">📈</span> ব্যবসা-বাণিজ্য
           </button>
           <button class="category-btn" data-category="sports">
-            <span class="cat-icon">⚽</span> খেলাধুলা ও বিনোদন
+            <span class="cat-icon">⚽</span> খেলাধুলা
           </button>
           <button class="category-btn" data-category="jobs_tech">
             <span class="cat-icon">💼</span> চাকরি ও প্রযুক্তি
@@ -142,26 +142,10 @@
             <span class="cat-icon">📻</span> এফএম রেডিও
           </button>
           <button class="category-btn" data-category="kolkata">
-            <span class="cat-icon">🏛️</span> কলকাতা ও পশ্চিমবঙ্গ
+            <span class="cat-icon">🏛️</span> কলকাতা
           </button>
         </div>
       </nav>
-    </div>
-
-    <!-- Sub-Filter for Divisions (Visible when 'বিভাগীয় ও জেলা' or 'all' is active) -->
-    <div class="subfilter-container" id="divisionFilterWrap" style="display: none;">
-      <span class="subfilter-label">বিভাগ নির্বাচন করুন:</span>
-      <div class="subfilter-chips" id="divisionTabs">
-        <button class="subfilter-chip active" data-division="all">সকল বিভাগ</button>
-        <button class="subfilter-chip" data-division="dhaka">ঢাকা</button>
-        <button class="subfilter-chip" data-division="chittagong">চট্টগ্রাম</button>
-        <button class="subfilter-chip" data-division="sylhet">সিলেট</button>
-        <button class="subfilter-chip" data-division="rajshahi">রাজশাহী</button>
-        <button class="subfilter-chip" data-division="khulna">খুলনা</button>
-        <button class="subfilter-chip" data-division="barisal">বরিশাল</button>
-        <button class="subfilter-chip" data-division="rangpur">রংপুর</button>
-        <button class="subfilter-chip" data-division="mymensingh">ময়মনসিংহ</button>
-      </div>
     </div>
 
     <!-- Results Status Bar -->
@@ -170,13 +154,13 @@
         <span id="resultsCount">সকল ওয়েবসাইট লোড হচ্ছে...</span>
       </div>
       <div class="results-right">
-        <span class="hint-text">⭐ ট্যাপ করে সহজে বুকমার্ক করুন</span>
+        <span class="hint-text">⭐ ট্যাপ করে সহজে বুকমার্ক করুন | 🔲 লেআউট ভিউ পরিবর্তন করুন</span>
       </div>
     </div>
 
-    <!-- Newspaper Container (Grid / List) -->
+    <!-- Newspaper Container (Category Blocks Container) -->
     <div class="newspaper-container grid-view" id="newspaperGrid">
-      <!-- Cards rendered via JavaScript -->
+      <!-- Category blocks rendered via JavaScript -->
     </div>
 
     <!-- Empty State -->

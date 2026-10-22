@@ -61,13 +61,15 @@ A modern, fast, and mobile-responsive Bangladeshi media portal bringing together
 
 ## 📱 Features
 
+- 🧱 **Block-Based Homepage Layout:** Clean, structured homepage arranged into distinct category blocks (জাতীয় দৈনিক, অনলাইন পোর্টাল, শেয়ার বাজার, টিভি ও লাইভ নিউজ, ই-পেপার, ইংরেজি দৈনিক, বিভাগীয় সংবাদপত্র, ব্যবসা, খেলাধুলা, চাকরি ও প্রযুক্তি, এফএম রেডিও, কলকাতা).
+- 🧭 **Quick Jump Navigation & ScrollSpy:** Smooth-scrolling category navigation tabs with automated active-tab tracking as you scroll through blocks.
 - 🎨 **Official Newspaper Logos:** High-resolution authentic brand logos for all 190+ news websites with native lazy loading, dark/light theme backing, and instant Bengali letter fallback.
-- 🔍 **Realtime Multi-Field Search:** Instant search by Bengali name, English name, district, division, or keyword.
+- 🔍 **Cross-Block Realtime Search:** Instant search by Bengali name, English name, district, division, or keyword with realtime block-level result counting.
 - 📊 **Dedicated 'Stock Market' Category:** 1-click access to all 32 share market and stock exchange portals.
-- 📍 **Division Sub-Filter:** Select specific divisions (Dhaka, Chittagong, Sylhet, Rajshahi, Khulna, Barisal, Rangpur, Mymensingh) when browsing local news.
+- 📍 **In-Block Division Sub-Filter:** Select specific divisions (Dhaka, Chittagong, Sylhet, Rajshahi, Khulna, Barisal, Rangpur, Mymensingh) right inside the regional news block.
 - 🔲 **Grid View & Compact List View:** Switch layouts with one tap to browse more efficiently on mobile screens.
 - 🌓 **Dark & Light Mode:** Eye-friendly reading with saved preference in `localStorage`.
-- ⭐ **Personal Bookmarks:** Tap the star on any card to save it to your personal favorites list.
+- ⭐ **Personal Bookmarks:** Tap the star on any card to pin your favorite publications to a dedicated top block.
 - ⚡ **Zero External Dependencies:** Built with pure HTML5, CSS3, and modern Vanilla JavaScript for instant page loads.
 
 ---
