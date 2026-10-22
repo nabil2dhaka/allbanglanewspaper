@@ -1597,40 +1597,6 @@ const newspapers = [
   // Dedicated category from https://www.allbanglanewspaper.xyz/bangladesh/sharebazarnewspaper
   // =========================================================================
   {
-    id: 'bonikbarta_stock',
-    nameBn: 'বণিক বার্তা',
-    nameEn: 'Bonik Barta',
-    category: 'stock',
-    categoryLabel: 'Stock Market',
-    url: 'https://www.bonikbarta.net',
-    epaperUrl: 'https://epaper.bonikbarta.net',
-    color: '#d35400',
-    icon: 'ব',
-    tags: 'stock market share dse bonik economy commerce'
-  },
-  {
-    id: 'financialexpress_stock',
-    nameBn: 'ফাইন্যান্সিয়াল এক্সপ্রেস',
-    nameEn: 'The Financial Express',
-    category: 'stock',
-    categoryLabel: 'Stock Market',
-    url: 'https://thefinancialexpress.com.bd',
-    color: '#1a5276',
-    icon: 'FE',
-    tags: 'stock market share dse financial express'
-  },
-  {
-    id: 'sharebiz',
-    nameBn: 'শেয়ার বিজ',
-    nameEn: 'Sharebiz.net',
-    category: 'stock',
-    categoryLabel: 'Stock Market',
-    url: 'https://www.sharebiz.net',
-    color: '#1f618d',
-    icon: 'শে',
-    tags: 'stock market share dse commerce sharebiz'
-  },
-  {
     id: 'arthosuchak',
     nameBn: 'অর্থসূচক',
     nameEn: 'Arthosuchak',
@@ -1644,7 +1610,7 @@ const newspapers = [
   {
     id: 'sharenews24',
     nameBn: 'শেয়ার নিউজ ২৪',
-    nameEn: 'Sharenews24.com',
+    nameEn: 'Sharenews24',
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://www.sharenews24.com',
@@ -1655,7 +1621,7 @@ const newspapers = [
   {
     id: 'sunbd24',
     nameBn: 'সান বিডি ২৪',
-    nameEn: 'Sunbd24.com',
+    nameEn: 'Sunbd24',
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://www.sunbd24.com',
@@ -1666,13 +1632,47 @@ const newspapers = [
   {
     id: 'sharebazarnews',
     nameBn: 'শেয়ার বাজার নিউজ',
-    nameEn: 'Sharebazarnews.com',
+    nameEn: 'sharebazarnews',
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://www.sharebazarnews.com',
     color: '#2980b9',
     icon: 'SBN',
     tags: 'stock market share dse sharebazarnews'
+  },
+  {
+    id: 'bonikbarta_stock',
+    nameBn: 'বণিক বার্তা',
+    nameEn: 'Daily Bonikbarta',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
+    url: 'https://www.bonikbarta.net',
+    epaperUrl: 'https://epaper.bonikbarta.net',
+    color: '#d35400',
+    icon: 'ব',
+    tags: 'stock market share dse bonik economy commerce'
+  },
+  {
+    id: 'sharebiz',
+    nameBn: 'শেয়ার বিজ',
+    nameEn: 'Share Biz',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
+    url: 'https://www.sharebiz.net',
+    color: '#1f618d',
+    icon: 'শে',
+    tags: 'stock market share dse commerce sharebiz'
+  },
+  {
+    id: 'financialexpress_stock',
+    nameBn: 'ফাইন্যান্সিয়াল এক্সপ্রেস',
+    nameEn: 'The Financial Express',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
+    url: 'https://thefinancialexpress.com.bd',
+    color: '#1a5276',
+    icon: 'FE',
+    tags: 'stock market share dse financial express'
   },
   {
     id: 'stockbangladesh',
@@ -2445,15 +2445,28 @@ function updateBadges() {
   if (totalCountBadge) totalCountBadge.textContent = newspapers.length;
 }
 
-// Get official brand logo URL with fallback support
+// Known SVG banner IDs
+const SVG_LOGOS = new Set([
+  "amardesh24","anandaalo","bangladeshbank","banglainsider","banglatelegraph","barisalnews",
+  "bd24report","bdcrictime","bdview24","bigganchinta","businesseyebd","businesshour24",
+  "businessinsiderbd","businessnewsbdnet","campuslive24","chakrirkhobor","chandpurkantha",
+  "dailycricket","dailycricket_portal","dailyictnews","deshdorpon","deshebideshe","dhakanews24",
+  "dhakaprokash24","dhakatimes24","dhakatoday","dinajpurnews","doinikbarta","dsebd","eisamay",
+  "energybangla","fenisangbad","gazipurbarta","hawker","jagobangla","jamalpurnews","jamunatv",
+  "kheladhula","lankabangla","mtnews24","mymensinghpratidin","narayanganjpost","news71online",
+  "newsbangla24","onenewsbd","ournewsbd","pabnabarta","patuakhaliweb","pavilion",
+  "pirganjnewsexpress","roarmedia","shamolbangla24","sharebarta24","somoyerdhara","sonalinews",
+  "sonalisangbad","sunamganjkhobor","tangailbarta","techtunes","thebengalitimes","timewatch",
+  "uttarbangla","zoombangla"
+]);
+
+// Get banner logo URL matching screenshot
 function getLogoUrl(paper) {
   if (paper.logo) return paper.logo;
-  try {
-    const domain = new URL(paper.url).hostname.replace(/^www\./, '');
-    return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
-  } catch (e) {
-    return null;
+  if (SVG_LOGOS.has(paper.id)) {
+    return `assets/logos/${paper.id}.svg`;
   }
+  return `assets/logos/${paper.id}.png`;
 }
 
 // Matches search query helper
@@ -2464,89 +2477,79 @@ function matchesSearchQuery(paper, query) {
   return searchTarget.includes(q);
 }
 
-// Create Card Element
+// Create Card Element - Designed to match screenshot exactly
 function createCard(paper) {
   const isFav = favorites.includes(paper.id);
   const card = document.createElement('a');
-  card.className = 'newspaper-card';
+  card.className = 'newspaper-card card-screenshot-style';
   card.href = paper.url;
   card.target = '_blank';
   card.rel = 'noopener noreferrer';
+  card.title = `${paper.nameBn} (${paper.nameEn})`;
 
   const logoUrl = getLogoUrl(paper);
-  const avatarHtml = logoUrl
-    ? `<div class="newspaper-avatar">
-        <img 
-          src="${logoUrl}" 
-          alt="${paper.nameBn}" 
-          class="newspaper-logo-img" 
-          loading="lazy" 
-          onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';" 
-        />
-        <span class="avatar-fallback" style="background-color: ${paper.color}; display: none;">${paper.icon}</span>
-      </div>`
-    : `<div class="newspaper-avatar" style="background-color: ${paper.color};">
-        <span class="avatar-fallback" style="background-color: ${paper.color};">${paper.icon}</span>
-      </div>`;
+  let domain = '';
+  try {
+    domain = new URL(paper.url).hostname.replace(/^www\./, '');
+  } catch(e) {}
 
-  const epaperButton = paper.epaperUrl 
-    ? `<a href="${paper.epaperUrl}" target="_blank" rel="noopener noreferrer" class="btn-epaper-pill" onclick="event.stopPropagation();" title="${paper.nameBn} সরাসরি ই-পেপার পড়ুন">🗞️ ই-পেপার</a>`
+  const epaperBadge = paper.epaperUrl 
+    ? `<a href="${paper.epaperUrl}" target="_blank" rel="noopener noreferrer" class="card-epaper-badge" onclick="event.stopPropagation();" title="${paper.nameBn} সরাসরি ই-পেপার পড়ুন">🗞️ ই-পেপার</a>`
     : '';
 
-  const divisionTag = paper.division 
-    ? `<span class="district-tag">${paper.categoryLabel}</span>` 
-    : '';
+  const favButton = `
+    <button 
+      class="card-fav-btn ${isFav ? 'favorited' : ''}" 
+      onclick="toggleFavorite('${paper.id}', event)" 
+      title="${isFav ? 'প্রিয় তালিকা থেকে সরান' : 'প্রিয় তালিকায় যুক্ত করুন'}"
+      aria-label="Favorite toggle"
+    >${isFav ? '★' : '☆'}</button>
+  `;
 
   if (currentView === 'list') {
     card.innerHTML = `
       <div class="card-layout-list">
         <div class="card-left">
-          ${avatarHtml}
+          <div class="card-logo-box-list">
+            <img 
+              src="${logoUrl}" 
+              alt="${paper.nameEn}" 
+              class="card-masthead-logo" 
+              loading="lazy" 
+              onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=${domain}&sz=128';" 
+            />
+          </div>
           <div class="newspaper-info">
             <h3 class="newspaper-name-bn">${paper.nameBn}</h3>
             <p class="newspaper-name-en">${paper.nameEn}</p>
           </div>
         </div>
         <div class="card-right">
-          ${epaperButton}
+          ${epaperBadge}
           <span class="category-tag">${paper.categoryLabel}</span>
-          <button 
-            class="favorite-btn ${isFav ? 'favorited' : ''}" 
-            onclick="toggleFavorite('${paper.id}', event)"
-            title="${isFav ? 'প্রিয় তালিকা থেকে সরান' : 'প্রিয় তালিকায় যুক্ত করুন'}"
-            aria-label="Favorite toggle"
-          >
-            ${isFav ? '★' : '☆'}
-          </button>
+          ${favButton}
         </div>
       </div>
     `;
   } else {
+    // Screenshot Grid View Style:
+    // Top area: Logo box with centered masthead logo
+    // Divider: Thin line
+    // Bottom area: Centered English publication name
     card.innerHTML = `
-      <div>
-        <div class="card-top">
-          ${avatarHtml}
-          <div class="card-actions">
-            ${epaperButton}
-            <button 
-              class="favorite-btn ${isFav ? 'favorited' : ''}" 
-              onclick="toggleFavorite('${paper.id}', event)"
-              title="${isFav ? 'প্রিয় তালিকা থেকে সরান' : 'প্রিয় তালিকায় যুক্ত করুন'}"
-              aria-label="Favorite toggle"
-            >
-              ${isFav ? '★' : '☆'}
-            </button>
-          </div>
-        </div>
-        <h3 class="newspaper-name-bn">${paper.nameBn}</h3>
-        <p class="newspaper-name-en">${paper.nameEn}</p>
+      <div class="card-logo-box">
+        ${epaperBadge}
+        ${favButton}
+        <img 
+          src="${logoUrl}" 
+          alt="${paper.nameEn}" 
+          class="card-masthead-logo" 
+          loading="lazy" 
+          onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=${domain}&sz=128';" 
+        />
       </div>
-      <div class="card-footer">
-        <div class="badges-group">
-          <span class="category-tag">${paper.categoryLabel}</span>
-          ${divisionTag}
-        </div>
-        <span class="visit-link">পড়ুন ➔</span>
+      <div class="banglanewspaperlistname card-name-bar">
+        ${paper.nameEn}
       </div>
     `;
   }
