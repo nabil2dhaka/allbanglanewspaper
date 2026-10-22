@@ -1,0 +1,88 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 120" width="100%" height="100%" fill="none">
+  <defs>
+    <!-- Background Gradient for Icon -->
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#006A4E"/>
+      <stop offset="100%" stop-color="#004D38"/>
+    </linearGradient>
+
+    <!-- Crimson Sun Gradient -->
+    <radialGradient id="sunGrad" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="100%" stop-color="#F42A41"/>
+    </radialGradient>
+
+    <!-- Gloss Highlight -->
+    <linearGradient id="foldGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#FFFFFF" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#FFFFFF" stop-opacity="0"/>
+    </linearGradient>
+
+    <!-- Drop Shadow for Icon -->
+    <filter id="iconShadow" x="-10%" y="-10%" width="130%" height="130%" filterUnits="userSpaceOnUse">
+      <feDropShadow dx="0" dy="4" stdDeviation="6" flood-color="#002b1f" flood-opacity="0.25"/>
+    </filter>
+  </defs>
+
+  <!-- ================= LOGO ICON ================= -->
+  <g transform="translate(10, 10)">
+    <!-- Main Rounded Container -->
+    <rect width="100" height="100" rx="24" fill="url(#bgGrad)" filter="url(#iconShadow)"/>
+
+    <!-- Subtle Border Accent -->
+    <rect x="1" y="1" width="98" height="98" rx="23" stroke="#26A69A" stroke-width="1.5" stroke-opacity="0.4"/>
+
+    <!-- Bangladesh Crimson Sun Accent -->
+    <circle cx="68" cy="36" r="16" fill="url(#sunGrad)"/>
+
+    <!-- Newspaper Silhouette (Folded Paper) -->
+    <!-- Back Page -->
+    <rect x="24" y="24" width="46" height="56" rx="4" fill="#E2E8F0" fill-opacity="0.95"/>
+    
+    <!-- Front Folded Page -->
+    <path d="M 28 32 C 28 30, 30 28, 33 28 L 60 28 C 63 28, 64 30, 64 33 L 64 74 C 64 76, 62 78, 59 78 L 32 78 C 29.8 78, 28 76.2, 28 74 Z" fill="#FFFFFF"/>
+    
+    <!-- Header banner in newspaper -->
+    <rect x="33" y="34" width="26" height="5" rx="1.5" fill="#006A4E"/>
+    
+    <!-- Column 1 Lines -->
+    <rect x="33" y="43" width="11" height="2" rx="1" fill="#64748B"/>
+    <rect x="33" y="47" width="11" height="2" rx="1" fill="#94A3B8"/>
+    <rect x="33" y="51" width="9" height="2" rx="1" fill="#94A3B8"/>
+    <rect x="33" y="55" width="11" height="2" rx="1" fill="#94A3B8"/>
+    <rect x="33" y="59" width="8" height="2" rx="1" fill="#94A3B8"/>
+    
+    <!-- Column 2 (Image Box + Lines) -->
+    <rect x="47" y="43" width="12" height="9" rx="1.5" fill="#F42A41" fill-opacity="0.85"/>
+    <rect x="47" y="55" width="12" height="2" rx="1" fill="#94A3B8"/>
+    <rect x="47" y="59" width="10" height="2" rx="1" fill="#94A3B8"/>
+
+    <!-- Bottom News Breaking Ticker Line -->
+    <rect x="33" y="66" width="26" height="4" rx="2" fill="#0284C7"/>
+
+    <!-- Curved page fold highlight on bottom left -->
+    <path d="M 24 70 Q 28 70 30 74 L 30 80 Q 24 80 24 70 Z" fill="#CBD5E1"/>
+
+    <!-- Glass Reflection on Icon -->
+    <path d="M 0 24 C 0 10.7 10.7 0 24 0 L 76 0 C 89.3 0 100 10.7 100 24 L 100 45 L 0 55 Z" fill="url(#foldGrad)" rx="24"/>
+  </g>
+
+  <!-- ================= TYPOGRAPHY ================= -->
+  <!-- Main Brand Title: All Bangla Newspaper -->
+  <g id="brand-text">
+    <text x="130" y="54" font-family="'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif" font-weight="800" font-size="34" letter-spacing="-0.8">
+      <tspan fill="#006A4E">All </tspan>
+      <tspan fill="#F42A41">Bangla </tspan>
+      <tspan class="text-dynamic" fill="currentColor">Newspaper</tspan>
+    </text>
+
+    <!-- Subtitle in Bengali with live badge -->
+    <text x="132" y="86" font-family="'Hind Siliguri', sans-serif" font-weight="600" font-size="18" fill="#64748B">
+      সকল বাংলা সংবাদপত্র ও জাতীয় নিউজ পোর্টাল
+    </text>
+
+    <!-- Live Dot & Badge -->
+    <circle cx="482" cy="79" r="4" fill="#10B981"/>
+    <text x="492" y="83" font-family="'Inter', sans-serif" font-weight="700" font-size="11" fill="#10B981" letter-spacing="0.5">LIVE</text>
+  </g>
+</svg>

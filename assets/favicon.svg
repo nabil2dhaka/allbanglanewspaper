@@ -1,0 +1,23 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100" width="100%" height="100%" fill="none">
+  <defs>
+    <linearGradient id="favBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#006A4E"/>
+      <stop offset="100%" stop-color="#004D38"/>
+    </linearGradient>
+    <radialGradient id="favSun" cx="40%" cy="40%" r="60%">
+      <stop offset="0%" stop-color="#FF5252"/>
+      <stop offset="100%" stop-color="#F42A41"/>
+    </radialGradient>
+  </defs>
+  <rect width="100" height="100" rx="22" fill="url(#favBg)"/>
+  <circle cx="68" cy="36" r="16" fill="url(#favSun)"/>
+  <rect x="24" y="24" width="46" height="56" rx="4" fill="#E2E8F0"/>
+  <path d="M 28 32 C 28 30, 30 28, 33 28 L 60 28 C 63 28, 64 30, 64 33 L 64 74 C 64 76, 62 78, 59 78 L 32 78 C 29.8 78, 28 76.2, 28 74 Z" fill="#FFFFFF"/>
+  <rect x="33" y="34" width="26" height="5" rx="1.5" fill="#006A4E"/>
+  <rect x="33" y="43" width="11" height="2" rx="1" fill="#64748B"/>
+  <rect x="33" y="47" width="11" height="2" rx="1" fill="#94A3B8"/>
+  <rect x="33" y="51" width="9" height="2" rx="1" fill="#94A3B8"/>
+  <rect x="47" y="43" width="12" height="9" rx="1.5" fill="#F42A41"/>
+  <rect x="47" y="55" width="12" height="2" rx="1" fill="#94A3B8"/>
+  <rect x="33" y="66" width="26" height="4" rx="2" fill="#0284C7"/>
+</svg>

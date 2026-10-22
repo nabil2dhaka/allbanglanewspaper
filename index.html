@@ -2,27 +2,49 @@
 <html lang="bn" data-theme="light">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
   <title>All Bangla Newspaper - সকল বাংলা সংবাদপত্র</title>
-  <meta name="description" content="All popular Bangladeshi newspapers, online portals, English dailies, and TV channels in one place.">
+  <meta name="description" content="All popular Bangladeshi newspapers, online portals, English dailies, and TV channels in one fast, mobile-friendly place.">
+  
+  <!-- Favicon -->
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
+  <link rel="apple-touch-icon" href="assets/favicon.svg">
+  <meta name="theme-color" content="#006A4E">
+
+  <!-- Google Fonts -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
   <!-- Header / Navigation -->
   <header class="header">
     <div class="container header-container">
-      <div class="brand">
-        <div class="brand-icon">📰</div>
-        <div>
-          <h1 class="brand-title">All Bangla Newspaper</h1>
-          <p class="brand-subtitle">সকল বাংলা সংবাদপত্র ও অনলাইন নিউজ পোর্টাল</p>
+      <a href="#" class="brand-link" aria-label="All Bangla Newspaper Home">
+        <div class="brand-logo-wrap">
+          <img src="assets/favicon.svg" alt="All Bangla Newspaper Logo" class="brand-logo-img" width="40" height="40">
         </div>
-      </div>
+        <div class="brand-text">
+          <div class="brand-title">
+            <span class="text-green">All</span> <span class="text-red">Bangla</span> <span class="text-main">Newspaper</span>
+          </div>
+          <p class="brand-subtitle">সকল বাংলা সংবাদপত্র ও অনলাইন নিউজ</p>
+        </div>
+      </a>
 
       <div class="header-actions">
+        <!-- View Toggle (Grid / List) for Mobile & Desktop -->
+        <div class="view-toggle" role="group" aria-label="Layout view">
+          <button id="viewGridBtn" class="btn-toggle active" title="গ্রিড ভিউ (Grid View)" aria-label="Grid View">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/></svg>
+          </button>
+          <button id="viewListBtn" class="btn-toggle" title="লিস্ট ভিউ (List View)" aria-label="List View">
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><line x1="8" y1="6" x2="21" y2="6"/><line x1="8" y1="12" x2="21" y2="12"/><line x1="8" y1="18" x2="21" y2="18"/><line x1="3" y1="6" x2="3.01" y2="6"/><line x1="3" y1="12" x2="3.01" y2="12"/><line x1="3" y1="18" x2="3.01" y2="18"/></svg>
+          </button>
+        </div>
+
+        <!-- Theme Toggle -->
         <button id="themeToggle" class="btn-icon" aria-label="Toggle Theme" title="ডার্ক/লাইট মোড পরিবর্তন">
           <span class="theme-icon">🌙</span>
         </button>
@@ -33,45 +55,72 @@
   <!-- Hero & Search Section -->
   <section class="hero-section">
     <div class="container hero-container">
-      <h2 class="hero-heading">বাংলাদেশের সকল খবর এক জায়গায়</h2>
-      <p class="hero-desc">আপনার পছন্দের পত্রিকা বা নিউজ পোর্টাল সহজেই খুঁজে নিন এবং পড়ুন।</p>
+      <div class="hero-badge">
+        <span class="pulse-dot"></span> লাইভ ডিরেক্টরি ২০২৬
+      </div>
+      <h1 class="hero-heading">বাংলাদেশের সকল খবর এক ঠিকানায়</h1>
+      <p class="hero-desc">আপনার পছন্দের জাতীয় দৈনিক, অনলাইন পোর্টাল ও টিভি নিউজ সহজে খুঁজুন।</p>
       
+      <!-- Mobile-Optimized Search Bar -->
       <div class="search-wrapper">
-        <span class="search-icon">🔍</span>
+        <span class="search-icon">
+          <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><circle cx="11" cy="11" r="8"/><line x1="21" y1="21" x2="16.65" y2="16.65"/></svg>
+        </span>
         <input 
-          type="text" 
+          type="search" 
           id="searchInput" 
-          placeholder="পত্রিকার নাম দিয়ে খুঁজুন (उदा: প্রথম আলো, The Daily Star, সময়)..." 
+          placeholder="পত্রিকার নাম দিয়ে খুঁজুন (যেমন: প্রথম আলো, The Daily Star)..." 
           autocomplete="off"
+          enterkeyhint="search"
         >
-        <button id="clearSearch" class="btn-clear" style="display: none;" title="মুছে ফেলুন">✕</button>
+        <button id="clearSearch" class="btn-clear" style="display: none;" title="মুছে ফেলুন" aria-label="Clear search">✕</button>
       </div>
     </div>
   </section>
 
   <!-- Main Content -->
   <main class="container main-content">
-    <!-- Category Tabs -->
-    <nav class="categories-nav" aria-label="Newspaper Categories">
-      <div class="categories-list" id="categoryTabs">
-        <button class="category-btn active" data-category="all">সকল (All)</button>
-        <button class="category-btn" data-category="favorites">⭐ প্রিয় তালিকা (Favorites)</button>
-        <button class="category-btn" data-category="bangla">জাতীয় দৈনিক (Bangla Dailies)</button>
-        <button class="category-btn" data-category="online">অনলাইন পোর্টাল (Online Portals)</button>
-        <button class="category-btn" data-category="english">English Dailies</button>
-        <button class="category-btn" data-category="tv">টিভি নিউজ (TV Channels)</button>
-        <button class="category-btn" data-category="international">আন্তর্জাতিক (International)</button>
-      </div>
-    </nav>
-
-    <!-- Results Status -->
-    <div class="results-bar">
-      <span id="resultsCount">সকল পত্রিকা প্রদর্শন করা হচ্ছে</span>
-      <span class="hint-text">⭐ চিহ্নে ক্লিক করে প্রিয় তালিকায় যোগ করুন</span>
+    <!-- Category Tabs with Mobile Swipe Indicator -->
+    <div class="categories-wrapper">
+      <nav class="categories-nav" aria-label="Newspaper Categories">
+        <div class="categories-list" id="categoryTabs">
+          <button class="category-btn active" data-category="all">
+            <span class="cat-icon">📑</span> সকল (All)
+          </button>
+          <button class="category-btn" data-category="favorites">
+            <span class="cat-icon">⭐</span> প্রিয় তালিকা (<span id="favCountBadge">0</span>)
+          </button>
+          <button class="category-btn" data-category="bangla">
+            <span class="cat-icon">📰</span> জাতীয় দৈনিক
+          </button>
+          <button class="category-btn" data-category="online">
+            <span class="cat-icon">⚡</span> অনলাইন পোর্টাল
+          </button>
+          <button class="category-btn" data-category="english">
+            <span class="cat-icon">🌐</span> English Dailies
+          </button>
+          <button class="category-btn" data-category="tv">
+            <span class="cat-icon">📺</span> টিভি নিউজ
+          </button>
+          <button class="category-btn" data-category="international">
+            <span class="cat-icon">🌍</span> আন্তর্জাতিক
+          </button>
+        </div>
+      </nav>
     </div>
 
-    <!-- Newspaper Grid -->
-    <div class="newspaper-grid" id="newspaperGrid">
+    <!-- Results Status Bar -->
+    <div class="results-bar">
+      <div class="results-left">
+        <span id="resultsCount">সকল পত্রিকা প্রদর্শন করা হচ্ছে</span>
+      </div>
+      <div class="results-right">
+        <span class="hint-text">⭐ ট্যাপ করে ফেভারিট করুন</span>
+      </div>
+    </div>
+
+    <!-- Newspaper Container (Grid / List) -->
+    <div class="newspaper-container grid-view" id="newspaperGrid">
       <!-- Cards rendered via JavaScript -->
     </div>
 
@@ -79,16 +128,27 @@
     <div id="emptyState" class="empty-state" style="display: none;">
       <div class="empty-icon">🔍</div>
       <h3>কোনো সংবাদপত্র পাওয়া যায়নি!</h3>
-      <p>অনুগ্রহ করে অন্য কোনো নাম দিয়ে চেষ্টা করুন।</p>
-      <button id="resetSearchBtn" class="btn-reset">সকল পত্রিকা দেখুন</button>
+      <p>আপনার অনুসন্ধানের সাথে মিলে এমন কোনো পত্রিকা পাওয়া যায়নি।</p>
+      <button id="resetSearchBtn" class="btn-reset">সকল পত্রিকা পুনরায় দেখুন</button>
     </div>
   </main>
+
+  <!-- Floating Back to Top Button for Mobile -->
+  <button id="backToTopBtn" class="btn-back-to-top" aria-label="Back to top" title="উপরে যান">
+    <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><polyline points="18 15 12 9 6 15"/></svg>
+  </button>
 
   <!-- Footer -->
   <footer class="footer">
     <div class="container footer-content">
-      <p>© 2026 All Bangla Newspaper Directory. All rights reserved.</p>
-      <p class="footer-sub">Developed by <a href="https://github.com/nabil2dhaka" target="_blank" rel="noopener">nabil2dhaka</a></p>
+      <div class="footer-brand">
+        <img src="assets/favicon.svg" alt="Logo" width="28" height="28">
+        <span>All Bangla Newspaper Directory</span>
+      </div>
+      <p class="footer-copy">© 2026 সকল স্বত্ব সংরক্ষিত।</p>
+      <p class="footer-dev">
+        Developed with ❤️ by <a href="https://github.com/nabil2dhaka" target="_blank" rel="noopener">nabil2dhaka</a>
+      </p>
     </div>
   </footer>
 

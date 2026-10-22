@@ -344,6 +344,7 @@ const newspapers = [
 // App State
 let currentCategory = 'all';
 let searchQuery = '';
+let currentView = localStorage.getItem('abn_view') || 'grid'; // 'grid' | 'list'
 let favorites = JSON.parse(localStorage.getItem('abn_favorites') || '[]');
 
 // DOM Elements
@@ -352,9 +353,13 @@ const searchInput = document.getElementById('searchInput');
 const clearSearchBtn = document.getElementById('clearSearch');
 const categoryTabs = document.getElementById('categoryTabs');
 const resultsCount = document.getElementById('resultsCount');
+const favCountBadge = document.getElementById('favCountBadge');
 const emptyState = document.getElementById('emptyState');
 const resetSearchBtn = document.getElementById('resetSearchBtn');
 const themeToggle = document.getElementById('themeToggle');
+const viewGridBtn = document.getElementById('viewGridBtn');
+const viewListBtn = document.getElementById('viewListBtn');
+const backToTopBtn = document.getElementById('backToTopBtn');
 
 // Initialize Theme
 function initTheme() {
@@ -375,6 +380,19 @@ themeToggle.addEventListener('click', () => {
   updateThemeIcon(newTheme);
 });
 
+// View Toggle (Grid / List)
+function updateView(view) {
+  currentView = view;
+  localStorage.setItem('abn_view', view);
+  newspaperGrid.className = `newspaper-container ${view}-view`;
+  viewGridBtn.classList.toggle('active', view === 'grid');
+  viewListBtn.classList.toggle('active', view === 'list');
+  renderNewspapers();
+}
+
+viewGridBtn.addEventListener('click', () => updateView('grid'));
+viewListBtn.addEventListener('click', () => updateView('list'));
+
 // Toggle Favorite
 function toggleFavorite(id, event) {
   event.preventDefault();
@@ -387,7 +405,14 @@ function toggleFavorite(id, event) {
   }
 
   localStorage.setItem('abn_favorites', JSON.stringify(favorites));
+  updateFavoriteBadge();
   renderNewspapers();
+}
+
+function updateFavoriteBadge() {
+  if (favCountBadge) {
+    favCountBadge.textContent = favorites.length;
+  }
 }
 
 // Filter and Render Newspapers
@@ -401,7 +426,7 @@ function renderNewspapers() {
       matchesCategory = paper.category === currentCategory;
     }
 
-    // Search match (name in Bangla or English, or category)
+    // Search match
     let matchesSearch = true;
     if (searchQuery.trim() !== '') {
       const q = searchQuery.toLowerCase().trim();
@@ -420,13 +445,14 @@ function renderNewspapers() {
     resultsCount.textContent = `মোট ${filtered.length} টি পত্রিকা পাওয়া গেছে`;
   }
 
-  // Clear grid
+  // Clear container
   newspaperGrid.innerHTML = '';
 
   if (filtered.length === 0) {
     emptyState.style.display = 'block';
   } else {
     emptyState.style.display = 'none';
+
     filtered.forEach(paper => {
       const isFav = favorites.includes(paper.id);
       const card = document.createElement('a');
@@ -435,29 +461,58 @@ function renderNewspapers() {
       card.target = '_blank';
       card.rel = 'noopener noreferrer';
 
-      card.innerHTML = `
-        <div>
-          <div class="card-top">
-            <div class="newspaper-avatar" style="background-color: ${paper.color};">
-              ${paper.icon}
+      if (currentView === 'list') {
+        // Compact List Layout
+        card.innerHTML = `
+          <div class="card-layout-list">
+            <div class="card-left">
+              <div class="newspaper-avatar" style="background-color: ${paper.color};">
+                ${paper.icon}
+              </div>
+              <div class="newspaper-info">
+                <h3 class="newspaper-name-bn">${paper.nameBn}</h3>
+                <p class="newspaper-name-en">${paper.nameEn}</p>
+              </div>
             </div>
-            <button 
-              class="favorite-btn ${isFav ? 'favorited' : ''}" 
-              onclick="toggleFavorite('${paper.id}', event)"
-              title="${isFav ? 'প্রিয় তালিকা থেকে সরান' : 'প্রিয় তালিকায় যুক্ত করুন'}"
-              aria-label="Toggle favorite"
-            >
-              ${isFav ? '★' : '☆'}
-            </button>
+            <div class="card-right">
+              <span class="category-tag">${paper.categoryLabel}</span>
+              <button 
+                class="favorite-btn ${isFav ? 'favorited' : ''}" 
+                onclick="toggleFavorite('${paper.id}', event)"
+                title="${isFav ? 'প্রিয় তালিকা থেকে সরান' : 'প্রিয় তালিকায় যুক্ত করুন'}"
+                aria-label="Favorite toggle"
+              >
+                ${isFav ? '★' : '☆'}
+              </button>
+            </div>
           </div>
-          <h3 class="newspaper-name-bn">${paper.nameBn}</h3>
-          <p class="newspaper-name-en">${paper.nameEn}</p>
-        </div>
-        <div class="card-footer">
-          <span class="category-tag">${paper.categoryLabel}</span>
-          <span class="visit-link">পড়ুন ➔</span>
-        </div>
-      `;
+        `;
+      } else {
+        // Standard Grid Layout
+        card.innerHTML = `
+          <div>
+            <div class="card-top">
+              <div class="newspaper-avatar" style="background-color: ${paper.color};">
+                ${paper.icon}
+              </div>
+              <button 
+                class="favorite-btn ${isFav ? 'favorited' : ''}" 
+                onclick="toggleFavorite('${paper.id}', event)"
+                title="${isFav ? 'প্রিয় তালিকা থেকে সরান' : 'প্রিয় তালিকায় যুক্ত করুন'}"
+                aria-label="Favorite toggle"
+              >
+                ${isFav ? '★' : '☆'}
+              </button>
+            </div>
+            <h3 class="newspaper-name-bn">${paper.nameBn}</h3>
+            <p class="newspaper-name-en">${paper.nameEn}</p>
+          </div>
+          <div class="card-footer">
+            <span class="category-tag">${paper.categoryLabel}</span>
+            <span class="visit-link">পড়ুন ➔</span>
+          </div>
+        `;
+      }
 
       newspaperGrid.appendChild(card);
     });
@@ -467,7 +522,7 @@ function renderNewspapers() {
 // Search Input Listener
 searchInput.addEventListener('input', (e) => {
   searchQuery = e.target.value;
-  clearSearchBtn.style.display = searchQuery ? 'block' : 'none';
+  clearSearchBtn.style.display = searchQuery ? 'flex' : 'none';
   renderNewspapers();
 });
 
@@ -492,14 +547,32 @@ resetSearchBtn.addEventListener('click', () => {
 
 // Category Switch Listener
 categoryTabs.addEventListener('click', (e) => {
-  if (e.target.classList.contains('category-btn')) {
-    document.querySelectorAll('.category-btn').forEach(btn => btn.classList.remove('active'));
-    e.target.classList.add('active');
-    currentCategory = e.target.dataset.category;
+  const btn = e.target.closest('.category-btn');
+  if (btn) {
+    document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentCategory = btn.dataset.category;
     renderNewspapers();
   }
 });
 
+// Floating Back to Top Button
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 280) {
+    backToTopBtn.classList.add('visible');
+  } else {
+    backToTopBtn.classList.remove('visible');
+  }
+}, { passive: true });
+
+backToTopBtn.addEventListener('click', () => {
+  window.scrollTo({
+    top: 0,
+    behavior: 'smooth'
+  });
+});
+
 // Initial boot
 initTheme();
-renderNewspapers();
+updateFavoriteBadge();
+updateView(currentView);
