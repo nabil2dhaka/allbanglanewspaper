@@ -1,7 +1,5 @@
 // All Bangla Newspaper Directory Data
-// Updated with:
-// 1. Online newspapers from https://allbanglanewspapersbd.com/bangla-online-newspaper/
-// 2. Sharebazar newspapers from https://www.allbanglanewspaper.xyz/bangladesh/sharebazarnewspaper
+// Categorized by Type with dedicated 'Stock Market' category from https://www.allbanglanewspaper.xyz/bangladesh/sharebazarnewspaper
 
 const newspapers = [
   // =========================================================================
@@ -1595,93 +1593,93 @@ const newspapers = [
   },
 
   // =========================================================================
-  // 6. BUSINESS, SHARE MARKET & ECONOMY (ব্যবসা, শেয়ার বাজার ও অর্থনীতি)
-  // Updated from https://www.allbanglanewspaper.xyz/bangladesh/sharebazarnewspaper
+  // 6. STOCK MARKET (শেয়ার বাজার)
+  // Dedicated category from https://www.allbanglanewspaper.xyz/bangladesh/sharebazarnewspaper
   // =========================================================================
   {
-    id: 'bonikbarta',
+    id: 'bonikbarta_stock',
     nameBn: 'বণিক বার্তা',
     nameEn: 'Bonik Barta',
-    category: 'business',
-    categoryLabel: 'অর্থনীতি ও ব্যবসা',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.bonikbarta.net',
     epaperUrl: 'https://epaper.bonikbarta.net',
     color: '#d35400',
     icon: 'ব',
-    tags: 'business bonik economy commerce dse share market'
+    tags: 'stock market share dse bonik economy commerce'
   },
   {
-    id: 'thefinancialexpress_biz',
+    id: 'financialexpress_stock',
     nameBn: 'ফাইন্যান্সিয়াল এক্সপ্রেস',
     nameEn: 'The Financial Express',
-    category: 'business',
-    categoryLabel: 'Financial Daily',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://thefinancialexpress.com.bd',
     color: '#1a5276',
     icon: 'FE',
-    tags: 'english financial business fe stock dse'
+    tags: 'stock market share dse financial express'
   },
   {
     id: 'sharebiz',
     nameBn: 'শেয়ার বিজ',
     nameEn: 'Sharebiz.net',
-    category: 'business',
-    categoryLabel: 'শেয়ার বাজার',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.sharebiz.net',
     color: '#1f618d',
     icon: 'শে',
-    tags: 'share market stock dse commerce sharebiz'
+    tags: 'stock market share dse commerce sharebiz'
   },
   {
     id: 'arthosuchak',
     nameBn: 'অর্থসূচক',
     nameEn: 'Arthosuchak',
-    category: 'business',
-    categoryLabel: 'শেয়ার বাজার ও অর্থনীতি',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.arthosuchak.com',
     color: '#27ae60',
     icon: 'অ',
-    tags: 'stock share market economy money arthosuchak'
+    tags: 'stock market share dse economy money arthosuchak'
   },
   {
     id: 'sharenews24',
     nameBn: 'শেয়ার নিউজ ২৪',
     nameEn: 'Sharenews24.com',
-    category: 'business',
-    categoryLabel: 'শেয়ার বাজার',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.sharenews24.com',
     color: '#c0392b',
     icon: 'শে২৪',
-    tags: 'share market stock dse sharenews24'
+    tags: 'stock market share dse sharenews24'
   },
   {
     id: 'sunbd24',
     nameBn: 'সান বিডি ২৪',
     nameEn: 'Sunbd24.com',
-    category: 'business',
-    categoryLabel: 'শেয়ার বাজার ও ব্যবসা',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.sunbd24.com',
     color: '#e67e22',
     icon: 'সান',
-    tags: 'share market stock sunbd24 economy'
+    tags: 'stock market share sunbd24 economy'
   },
   {
     id: 'sharebazarnews',
     nameBn: 'শেয়ার বাজার নিউজ',
     nameEn: 'Sharebazarnews.com',
-    category: 'business',
-    categoryLabel: 'শেয়ার বাজার',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.sharebazarnews.com',
     color: '#2980b9',
     icon: 'SBN',
-    tags: 'share market stock dse sharebazarnews'
+    tags: 'stock market share dse sharebazarnews'
   },
   {
     id: 'stockbangladesh',
     nameBn: 'স্টক বাংলাদেশ',
     nameEn: 'Stock Bangladesh',
-    category: 'business',
-    categoryLabel: 'স্টক মার্কেট পোর্টাল',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.stockbangladesh.com',
     color: '#16a085',
     icon: 'SB',
@@ -1691,8 +1689,8 @@ const newspapers = [
     id: 'amarstock',
     nameBn: 'আমার স্টক',
     nameEn: 'AmarStock.com',
-    category: 'business',
-    categoryLabel: 'স্টক অ্যানালাইসিস',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.amarstock.com',
     color: '#2e4053',
     icon: 'AS',
@@ -1702,258 +1700,284 @@ const newspapers = [
     id: 'ajkerbazzar',
     nameBn: 'আজকের বাজার',
     nameEn: 'Ajker Bazzar',
-    category: 'business',
-    categoryLabel: 'বাণিজ্য ও শেয়ার বাজার',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.ajkerbazzar.com',
     color: '#b03a2e',
     icon: 'আজ',
-    tags: 'market business commerce ajkerbazzar'
+    tags: 'stock market business commerce ajkerbazzar'
   },
   {
     id: 'orthosongbad',
     nameBn: 'অর্থসংবাদ',
     nameEn: 'Ortho Songbad',
-    category: 'business',
-    categoryLabel: 'অর্থনীতি ও বাণিজ্য',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://orthosongbad.com',
     color: '#117a65',
     icon: 'অর্থ',
-    tags: 'economy business orthosongbad finance'
+    tags: 'stock market economy business orthosongbad finance'
   },
   {
     id: 'businesshour24',
     nameBn: 'বিজনেস আওয়ার ২৪',
     nameEn: 'Business Hour 24',
-    category: 'business',
-    categoryLabel: 'বাণিজ্য সংবাদ',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.businesshour24.com',
     color: '#7d3c98',
     icon: 'BH',
-    tags: 'business corporate commerce'
+    tags: 'stock market business corporate commerce'
   },
   {
     id: 'corporatesangbad',
     nameBn: 'কর্পোরেট সংবাদ',
     nameEn: 'Corporate Sangbad',
-    category: 'business',
-    categoryLabel: 'কর্পোরেট নিউজ',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://corporatesangbad.com',
     color: '#1b4f72',
     icon: 'কর্পো',
-    tags: 'corporate business sangbad company'
+    tags: 'stock market corporate business sangbad company'
   },
   {
     id: 'businesseyebd',
     nameBn: 'বিজনেস আই বিডি',
     nameEn: 'Business Eye BD',
-    category: 'business',
-    categoryLabel: 'বাণিজ্য ও অর্থনীতি',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://businesseyebd.com',
     color: '#1e8449',
     icon: 'BE',
-    tags: 'business eye bd trade commerce'
+    tags: 'stock market business eye bd trade commerce'
   },
   {
     id: 'pujibazar',
     nameBn: 'পুঁজিবাজার ডট কম',
     nameEn: 'Pujibazar.com',
-    category: 'business',
-    categoryLabel: 'পুঁজিবাজার',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://pujibazar.com',
     color: '#af601a',
     icon: 'পুঁজি',
-    tags: 'share market pujibazar stock dse investment'
+    tags: 'stock market share pujibazar dse investment'
   },
   {
     id: 'dailysharebazarprotidin',
     nameBn: 'শেয়ারবাজার প্রতিদিন',
     nameEn: 'Sharebazar Protidin',
-    category: 'business',
-    categoryLabel: 'শেয়ার বাজার',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://dailysharebazarprotidin.com',
     color: '#c0392b',
     icon: 'প্রতি',
-    tags: 'share market stock daily sharebazar'
+    tags: 'stock market share daily sharebazar'
   },
   {
     id: 'deshprotikhon',
     nameBn: 'দেশ প্রতিক্ষণ',
     nameEn: 'Desh Protikhon',
-    category: 'business',
-    categoryLabel: 'অর্থনীতি ও শেয়ার',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://deshprotikhon.com',
     color: '#1f618d',
     icon: 'দেশ',
-    tags: 'economy stock deshprotikhon finance'
+    tags: 'stock market economy deshprotikhon finance'
   },
   {
     id: 'arthoniteerkagoj',
     nameBn: 'অর্থনীতির কাগজ',
     nameEn: 'Arthoniteer Kagoj',
-    category: 'business',
-    categoryLabel: 'অর্থনীতি',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://arthoniteerkagoj.com',
     color: '#2874a6',
     icon: 'কাগজ',
-    tags: 'economy business paper finance'
+    tags: 'stock market economy business paper finance'
   },
   {
     id: 'sharebusiness24',
     nameBn: 'শেয়ার বিজনেস ২৪',
     nameEn: 'Share Business 24',
-    category: 'business',
-    categoryLabel: 'শেয়ার ও বাণিজ্য',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://sharebusiness24.com',
     color: '#d35400',
     icon: 'SB24',
-    tags: 'share market stock business'
+    tags: 'stock market share business'
   },
   {
     id: 'biniogbarta',
     nameBn: 'বিনিয়োগ বার্তা',
     nameEn: 'Biniog Barta',
-    category: 'business',
-    categoryLabel: 'বিনিয়োগ ও বাণিজ্য',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://biniogbarta.com',
     color: '#27ae60',
     icon: 'বিনি',
-    tags: 'investment biniog barta capital'
+    tags: 'stock market investment biniog barta capital'
   },
   {
     id: 'energybangla',
     nameBn: 'এনার্জি বাংলা',
     nameEn: 'Energy Bangla',
-    category: 'business',
-    categoryLabel: 'জ্বালানি ও বিদ্যুৎ',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://energybangla.com',
     color: '#f39c12',
     icon: 'EB',
-    tags: 'energy power oil gas electricity'
+    tags: 'stock market energy power oil gas electricity'
   },
   {
     id: 'sharebarta24',
     nameBn: 'শেয়ার বার্তা ২৪',
     nameEn: 'Share Barta 24',
-    category: 'business',
-    categoryLabel: 'শেয়ার বাজার',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://sharebarta24.com',
     color: '#8e44ad',
     icon: 'বা২৪',
-    tags: 'share barta stock dse sharebarta24'
+    tags: 'stock market share barta dse sharebarta24'
   },
   {
     id: 'businessnews24bd',
     nameBn: 'বিজনেস নিউজ ২৪ বিডি',
     nameEn: 'Business News 24 BD',
-    category: 'business',
-    categoryLabel: 'বাণিজ্য সংবাদ',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://businessnews24bd.com',
     color: '#16a085',
     icon: 'BN',
-    tags: 'business news 24 commerce trade'
+    tags: 'stock market business news 24 commerce trade'
   },
   {
     id: 'bdcap24',
     nameBn: 'বিডি ক্যাপ ২৪',
     nameEn: 'BDCap24.net',
-    category: 'business',
-    categoryLabel: 'ক্যাপিটাল মার্কেট',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://bdcap24.net',
     color: '#2c3e50',
     icon: 'CAP',
-    tags: 'capital market stock dse cse'
+    tags: 'stock market capital market dse cse'
   },
   {
     id: 'insurancenewsbd',
     nameBn: 'ইন্সুরেন্স নিউজ বিডি',
     nameEn: 'Insurance News BD',
-    category: 'business',
-    categoryLabel: 'বীমা খাত',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://insurancenewsbd.com',
     color: '#006a4e',
     icon: 'বীমা',
-    tags: 'insurance bima finance claim policy'
+    tags: 'stock market insurance bima finance claim policy'
   },
   {
     id: 'bankbimaarthonity',
     nameBn: 'ব্যাংক বীমা অর্থনীতি',
     nameEn: 'Bank Bima Arthonity',
-    category: 'business',
-    categoryLabel: 'ব্যাংকিং ও বীমা',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://bankbimaarthonity.com',
     color: '#1b4f72',
     icon: 'ব্যাংক',
-    tags: 'bank bima insurance banking arthonity'
+    tags: 'stock market bank bima insurance banking arthonity'
   },
   {
     id: 'bankingnewsbd',
     nameBn: 'ব্যাংকিং নিউজ বিডি',
     nameEn: 'Banking News BD',
-    category: 'business',
-    categoryLabel: 'ব্যাংক ও আর্থিক খাত',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://bankingnewsbd.com',
     color: '#117864',
     icon: 'BNB',
-    tags: 'banking financial interest loan remittance'
+    tags: 'stock market banking financial interest loan remittance'
   },
   {
     id: 'dsebd',
     nameBn: 'ঢাকা স্টক এক্সচেঞ্জ (DSE)',
     nameEn: 'Dhaka Stock Exchange',
-    category: 'business',
-    categoryLabel: 'স্টক মার্কেট',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.dsebd.org',
     color: '#004d38',
     icon: 'DSE',
-    tags: 'dse stock live index market share'
+    tags: 'stock market dse live index share trading'
   },
   {
     id: 'csekhorbor',
     nameBn: 'চট্টগ্রাম স্টক এক্সচেঞ্জ (CSE)',
     nameEn: 'Chittagong Stock Exchange',
-    category: 'business',
-    categoryLabel: 'স্টক মার্কেট',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.cse.com.bd',
     color: '#1b4f72',
     icon: 'CSE',
-    tags: 'cse stock chittagong share'
+    tags: 'stock market cse chittagong share trading'
   },
   {
     id: 'bangladeshbank',
     nameBn: 'বাংলাদেশ ব্যাংক (কেন্দ্রীয় ব্যাংক)',
     nameEn: 'Bangladesh Bank (Central Bank)',
-    category: 'business',
-    categoryLabel: 'কেন্দ্রীয় ব্যাংক',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.bb.org.bd',
     color: '#006a4e',
     icon: 'BB',
-    tags: 'bangladesh bank central bank forex reserves dollar'
+    tags: 'stock market bangladesh bank central bank forex reserves dollar'
   },
   {
     id: 'lankabangla',
     nameBn: 'লংকাবাংলা ফাইন্যান্সিয়াল পোর্টাল',
     nameEn: 'LankaBangla Portal',
-    category: 'business',
-    categoryLabel: 'আর্থিক পোর্টাল',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://lankabd.com',
     color: '#d9230f',
     icon: 'LB',
-    tags: 'lanka bangla finance stock investment'
+    tags: 'stock market lanka bangla finance investment'
   },
   {
     id: 'cdbl',
     nameBn: 'সেন্ট্রাল ডিপোজিটরি বাংলাদেশ (CDBL)',
     nameEn: 'Central Depository BD (CDBL)',
-    category: 'business',
-    categoryLabel: 'বিও অ্যাকাউন্ট ও শেয়ার',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
     url: 'https://www.cdbl.com.bd',
     color: '#27ae60',
     icon: 'CDBL',
-    tags: 'cdbl bo account depository shares'
+    tags: 'stock market cdbl bo account depository shares'
   },
 
   // =========================================================================
-  // 7. SPORTS & ENTERTAINMENT (খেলাধুলা ও বিনোদন)
+  // 7. GENERAL BUSINESS & COMMERCE (ব্যবসা ও বাণিজ্য)
+  // =========================================================================
+  {
+    id: 'businessinsiderbd',
+    nameBn: 'বিজনেস ইনসাইডার বাংলাদেশ',
+    nameEn: 'Business Insider BD',
+    category: 'business',
+    categoryLabel: 'ব্যবসা ও বাণিজ্য',
+    url: 'https://www.businessinsiderbd.com',
+    color: '#117864',
+    icon: 'BI',
+    tags: 'business commerce trade corporate'
+  },
+  {
+    id: 'businessnewsbdnet',
+    nameBn: 'বিজনেস নিউজ বিডি',
+    nameEn: 'Business News BD',
+    category: 'business',
+    categoryLabel: 'ব্যবসা ও বাণিজ্য',
+    url: 'https://businessnews-bd.net',
+    color: '#1f618d',
+    icon: 'BNB',
+    tags: 'business commerce industry'
+  },
+
+  // =========================================================================
+  // 8. SPORTS & ENTERTAINMENT (খেলাধুলা ও বিনোদন)
   // =========================================================================
   {
     id: 'pavilion',
@@ -2012,7 +2036,7 @@ const newspapers = [
   },
 
   // =========================================================================
-  // 8. JOBS, TECH & EDUCATION (চাকরি, প্রযুক্তি ও শিক্ষা)
+  // 9. JOBS, TECH & EDUCATION (চাকরি, প্রযুক্তি ও শিক্ষা)
   // =========================================================================
   {
     id: 'bdjobs',
@@ -2093,7 +2117,7 @@ const newspapers = [
   },
 
   // =========================================================================
-  // 9. BANGLA FM RADIO (এফএম রেডিও)
+  // 10. BANGLA FM RADIO (এফএম রেডিও)
   // =========================================================================
   {
     id: 'radiofoorti',
@@ -2152,7 +2176,7 @@ const newspapers = [
   },
 
   // =========================================================================
-  // 10. KOLKATA & WEST BENGAL (কলকাতা ও পশ্চিমবঙ্গ)
+  // 11. KOLKATA & WEST BENGAL (কলকাতা ও পশ্চিমবঙ্গ)
   // =========================================================================
   {
     id: 'anandabazar',
@@ -2344,8 +2368,10 @@ function renderNewspapers() {
     resultsCount.textContent = `ই-পেপার সংস্করণ রয়েছে: ${filtered.length} টি`;
   } else if (currentCategory === 'online') {
     resultsCount.textContent = `অনলাইন পোর্টাল: ${filtered.length} টি ওয়েবসাইট`;
+  } else if (currentCategory === 'stock') {
+    resultsCount.textContent = `Stock Market: ${filtered.length} টি শেয়ার বাজার ওয়েবসাইট`;
   } else if (currentCategory === 'business') {
-    resultsCount.textContent = `শেয়ার বাজার ও অর্থনীতি: ${filtered.length} টি ওয়েবসাইট`;
+    resultsCount.textContent = `ব্যবসা ও বাণিজ্য: ${filtered.length} টি ওয়েবসাইট`;
   } else if (currentCategory === 'local' && currentDivision !== 'all') {
     resultsCount.textContent = `নির্বাচিত বিভাগ: ${filtered.length} টি পত্রিকা`;
   } else {

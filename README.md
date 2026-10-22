@@ -10,10 +10,11 @@ A modern, fast, and mobile-responsive Bangladeshi media portal bringing together
 
 ## 📑 Complete Directory Categories (190+ Websites)
 
-### 1. 📈 ব্যবসা, শেয়ার বাজার ও অর্থনীতি (32+ Websites from URL)
-* **শেয়ার বাজার ও স্টক মার্কেট:** অর্থসূচক, শেয়ার নিউজ ২৪, শেয়ার বিজ, সান বিডি ২৪, শেয়ার বাজার নিউজ, স্টক বাংলাদেশ, আমার স্টক (AmarStock), পুঁজিবাজার ডট কম, শেয়ারবাজার প্রতিদিন, দেশ প্রতিক্ষণ, শেয়ার বিজনেস ২৪, শেয়ার বার্তা ২৪, বিডি ক্যাপ ২৪।
-* **অর্থনীতি ও বাণিজ্য সংবাদপত্র:** বণিক বার্তা (E-paper সহ), ফাইন্যান্সিয়াল এক্সপ্রেস, আজকের বাজার, অর্থসংবাদ, বিজনেস আওয়ার ২৪, কর্পোরেট সংবাদ, বিজনেস আই বিডি, অর্থনীতির কাগজ, বিনিয়োগ বার্তা, এনার্জি বাংলা, বিজনেস নিউজ ২৪ বিডি।
-* **ব্যাংকিং, বীমা ও স্টক এক্সচেঞ্জ:** ঢাকা স্টক এক্সচেঞ্জ (DSE), চট্টগ্রাম স্টক এক্সচেঞ্জ (CSE), বাংলাদেশ ব্যাংক (কেন্দ্রীয় ব্যাংক), সেন্ট্রাল ডিপোজিটরি বাংলাদেশ (CDBL), লংকাবাংলা পোর্টাল, ইন্স্যুরেন্স নিউজ বিডি, ব্যাংক বীমা অর্থনীতি, ব্যাংকিং নিউজ বিডি।
+### 1. 📊 শেয়ার বাজার (Stock Market - 32 Websites)
+* **স্টক এক্সচেঞ্জ ও নিয়ন্ত্রক সংস্থা:** ঢাকা স্টক এক্সচেঞ্জ (DSE), চট্টগ্রাম স্টক এক্সচেঞ্জ (CSE), বাংলাদেশ ব্যাংক (কেন্দ্রীয় ব্যাংক), সেন্ট্রাল ডিপোজিটরি বাংলাদেশ (CDBL), লংকাবাংলা পোর্টাল।
+* **শেয়ার বাজার ও স্টক মার্কেট মিডিয়া:** অর্থসূচক, শেয়ার নিউজ ২৪, শেয়ার বিজ, সান বিডি ২৪, শেয়ার বাজার নিউজ, স্টক বাংলাদেশ, আমার স্টক (AmarStock), পুঁজিবাজার ডট কম, শেয়ারবাজার প্রতিদিন, দেশ প্রতিক্ষণ, শেয়ার বিজনেস ২৪, শেয়ার বার্তা ২৪, বিডি ক্যাপ ২৪।
+* **বাণিজ্য ও অর্থনীতি পত্রিকা:** বণিক বার্তা (E-paper সহ), ফাইন্যান্সিয়াল এক্সপ্রেস, আজকের বাজার, অর্থসংবাদ, বিজনেস আওয়ার ২৪, কর্পোরেট সংবাদ, বিজনেস আই বিডি, অর্থনীতির কাগজ, বিনিয়োগ বার্তা, এনার্জি বাংলা, বিজনেস নিউজ ২৪ বিডি।
+* **বীমা ও ব্যাংকিং সংবাদ:** ইন্স্যুরেন্স নিউজ বিডি, ব্যাংক বীমা অর্থনীতি, ব্যাংকিং নিউজ বিডি।
 
 ### 2. ⚡ অনলাইন নিউজ পোর্টাল (57 Portals from URL)
 * **শীর্ষ অনলাইন পোর্টাল:** বিডিনিউজ২৪, বাংলানিউজ২৪, জাগো নিউজ ২৪, রাইজিংবিডি, ঢাকা পোস্ট, বিডি২৪লাইভ, বিবিসি বাংলা, বাংলা ট্রিবিউন, দৈনিক শিক্ষা, নিউজবাংলা২৪, সারাবাংলা, গো নিউজ ২৪, বাংলা ইনসাইডার, ডয়চে ভেলে বাংলা, আমার দেশ ২৪, প্রিয়.কম, ভয়েস অফ আমেরিকা বাংলা, ঢাকা ট্রিবিউন।
@@ -41,16 +42,19 @@ A modern, fast, and mobile-responsive Bangladeshi media portal bringing together
 * **রংপুর বিভাগ:** দৈনিক উত্তর বাংলা, রংপুর চিত্র, দিনাজপুর নিউজ ২৪
 * **ময়মনসিংহ বিভাগ:** ময়মনসিংহ প্রতিদিন, জামালপুর বার্তা
 
-### 8. ⚽ খেলাধুলা ও বিনোদন
+### 8. 💼 ব্যবসা ও বাণিজ্য (General Business & Commerce)
+* বিজনেস ইনসাইডার বাংলাদেশ, বিজনেস নিউজ বিডি ইত্যাদি।
+
+### 9. ⚽ খেলাধুলা ও বিনোদন
 * প্যাভিলিয়ন (Pavilion), বিডিক্রিকটাইম (Bdcrictime), ডেইলি ক্রিকেট, খেলাধুলা ২৪, আনন্দ আলো।
 
-### 9. 💼 চাকরি, প্রযুক্তি ও শিক্ষা
+### 10. 💼 চাকরি, প্রযুক্তি ও শিক্ষা
 * বিডিজবস (Bdjobs), সাপ্তাহিক চাকরির খবর, দৈনিক শিক্ষা, ক্যাম্পাস লাইভ ২৪, টেকশহর, টেকটিউনস, বিজ্ঞানচিন্তা, কিশোর আলো।
 
-### 10. 📻 এফএম ও জাতীয় বেতার
+### 11. 📻 এফএম ও জাতীয় বেতার
 * রেডিও ফুর্তি (88.0 FM), রেডিও টুডে (89.6 FM), ঢাকা এফএম (90.4 FM), জাগো এফএম (94.4 FM), বাংলাদেশ বেতার।
 
-### 11. 🏛️ কলকাতা ও পশ্চিমবঙ্গ
+### 12. 🏛️ কলকাতা ও পশ্চিমবঙ্গ
 * আনন্দবাজার পত্রিকা, বর্তমান পত্রিকা, সংবাদ প্রতিদিন, এই সময়, আজকাল, উত্তরবঙ্গ সংবাদ।
 
 ---
@@ -58,6 +62,7 @@ A modern, fast, and mobile-responsive Bangladeshi media portal bringing together
 ## 📱 Features
 
 - 🔍 **Realtime Multi-Field Search:** Instant search by Bengali name, English name, district, division, or keyword.
+- 📊 **Dedicated 'Stock Market' Category:** 1-click access to all 32 share market and stock exchange portals.
 - 📍 **Division Sub-Filter:** Select specific divisions (Dhaka, Chittagong, Sylhet, Rajshahi, Khulna, Barisal, Rangpur, Mymensingh) when browsing local news.
 - 🔲 **Grid View & Compact List View:** Switch layouts with one tap to browse more efficiently on mobile screens.
 - 🌓 **Dark & Light Mode:** Eye-friendly reading with saved preference in `localStorage`.
@@ -86,7 +91,7 @@ Start-Process "C:\Users\User\.gemini\antigravity\scratch\allbanglanewspaper\inde
 ```bash
 cd "C:\Users\User\.gemini\antigravity\scratch\allbanglanewspaper"
 git add .
-git commit -m "Update sharebazar newspapers from allbanglanewspaper.xyz/bangladesh/sharebazarnewspaper"
+git commit -m "Create separate 'Stock Market' category and assign all sharebazar websites"
 git remote add origin https://github.com/nabil2dhaka/allbanglanewspaper.git
 git push -u origin main
 ```
