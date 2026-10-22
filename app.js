@@ -2801,7 +2801,7 @@ function setupScrollSpy() {
           document.querySelectorAll('.category-btn').forEach(btn => {
             const isMatch = btn.dataset.category === catId;
             btn.classList.toggle('active', isMatch);
-            if (isMatch) {
+            if (isMatch && categoriesWrapper && !categoriesWrapper.classList.contains('wrap-mode')) {
               btn.scrollIntoView({ behavior: 'smooth', inline: 'nearest', block: 'nearest' });
             }
           });
@@ -2841,7 +2841,8 @@ function showAllBlocks() {
 function scrollToBlock(blockId) {
   const el = document.getElementById(blockId);
   if (!el) return;
-  const headerOffset = 130;
+  const catWrapHeight = categoriesWrapper ? categoriesWrapper.offsetHeight : 50;
+  const headerOffset = 70 + catWrapHeight + 12;
   const elementPosition = el.getBoundingClientRect().top;
   const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
 
@@ -2951,6 +2952,83 @@ backToTopBtn.addEventListener('click', () => {
   });
 });
 
+// ================= CATEGORIES RESPONSIVE & FLEXIBLE CONTROLS =================
+const categoriesWrapper = document.getElementById('categoriesWrapper');
+const categoriesNav = document.getElementById('categoriesNav');
+const catScrollLeftBtn = document.getElementById('catScrollLeftBtn');
+const catScrollRightBtn = document.getElementById('catScrollRightBtn');
+const catToggleWrapBtn = document.getElementById('catToggleWrapBtn');
+
+function initCategoryLayout() {
+  // Check user saved preference or default to wrap-mode on desktop (width >= 992px)
+  const savedMode = localStorage.getItem('abn_cat_wrap');
+  const isWrap = savedMode !== null ? savedMode === 'true' : window.innerWidth >= 992;
+  setCategoryWrapMode(isWrap);
+
+  if (categoriesNav) {
+    categoriesNav.addEventListener('scroll', updateScrollButtonsState, { passive: true });
+    updateScrollButtonsState();
+  }
+
+  // Handle window resize to adapt gracefully
+  window.addEventListener('resize', () => {
+    updateScrollButtonsState();
+  }, { passive: true });
+}
+
+function setCategoryWrapMode(isWrap) {
+  if (!categoriesWrapper || !catToggleWrapBtn) return;
+  categoriesWrapper.classList.toggle('wrap-mode', isWrap);
+  categoriesWrapper.classList.toggle('scroll-mode', !isWrap);
+  catToggleWrapBtn.classList.toggle('active', isWrap);
+
+  const iconSpan = catToggleWrapBtn.querySelector('.toggle-icon');
+  const labelSpan = catToggleWrapBtn.querySelector('.toggle-label');
+  if (iconSpan && labelSpan) {
+    if (isWrap) {
+      iconSpan.textContent = '↔';
+      labelSpan.textContent = 'স্লাইডার ভিউ';
+    } else {
+      iconSpan.textContent = '⊞';
+      labelSpan.textContent = 'সবগুলো দেখুন';
+    }
+  }
+
+  localStorage.setItem('abn_cat_wrap', isWrap);
+  if (!isWrap) {
+    setTimeout(updateScrollButtonsState, 100);
+  }
+}
+
+if (catToggleWrapBtn) {
+  catToggleWrapBtn.addEventListener('click', () => {
+    const currentIsWrap = categoriesWrapper.classList.contains('wrap-mode');
+    setCategoryWrapMode(!currentIsWrap);
+  });
+}
+
+if (catScrollLeftBtn && categoriesNav) {
+  catScrollLeftBtn.addEventListener('click', () => {
+    categoriesNav.scrollBy({ left: -260, behavior: 'smooth' });
+    setTimeout(updateScrollButtonsState, 350);
+  });
+}
+
+if (catScrollRightBtn && categoriesNav) {
+  catScrollRightBtn.addEventListener('click', () => {
+    categoriesNav.scrollBy({ left: 260, behavior: 'smooth' });
+    setTimeout(updateScrollButtonsState, 350);
+  });
+}
+
+function updateScrollButtonsState() {
+  if (!categoriesNav || !catScrollLeftBtn || !catScrollRightBtn) return;
+  const isAtStart = categoriesNav.scrollLeft <= 5;
+  const isAtEnd = categoriesNav.scrollLeft + categoriesNav.clientWidth >= categoriesNav.scrollWidth - 5;
+  catScrollLeftBtn.disabled = isAtStart;
+  catScrollRightBtn.disabled = isAtEnd;
+}
+
 // Expose global methods for inline HTML onclick handlers
 window.toggleFavorite = toggleFavorite;
 window.focusCategory = focusCategory;
@@ -2958,8 +3036,10 @@ window.showAllBlocks = showAllBlocks;
 window.scrollToBlock = scrollToBlock;
 window.setLocalDivision = setLocalDivision;
 window.clearAllFavoritesPrompt = clearAllFavoritesPrompt;
+window.setCategoryWrapMode = setCategoryWrapMode;
 
 // Initial boot
 initTheme();
+initCategoryLayout();
 updateBadges();
 updateView(currentView);

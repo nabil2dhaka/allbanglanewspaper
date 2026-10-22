@@ -62,7 +62,7 @@ A modern, fast, and mobile-responsive Bangladeshi media portal bringing together
 ## 📱 Features
 
 - 🧱 **Block-Based Homepage Layout:** Clean, structured homepage arranged into distinct category blocks (জাতীয় দৈনিক, অনলাইন পোর্টাল, শেয়ার বাজার, টিভি ও লাইভ নিউজ, ই-পেপার, ইংরেজি দৈনিক, বিভাগীয় সংবাদপত্র, ব্যবসা, খেলাধুলা, চাকরি ও প্রযুক্তি, এফএম রেডিও, কলকাতা).
-- 🧭 **Quick Jump Navigation & ScrollSpy:** Smooth-scrolling category navigation tabs with automated active-tab tracking as you scroll through blocks.
+- 🧭 **Responsive & Flexible Categories Navigation:** Dynamic sticky category toolbar with dual modes: **Flexible Wrap Grid** (multi-row view showing all 14 categories at a glance) and **Smooth Horizontal Slider** with 1-click scroll arrows (`‹` / `›`), mobile 2-column expander, and ScrollSpy tracking.
 - 🖼️ **Screenshot-Accurate Masthead Directory Cards:** Authentic wide rectangular logo masthead cards with bottom publication name bar, clean borders, and responsive grid layout matching standard Bangladeshi newspaper directories.
 - 📁 **Bundled Offline Logo Assets:** Over 190+ high-resolution masthead and banner logos bundled directly in `assets/logos/` for instant, offline-capable loading.
 - 🔍 **Cross-Block Realtime Search:** Instant search by Bengali name, English name, district, division, or keyword with realtime block-level result counting.

@@ -98,9 +98,29 @@
 
   <!-- Main Content -->
   <main class="container main-content">
-    <!-- Category Tabs Navigation (Block Jump Links) -->
-    <div class="categories-wrapper">
-      <nav class="categories-nav" aria-label="Newspaper Categories">
+    <!-- Category Tabs Navigation (Responsive & Flexible) -->
+    <div class="categories-wrapper scroll-mode" id="categoriesWrapper">
+      <div class="categories-header-bar">
+        <div class="categories-header-left">
+          <span class="categories-header-title">🏷️ ক্যাটাগরি ব্রাউজ করুন</span>
+          <span class="categories-count-badge">১৪ টি বিভাগ</span>
+        </div>
+        <div class="categories-header-actions">
+          <!-- Horizontal Scroll Arrows (for scroll mode) -->
+          <button class="btn-cat-scroll" id="catScrollLeftBtn" title="বামে স্ক্রোল করুন" aria-label="Scroll left">
+            ‹
+          </button>
+          <button class="btn-cat-scroll" id="catScrollRightBtn" title="ডানে স্ক্রোল করুন" aria-label="Scroll right">
+            ›
+          </button>
+          <!-- Flexible Layout Toggle: Wrap / Scroll -->
+          <button class="btn-cat-toggle-wrap" id="catToggleWrapBtn" title="ক্যাটাগরি লেআউট পরিবর্তন করুন">
+            <span class="toggle-icon">⊞</span> <span class="toggle-label">সবগুলো দেখুন</span>
+          </button>
+        </div>
+      </div>
+
+      <nav class="categories-nav" id="categoriesNav" aria-label="Newspaper Categories">
         <div class="categories-list" id="categoryTabs">
           <button class="category-btn active" data-category="all">
             <span class="cat-icon">📑</span> সকল ব্লক (<span id="totalCountBadge">0</span>)
