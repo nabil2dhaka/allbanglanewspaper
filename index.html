@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="bn" data-theme="light">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>All Bangla Newspaper - সকল বাংলা সংবাদপত্র</title>
+  <meta name="description" content="All popular Bangladeshi newspapers, online portals, English dailies, and TV channels in one place.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <!-- Header / Navigation -->
+  <header class="header">
+    <div class="container header-container">
+      <div class="brand">
+        <div class="brand-icon">📰</div>
+        <div>
+          <h1 class="brand-title">All Bangla Newspaper</h1>
+          <p class="brand-subtitle">সকল বাংলা সংবাদপত্র ও অনলাইন নিউজ পোর্টাল</p>
+        </div>
+      </div>
+
+      <div class="header-actions">
+        <button id="themeToggle" class="btn-icon" aria-label="Toggle Theme" title="ডার্ক/লাইট মোড পরিবর্তন">
+          <span class="theme-icon">🌙</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Hero & Search Section -->
+  <section class="hero-section">
+    <div class="container hero-container">
+      <h2 class="hero-heading">বাংলাদেশের সকল খবর এক জায়গায়</h2>
+      <p class="hero-desc">আপনার পছন্দের পত্রিকা বা নিউজ পোর্টাল সহজেই খুঁজে নিন এবং পড়ুন।</p>
+      
+      <div class="search-wrapper">
+        <span class="search-icon">🔍</span>
+        <input 
+          type="text" 
+          id="searchInput" 
+          placeholder="পত্রিকার নাম দিয়ে খুঁজুন (उदा: প্রথম আলো, The Daily Star, সময়)..." 
+          autocomplete="off"
+        >
+        <button id="clearSearch" class="btn-clear" style="display: none;" title="মুছে ফেলুন">✕</button>
+      </div>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container main-content">
+    <!-- Category Tabs -->
+    <nav class="categories-nav" aria-label="Newspaper Categories">
+      <div class="categories-list" id="categoryTabs">
+        <button class="category-btn active" data-category="all">সকল (All)</button>
+        <button class="category-btn" data-category="favorites">⭐ প্রিয় তালিকা (Favorites)</button>
+        <button class="category-btn" data-category="bangla">জাতীয় দৈনিক (Bangla Dailies)</button>
+        <button class="category-btn" data-category="online">অনলাইন পোর্টাল (Online Portals)</button>
+        <button class="category-btn" data-category="english">English Dailies</button>
+        <button class="category-btn" data-category="tv">টিভি নিউজ (TV Channels)</button>
+        <button class="category-btn" data-category="international">আন্তর্জাতিক (International)</button>
+      </div>
+    </nav>
+
+    <!-- Results Status -->
+    <div class="results-bar">
+      <span id="resultsCount">সকল পত্রিকা প্রদর্শন করা হচ্ছে</span>
+      <span class="hint-text">⭐ চিহ্নে ক্লিক করে প্রিয় তালিকায় যোগ করুন</span>
+    </div>
+
+    <!-- Newspaper Grid -->
+    <div class="newspaper-grid" id="newspaperGrid">
+      <!-- Cards rendered via JavaScript -->
+    </div>
+
+    <!-- Empty State -->
+    <div id="emptyState" class="empty-state" style="display: none;">
+      <div class="empty-icon">🔍</div>
+      <h3>কোনো সংবাদপত্র পাওয়া যায়নি!</h3>
+      <p>অনুগ্রহ করে অন্য কোনো নাম দিয়ে চেষ্টা করুন।</p>
+      <button id="resetSearchBtn" class="btn-reset">সকল পত্রিকা দেখুন</button>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container footer-content">
+      <p>© 2026 All Bangla Newspaper Directory. All rights reserved.</p>
+      <p class="footer-sub">Developed by <a href="https://github.com/nabil2dhaka" target="_blank" rel="noopener">nabil2dhaka</a></p>
+    </div>
+  </footer>
+
+  <script src="app.js"></script>
+</body>
+</html>
