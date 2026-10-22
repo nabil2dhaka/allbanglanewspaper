@@ -1,4 +1,6 @@
-// All Bangla News Websites Directory - Categorized by Type
+// All Bangla Newspaper Directory Data
+// Updated with complete online newspapers from https://allbanglanewspapersbd.com/bangla-online-newspaper/
+
 const newspapers = [
   // =========================================================================
   // 1. NATIONAL BANGLA DAILIES (জাতীয় দৈনিক)
@@ -13,7 +15,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.prothomalo.com',
     color: '#ed1c24',
     icon: 'প্র',
-    tags: 'dhaka top10 national leading'
+    tags: 'dhaka top10 national leading prothom alo'
   },
   {
     id: 'bdpratidin',
@@ -25,7 +27,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.bd-pratidin.com',
     color: '#e30613',
     icon: 'বা',
-    tags: 'dhaka top10 national'
+    tags: 'dhaka top10 national highest circulation'
   },
   {
     id: 'jugantor',
@@ -37,7 +39,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.jugantor.com',
     color: '#f37023',
     icon: 'যু',
-    tags: 'dhaka top10 national'
+    tags: 'dhaka top10 national jugantor'
   },
   {
     id: 'kalerkantho',
@@ -49,7 +51,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.kalerkantho.com',
     color: '#1b75bb',
     icon: 'কা',
-    tags: 'dhaka top10 national'
+    tags: 'dhaka top10 national kaler kantho'
   },
   {
     id: 'ittefaq',
@@ -61,7 +63,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.ittefaq.com.bd',
     color: '#006a4e',
     icon: 'ই',
-    tags: 'dhaka top10 national historic'
+    tags: 'dhaka top10 national historic ittefaq'
   },
   {
     id: 'samakal',
@@ -73,7 +75,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.samakal.com',
     color: '#1d8348',
     icon: 'স',
-    tags: 'dhaka top10 national'
+    tags: 'dhaka top10 national samakal'
   },
   {
     id: 'amadershomoy',
@@ -85,7 +87,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.dainikamadershomoy.com',
     color: '#c0392b',
     icon: 'আ',
-    tags: 'dhaka national'
+    tags: 'dhaka national amader shomoy'
   },
   {
     id: 'janakantha',
@@ -97,7 +99,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.dailyjanakantha.com',
     color: '#7d3c98',
     icon: 'জ',
-    tags: 'dhaka national'
+    tags: 'dhaka national janakantha'
   },
   {
     id: 'inqilab',
@@ -109,7 +111,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.dailyinqilab.com',
     color: '#0e6251',
     icon: 'ই',
-    tags: 'dhaka national'
+    tags: 'dhaka national inqilab'
   },
   {
     id: 'nayadiganta',
@@ -121,7 +123,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.dailynayadiganta.com',
     color: '#2874a6',
     icon: 'ন',
-    tags: 'dhaka national'
+    tags: 'dhaka national naya diganta'
   },
   {
     id: 'manabzamin',
@@ -133,7 +135,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.mzamin.com',
     color: '#b03a2e',
     icon: 'মা',
-    tags: 'dhaka national tabloid'
+    tags: 'dhaka national tabloid mzamin'
   },
   {
     id: 'bhorerkagoj',
@@ -145,7 +147,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.bhorerkagoj.com',
     color: '#af601a',
     icon: 'ভো',
-    tags: 'dhaka national'
+    tags: 'dhaka national bhorer kagoj'
   },
   {
     id: 'deshrupantor',
@@ -157,7 +159,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.deshrupantor.com',
     color: '#922b21',
     icon: 'দে',
-    tags: 'dhaka national'
+    tags: 'dhaka national desh rupantor'
   },
   {
     id: 'alokitobangladesh',
@@ -169,7 +171,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.alokitobangladesh.com',
     color: '#117a65',
     icon: 'আ',
-    tags: 'dhaka national'
+    tags: 'dhaka national alokito'
   },
   {
     id: 'jaijaidin',
@@ -181,7 +183,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.jaijaidinbd.com',
     color: '#2e4053',
     icon: 'য',
-    tags: 'dhaka national'
+    tags: 'dhaka national jaijaidin'
   },
   {
     id: 'sangbad',
@@ -192,7 +194,7 @@ const newspapers = [
     url: 'https://sangbad.net.bd',
     color: '#78281f',
     icon: 'সং',
-    tags: 'dhaka national'
+    tags: 'dhaka national sangbad'
   },
   {
     id: 'kholakagoj',
@@ -203,7 +205,7 @@ const newspapers = [
     url: 'https://www.kholakagojbd.com',
     color: '#1b4f72',
     icon: 'খো',
-    tags: 'dhaka national'
+    tags: 'dhaka national khola kagoj'
   },
   {
     id: 'manobkantha',
@@ -214,7 +216,7 @@ const newspapers = [
     url: 'https://www.manobkantha.com.bd',
     color: '#6c3483',
     icon: 'মা',
-    tags: 'dhaka national'
+    tags: 'dhaka national manobkantha'
   },
   {
     id: 'amarsangbad',
@@ -225,7 +227,7 @@ const newspapers = [
     url: 'https://www.amarsangbad.com',
     color: '#d35400',
     icon: 'আ',
-    tags: 'dhaka national'
+    tags: 'dhaka national amar sangbad'
   },
   {
     id: 'ajkerpatrika',
@@ -237,7 +239,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.ajkerpatrika.com',
     color: '#c0392b',
     icon: 'আজ',
-    tags: 'dhaka national'
+    tags: 'dhaka national ajker patrika'
   },
   {
     id: 'kalbela',
@@ -249,7 +251,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.kalbela.com',
     color: '#8e44ad',
     icon: 'কাল',
-    tags: 'dhaka national'
+    tags: 'dhaka national kalbela'
   },
   {
     id: 'somoyeralo',
@@ -261,7 +263,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.shomoyeralo.com',
     color: '#16a085',
     icon: 'সম',
-    tags: 'dhaka national'
+    tags: 'dhaka national shomoyer alo'
   },
   {
     id: 'pratidinbangladesh',
@@ -272,11 +274,11 @@ const newspapers = [
     url: 'https://protidinersangbad.com',
     color: '#27ae60',
     icon: 'প্র',
-    tags: 'dhaka national'
+    tags: 'dhaka national pratidiner sangbad'
   },
 
   // =========================================================================
-  // 2. NATIONAL ONLINE NEWS PORTALS (অনলাইন নিউজ পোর্টাল)
+  // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 57 Websites from URL)
   // =========================================================================
   {
     id: 'bdnews24',
@@ -287,7 +289,7 @@ const newspapers = [
     url: 'https://bangla.bdnews24.com',
     color: '#c0392b',
     icon: 'BD',
-    tags: 'top10 24hour online first'
+    tags: 'top10 24hour online pioneer bdnews24'
   },
   {
     id: 'banglanews24',
@@ -298,7 +300,7 @@ const newspapers = [
     url: 'https://www.banglanews24.com',
     color: '#16a085',
     icon: 'বা',
-    tags: 'top10 24hour online'
+    tags: 'top10 24hour online banglanews24'
   },
   {
     id: 'jagonews24',
@@ -309,29 +311,7 @@ const newspapers = [
     url: 'https://www.jagonews24.com',
     color: '#27ae60',
     icon: 'জা',
-    tags: 'top10 online portal'
-  },
-  {
-    id: 'dhakapost',
-    nameBn: 'ঢাকা পোস্ট',
-    nameEn: 'Dhaka Post',
-    category: 'online',
-    categoryLabel: 'অনলাইন পোর্টাল',
-    url: 'https://www.dhakapost.com',
-    color: '#e67e22',
-    icon: 'ঢা',
-    tags: 'top10 online portal'
-  },
-  {
-    id: 'banglatribune',
-    nameBn: 'বাংলা ট্রিবিউন',
-    nameEn: 'Bangla Tribune',
-    category: 'online',
-    categoryLabel: 'অনলাইন পোর্টাল',
-    url: 'https://www.banglatribune.com',
-    color: '#8e44ad',
-    icon: 'বা',
-    tags: 'online portal'
+    tags: 'top10 online portal jagonews24'
   },
   {
     id: 'risingbd',
@@ -342,18 +322,18 @@ const newspapers = [
     url: 'https://www.risingbd.com',
     color: '#2980b9',
     icon: 'রা',
-    tags: 'online portal'
+    tags: 'online portal risingbd'
   },
   {
-    id: 'priyo',
-    nameBn: 'প্রিয়.কম',
-    nameEn: 'Priyo.com',
+    id: 'dhakapost',
+    nameBn: 'ঢাকা পোস্ট',
+    nameEn: 'Dhaka Post',
     category: 'online',
     categoryLabel: 'অনলাইন পোর্টাল',
-    url: 'https://www.priyo.com',
-    color: '#d35400',
-    icon: 'প্রি',
-    tags: 'online portal'
+    url: 'https://www.dhakapost.com',
+    color: '#e67e22',
+    icon: 'ঢা',
+    tags: 'top10 online portal dhakapost'
   },
   {
     id: 'bd24live',
@@ -364,7 +344,40 @@ const newspapers = [
     url: 'https://www.bd24live.com/bangla/',
     color: '#c0392b',
     icon: '২৪',
-    tags: 'live portal'
+    tags: 'live portal bd24live'
+  },
+  {
+    id: 'bbcbangla',
+    nameBn: 'বিবিসি বাংলা',
+    nameEn: 'BBC News Bangla',
+    category: 'online',
+    categoryLabel: 'আন্তর্জাতিক পোর্টাল',
+    url: 'https://www.bbc.com/bengali',
+    color: '#bb1919',
+    icon: 'BBC',
+    tags: 'international bbc world'
+  },
+  {
+    id: 'banglatribune',
+    nameBn: 'বাংলা ট্রিবিউন',
+    nameEn: 'Bangla Tribune',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.banglatribune.com',
+    color: '#8e44ad',
+    icon: 'বা',
+    tags: 'online portal banglatribune'
+  },
+  {
+    id: 'dainikshiksha',
+    nameBn: 'দৈনিক শিক্ষা',
+    nameEn: 'Dainik Shiksha',
+    category: 'online',
+    categoryLabel: 'শিক্ষা ও ক্যারিয়ার',
+    url: 'https://www.dainikshiksha.com',
+    color: '#117864',
+    icon: 'শি',
+    tags: 'education shiksha teacher school'
   },
   {
     id: 'newsbangla24',
@@ -375,7 +388,7 @@ const newspapers = [
     url: 'https://www.newsbangla24.com',
     color: '#1f618d',
     icon: 'NB',
-    tags: 'online portal'
+    tags: 'online portal newsbangla24'
   },
   {
     id: 'sarabangla',
@@ -386,51 +399,7 @@ const newspapers = [
     url: 'https://sarabangla.net',
     color: '#117a65',
     icon: 'সারা',
-    tags: 'online portal'
-  },
-  {
-    id: 'barta24',
-    nameBn: 'বার্তা২৪',
-    nameEn: 'Barta24.com',
-    category: 'online',
-    categoryLabel: 'অনলাইন পোর্টাল',
-    url: 'https://barta24.com',
-    color: '#900c3f',
-    icon: 'বা২৪',
-    tags: 'online portal'
-  },
-  {
-    id: 'dhakatimes24',
-    nameBn: 'ঢাকা টাইমস ২৪',
-    nameEn: 'Dhaka Times 24',
-    category: 'online',
-    categoryLabel: 'অনলাইন পোর্টাল',
-    url: 'https://www.dhakatimes24.com',
-    color: '#1a5276',
-    icon: 'DT',
-    tags: 'online portal'
-  },
-  {
-    id: 'bssnews',
-    nameBn: 'বাসস (জাতীয় সংবাদ সংস্থা)',
-    nameEn: 'BSS News (National Agency)',
-    category: 'online',
-    categoryLabel: 'সংবাদ সংস্থা',
-    url: 'https://www.bssnews.net/bangla',
-    color: '#004d38',
-    icon: 'বাসস',
-    tags: 'national news agency govt'
-  },
-  {
-    id: 'zoombangla',
-    nameBn: 'জুমবাংলা',
-    nameEn: 'ZoomBangla News',
-    category: 'online',
-    categoryLabel: 'অনলাইন পোর্টাল',
-    url: 'https://zoombangla.com',
-    color: '#e74c3c',
-    icon: 'জুম',
-    tags: 'online portal viral'
+    tags: 'online portal sarabangla'
   },
   {
     id: 'gonews24',
@@ -441,7 +410,502 @@ const newspapers = [
     url: 'https://www.gonews24.com',
     color: '#5b2c6f',
     icon: 'গো',
-    tags: 'online portal'
+    tags: 'online portal gonews24'
+  },
+  {
+    id: 'banglainsider',
+    nameBn: 'বাংলা ইনসাইডার',
+    nameEn: 'Bangla Insider',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.banglainsider.com',
+    color: '#d35400',
+    icon: 'BI',
+    tags: 'online portal banglainsider politics'
+  },
+  {
+    id: 'dwbangla',
+    nameBn: 'ডয়চে ভেলে বাংলা',
+    nameEn: 'DW Bangla',
+    category: 'online',
+    categoryLabel: 'আন্তর্জাতিক পোর্টাল',
+    url: 'https://www.dw.com/bn',
+    color: '#005b96',
+    icon: 'DW',
+    tags: 'international dw germany world'
+  },
+  {
+    id: 'amardesh24',
+    nameBn: 'আমার দেশ ২৪',
+    nameEn: 'Amar Desh 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://amar-desh24.com',
+    color: '#922b21',
+    icon: 'আম',
+    tags: 'online portal amardesh'
+  },
+  {
+    id: 'priyo',
+    nameBn: 'প্রিয়.কম',
+    nameEn: 'Priyo.com',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.priyo.com',
+    color: '#d35400',
+    icon: 'প্রি',
+    tags: 'online portal priyo'
+  },
+  {
+    id: 'voabangla',
+    nameBn: 'ভয়েস অফ আমেরিকা বাংলা',
+    nameEn: 'Voice of America (VOA)',
+    category: 'online',
+    categoryLabel: 'আন্তর্জাতিক পোর্টাল',
+    url: 'https://www.voabangla.com',
+    color: '#003366',
+    icon: 'VOA',
+    tags: 'international voa usa world'
+  },
+  {
+    id: 'dhakatribune_online',
+    nameBn: 'ঢাকা ট্রিবিউন বাংলা',
+    nameEn: 'Dhaka Tribune Bangla',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.dhakatribune.com',
+    color: '#d9230f',
+    icon: 'DT',
+    tags: 'online portal tribune'
+  },
+  {
+    id: 'zoombangla',
+    nameBn: 'জুমবাংলা',
+    nameEn: 'ZoomBangla News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://zoombangla.com',
+    color: '#e74c3c',
+    icon: 'জুম',
+    tags: 'online portal viral zoombangla'
+  },
+  {
+    id: 'abnews24',
+    nameBn: 'এবি নিউজ ২৪',
+    nameEn: 'AB News 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://abnews24.com',
+    color: '#1a5276',
+    icon: 'AB',
+    tags: 'online portal abnews24'
+  },
+  {
+    id: 'poriborton',
+    nameBn: 'পরিবর্তন ডট কম',
+    nameEn: 'Poriborton News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://poriborton.news',
+    color: '#1b4f72',
+    icon: 'পরি',
+    tags: 'online portal poriborton'
+  },
+  {
+    id: 'bdmorning',
+    nameBn: 'বিডি মর্নিং',
+    nameEn: 'BD Morning',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://bdmorning.com',
+    color: '#f39c12',
+    icon: 'মর্নিং',
+    tags: 'online portal bdmorning'
+  },
+  {
+    id: 'roarmedia',
+    nameBn: 'রোর বাংলা',
+    nameEn: 'Roar Media Bangla',
+    category: 'online',
+    categoryLabel: 'ফিচার ও তথ্য',
+    url: 'https://roar.media/bangla',
+    color: '#1e8449',
+    icon: 'ROAR',
+    tags: 'feature story roar media'
+  },
+  {
+    id: 'bdjournal',
+    nameBn: 'বাংলাদেশ জার্নাল',
+    nameEn: 'Bangladesh Journal',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.bd-journal.com',
+    color: '#78281f',
+    icon: 'BJ',
+    tags: 'online portal bd-journal'
+  },
+  {
+    id: 'newsg24',
+    nameBn: 'নিউজজি২৪',
+    nameEn: 'NewsG24.com',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.newsg24.com',
+    color: '#6c3483',
+    icon: 'জি২৪',
+    tags: 'online portal newsg24'
+  },
+  {
+    id: 'barta24',
+    nameBn: 'বার্তা২৪',
+    nameEn: 'Barta24.com',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://barta24.com',
+    color: '#900c3f',
+    icon: 'বা২৪',
+    tags: 'online portal barta24'
+  },
+  {
+    id: 'dhakatimes24',
+    nameBn: 'ঢাকা টাইমস ২৪',
+    nameEn: 'Dhaka Times 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.dhakatimes24.com',
+    color: '#1a5276',
+    icon: 'DT',
+    tags: 'online portal dhakatimes24'
+  },
+  {
+    id: 'dailybangladesh',
+    nameBn: 'ডেইলি বাংলাদেশ',
+    nameEn: 'Daily Bangladesh',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.daily-bangladesh.com',
+    color: '#27ae60',
+    icon: 'DB',
+    tags: 'online portal daily bangladesh'
+  },
+  {
+    id: 'dmpnews',
+    nameBn: 'ডিএমপি নিউজ',
+    nameEn: 'DMP News (Police Portal)',
+    category: 'online',
+    categoryLabel: 'আইন-শৃঙ্খলা সংবাদ',
+    url: 'https://dmpnews.org',
+    color: '#1b2631',
+    icon: 'DMP',
+    tags: 'dmp police security crime'
+  },
+  {
+    id: 'thereport24',
+    nameBn: 'দ্য রিপোর্ট ২৪',
+    nameEn: 'The Report 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://thereport24.com',
+    color: '#c0392b',
+    icon: 'TR',
+    tags: 'online portal thereport24'
+  },
+  {
+    id: 'somoyerkonthosor',
+    nameBn: 'সময়ের কণ্ঠস্বর',
+    nameEn: 'Somoyer Konthosor',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.somoyerkonthosor.com',
+    color: '#af601a',
+    icon: 'কণ্ঠ',
+    tags: 'online portal somoyerkonthosor'
+  },
+  {
+    id: 'onenewsbd',
+    nameBn: 'ওয়ান নিউজ বিডি',
+    nameEn: 'One News BD',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://onenewsbd.com',
+    color: '#117a65',
+    icon: 'ONE',
+    tags: 'online portal onenewsbd'
+  },
+  {
+    id: 'bartabangla',
+    nameBn: 'বার্তা বাংলা',
+    nameEn: 'Barta Bangla',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://bartabangla.com',
+    color: '#2874a6',
+    icon: 'বাং',
+    tags: 'online portal bartabangla'
+  },
+  {
+    id: 'bartabazar',
+    nameBn: 'বার্তা বাজার',
+    nameEn: 'Barta Bazar',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://bartabazar.com',
+    color: '#d35400',
+    icon: 'বাজা',
+    tags: 'online portal bartabazar'
+  },
+  {
+    id: 'jagobangla',
+    nameBn: 'জাগো বাংলা',
+    nameEn: 'Jago Bangla',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://jagobangla.com',
+    color: '#16a085',
+    icon: 'জাগো',
+    tags: 'online portal jagobangla'
+  },
+  {
+    id: 'timewatch',
+    nameBn: 'টাইম ওয়াচ',
+    nameEn: 'Time Watch BD',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://timewatch.com.bd',
+    color: '#5b2c6f',
+    icon: 'TW',
+    tags: 'online portal timewatch'
+  },
+  {
+    id: 'doinikbarta',
+    nameBn: 'দৈনিক বার্তা',
+    nameEn: 'Doinik Barta',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://doinikbarta.com',
+    color: '#78281f',
+    icon: 'বার্ত্তা',
+    tags: 'online portal doinikbarta'
+  },
+  {
+    id: 'pirganjnewsexpress',
+    nameBn: 'পীরগঞ্জ নিউজ এক্সপ্রেস',
+    nameEn: 'Pirganj News Express',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://pirganjnewsexpress.com',
+    color: '#1f618d',
+    icon: 'PNE',
+    tags: 'online portal pirganj'
+  },
+  {
+    id: 'deshebideshe',
+    nameBn: 'দেশে বিদেশে',
+    nameEn: 'Deshe Bideshe',
+    category: 'online',
+    categoryLabel: 'প্রবাস ও আন্তর্জাতিক',
+    url: 'https://deshebideshe.com',
+    color: '#b03a2e',
+    icon: 'দেশ',
+    tags: 'probash expatriate deshebideshe'
+  },
+  {
+    id: 'sonalinews',
+    nameBn: 'সোনালী নিউজ',
+    nameEn: 'Sonali News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://sonalinews.com',
+    color: '#d4ac0d',
+    icon: 'সোনা',
+    tags: 'online portal sonalinews'
+  },
+  {
+    id: 'mtnews24',
+    nameBn: 'এমটি নিউজ ২৪',
+    nameEn: 'MT News 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://mtnews24.com',
+    color: '#27ae60',
+    icon: 'MT',
+    tags: 'online portal mtnews24'
+  },
+  {
+    id: 'thebengalitimes',
+    nameBn: 'দ্য বেঙ্গলি টাইমস',
+    nameEn: 'The Bengali Times',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://thebengalitimes.com',
+    color: '#2980b9',
+    icon: 'TBT',
+    tags: 'online portal thebengalitimes'
+  },
+  {
+    id: 'deshdorpon',
+    nameBn: 'দেশদর্পণ',
+    nameEn: 'Desh Dorpon',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://deshdorpon.com',
+    color: '#7d3c98',
+    icon: 'দর্প',
+    tags: 'online portal deshdorpon'
+  },
+  {
+    id: 'dailycricket_portal',
+    nameBn: 'ডেইলি ক্রিকেট',
+    nameEn: 'Daily Cricket BD',
+    category: 'online',
+    categoryLabel: 'ক্রিকেট সংবাদ',
+    url: 'https://dailycricket.com.bd',
+    color: '#e74c3c',
+    icon: 'DC',
+    tags: 'sports cricket online portal'
+  },
+  {
+    id: 'dhakatoday',
+    nameBn: 'ঢাকা টুডে',
+    nameEn: 'Dhaka Today',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://dhakatoday.com',
+    color: '#117864',
+    icon: 'DT',
+    tags: 'online portal dhakatoday'
+  },
+  {
+    id: 'news71online',
+    nameBn: 'নিউজ ৭১ অনলাইন',
+    nameEn: 'News 71 Online',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://news71online.com',
+    color: '#900c3f',
+    icon: '৭১',
+    tags: 'online portal news71'
+  },
+  {
+    id: 'banglatelegraph',
+    nameBn: 'বাংলা টেলিগ্রাফ',
+    nameEn: 'Bangla Telegraph',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://banglatelegraph.com',
+    color: '#1a5276',
+    icon: 'BT',
+    tags: 'online portal banglatelegraph'
+  },
+  {
+    id: 'somoyerdhara',
+    nameBn: 'সময়ের ধারা',
+    nameEn: 'Somoyer Dhara',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://somoyerdhara.com',
+    color: '#d35400',
+    icon: 'ধারা',
+    tags: 'online portal somoyerdhara'
+  },
+  {
+    id: 'dhakaprokash24',
+    nameBn: 'ঢাকা প্রকাশ',
+    nameEn: 'Dhaka Prokash 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://dhakaprokash24.com',
+    color: '#c0392b',
+    icon: 'DP',
+    tags: 'online portal dhakaprokash'
+  },
+  {
+    id: 'dhakanews24',
+    nameBn: 'ঢাকা নিউজ ২৪',
+    nameEn: 'Dhaka News 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://dhakanews24.com',
+    color: '#1b4f72',
+    icon: 'DN',
+    tags: 'online portal dhakanews24'
+  },
+  {
+    id: 'natunbarta',
+    nameBn: 'নতুন বার্তা',
+    nameEn: 'Natun Barta',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://natun-barta.com',
+    color: '#27ae60',
+    icon: 'নতুন',
+    tags: 'online portal natunbarta'
+  },
+  {
+    id: 'bdview24',
+    nameBn: 'বিডি ভিউ ২৪',
+    nameEn: 'BD View 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://bdview24.com',
+    color: '#2e4053',
+    icon: 'BV',
+    tags: 'online portal bdview24'
+  },
+  {
+    id: 'bd24report',
+    nameBn: 'বিডি ২৪ রিপোর্ট',
+    nameEn: 'BD 24 Report',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://bd24report.com',
+    color: '#922b21',
+    icon: '২৪',
+    tags: 'online portal bd24report'
+  },
+  {
+    id: 'shamolbangla24',
+    nameBn: 'শ্যামল বাংলা ২৪',
+    nameEn: 'Shamol Bangla 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://shamolbangla24.com',
+    color: '#16a085',
+    icon: 'শ্যাম',
+    tags: 'online portal shamolbangla'
+  },
+  {
+    id: 'ournewsbd',
+    nameBn: 'আওয়ার নিউজ বিডি',
+    nameEn: 'Our News BD',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://ournewsbd.net',
+    color: '#1f618d',
+    icon: 'OUR',
+    tags: 'online portal ournewsbd'
+  },
+  {
+    id: 'dailyictnews',
+    nameBn: 'ডেইলি আইসিটি নিউজ',
+    nameEn: 'Daily ICT News',
+    category: 'online',
+    categoryLabel: 'প্রযুক্তি সংবাদ',
+    url: 'https://dailyictnews.com',
+    color: '#2980b9',
+    icon: 'ICT',
+    tags: 'tech ict technology'
+  },
+  {
+    id: 'hawker',
+    nameBn: 'হকার ডট কম ডট বিডি',
+    nameEn: 'Hawker.com.bd',
+    category: 'online',
+    categoryLabel: 'সংবাদ সংগ্রাহক',
+    url: 'https://hawker.com.bd',
+    color: '#e67e22',
+    icon: 'হকার',
+    tags: 'news aggregator hawker'
   },
 
   // =========================================================================
@@ -1284,17 +1748,6 @@ const newspapers = [
     tags: 'job career govt chakri'
   },
   {
-    id: 'dainikshiksha',
-    nameBn: 'দৈনিক শিক্ষা',
-    nameEn: 'Dainik Shiksha',
-    category: 'jobs_tech',
-    categoryLabel: 'শিক্ষা ও শিক্ষক',
-    url: 'https://www.dainikshiksha.com',
-    color: '#117864',
-    icon: 'শি',
-    tags: 'education teacher school college'
-  },
-  {
     id: 'campuslive24',
     nameBn: 'ক্যাম্পাস লাইভ ২৪',
     nameEn: 'Campus Live 24',
@@ -1600,6 +2053,8 @@ function renderNewspapers() {
     resultsCount.textContent = `প্রিয় তালিকা: ${filtered.length} টি সংবাদপত্র`;
   } else if (currentCategory === 'epaper') {
     resultsCount.textContent = `ই-পেপার সংস্করণ রয়েছে: ${filtered.length} টি`;
+  } else if (currentCategory === 'online') {
+    resultsCount.textContent = `অনলাইন পোর্টাল: ${filtered.length} টি ওয়েবসাইট`;
   } else if (currentCategory === 'local' && currentDivision !== 'all') {
     resultsCount.textContent = `নির্বাচিত বিভাগ: ${filtered.length} টি পত্রিকা`;
   } else {
@@ -1732,7 +2187,7 @@ categoryTabs.addEventListener('click', (e) => {
     document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     currentCategory = btn.dataset.category;
-    currentDivision = 'all'; // Reset division filter on category switch
+    currentDivision = 'all';
     document.querySelectorAll('.subfilter-chip').forEach(b => b.classList.toggle('active', b.dataset.division === 'all'));
     renderNewspapers();
   }
