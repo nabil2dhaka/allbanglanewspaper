@@ -1,30 +1,37 @@
 # All Bangla Newspaper Directory (সকল বাংলা সংবাদপত্র ডিরেক্টরি) 📰
 
-A modern, fast, and mobile-responsive Bangladeshi media portal bringing together all news-related websites from Bangladesh, updated directly from [allbanglanewspapersbd.com/bangla-online-newspaper/](https://allbanglanewspapersbd.com/bangla-online-newspaper/).
+A modern, fast, and mobile-responsive Bangladeshi media portal bringing together all news-related websites from Bangladesh, updated directly from:
+- [allbanglanewspapersbd.com/bangla-online-newspaper/](https://allbanglanewspapersbd.com/bangla-online-newspaper/)
+- [allbanglanewspaper.xyz/bangladesh/sharebazarnewspaper](https://www.allbanglanewspaper.xyz/bangladesh/sharebazarnewspaper)
 
 ![All Bangla Newspaper Logo](assets/logo.svg)
 
 ---
 
-## 📑 Complete Directory Categories (160+ Websites)
+## 📑 Complete Directory Categories (190+ Websites)
 
-### 1. ⚡ অনলাইন নিউজ পোর্টাল (Complete 57 Portals from URL)
+### 1. 📈 ব্যবসা, শেয়ার বাজার ও অর্থনীতি (32+ Websites from URL)
+* **শেয়ার বাজার ও স্টক মার্কেট:** অর্থসূচক, শেয়ার নিউজ ২৪, শেয়ার বিজ, সান বিডি ২৪, শেয়ার বাজার নিউজ, স্টক বাংলাদেশ, আমার স্টক (AmarStock), পুঁজিবাজার ডট কম, শেয়ারবাজার প্রতিদিন, দেশ প্রতিক্ষণ, শেয়ার বিজনেস ২৪, শেয়ার বার্তা ২৪, বিডি ক্যাপ ২৪।
+* **অর্থনীতি ও বাণিজ্য সংবাদপত্র:** বণিক বার্তা (E-paper সহ), ফাইন্যান্সিয়াল এক্সপ্রেস, আজকের বাজার, অর্থসংবাদ, বিজনেস আওয়ার ২৪, কর্পোরেট সংবাদ, বিজনেস আই বিডি, অর্থনীতির কাগজ, বিনিয়োগ বার্তা, এনার্জি বাংলা, বিজনেস নিউজ ২৪ বিডি।
+* **ব্যাংকিং, বীমা ও স্টক এক্সচেঞ্জ:** ঢাকা স্টক এক্সচেঞ্জ (DSE), চট্টগ্রাম স্টক এক্সচেঞ্জ (CSE), বাংলাদেশ ব্যাংক (কেন্দ্রীয় ব্যাংক), সেন্ট্রাল ডিপোজিটরি বাংলাদেশ (CDBL), লংকাবাংলা পোর্টাল, ইন্স্যুরেন্স নিউজ বিডি, ব্যাংক বীমা অর্থনীতি, ব্যাংকিং নিউজ বিডি।
+
+### 2. ⚡ অনলাইন নিউজ পোর্টাল (57 Portals from URL)
 * **শীর্ষ অনলাইন পোর্টাল:** বিডিনিউজ২৪, বাংলানিউজ২৪, জাগো নিউজ ২৪, রাইজিংবিডি, ঢাকা পোস্ট, বিডি২৪লাইভ, বিবিসি বাংলা, বাংলা ট্রিবিউন, দৈনিক শিক্ষা, নিউজবাংলা২৪, সারাবাংলা, গো নিউজ ২৪, বাংলা ইনসাইডার, ডয়চে ভেলে বাংলা, আমার দেশ ২৪, প্রিয়.কম, ভয়েস অফ আমেরিকা বাংলা, ঢাকা ট্রিবিউন।
 * **জনপ্রিয় অনলাইন মিডিয়া:** জুমবাংলা, এবি নিউজ ২৪, পরিবর্তন ডট কম, বিডি মর্নিং, রোর বাংলা, বাংলাদেশ জার্নাল, নিউজজি২৪, বার্তা২৪, ঢাকা টাইমস ২৪, ডেইলি বাংলাদেশ, ডিএমপি নিউজ, দ্য রিপোর্ট ২৪, সময়ের কণ্ঠস্বর, ওয়ান নিউজ বিডি, বার্তা বাংলা, বার্তা বাজার, জাগো বাংলা, টাইম ওয়াচ, দৈনিক বার্তা, পীরগঞ্জ নিউজ এক্সপ্রেস, দেশে বিদেশে, সোনালী নিউজ, এমটি নিউজ ২৪, দ্য বেঙ্গলি টাইমস, দেশদর্পণ, ডেইলি ক্রিকেট, ঢাকা টুডে, নিউজ ৭১ অনলাইন, বাংলা টেলিগ্রাফ, সময়ের ধারা, ঢাকা প্রকাশ, ঢাকা নিউজ ২৪, নতুন বার্তা, বিডি ভিউ ২৪, বিডি ২৪ রিপোর্ট, শ্যামল বাংলা ২৪, আওয়ার নিউজ বিডি, ডেইলি আইসিটি নিউজ, হকার ডট কম ডট বিডি।
 
-### 2. 📰 জাতীয় দৈনিক (23+ Papers)
+### 3. 📰 জাতীয় দৈনিক (23+ Papers)
 * প্রথম আলো, বাংলাদেশ প্রতিদিন, যুগান্তর, কালের কণ্ঠ, ইত্তেফাক, সমকাল, আমাদের সময়, জনকণ্ঠ, ইনকিলাব, নয়াদিগন্ত, মানবজমিন, ভোরের কাগজ, দেশ রূপান্তর, আলোকিত বাংলাদেশ, যায়যায়দিন, সংবাদ, খোলা কাগজ, মানবকণ্ঠ, আমার সংবাদ, আজকের পত্রিকা, কালবেলা, সময়ের আলো, প্রতিদিনের সংবাদ।
 
-### 3. 🗞️ ই-পেপার (E-Paper Digital Print Editions)
+### 4. 🗞️ ই-পেপার (E-Paper Digital Print Editions)
 * Direct digital print replica shortcut pills (`[🗞️ ই-পেপার]`) on cards for Prothom Alo, Bangladesh Pratidin, Jugantor, Kaler Kantho, Samakal, Ittefaq, Inqilab, Janakantha, Desh Rupantor, Bonik Barta, Anandabazar, etc.
 
-### 4. 📺 টিভি ও স্যাটেলাইট সম্প্রচার (18+ Channels)
+### 5. 📺 টিভি ও স্যাটেলাইট সম্প্রচার (18+ Channels)
 * সময় টিভি, যমুনা টিভি, চ্যানেল ২৪, ডিবিসি নিউজ, একাত্তর টিভি, ইনডিপেনডেন্ট টিভি, নিউজ ২৪, এনটিভি, চ্যানেল আই, আরটিভি, এটিএন নিউজ, এটিএন বাংলা, বাংলাদেশ টেলিভিশন (BTV), দেশ টিভি, একুশে টিভি, মাছরাঙা টিভি, বাংলাভিশন, বৈশাখী টিভি।
 
-### 5. 🌐 ইংরেজি জাতীয় দৈনিক (English Dailies)
+### 6. 🌐 ইংরেজি জাতীয় দৈনিক (English Dailies)
 * The Daily Star, Dhaka Tribune, The Business Standard (TBS), The Financial Express, New Age, Daily Sun, The Daily Observer, The Asian Age, Bangladesh Post.
 
-### 6. 📍 বিভাগীয় ও জেলা সংবাদপত্র (8 Divisions)
+### 7. 📍 বিভাগীয় ও জেলা সংবাদপত্র (8 Divisions)
 * **ঢাকা বিভাগ:** নারায়ণগঞ্জ পোস্ট, গাজীপুর বার্তা, টাঙ্গাইল বার্তা
 * **চট্টগ্রাম বিভাগ:** দৈনিক আজাদী, দৈনিক পূর্বকোণ, সুপ্রভাত বাংলাদেশ, আমাদের কুমিল্লা, চাঁদপুর কণ্ঠ, দৈনিক কক্সবাজার, ফেনী সংবাদ
 * **সিলেট বিভাগ:** দৈনিক সিলেট, সিলেট এক্সপ্রেস, দৈনিক খোয়াই, সুনামগঞ্জের খবর
@@ -33,9 +40,6 @@ A modern, fast, and mobile-responsive Bangladeshi media portal bringing together
 * **বরিশাল বিভাগ:** আমাদের বরিশাল, বরিশাল নিউজ, পটুয়াখালী ওয়েব
 * **রংপুর বিভাগ:** দৈনিক উত্তর বাংলা, রংপুর চিত্র, দিনাজপুর নিউজ ২৪
 * **ময়মনসিংহ বিভাগ:** ময়মনসিংহ প্রতিদিন, জামালপুর বার্তা
-
-### 7. 📈 ব্যবসা ও শেয়ার বাজার
-* বণিক বার্তা, শেয়ার বিজ, অর্থসূচক, ঢাকা স্টক এক্সচেঞ্জ (DSE), চট্টগ্রাম স্টক এক্সচেঞ্জ (CSE), বিজনেস ইনসাইডার বিডি।
 
 ### 8. ⚽ খেলাধুলা ও বিনোদন
 * প্যাভিলিয়ন (Pavilion), বিডিক্রিকটাইম (Bdcrictime), ডেইলি ক্রিকেট, খেলাধুলা ২৪, আনন্দ আলো।
@@ -82,7 +86,7 @@ Start-Process "C:\Users\User\.gemini\antigravity\scratch\allbanglanewspaper\inde
 ```bash
 cd "C:\Users\User\.gemini\antigravity\scratch\allbanglanewspaper"
 git add .
-git commit -m "Update online newspaper list from allbanglanewspapersbd.com/bangla-online-newspaper/"
+git commit -m "Update sharebazar newspapers from allbanglanewspaper.xyz/bangladesh/sharebazarnewspaper"
 git remote add origin https://github.com/nabil2dhaka/allbanglanewspaper.git
 git push -u origin main
 ```
