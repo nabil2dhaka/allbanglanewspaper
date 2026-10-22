@@ -61,6 +61,7 @@ A modern, fast, and mobile-responsive Bangladeshi media portal bringing together
 
 ## 📱 Features
 
+- 🎨 **Official Newspaper Logos:** High-resolution authentic brand logos for all 190+ news websites with native lazy loading, dark/light theme backing, and instant Bengali letter fallback.
 - 🔍 **Realtime Multi-Field Search:** Instant search by Bengali name, English name, district, division, or keyword.
 - 📊 **Dedicated 'Stock Market' Category:** 1-click access to all 32 share market and stock exchange portals.
 - 📍 **Division Sub-Filter:** Select specific divisions (Dhaka, Chittagong, Sylhet, Rajshahi, Khulna, Barisal, Rangpur, Mymensingh) when browsing local news.

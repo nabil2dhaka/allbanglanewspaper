@@ -2324,6 +2324,17 @@ function updateBadges() {
   if (totalCountBadge) totalCountBadge.textContent = newspapers.length;
 }
 
+// Get official brand logo URL with fallback support
+function getLogoUrl(paper) {
+  if (paper.logo) return paper.logo;
+  try {
+    const domain = new URL(paper.url).hostname.replace(/^www\./, '');
+    return `https://www.google.com/s2/favicons?domain=${domain}&sz=128`;
+  } catch (e) {
+    return null;
+  }
+}
+
 // Filter and Render Newspapers
 function renderNewspapers() {
   // Show / hide division subfilter if category is 'local'
@@ -2394,6 +2405,22 @@ function renderNewspapers() {
       card.target = '_blank';
       card.rel = 'noopener noreferrer';
 
+      const logoUrl = getLogoUrl(paper);
+      const avatarHtml = logoUrl
+        ? `<div class="newspaper-avatar">
+            <img 
+              src="${logoUrl}" 
+              alt="${paper.nameBn}" 
+              class="newspaper-logo-img" 
+              loading="lazy" 
+              onerror="this.style.display='none'; if(this.nextElementSibling) this.nextElementSibling.style.display='flex';" 
+            />
+            <span class="avatar-fallback" style="background-color: ${paper.color}; display: none;">${paper.icon}</span>
+          </div>`
+        : `<div class="newspaper-avatar" style="background-color: ${paper.color};">
+            <span class="avatar-fallback" style="background-color: ${paper.color};">${paper.icon}</span>
+          </div>`;
+
       const epaperButton = paper.epaperUrl 
         ? `<a href="${paper.epaperUrl}" target="_blank" rel="noopener noreferrer" class="btn-epaper-pill" onclick="event.stopPropagation();" title="${paper.nameBn} ই-পেপার পড়ুন">🗞️ ই-পেপার</a>`
         : '';
@@ -2407,9 +2434,7 @@ function renderNewspapers() {
         card.innerHTML = `
           <div class="card-layout-list">
             <div class="card-left">
-              <div class="newspaper-avatar" style="background-color: ${paper.color};">
-                ${paper.icon}
-              </div>
+              ${avatarHtml}
               <div class="newspaper-info">
                 <h3 class="newspaper-name-bn">${paper.nameBn}</h3>
                 <p class="newspaper-name-en">${paper.nameEn}</p>
@@ -2434,9 +2459,7 @@ function renderNewspapers() {
         card.innerHTML = `
           <div>
             <div class="card-top">
-              <div class="newspaper-avatar" style="background-color: ${paper.color};">
-                ${paper.icon}
-              </div>
+              ${avatarHtml}
               <div class="card-actions">
                 ${epaperButton}
                 <button 
