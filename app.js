@@ -1,6 +1,8 @@
-// All Bangla Newspaper Directory Data (Following allbanglanewspapersbd.com)
+// All Bangla News Websites Directory - Categorized by Type
 const newspapers = [
-  // ================= 1. DAILY BANGLA NEWSPAPERS (জাতীয় দৈনিক) =================
+  // =========================================================================
+  // 1. NATIONAL BANGLA DAILIES (জাতীয় দৈনিক)
+  // =========================================================================
   {
     id: 'prothomalo',
     nameBn: 'প্রথম আলো',
@@ -11,7 +13,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.prothomalo.com',
     color: '#ed1c24',
     icon: 'প্র',
-    tags: 'dhaka top10 national'
+    tags: 'dhaka top10 national leading'
   },
   {
     id: 'bdpratidin',
@@ -59,7 +61,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.ittefaq.com.bd',
     color: '#006a4e',
     icon: 'ই',
-    tags: 'dhaka top10 national'
+    tags: 'dhaka top10 national historic'
   },
   {
     id: 'samakal',
@@ -214,8 +216,68 @@ const newspapers = [
     icon: 'মা',
     tags: 'dhaka national'
   },
+  {
+    id: 'amarsangbad',
+    nameBn: 'দৈনিক আমার সংবাদ',
+    nameEn: 'Amar Sangbad',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.amarsangbad.com',
+    color: '#d35400',
+    icon: 'আ',
+    tags: 'dhaka national'
+  },
+  {
+    id: 'ajkerpatrika',
+    nameBn: 'আজকের পত্রিকা',
+    nameEn: 'Ajker Patrika',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.ajkerpatrika.com',
+    epaperUrl: 'https://epaper.ajkerpatrika.com',
+    color: '#c0392b',
+    icon: 'আজ',
+    tags: 'dhaka national'
+  },
+  {
+    id: 'kalbela',
+    nameBn: 'কালবেলা',
+    nameEn: 'Kalbela',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.kalbela.com',
+    epaperUrl: 'https://epaper.kalbela.com',
+    color: '#8e44ad',
+    icon: 'কাল',
+    tags: 'dhaka national'
+  },
+  {
+    id: 'somoyeralo',
+    nameBn: 'সময়ের আলো',
+    nameEn: 'Somoyer Alo',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.shomoyeralo.com',
+    epaperUrl: 'https://epaper.shomoyeralo.com',
+    color: '#16a085',
+    icon: 'সম',
+    tags: 'dhaka national'
+  },
+  {
+    id: 'pratidinbangladesh',
+    nameBn: 'প্রতিদিনের বাংলাদেশ',
+    nameEn: 'Pratidiner Bangladesh',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://protidinersangbad.com',
+    color: '#27ae60',
+    icon: 'প্র',
+    tags: 'dhaka national'
+  },
 
-  // ================= 2. ONLINE NEWS PORTALS (অনলাইন পোর্টাল) =================
+  // =========================================================================
+  // 2. NATIONAL ONLINE NEWS PORTALS (অনলাইন নিউজ পোর্টাল)
+  // =========================================================================
   {
     id: 'bdnews24',
     nameBn: 'বিডিনিউজ২৪',
@@ -225,7 +287,7 @@ const newspapers = [
     url: 'https://bangla.bdnews24.com',
     color: '#c0392b',
     icon: 'BD',
-    tags: 'top10 24hour online'
+    tags: 'top10 24hour online first'
   },
   {
     id: 'banglanews24',
@@ -316,18 +378,75 @@ const newspapers = [
     tags: 'online portal'
   },
   {
-    id: 'dainikshiksha',
-    nameBn: 'দৈনিক শিক্ষা',
-    nameEn: 'Dainik Shiksha',
+    id: 'sarabangla',
+    nameBn: 'সারাবাংলা',
+    nameEn: 'Sarabangla.net',
     category: 'online',
-    categoryLabel: 'শিক্ষা ও ক্যারিয়ার',
-    url: 'https://www.dainikshiksha.com',
-    color: '#117864',
-    icon: 'শি',
-    tags: 'education shiksha'
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://sarabangla.net',
+    color: '#117a65',
+    icon: 'সারা',
+    tags: 'online portal'
+  },
+  {
+    id: 'barta24',
+    nameBn: 'বার্তা২৪',
+    nameEn: 'Barta24.com',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://barta24.com',
+    color: '#900c3f',
+    icon: 'বা২৪',
+    tags: 'online portal'
+  },
+  {
+    id: 'dhakatimes24',
+    nameBn: 'ঢাকা টাইমস ২৪',
+    nameEn: 'Dhaka Times 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.dhakatimes24.com',
+    color: '#1a5276',
+    icon: 'DT',
+    tags: 'online portal'
+  },
+  {
+    id: 'bssnews',
+    nameBn: 'বাসস (জাতীয় সংবাদ সংস্থা)',
+    nameEn: 'BSS News (National Agency)',
+    category: 'online',
+    categoryLabel: 'সংবাদ সংস্থা',
+    url: 'https://www.bssnews.net/bangla',
+    color: '#004d38',
+    icon: 'বাসস',
+    tags: 'national news agency govt'
+  },
+  {
+    id: 'zoombangla',
+    nameBn: 'জুমবাংলা',
+    nameEn: 'ZoomBangla News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://zoombangla.com',
+    color: '#e74c3c',
+    icon: 'জুম',
+    tags: 'online portal viral'
+  },
+  {
+    id: 'gonews24',
+    nameBn: 'গো নিউজ ২৪',
+    nameEn: 'GoNews24.com',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.gonews24.com',
+    color: '#5b2c6f',
+    icon: 'গো',
+    tags: 'online portal'
   },
 
-  // ================= 3. BANGLA LIVE TV & NEWS CHANNELS (টিভি চ্যানেল) =================
+  // =========================================================================
+  // 3. BANGLA LIVE TV & BROADCAST NEWS (টিভি ও স্যাটেলাইট চ্যানেল)
+  // =========================================================================
   {
     id: 'somoynews',
     nameBn: 'সময় টিভি',
@@ -337,7 +456,7 @@ const newspapers = [
     url: 'https://www.somoynews.tv',
     color: '#c0392b',
     icon: 'ST',
-    tags: 'live tv news somoy'
+    tags: 'live tv news somoy 24hour'
   },
   {
     id: 'jamunatv',
@@ -359,7 +478,7 @@ const newspapers = [
     url: 'https://www.channel24bd.tv',
     color: '#117864',
     icon: '24',
-    tags: 'live tv news'
+    tags: 'live tv news channel24'
   },
   {
     id: 'dbcnews',
@@ -370,7 +489,7 @@ const newspapers = [
     url: 'https://www.dbcnews.tv',
     color: '#7b1113',
     icon: 'DBC',
-    tags: 'live tv news'
+    tags: 'live tv news dbc'
   },
   {
     id: 'ekattor',
@@ -414,7 +533,7 @@ const newspapers = [
     url: 'https://www.ntvbd.com',
     color: '#5b2c6f',
     icon: 'NTV',
-    tags: 'satellite tv drama'
+    tags: 'satellite tv entertainment'
   },
   {
     id: 'channeli',
@@ -425,7 +544,7 @@ const newspapers = [
     url: 'https://www.channelionline.com',
     color: '#145a32',
     icon: 'i',
-    tags: 'satellite tv'
+    tags: 'satellite tv agriculture'
   },
   {
     id: 'rtv',
@@ -439,6 +558,39 @@ const newspapers = [
     tags: 'satellite tv'
   },
   {
+    id: 'atnnews',
+    nameBn: 'এটিএন নিউজ',
+    nameEn: 'ATN News',
+    category: 'tv',
+    categoryLabel: 'টিভি নিউজ',
+    url: 'https://atnnewstv.com',
+    color: '#c0392b',
+    icon: 'ATN',
+    tags: 'live tv news 24hour'
+  },
+  {
+    id: 'atnbangla',
+    nameBn: 'এটিএন বাংলা',
+    nameEn: 'ATN Bangla',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://atnbangla.tv',
+    color: '#1b4f72',
+    icon: 'ATN',
+    tags: 'satellite tv pioneer'
+  },
+  {
+    id: 'btv',
+    nameBn: 'বাংলাদেশ টেলিভিশন (BTV)',
+    nameEn: 'Bangladesh Television',
+    category: 'tv',
+    categoryLabel: 'জাতীয় সম্প্রচার',
+    url: 'http://www.btv.gov.bd',
+    color: '#006a4e',
+    icon: 'BTV',
+    tags: 'national tv state btv'
+  },
+  {
     id: 'deshtv',
     nameBn: 'দেশ টিভি',
     nameEn: 'Desh TV',
@@ -449,8 +601,54 @@ const newspapers = [
     icon: 'দেশ',
     tags: 'tv news'
   },
+  {
+    id: 'ekusheytv',
+    nameBn: 'একুশে টেলিভিশন (ETV)',
+    nameEn: 'Ekushey Television',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://ekushey-tv.com',
+    color: '#b03a2e',
+    icon: 'ETV',
+    tags: 'satellite tv'
+  },
+  {
+    id: 'maasranga',
+    nameBn: 'মাছরাঙা টেলিভিশন',
+    nameEn: 'Maasranga TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://maasranga.tv',
+    color: '#d35400',
+    icon: 'মাছ',
+    tags: 'satellite tv cricket'
+  },
+  {
+    id: 'banglavision',
+    nameBn: 'বাংলাভিশন',
+    nameEn: 'Banglavision',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://www.bvnews24.com',
+    color: '#2874a6',
+    icon: 'BV',
+    tags: 'satellite tv'
+  },
+  {
+    id: 'boishakhi',
+    nameBn: 'বৈশাখী টিভি',
+    nameEn: 'Boishakhi TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://www.boishakhionline.com',
+    color: '#7d3c98',
+    icon: 'বৈ',
+    tags: 'satellite tv'
+  },
 
-  // ================= 4. BANGLADESH ENGLISH & WORLD DAILIES =================
+  // =========================================================================
+  // 4. BANGLADESH ENGLISH DAILIES (ইংরেজি জাতীয় দৈনিক)
+  // =========================================================================
   {
     id: 'thedailystar',
     nameBn: 'দ্য ডেইলি স্টার',
@@ -460,7 +658,7 @@ const newspapers = [
     url: 'https://www.thedailystar.net',
     color: '#003366',
     icon: 'DS',
-    tags: 'english bangladesh star'
+    tags: 'english bangladesh leading star'
   },
   {
     id: 'dhakatribune',
@@ -482,7 +680,18 @@ const newspapers = [
     url: 'https://www.tbsnews.net',
     color: '#005b96',
     icon: 'TBS',
-    tags: 'english business tbs'
+    tags: 'english business tbs economy'
+  },
+  {
+    id: 'financialexpress',
+    nameBn: 'ফাইন্যান্সিয়াল এক্সপ্রেস',
+    nameEn: 'The Financial Express',
+    category: 'english',
+    categoryLabel: 'Financial Daily',
+    url: 'https://thefinancialexpress.com.bd',
+    color: '#1a5276',
+    icon: 'FE',
+    tags: 'english financial business fe'
   },
   {
     id: 'newage',
@@ -496,17 +705,6 @@ const newspapers = [
     tags: 'english bangladesh'
   },
   {
-    id: 'financialexpress',
-    nameBn: 'ফাইন্যান্সিয়াল এক্সপ্রেস',
-    nameEn: 'The Financial Express',
-    category: 'english',
-    categoryLabel: 'Business Daily',
-    url: 'https://thefinancialexpress.com.bd',
-    color: '#1a5276',
-    icon: 'FE',
-    tags: 'english financial business'
-  },
-  {
     id: 'dailysun',
     nameBn: 'ডেইলি সান',
     nameEn: 'Daily Sun',
@@ -518,68 +716,62 @@ const newspapers = [
     tags: 'english bangladesh sun'
   },
   {
-    id: 'bbcbangla',
-    nameBn: 'বিবিসি বাংলা',
-    nameEn: 'BBC News Bangla',
+    id: 'dailyobserver',
+    nameBn: 'দ্য ডেইলি অবজারভার',
+    nameEn: 'The Daily Observer',
     category: 'english',
-    categoryLabel: 'আন্তর্জাতিক',
-    url: 'https://www.bbc.com/bengali',
-    color: '#bb1919',
-    icon: 'BBC',
-    tags: 'international bbc world'
+    categoryLabel: 'English Daily',
+    url: 'https://www.observerbd.com',
+    color: '#117864',
+    icon: 'OB',
+    tags: 'english bangladesh'
   },
   {
-    id: 'voabangla',
-    nameBn: 'ভয়েস অফ আমেরিকা বাংলা',
-    nameEn: 'Voice of America (VOA)',
+    id: 'asianage',
+    nameBn: 'দ্য এশিয়ান এইজ',
+    nameEn: 'The Asian Age Bangladesh',
     category: 'english',
-    categoryLabel: 'আন্তর্জাতিক',
-    url: 'https://www.voabangla.com',
-    color: '#003366',
-    icon: 'VOA',
-    tags: 'international voa usa'
+    categoryLabel: 'English Daily',
+    url: 'https://dailyasianage.com',
+    color: '#922b21',
+    icon: 'AA',
+    tags: 'english bangladesh'
   },
   {
-    id: 'reuters',
-    nameBn: 'রয়টার্স',
-    nameEn: 'Reuters World News',
+    id: 'bangladeshpost',
+    nameBn: 'বাংলাদেশ পোস্ট',
+    nameEn: 'Bangladesh Post',
     category: 'english',
-    categoryLabel: 'World News',
-    url: 'https://www.reuters.com',
-    color: '#ff8000',
-    icon: 'RT',
-    tags: 'world international'
-  },
-  {
-    id: 'aljazeera',
-    nameBn: 'আল জাজিরা',
-    nameEn: 'Al Jazeera English',
-    category: 'english',
-    categoryLabel: 'World News',
-    url: 'https://www.aljazeera.com',
-    color: '#d4ac0d',
-    icon: 'AJ',
-    tags: 'world middleeast'
+    categoryLabel: 'English Daily',
+    url: 'https://bangladeshpost.net',
+    color: '#1f618d',
+    icon: 'BP',
+    tags: 'english bangladesh'
   },
 
-  // ================= 5. DISTRICT & LOCAL NEWSPAPERS (বিভাগীয় ও জেলা) =================
+  // =========================================================================
+  // 5. DIVISION & DISTRICT NEWSPAPERS (বিভাগীয় ও জেলা সংবাদপত্র)
+  // =========================================================================
+  // --- চট্টগ্রাম বিভাগ ---
   {
     id: 'azadi',
     nameBn: 'দৈনিক আজাদী',
     nameEn: 'Dainik Azadi',
     category: 'local',
-    categoryLabel: 'চট্টগ্রাম (Ctg)',
+    division: 'chittagong',
+    categoryLabel: 'চট্টগ্রাম',
     url: 'https://dainikazadi.net',
     color: '#c0392b',
     icon: 'আ',
-    tags: 'chittagong ctg local azadi'
+    tags: 'chittagong ctg local azadi port'
   },
   {
     id: 'purbokone',
     nameBn: 'দৈনিক পূর্বকোণ',
     nameEn: 'Dainik Purbokone',
     category: 'local',
-    categoryLabel: 'চট্টগ্রাম (Ctg)',
+    division: 'chittagong',
+    categoryLabel: 'চট্টগ্রাম',
     url: 'https://dainikpurbokone.net',
     color: '#2471a3',
     icon: 'পূ',
@@ -590,50 +782,181 @@ const newspapers = [
     nameBn: 'সুপ্রভাত বাংলাদেশ',
     nameEn: 'Suprobhat Bangladesh',
     category: 'local',
-    categoryLabel: 'চট্টগ্রাম (Ctg)',
+    division: 'chittagong',
+    categoryLabel: 'চট্টগ্রাম',
     url: 'https://suprobhat.com',
     color: '#138d75',
     icon: 'সু',
     tags: 'chittagong ctg'
   },
   {
+    id: 'amadercomilla',
+    nameBn: 'আমাদের কুমিল্লা',
+    nameEn: 'Amader Comilla',
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'কুমিল্লা',
+    url: 'https://www.dailyamadercomilla.com',
+    color: '#af601a',
+    icon: 'কু',
+    tags: 'comilla cumilla chittagong'
+  },
+  {
+    id: 'chandpurkantha',
+    nameBn: 'চাঁদপুর কণ্ঠ',
+    nameEn: 'Chandpur Kantha',
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'চাঁদপুর',
+    url: 'https://chandpurkantha.com',
+    color: '#6c3483',
+    icon: 'চাঁ',
+    tags: 'chandpur chittagong'
+  },
+  {
+    id: 'dainikcoxsbazar',
+    nameBn: 'দৈনিক কক্সবাজার',
+    nameEn: 'Dainik Coxsbazar',
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'কক্সবাজার',
+    url: 'https://www.dainikcoxsbazar.com',
+    color: '#16a085',
+    icon: 'কক্স',
+    tags: 'coxsbazar cox beach chittagong'
+  },
+  {
+    id: 'fenisangbad',
+    nameBn: 'ফেনী সংবাদ',
+    nameEn: 'Feni Sangbad',
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'ফেনী',
+    url: 'https://fenisangbad.com',
+    color: '#2e4053',
+    icon: 'ফে',
+    tags: 'feni chittagong'
+  },
+
+  // --- সিলেট বিভাগ ---
+  {
     id: 'dainiksylhet',
     nameBn: 'দৈনিক সিলেট',
     nameEn: 'Dainik Sylhet',
     category: 'local',
-    categoryLabel: 'সিলেট (Sylhet)',
+    division: 'sylhet',
+    categoryLabel: 'সিলেট',
     url: 'https://dainiksylhet.com',
     color: '#2e4053',
     icon: 'সি',
+    tags: 'sylhet local surma'
+  },
+  {
+    id: 'sylhetexpress',
+    nameBn: 'সিলেট এক্সপ্রেস',
+    nameEn: 'Sylhet Express',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'সিলেট',
+    url: 'https://sylhetexpress.com',
+    color: '#1b4f72',
+    icon: 'সি',
     tags: 'sylhet local'
+  },
+  {
+    id: 'dailykhowai',
+    nameBn: 'দৈনিক খোয়াই',
+    nameEn: 'Daily Khowai',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'হবিগঞ্জ/সিলেট',
+    url: 'https://dailykhowai.com',
+    color: '#117a65',
+    icon: 'খো',
+    tags: 'habiganj sylhet khowai'
+  },
+  {
+    id: 'sunamganjkhobor',
+    nameBn: 'সুনামগঞ্জের খবর',
+    nameEn: 'Sunamganjer Khobor',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'সুনামগঞ্জ',
+    url: 'https://sunamganjerkhobor.com',
+    color: '#d35400',
+    icon: 'সু',
+    tags: 'sunamganj sylhet haor'
+  },
+
+  // --- রাজশাহী বিভাগ ---
+  {
+    id: 'sonalisangbad',
+    nameBn: 'দৈনিক সোনালী সংবাদ',
+    nameEn: 'Daily Sonali Sangbad',
+    category: 'local',
+    division: 'rajshahi',
+    categoryLabel: 'রাজশাহী',
+    url: 'https://sonalisangbad.com',
+    color: '#d4ac0d',
+    icon: 'সো',
+    tags: 'rajshahi local padma'
   },
   {
     id: 'rajshahinews24',
     nameBn: 'রাজশাহী নিউজ ২৪',
     nameEn: 'Rajshahi News 24',
     category: 'local',
-    categoryLabel: 'রাজশাহী (Rajshahi)',
+    division: 'rajshahi',
+    categoryLabel: 'রাজশাহী',
     url: 'https://rajshahinews24.com',
     color: '#117a65',
     icon: 'রা',
     tags: 'rajshahi local'
   },
   {
+    id: 'karatoa',
+    nameBn: 'দৈনিক করতোয়া',
+    nameEn: 'Dainik Karatoa',
+    category: 'local',
+    division: 'rajshahi',
+    categoryLabel: 'বগুড়া/রাজশাহী',
+    url: 'https://www.karatoa.com.bd',
+    color: '#6c3483',
+    icon: 'ক',
+    tags: 'bogra bogura rajshahi north'
+  },
+  {
+    id: 'pabnabarta',
+    nameBn: 'পাবনা বার্তা',
+    nameEn: 'Pabna Barta',
+    category: 'local',
+    division: 'rajshahi',
+    categoryLabel: 'পাবনা',
+    url: 'https://pabnabarta24.com',
+    color: '#1f618d',
+    icon: 'পা',
+    tags: 'pabna rajshahi'
+  },
+
+  // --- খুলনা বিভাগ ---
+  {
     id: 'purbanchal',
     nameBn: 'দৈনিক পূর্বাঞ্চল',
     nameEn: 'Dainik Purbanchal',
     category: 'local',
-    categoryLabel: 'খুলনা (Khulna)',
+    division: 'khulna',
+    categoryLabel: 'খুলনা',
     url: 'https://purbanchal.com',
     color: '#b03a2e',
     icon: 'পূ',
-    tags: 'khulna local'
+    tags: 'khulna local sundarbans'
   },
   {
     id: 'gramerkagoj',
     nameBn: 'গ্রামের কাগজ',
     nameEn: 'Gramer Kagoj',
     category: 'local',
+    division: 'khulna',
     categoryLabel: 'যশোর/খুলনা',
     url: 'https://www.gramerkagoj.com',
     color: '#2874a6',
@@ -641,51 +964,173 @@ const newspapers = [
     tags: 'jessore khulna gram'
   },
   {
+    id: 'mathabhanga',
+    nameBn: 'দৈনিক মাথাভাঙ্গা',
+    nameEn: 'Dainik Mathabhanga',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'চুয়াডাঙ্গা/খুলনা',
+    url: 'https://mathabhanga.com',
+    color: '#27ae60',
+    icon: 'মা',
+    tags: 'chuadanga khulna'
+  },
+  {
+    id: 'meherpurpratidin',
+    nameBn: 'মেহেরপুর প্রতিদিন',
+    nameEn: 'Meherpur Pratidin',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'মেহেরপুর/খুলনা',
+    url: 'https://meherpurpratidin.news',
+    color: '#e67e22',
+    icon: 'মে',
+    tags: 'meherpur khulna'
+  },
+
+  // --- বরিশাল বিভাগ ---
+  {
     id: 'amaderbarisal',
     nameBn: 'আমাদের বরিশাল',
     nameEn: 'Amader Barisal',
     category: 'local',
-    categoryLabel: 'বরিশাল (Barisal)',
+    division: 'barisal',
+    categoryLabel: 'বরিশাল',
     url: 'https://www.amaderbarisal.com',
     color: '#196f3d',
     icon: 'ব',
-    tags: 'barisal barishal local'
+    tags: 'barisal barishal local kirtankhola'
   },
   {
-    id: 'karatoa',
-    nameBn: 'দৈনিক করতোয়া',
-    nameEn: 'Dainik Karatoa',
+    id: 'barisalnews',
+    nameBn: 'বরিশাল নিউজ',
+    nameEn: 'Barisal News',
     category: 'local',
-    categoryLabel: 'বগুড়া/উত্তরাঞ্চল',
-    url: 'https://www.karatoa.com.bd',
-    color: '#6c3483',
-    icon: 'ক',
-    tags: 'bogra bogura north'
+    division: 'barisal',
+    categoryLabel: 'বরিশাল',
+    url: 'https://barisalnews.com',
+    color: '#1f618d',
+    icon: 'ব',
+    tags: 'barisal barishal'
   },
   {
-    id: 'amadercomilla',
-    nameBn: 'আমাদের কুমিল্লা',
-    nameEn: 'Amader Comilla',
+    id: 'patuakhaliweb',
+    nameBn: 'পটুয়াখালী ওয়েব',
+    nameEn: 'Patuakhali Web',
     category: 'local',
-    categoryLabel: 'কুমিল্লা (Cumilla)',
-    url: 'https://www.dailyamadercomilla.com',
-    color: '#af601a',
-    icon: 'কু',
-    tags: 'comilla cumilla'
-  },
-  {
-    id: 'dainikcoxsbazar',
-    nameBn: 'দৈনিক কক্সবাজার',
-    nameEn: 'Dainik Coxsbazar',
-    category: 'local',
-    categoryLabel: 'কক্সবাজার',
-    url: 'https://www.dainikcoxsbazar.com',
-    color: '#16a085',
-    icon: 'কক্স',
-    tags: 'coxsbazar cox beach'
+    division: 'barisal',
+    categoryLabel: 'পটুয়াখালী/বরিশাল',
+    url: 'https://patuakhaliweb.com',
+    color: '#922b21',
+    icon: 'প',
+    tags: 'patuakhali barisal kuakata'
   },
 
-  // ================= 6. BUSINESS & SHARE MARKET (ব্যবসা ও শেয়ার বাজার) =================
+  // --- রংপুর বিভাগ ---
+  {
+    id: 'uttarbangla',
+    nameBn: 'দৈনিক উত্তর বাংলা',
+    nameEn: 'Dainik Uttar Bangla',
+    category: 'local',
+    division: 'rangpur',
+    categoryLabel: 'রংপুর/উত্তরাঞ্চল',
+    url: 'https://uttarbangla.com',
+    color: '#c0392b',
+    icon: 'উ',
+    tags: 'rangpur north teesta'
+  },
+  {
+    id: 'rangpurchitra',
+    nameBn: 'রংপুর চিত্র',
+    nameEn: 'Rangpur Chitra',
+    category: 'local',
+    division: 'rangpur',
+    categoryLabel: 'রংপুর',
+    url: 'https://rangpurchitra.net',
+    color: '#16a085',
+    icon: 'রং',
+    tags: 'rangpur local'
+  },
+  {
+    id: 'dinajpurnews',
+    nameBn: 'দিনাজপুর নিউজ ২৪',
+    nameEn: 'Dinajpur News 24',
+    category: 'local',
+    division: 'rangpur',
+    categoryLabel: 'দিনাজপুর',
+    url: 'https://dinajpurnews24.com',
+    color: '#5b2c6f',
+    icon: 'দি',
+    tags: 'dinajpur rangpur'
+  },
+
+  // --- ঢাকা জেলা ও শহরতলি ---
+  {
+    id: 'narayanganjpost',
+    nameBn: 'নারায়ণগঞ্জ পোস্ট',
+    nameEn: 'Narayanganj Post',
+    category: 'local',
+    division: 'dhaka',
+    categoryLabel: 'নারায়ণগঞ্জ',
+    url: 'https://narayanganjpost.com',
+    color: '#2e4053',
+    icon: 'না',
+    tags: 'narayanganj dhaka'
+  },
+  {
+    id: 'gazipurbarta',
+    nameBn: 'গাজীপুর বার্তা',
+    nameEn: 'Gazipur Barta',
+    category: 'local',
+    division: 'dhaka',
+    categoryLabel: 'গাজীপুর',
+    url: 'https://gazipurbarta.com',
+    color: '#1b4f72',
+    icon: 'গা',
+    tags: 'gazipur dhaka'
+  },
+  {
+    id: 'tangailbarta',
+    nameBn: 'টাঙ্গাইল বার্তা',
+    nameEn: 'Tangail Barta',
+    category: 'local',
+    division: 'dhaka',
+    categoryLabel: 'টাঙ্গাইল',
+    url: 'https://tangailbarta24.com',
+    color: '#117a65',
+    icon: 'টা',
+    tags: 'tangail dhaka'
+  },
+
+  // --- ময়মনসিংহ বিভাগ ---
+  {
+    id: 'mymensinghpratidin',
+    nameBn: 'ময়মনসিংহ প্রতিদিন',
+    nameEn: 'Mymensingh Pratidin',
+    category: 'local',
+    division: 'mymensingh',
+    categoryLabel: 'ময়মনসিংহ',
+    url: 'https://mymensinghpratidin.com',
+    color: '#d35400',
+    icon: 'ম',
+    tags: 'mymensingh brahmaputra'
+  },
+  {
+    id: 'jamalpurnews',
+    nameBn: 'জামালপুর বার্তা',
+    nameEn: 'Jamalpur Barta',
+    category: 'local',
+    division: 'mymensingh',
+    categoryLabel: 'জামালপুর',
+    url: 'https://jamalpurnews24.com',
+    color: '#7d3c98',
+    icon: 'জা',
+    tags: 'jamalpur mymensingh'
+  },
+
+  // =========================================================================
+  // 6. BUSINESS, STOCK & FINANCIAL NEWS (ব্যবসা ও শেয়ার বাজার)
+  // =========================================================================
   {
     id: 'bonikbarta',
     nameBn: 'বণিক বার্তা',
@@ -696,7 +1141,7 @@ const newspapers = [
     epaperUrl: 'https://epaper.bonikbarta.net',
     color: '#d35400',
     icon: 'ব',
-    tags: 'business bonik economy'
+    tags: 'business bonik economy commerce'
   },
   {
     id: 'sharebiz',
@@ -707,18 +1152,18 @@ const newspapers = [
     url: 'https://www.sharebiz.net',
     color: '#1f618d',
     icon: 'শে',
-    tags: 'share market stock dse'
+    tags: 'share market stock dse commerce'
   },
   {
     id: 'arthosuchak',
     nameBn: 'অর্থসূচক',
     nameEn: 'Arthosuchak',
     category: 'business',
-    categoryLabel: 'শেয়ার বাজার ও অর্থনীতি',
+    categoryLabel: 'অর্থনীতি ও ব্যবসা',
     url: 'https://www.arthosuchak.com',
     color: '#27ae60',
     icon: 'অ',
-    tags: 'stock share market economy'
+    tags: 'stock share market economy money'
   },
   {
     id: 'dsebd',
@@ -729,10 +1174,244 @@ const newspapers = [
     url: 'https://www.dsebd.org',
     color: '#004d38',
     icon: 'DSE',
-    tags: 'dse stock live index'
+    tags: 'dse stock live index market'
+  },
+  {
+    id: 'csekhorbor',
+    nameBn: 'চট্টগ্রাম স্টক এক্সচেঞ্জ (CSE)',
+    nameEn: 'Chittagong Stock Exchange',
+    category: 'business',
+    categoryLabel: 'স্টক মার্কেট',
+    url: 'https://www.cse.com.bd',
+    color: '#1b4f72',
+    icon: 'CSE',
+    tags: 'cse stock chittagong'
+  },
+  {
+    id: 'businessinsiderbd',
+    nameBn: 'বিজনেস ইনসাইডার বাংলাদেশ',
+    nameEn: 'Business Insider BD',
+    category: 'business',
+    categoryLabel: 'বাণিজ্য সংবাদ',
+    url: 'https://www.businessinsiderbd.com',
+    color: '#117864',
+    icon: 'BI',
+    tags: 'business commerce trade'
   },
 
-  // ================= 7. KOLKATA & WEST BENGAL (কলকাতা ও পশ্চিমবঙ্গ) =================
+  // =========================================================================
+  // 7. SPORTS & ENTERTAINMENT (খেলাধুলা ও বিনোদন)
+  // =========================================================================
+  {
+    id: 'pavilion',
+    nameBn: 'প্যাভিলিয়ন (Pavilion)',
+    nameEn: 'Pavilion Cricket & Sports',
+    category: 'sports',
+    categoryLabel: 'ক্রীড়া পোর্টাল',
+    url: 'https://pavilion.com.bd',
+    color: '#27ae60',
+    icon: 'PAV',
+    tags: 'sports cricket football pavilion'
+  },
+  {
+    id: 'bdcrictime',
+    nameBn: 'বিডিক্রিকটাইম',
+    nameEn: 'Bdcrictime',
+    category: 'sports',
+    categoryLabel: 'ক্রিকেট সংবাদ',
+    url: 'https://www.bdcrictime.com',
+    color: '#e74c3c',
+    icon: 'BCT',
+    tags: 'sports cricket tigers bpl'
+  },
+  {
+    id: 'dailycricket',
+    nameBn: 'ডেইলি ক্রিকেট',
+    nameEn: 'Daily Cricket BD',
+    category: 'sports',
+    categoryLabel: 'ক্রিকেট সংবাদ',
+    url: 'https://dailycricket.com.bd',
+    color: '#2980b9',
+    icon: 'DC',
+    tags: 'sports cricket live score'
+  },
+  {
+    id: 'kheladhula',
+    nameBn: 'খেলাধুলা ২৪',
+    nameEn: 'Kheladhula24',
+    category: 'sports',
+    categoryLabel: 'খেলাধুলা সংবাদ',
+    url: 'https://kheladhula24.com',
+    color: '#f39c12',
+    icon: 'খেলা',
+    tags: 'sports football messi ronaldo'
+  },
+  {
+    id: 'anandaalo',
+    nameBn: 'আনন্দ আলো',
+    nameEn: 'Ananda Alo',
+    category: 'sports',
+    categoryLabel: 'বিনোদন ও সংস্কৃতি',
+    url: 'https://anandaalo.com',
+    color: '#9b59b6',
+    icon: 'আ',
+    tags: 'entertainment culture cinema natok'
+  },
+
+  // =========================================================================
+  // 8. JOBS, TECH & EDUCATION (চাকরি, প্রযুক্তি ও শিক্ষা)
+  // =========================================================================
+  {
+    id: 'bdjobs',
+    nameBn: 'বিডিজবস (Bdjobs)',
+    nameEn: 'Bdjobs.com',
+    category: 'jobs_tech',
+    categoryLabel: 'চাকরির পোর্টাল',
+    url: 'https://www.bdjobs.com',
+    color: '#006a4e',
+    icon: 'BDJ',
+    tags: 'job career chakri circular'
+  },
+  {
+    id: 'chakrirkhobor',
+    nameBn: 'সাপ্তাহিক চাকরির খবর',
+    nameEn: 'Chakrir Khobor',
+    category: 'jobs_tech',
+    categoryLabel: 'চাকরির খবর',
+    url: 'https://chakrirkhobor.net',
+    color: '#c0392b',
+    icon: 'চা',
+    tags: 'job career govt chakri'
+  },
+  {
+    id: 'dainikshiksha',
+    nameBn: 'দৈনিক শিক্ষা',
+    nameEn: 'Dainik Shiksha',
+    category: 'jobs_tech',
+    categoryLabel: 'শিক্ষা ও শিক্ষক',
+    url: 'https://www.dainikshiksha.com',
+    color: '#117864',
+    icon: 'শি',
+    tags: 'education teacher school college'
+  },
+  {
+    id: 'campuslive24',
+    nameBn: 'ক্যাম্পাস লাইভ ২৪',
+    nameEn: 'Campus Live 24',
+    category: 'jobs_tech',
+    categoryLabel: 'বিশ্ববিদ্যালয় ও ক্যাম্পাস',
+    url: 'https://campuslive24.com',
+    color: '#1f618d',
+    icon: 'CL',
+    tags: 'campus university student hsc ssc'
+  },
+  {
+    id: 'techshohor',
+    nameBn: 'টেকশহর',
+    nameEn: 'Techshohor.com',
+    category: 'jobs_tech',
+    categoryLabel: 'প্রযুক্তি সংবাদ',
+    url: 'https://techshohor.com',
+    color: '#2980b9',
+    icon: 'টে',
+    tags: 'technology gadget mobile ai telecom'
+  },
+  {
+    id: 'techtunes',
+    nameBn: 'টেকটিউনস',
+    nameEn: 'Techtunes.io',
+    category: 'jobs_tech',
+    categoryLabel: 'প্রযুক্তি ব্লগ',
+    url: 'https://www.techtunes.io',
+    color: '#27ae60',
+    icon: 'টিটি',
+    tags: 'technology blog tech tutorial'
+  },
+  {
+    id: 'bigganchinta',
+    nameBn: 'বিজ্ঞানচিন্তা',
+    nameEn: 'Biggan Chinta',
+    category: 'jobs_tech',
+    categoryLabel: 'বিজ্ঞান সাময়িকী',
+    url: 'https://www.bigganchinta.com',
+    color: '#d35400',
+    icon: 'বি',
+    tags: 'science research space biggan'
+  },
+  {
+    id: 'kishorealo',
+    nameBn: 'কিশোর আলো',
+    nameEn: 'Kishor Alo',
+    category: 'jobs_tech',
+    categoryLabel: 'ম্যাগাজিন ও কিশোর',
+    url: 'https://www.kishoralo.com',
+    color: '#f39c12',
+    icon: 'কি',
+    tags: 'magazine youth kishor literature'
+  },
+
+  // =========================================================================
+  // 9. BANGLA FM RADIO (এফএম রেডিও)
+  // =========================================================================
+  {
+    id: 'radiofoorti',
+    nameBn: 'রেডিও ফুর্তি',
+    nameEn: 'Radio Foorti (88.0 FM)',
+    category: 'radio',
+    categoryLabel: 'এফএম রেডিও',
+    url: 'https://radiofoorti.fm',
+    color: '#e74c3c',
+    icon: '📻',
+    tags: 'radio music fm entertainment'
+  },
+  {
+    id: 'radiotoday',
+    nameBn: 'রেডিও টুডে',
+    nameEn: 'Radio Today (89.6 FM)',
+    category: 'radio',
+    categoryLabel: 'এফএম রেডিও',
+    url: 'https://radiotodaybd.fm',
+    color: '#2980b9',
+    icon: '📻',
+    tags: 'radio news fm'
+  },
+  {
+    id: 'dhakafm',
+    nameBn: 'ঢাকা এফএম',
+    nameEn: 'Dhaka FM (90.4 FM)',
+    category: 'radio',
+    categoryLabel: 'এফএম রেডিও',
+    url: 'https://dhakafm904.com',
+    color: '#27ae60',
+    icon: '📻',
+    tags: 'radio live fm'
+  },
+  {
+    id: 'jagofm',
+    nameBn: 'জাগো এফএম',
+    nameEn: 'Jago FM (94.4 FM)',
+    category: 'radio',
+    categoryLabel: 'এফএম রেডিও',
+    url: 'https://www.jago.fm',
+    color: '#e67e22',
+    icon: '📻',
+    tags: 'radio live fm jago'
+  },
+  {
+    id: 'betar',
+    nameBn: 'বাংলাদেশ বেতার',
+    nameEn: 'Bangladesh Betar',
+    category: 'radio',
+    categoryLabel: 'জাতীয় বেতার',
+    url: 'http://www.betar.gov.bd',
+    color: '#006a4e',
+    icon: '📻',
+    tags: 'betar govt radio news state'
+  },
+
+  // =========================================================================
+  // 10. KOLKATA & WEST BENGAL (কলকাতা ও পশ্চিমবঙ্গ)
+  // =========================================================================
   {
     id: 'anandabazar',
     nameBn: 'আনন্দবাজার পত্রিকা',
@@ -789,115 +1468,24 @@ const newspapers = [
     icon: 'আ',
     tags: 'kolkata west bengal'
   },
-
-  // ================= 8. JOBS, TECH & MAGAZINES (চাকরি ও প্রযুক্তি) =================
   {
-    id: 'bdjobs',
-    nameBn: 'বিডিজবস',
-    nameEn: 'Bdjobs.com',
-    category: 'jobs_tech',
-    categoryLabel: 'চাকরির পোর্টাল',
-    url: 'https://www.bdjobs.com',
-    color: '#006a4e',
-    icon: 'BDJ',
-    tags: 'job career chakri'
-  },
-  {
-    id: 'chakrirkhobor',
-    nameBn: 'সাপ্তাহিক চাকরির খবর',
-    nameEn: 'Chakrir Khobor',
-    category: 'jobs_tech',
-    categoryLabel: 'চাকরির খবর',
-    url: 'https://chakrirkhobor.net',
-    color: '#c0392b',
-    icon: 'চা',
-    tags: 'job career chakri'
-  },
-  {
-    id: 'techshohor',
-    nameBn: 'টেকশহর',
-    nameEn: 'Techshohor.com',
-    category: 'jobs_tech',
-    categoryLabel: 'প্রযুক্তি সংবাদ',
-    url: 'https://techshohor.com',
-    color: '#2980b9',
-    icon: 'টে',
-    tags: 'technology gadget mobile'
-  },
-  {
-    id: 'techtunes',
-    nameBn: 'টেকটিউনস',
-    nameEn: 'Techtunes.io',
-    category: 'jobs_tech',
-    categoryLabel: 'প্রযুক্তি ব্লগ',
-    url: 'https://www.techtunes.io',
-    color: '#27ae60',
-    icon: 'টিটি',
-    tags: 'technology blog tech'
-  },
-  {
-    id: 'kishorealo',
-    nameBn: 'কিশোর আলো',
-    nameEn: 'Kishor Alo',
-    category: 'jobs_tech',
-    categoryLabel: 'ম্যাগাজিন ও কিশোর',
-    url: 'https://www.kishoralo.com',
-    color: '#f39c12',
-    icon: 'কি',
-    tags: 'magazine youth kishor'
-  },
-
-  // ================= 9. BANGLA FM RADIO (এফএম রেডিও) =================
-  {
-    id: 'radiofoorti',
-    nameBn: 'রেডিও ফুর্তি',
-    nameEn: 'Radio Foorti (88.0 FM)',
-    category: 'radio',
-    categoryLabel: 'এফএম রেডিও',
-    url: 'https://radiofoorti.fm',
-    color: '#e74c3c',
-    icon: '📻',
-    tags: 'radio music fm'
-  },
-  {
-    id: 'radiotoday',
-    nameBn: 'রেডিও টুডে',
-    nameEn: 'Radio Today (89.6 FM)',
-    category: 'radio',
-    categoryLabel: 'এফএম রেডিও',
-    url: 'https://radiotodaybd.fm',
-    color: '#2980b9',
-    icon: '📻',
-    tags: 'radio news fm'
-  },
-  {
-    id: 'dhakafm',
-    nameBn: 'ঢাকা এফএম',
-    nameEn: 'Dhaka FM (90.4 FM)',
-    category: 'radio',
-    categoryLabel: 'এফএম রেডিও',
-    url: 'https://dhakafm904.com',
-    color: '#27ae60',
-    icon: '📻',
-    tags: 'radio live fm'
-  },
-  {
-    id: 'betar',
-    nameBn: 'বাংলাদেশ বেতার',
-    nameEn: 'Bangladesh Betar',
-    category: 'radio',
-    categoryLabel: 'জাতীয় বেতার',
-    url: 'http://www.betar.gov.bd',
-    color: '#006a4e',
-    icon: '📻',
-    tags: 'betar govt radio'
+    id: 'uttarbangasambad',
+    nameBn: 'উত্তরবঙ্গ সংবাদ',
+    nameEn: 'Uttarbanga Sambad',
+    category: 'kolkata',
+    categoryLabel: 'উত্তরবঙ্গ/শিলিগুড়ি',
+    url: 'https://uttarbangasambad.com',
+    color: '#117a65',
+    icon: 'উ',
+    tags: 'siliguri west bengal uttarbanga'
   }
 ];
 
 // App State
 let currentCategory = 'all';
+let currentDivision = 'all';
 let searchQuery = '';
-let currentView = localStorage.getItem('abn_view') || 'grid'; // 'grid' | 'list'
+let currentView = localStorage.getItem('abn_view') || 'grid';
 let favorites = JSON.parse(localStorage.getItem('abn_favorites') || '[]');
 
 // DOM Elements
@@ -905,7 +1493,10 @@ const newspaperGrid = document.getElementById('newspaperGrid');
 const searchInput = document.getElementById('searchInput');
 const clearSearchBtn = document.getElementById('clearSearch');
 const categoryTabs = document.getElementById('categoryTabs');
+const divisionFilterWrap = document.getElementById('divisionFilterWrap');
+const divisionTabs = document.getElementById('divisionTabs');
 const resultsCount = document.getElementById('resultsCount');
+const totalCountBadge = document.getElementById('totalCountBadge');
 const favCountBadge = document.getElementById('favCountBadge');
 const emptyState = document.getElementById('emptyState');
 const resetSearchBtn = document.getElementById('resetSearchBtn');
@@ -958,20 +1549,26 @@ function toggleFavorite(id, event) {
   }
 
   localStorage.setItem('abn_favorites', JSON.stringify(favorites));
-  updateFavoriteBadge();
+  updateBadges();
   renderNewspapers();
 }
 
-function updateFavoriteBadge() {
-  if (favCountBadge) {
-    favCountBadge.textContent = favorites.length;
-  }
+function updateBadges() {
+  if (favCountBadge) favCountBadge.textContent = favorites.length;
+  if (totalCountBadge) totalCountBadge.textContent = newspapers.length;
 }
 
 // Filter and Render Newspapers
 function renderNewspapers() {
+  // Show / hide division subfilter if category is 'local'
+  if (currentCategory === 'local') {
+    divisionFilterWrap.style.display = 'flex';
+  } else {
+    divisionFilterWrap.style.display = 'none';
+  }
+
   const filtered = newspapers.filter(paper => {
-    // Category match
+    // 1. Category filter
     let matchesCategory = true;
     if (currentCategory === 'favorites') {
       matchesCategory = favorites.includes(paper.id);
@@ -981,24 +1578,32 @@ function renderNewspapers() {
       matchesCategory = paper.category === currentCategory;
     }
 
-    // Search match (Bangla, English, Label, or Tags)
+    // 2. Division subfilter (when viewing local news)
+    let matchesDivision = true;
+    if (currentCategory === 'local' && currentDivision !== 'all') {
+      matchesDivision = paper.division === currentDivision;
+    }
+
+    // 3. Search match
     let matchesSearch = true;
     if (searchQuery.trim() !== '') {
       const q = searchQuery.toLowerCase().trim();
-      const searchTarget = `${paper.nameBn} ${paper.nameEn} ${paper.categoryLabel} ${paper.tags || ''}`.toLowerCase();
+      const searchTarget = `${paper.nameBn} ${paper.nameEn} ${paper.categoryLabel} ${paper.division || ''} ${paper.tags || ''}`.toLowerCase();
       matchesSearch = searchTarget.includes(q);
     }
 
-    return matchesCategory && matchesSearch;
+    return matchesCategory && matchesDivision && matchesSearch;
   });
 
   // Update status count
   if (currentCategory === 'favorites') {
     resultsCount.textContent = `প্রিয় তালিকা: ${filtered.length} টি সংবাদপত্র`;
   } else if (currentCategory === 'epaper') {
-    resultsCount.textContent = `ই-পেপার সংস্করণ রয়েছে এমন পত্রিকা: ${filtered.length} টি`;
+    resultsCount.textContent = `ই-পেপার সংস্করণ রয়েছে: ${filtered.length} টি`;
+  } else if (currentCategory === 'local' && currentDivision !== 'all') {
+    resultsCount.textContent = `নির্বাচিত বিভাগ: ${filtered.length} টি পত্রিকা`;
   } else {
-    resultsCount.textContent = `মোট ${filtered.length} টি সংবাদপত্র পাওয়া গেছে`;
+    resultsCount.textContent = `মোট ${filtered.length} টি ওয়েবসাইট প্রদর্শিত হচ্ছে`;
   }
 
   // Clear container
@@ -1019,6 +1624,10 @@ function renderNewspapers() {
 
       const epaperButton = paper.epaperUrl 
         ? `<a href="${paper.epaperUrl}" target="_blank" rel="noopener noreferrer" class="btn-epaper-pill" onclick="event.stopPropagation();" title="${paper.nameBn} ই-পেপার পড়ুন">🗞️ ই-পেপার</a>`
+        : '';
+
+      const divisionTag = paper.division 
+        ? `<span class="district-tag">${paper.categoryLabel}</span>` 
         : '';
 
       if (currentView === 'list') {
@@ -1072,7 +1681,10 @@ function renderNewspapers() {
             <p class="newspaper-name-en">${paper.nameEn}</p>
           </div>
           <div class="card-footer">
-            <span class="category-tag">${paper.categoryLabel}</span>
+            <div class="badges-group">
+              <span class="category-tag">${paper.categoryLabel}</span>
+              ${divisionTag}
+            </div>
             <span class="visit-link">পড়ুন ➔</span>
           </div>
         `;
@@ -1103,8 +1715,12 @@ resetSearchBtn.addEventListener('click', () => {
   searchQuery = '';
   clearSearchBtn.style.display = 'none';
   currentCategory = 'all';
+  currentDivision = 'all';
   document.querySelectorAll('.category-btn').forEach(btn => {
     btn.classList.toggle('active', btn.dataset.category === 'all');
+  });
+  document.querySelectorAll('.subfilter-chip').forEach(btn => {
+    btn.classList.toggle('active', btn.dataset.division === 'all');
   });
   renderNewspapers();
 });
@@ -1116,6 +1732,19 @@ categoryTabs.addEventListener('click', (e) => {
     document.querySelectorAll('.category-btn').forEach(b => b.classList.remove('active'));
     btn.classList.add('active');
     currentCategory = btn.dataset.category;
+    currentDivision = 'all'; // Reset division filter on category switch
+    document.querySelectorAll('.subfilter-chip').forEach(b => b.classList.toggle('active', b.dataset.division === 'all'));
+    renderNewspapers();
+  }
+});
+
+// Division Subfilter Listener
+divisionTabs.addEventListener('click', (e) => {
+  const btn = e.target.closest('.subfilter-chip');
+  if (btn) {
+    document.querySelectorAll('.subfilter-chip').forEach(b => b.classList.remove('active'));
+    btn.classList.add('active');
+    currentDivision = btn.dataset.division;
     renderNewspapers();
   }
 });
@@ -1138,5 +1767,5 @@ backToTopBtn.addEventListener('click', () => {
 
 // Initial boot
 initTheme();
-updateFavoriteBadge();
+updateBadges();
 updateView(currentView);

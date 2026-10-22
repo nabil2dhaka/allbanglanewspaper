@@ -3,8 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
-  <title>All Bangla Newspaper Directory - সকল বাংলা সংবাদপত্র পোর্টাল</title>
-  <meta name="description" content="বাংলাদেশের সকল জাতীয় দৈনিক, অনলাইন নিউজ পোর্টাল, ই-পেপার, টিভি চ্যানেল, স্থানীয় জেলা সংবাদপত্র, ইংরেজি ও কলকাতার পত্রিকার পূর্ণাঙ্গ ডিরেক্টরি।">
+  <title>All Bangla Newspaper Directory - বাংলাদেশের সকল নিউজ ওয়েবসাইট</title>
+  <meta name="description" content="বাংলাদেশের সকল জাতীয় দৈনিক, অনলাইন নিউজ পোর্টাল, ই-পেপার, টিভি চ্যানেল, ৮ বিভাগের জেলা সংবাদপত্র, ইংরেজি, ব্যবসা, খেলাধুলা, চাকরি ও প্রযুক্তি সংবাদপত্রের পূর্ণাঙ্গ ডিরেক্টরি।">
   
   <!-- Favicon -->
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg">
@@ -29,7 +29,7 @@
           <div class="brand-title">
             <span class="text-green">All</span> <span class="text-red">Bangla</span> <span class="text-main">Newspaper</span>
           </div>
-          <p class="brand-subtitle">সকল বাংলা সংবাদপত্র ও অনলাইন নিউজ পোর্টাল</p>
+          <p class="brand-subtitle">বাংলাদেশের সকল সংবাদ মাধ্যমের পূর্ণাঙ্গ ডিরেক্টরি</p>
         </div>
       </a>
 
@@ -56,10 +56,10 @@
   <section class="hero-section">
     <div class="container hero-container">
       <div class="hero-badge">
-        <span class="pulse-dot"></span> শীর্ষ বাংলা সংবাদপত্র ডিরেক্টরি ২০২৬
+        <span class="pulse-dot"></span> ১২০+ সংবাদ ওয়েবসাইট ও মিডিয়া পোর্টাল
       </div>
       <h1 class="hero-heading">বাংলাদেশের সকল খবর এক ঠিকানায়</h1>
-      <p class="hero-desc">জাতীয় দৈনিক, অনলাইন পোর্টাল, ই-পেপার, টিভি চ্যানেল ও জেলা সংবাদপত্র সহজে খুঁজুন।</p>
+      <p class="hero-desc">জাতীয় দৈনিক, অনলাইন পোর্টাল, টিভি নিউজ, ৮ বিভাগের জেলা সংবাদপত্র, ব্যবসা ও খেলাধুলার খবর পড়ুন সহজে।</p>
       
       <!-- Search Bar -->
       <div class="search-wrapper">
@@ -69,16 +69,16 @@
         <input 
           type="search" 
           id="searchInput" 
-          placeholder="পত্রিকার নাম, জেলা বা বিভাগ দিয়ে খুঁজুন (उदा: প্রথম আলো, চট্টগ্রাম, ই-পেপার)..." 
+          placeholder="পত্রিকা, টিভি, জেলা বা বিভাগ দিয়ে খুঁজুন (उदा: প্রথম আলো, চট্টগ্রাম, বিবিসি, ই-পেপার)..." 
           autocomplete="off"
           enterkeyhint="search"
         >
         <button id="clearSearch" class="btn-clear" style="display: none;" title="মুছে ফেলুন" aria-label="Clear search">✕</button>
       </div>
 
-      <!-- Quick Top 10 Bar (Followed from allbanglanewspapersbd.com) -->
+      <!-- Quick Top 10 Bar -->
       <div class="top10-quickbar">
-        <span class="top10-label">🔥 শীর্ষ ১০ পত্রিকা:</span>
+        <span class="top10-label">🔥 দ্রুত অ্যাক্সেস:</span>
         <div class="top10-chips">
           <a href="https://www.prothomalo.com" target="_blank" rel="noopener" class="top10-chip">প্রথম আলো</a>
           <a href="https://www.bd-pratidin.com" target="_blank" rel="noopener" class="top10-chip">বাংলাদেশ প্রতিদিন</a>
@@ -90,6 +90,7 @@
           <a href="https://bangla.bdnews24.com" target="_blank" rel="noopener" class="top10-chip">বিডিনিউজ২৪</a>
           <a href="https://www.jagonews24.com" target="_blank" rel="noopener" class="top10-chip">জাগো নিউজ</a>
           <a href="https://www.somoynews.tv" target="_blank" rel="noopener" class="top10-chip">সময় টিভি</a>
+          <a href="https://www.jamuna.tv" target="_blank" rel="noopener" class="top10-chip">যমুনা টিভি</a>
         </div>
       </div>
     </div>
@@ -97,12 +98,12 @@
 
   <!-- Main Content -->
   <main class="container main-content">
-    <!-- Category Tabs Navigation (All categories from allbanglanewspapersbd.com) -->
+    <!-- Category Tabs Navigation -->
     <div class="categories-wrapper">
       <nav class="categories-nav" aria-label="Newspaper Categories">
         <div class="categories-list" id="categoryTabs">
           <button class="category-btn active" data-category="all">
-            <span class="cat-icon">📑</span> সকল (All)
+            <span class="cat-icon">📑</span> সকল ক্যাটাগরি (<span id="totalCountBadge">0</span>)
           </button>
           <button class="category-btn" data-category="favorites">
             <span class="cat-icon">⭐</span> প্রিয় তালিকা (<span id="favCountBadge">0</span>)
@@ -110,26 +111,26 @@
           <button class="category-btn" data-category="daily">
             <span class="cat-icon">📰</span> জাতীয় দৈনিক
           </button>
-          <button class="category-btn" data-category="epaper">
-            <span class="cat-icon">🗞️</span> ই-পেপার (E-Papers)
-          </button>
           <button class="category-btn" data-category="online">
             <span class="cat-icon">⚡</span> অনলাইন পোর্টাল
+          </button>
+          <button class="category-btn" data-category="epaper">
+            <span class="cat-icon">🗞️</span> ই-পেপার (E-Papers)
           </button>
           <button class="category-btn" data-category="tv">
             <span class="cat-icon">📺</span> টিভি ও লাইভ নিউজ
           </button>
-          <button class="category-btn" data-category="english">
-            <span class="cat-icon">🌐</span> English & World
-          </button>
           <button class="category-btn" data-category="local">
             <span class="cat-icon">📍</span> বিভাগীয় ও জেলা
           </button>
-          <button class="category-btn" data-category="business">
-            <span class="cat-icon">📈</span> ব্যবসা ও শেয়ার বাজার
+          <button class="category-btn" data-category="english">
+            <span class="cat-icon">🌐</span> English Dailies
           </button>
-          <button class="category-btn" data-category="kolkata">
-            <span class="cat-icon">🏛️</span> কলকাতা ও পশ্চিমবঙ্গ
+          <button class="category-btn" data-category="business">
+            <span class="cat-icon">📈</span> ব্যবসা ও অর্থনীতি
+          </button>
+          <button class="category-btn" data-category="sports">
+            <span class="cat-icon">⚽</span> খেলাধুলা ও বিনোদন
           </button>
           <button class="category-btn" data-category="jobs_tech">
             <span class="cat-icon">💼</span> চাকরি ও প্রযুক্তি
@@ -137,17 +138,36 @@
           <button class="category-btn" data-category="radio">
             <span class="cat-icon">📻</span> এফএম রেডিও
           </button>
+          <button class="category-btn" data-category="kolkata">
+            <span class="cat-icon">🏛️</span> কলকাতা ও পশ্চিমবঙ্গ
+          </button>
         </div>
       </nav>
+    </div>
+
+    <!-- Sub-Filter for Divisions (Visible when 'বিভাগীয় ও জেলা' or 'all' is active) -->
+    <div class="subfilter-container" id="divisionFilterWrap" style="display: none;">
+      <span class="subfilter-label">বিভাগ নির্বাচন করুন:</span>
+      <div class="subfilter-chips" id="divisionTabs">
+        <button class="subfilter-chip active" data-division="all">সকল বিভাগ</button>
+        <button class="subfilter-chip" data-division="dhaka">ঢাকা</button>
+        <button class="subfilter-chip" data-division="chittagong">চট্টগ্রাম</button>
+        <button class="subfilter-chip" data-division="sylhet">সিলেট</button>
+        <button class="subfilter-chip" data-division="rajshahi">রাজশাহী</button>
+        <button class="subfilter-chip" data-division="khulna">খুলনা</button>
+        <button class="subfilter-chip" data-division="barisal">বরিশাল</button>
+        <button class="subfilter-chip" data-division="rangpur">রংপুর</button>
+        <button class="subfilter-chip" data-division="mymensingh">ময়মনসিংহ</button>
+      </div>
     </div>
 
     <!-- Results Status Bar -->
     <div class="results-bar">
       <div class="results-left">
-        <span id="resultsCount">সকল পত্রিকা প্রদর্শন করা হচ্ছে</span>
+        <span id="resultsCount">সকল ওয়েবসাইট লোড হচ্ছে...</span>
       </div>
       <div class="results-right">
-        <span class="hint-text">⭐ ট্যাপ করে সহজে প্রিয় তালিকায় যুক্ত করুন</span>
+        <span class="hint-text">⭐ ট্যাপ করে সহজে বুকমার্ক করুন</span>
       </div>
     </div>
 
@@ -159,8 +179,8 @@
     <!-- Empty State -->
     <div id="emptyState" class="empty-state" style="display: none;">
       <div class="empty-icon">🔍</div>
-      <h3>কোনো সংবাদপত্র পাওয়া যায়নি!</h3>
-      <p>আপনার অনুসন্ধানের সাথে মিলে এমন কোনো পত্রিকা পাওয়া যায়নি। অন্য কোনো নাম বা বিভাগ দিয়ে চেষ্টা করুন।</p>
+      <h3>কোনো ওয়েবসাইট পাওয়া যায়নি!</h3>
+      <p>আপনার অনুসন্ধানের সাথে মিলে এমন কোনো পত্রিকা পাওয়া যায়নি। অন্য কোনো নাম বা ক্যাটাগরি দিয়ে চেষ্টা করুন।</p>
       <button id="resetSearchBtn" class="btn-reset">সকল পত্রিকা পুনরায় দেখুন</button>
     </div>
   </main>
@@ -177,7 +197,7 @@
         <img src="assets/favicon.svg" alt="Logo" width="28" height="28">
         <span>All Bangla Newspaper Directory</span>
       </div>
-      <p class="footer-copy">© 2026 সকল স্বত্ব সংরক্ষিত | বাংলাদেশের সকল শীর্ষ সংবাদপত্রের সহজ মাধ্যম</p>
+      <p class="footer-copy">© 2026 সকল স্বত্ব সংরক্ষিত | বাংলাদেশের সকল সংবাদ মাধ্যমের এক প্ল্যাটফর্ম</p>
       <p class="footer-dev">
         Developed with ❤️ by <a href="https://github.com/nabil2dhaka" target="_blank" rel="noopener">nabil2dhaka</a>
       </p>

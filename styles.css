@@ -271,7 +271,7 @@ body {
 .hero-desc {
   font-size: clamp(0.95rem, 2vw, 1.1rem);
   opacity: 0.92;
-  max-width: 600px;
+  max-width: 650px;
   margin: 0 auto 1.5rem;
   font-weight: 400;
 }
@@ -279,7 +279,7 @@ body {
 /* Mobile-Friendly Search Wrapper */
 .search-wrapper {
   position: relative;
-  max-width: 620px;
+  max-width: 640px;
   margin: 0 auto;
 }
 
@@ -334,7 +334,7 @@ body {
 
 /* Top 10 Quickbar */
 .top10-quickbar {
-  margin-top: 1.5rem;
+  margin-top: 1.35rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -383,7 +383,7 @@ body {
 
 .categories-wrapper {
   position: relative;
-  margin-bottom: 1.25rem;
+  margin-bottom: 0.75rem;
 }
 
 .categories-nav {
@@ -438,16 +438,69 @@ body {
   box-shadow: 0 2px 8px rgba(0, 106, 78, 0.25);
 }
 
-#favCountBadge {
+#favCountBadge, #totalCountBadge {
   background: rgba(255, 255, 255, 0.25);
   padding: 0.1rem 0.45rem;
   border-radius: 9999px;
   font-size: 0.75rem;
 }
 
-.category-btn:not(.active) #favCountBadge {
+.category-btn:not(.active) #favCountBadge,
+.category-btn:not(.active) #totalCountBadge {
   background: var(--badge-bg);
   color: var(--text-primary);
+}
+
+/* ================= DIVISION SUBFILTER ================= */
+.subfilter-container {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.15rem;
+  padding: 0.75rem 1rem;
+  background-color: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: 12px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.subfilter-label {
+  font-size: 0.88rem;
+  font-weight: 600;
+  color: var(--text-secondary);
+  white-space: nowrap;
+}
+
+.subfilter-chips {
+  display: flex;
+  gap: 0.4rem;
+  width: max-content;
+}
+
+.subfilter-chip {
+  background-color: var(--badge-bg);
+  border: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  font-family: var(--font-bn);
+  font-size: 0.85rem;
+  font-weight: 500;
+  padding: 0.35rem 0.85rem;
+  border-radius: 9999px;
+  cursor: pointer;
+  transition: all 0.15s ease;
+  white-space: nowrap;
+}
+
+.subfilter-chip:hover {
+  border-color: var(--accent-blue);
+  color: var(--accent-blue);
+}
+
+.subfilter-chip.active {
+  background-color: var(--accent-blue);
+  color: #ffffff;
+  border-color: var(--accent-blue);
 }
 
 /* ================= RESULTS BAR ================= */
@@ -598,13 +651,34 @@ body {
   border-top: 1px solid var(--border-color);
 }
 
+.badges-group {
+  display: flex;
+  align-items: center;
+  gap: 0.35rem;
+  flex-wrap: wrap;
+}
+
 .category-tag {
   font-size: 0.75rem;
-  padding: 0.25rem 0.65rem;
+  padding: 0.2rem 0.6rem;
   border-radius: 9999px;
   background-color: var(--badge-bg);
   color: var(--badge-text);
   font-weight: 500;
+}
+
+.district-tag {
+  font-size: 0.72rem;
+  padding: 0.15rem 0.5rem;
+  border-radius: 9999px;
+  background-color: #e0f2fe;
+  color: #0369a1;
+  font-weight: 600;
+}
+
+[data-theme="dark"] .district-tag {
+  background-color: #1e3a5f;
+  color: #7dd3fc;
 }
 
 .visit-link {
@@ -614,6 +688,7 @@ body {
   display: inline-flex;
   align-items: center;
   gap: 0.25rem;
+  white-space: nowrap;
 }
 
 /* ================= NEWSPAPER CARDS (COMPACT LIST VIEW) ================= */
