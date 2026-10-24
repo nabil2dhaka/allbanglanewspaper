@@ -1928,15 +1928,15 @@ const newspapers = [
     tags: 'stock market bangladesh bank central bank forex reserves dollar'
   },
   {
-    id: 'lankabangla',
-    nameBn: 'লংকাবাংলা ফাইন্যান্সিয়াল পোর্টাল',
-    nameEn: 'LankaBangla Portal',
+    id: 'lankabd',
+    nameBn: 'লংকাবাংলা ফাইন্যান্সিয়াল পোর্টাল (lankabd.com)',
+    nameEn: 'lankabd.com',
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://lankabd.com',
     color: '#d9230f',
     icon: 'LB',
-    tags: 'stock market lanka bangla finance investment'
+    tags: 'stock market lankabd lankabd.com lanka bangla finance investment dse share trading financial portal'
   },
   {
     id: 'cdbl',
@@ -2451,7 +2451,7 @@ const SVG_LOGOS = new Set([
   "businesseyebd","businesshour24","businessinsiderbd","businessnewsbdnet",
   "campuslive24","chakrirkhobor","chandpurkantha","dailycricket","dinajpurnews",
   "dsebd","eisamay","energybangla","fenisangbad","gazipurbarta","jamalpurnews",
-  "jamunatv","kheladhula","lankabangla","mymensinghpratidin","narayanganjpost",
+  "jamunatv","kheladhula","mymensinghpratidin","narayanganjpost",
   "pabnabarta","patuakhaliweb","pavilion","sharebarta24","sonalisangbad",
   "sunamganjkhobor","tangailbarta","techtunes","uttarbangla"
 ]);
@@ -2469,7 +2469,7 @@ function getLogoUrl(paper) {
 function matchesSearchQuery(paper, query) {
   if (!query || query.trim() === '') return true;
   const q = query.toLowerCase().trim();
-  const searchTarget = `${paper.nameBn} ${paper.nameEn} ${paper.categoryLabel} ${paper.division || ''} ${paper.tags || ''}`.toLowerCase();
+  const searchTarget = `${paper.nameBn} ${paper.nameEn} ${paper.url} ${paper.categoryLabel} ${paper.division || ''} ${paper.tags || ''}`.toLowerCase();
   return searchTarget.includes(q);
 }
 
