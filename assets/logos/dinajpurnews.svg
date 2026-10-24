@@ -1,7 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 220 62" width="220" height="62">
-  <rect width="100%" height="100%" fill="#ffffff"/>
-  <text x="50%" y="38" text-anchor="middle" font-family="'Hind Siliguri', 'SolaimanLipi', Arial, sans-serif" font-weight="700" font-size="19" fill="#5b2c6f">
-    দিনাজপুর নিউজ ২৪
-  </text>
-  <circle cx="204" cy="36" r="3.5" fill="#f42a41"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 320 56" role="img" aria-label="DinajpurNews24">
+  <rect x="0" y="6" width="44" height="44" rx="9" fill="#0d7a4f"/>
+  <path d="M12 14h13c7.5 0 12.5 4.6 12.5 14s-5 14-12.5 14H12V14zm6.2 5.4v17.2h6.4c4.2 0 6.6-3.1 6.6-8.6s-2.4-8.6-6.6-8.6h-6.4z" fill="#eafff3"/>
+  <circle cx="38" cy="40" r="3.4" fill="#e8a020"/>
+  <text x="56" y="27" font-family="Verdana,Geneva,sans-serif" font-size="21" font-weight="700" fill="#0a3d2a">Dinajpur</text>
+  <text x="56" y="46" font-family="Verdana,Geneva,sans-serif" font-size="19" font-weight="700"><tspan fill="#0d7a4f">News</tspan><tspan fill="#e8a020">24</tspan></text>
 </svg>

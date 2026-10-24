@@ -1357,10 +1357,10 @@ const newspapers = [
     category: 'local',
     division: 'chittagong',
     categoryLabel: 'চাঁদপুর',
-    url: 'https://chandpurkantha.com',
+    url: 'https://chandpurkantha24.com',
     color: '#6c3483',
     icon: 'চাঁ',
-    tags: 'chandpur chittagong'
+    tags: 'chandpur chittagong chandpurkantha24'
   },
   {
     id: 'dainikcoxsbazar',
@@ -1376,15 +1376,15 @@ const newspapers = [
   },
   {
     id: 'fenisangbad',
-    nameBn: 'ফেনী সংবাদ',
-    nameEn: 'Feni Sangbad',
+    nameBn: 'দৈনিক ফেনী',
+    nameEn: 'Doinik Feni',
     category: 'local',
     division: 'chittagong',
     categoryLabel: 'ফেনী',
-    url: 'https://fenisangbad.com',
+    url: 'https://doinikfeni.com',
     color: '#2e4053',
     icon: 'ফে',
-    tags: 'feni chittagong'
+    tags: 'feni chittagong fenisangbad doinik feni'
   },
 
   // --- সিলেট বিভাগ ---
@@ -1476,15 +1476,15 @@ const newspapers = [
   },
   {
     id: 'pabnabarta',
-    nameBn: 'পাবনা বার্তা',
-    nameEn: 'Pabna Barta',
+    nameBn: 'পাবনা বার্তা / টাইমস',
+    nameEn: 'Pabna Barta & Times',
     category: 'local',
     division: 'rajshahi',
     categoryLabel: 'পাবনা',
-    url: 'https://pabnabarta24.com',
+    url: 'https://www.pabnatimes24.com',
     color: '#1f618d',
     icon: 'পা',
-    tags: 'pabna rajshahi'
+    tags: 'pabna rajshahi pabnabarta pabnatimes24'
   },
 
   // --- খুলনা বিভাগ ---
@@ -1531,10 +1531,10 @@ const newspapers = [
     category: 'local',
     division: 'khulna',
     categoryLabel: 'মেহেরপুর/খুলনা',
-    url: 'https://meherpurpratidin.news',
+    url: 'https://www.meherpurpratidin.com',
     color: '#e67e22',
     icon: 'মে',
-    tags: 'meherpur khulna'
+    tags: 'meherpur khulna meherpurpratidin'
   },
 
   // --- বরিশাল বিভাগ ---
@@ -1553,40 +1553,40 @@ const newspapers = [
   {
     id: 'barisalnews',
     nameBn: 'বরিশাল নিউজ',
-    nameEn: 'Barisal News',
+    nameEn: 'Barishal News',
     category: 'local',
     division: 'barisal',
     categoryLabel: 'বরিশাল',
-    url: 'https://barisalnews.com',
+    url: 'https://www.barishalnews.com',
     color: '#1f618d',
     icon: 'ব',
-    tags: 'barisal barishal'
+    tags: 'barisal barishal barishalnews'
   },
   {
     id: 'patuakhaliweb',
-    nameBn: 'পটুয়াখালী ওয়েব',
-    nameEn: 'Patuakhali Web',
+    nameBn: 'দৈনিক আমাদের পটুয়াখালী',
+    nameEn: 'Amader Patuakhali',
     category: 'local',
     division: 'barisal',
     categoryLabel: 'পটুয়াখালী/বরিশাল',
-    url: 'https://patuakhaliweb.com',
+    url: 'https://dailyamaderpatuakhali.com',
     color: '#922b21',
     icon: 'প',
-    tags: 'patuakhali barisal kuakata'
+    tags: 'patuakhali barisal kuakata amader patuakhali patuakhaliweb'
   },
 
   // --- রংপুর বিভাগ ---
   {
     id: 'uttarbangla',
-    nameBn: 'দৈনিক উত্তর বাংলা',
-    nameEn: 'Dainik Uttar Bangla',
+    nameBn: 'দৈনিক উত্তরবাংলা',
+    nameEn: 'Dainik Uttorbangla',
     category: 'local',
     division: 'rangpur',
     categoryLabel: 'রংপুর/উত্তরাঞ্চল',
-    url: 'https://uttarbangla.com',
+    url: 'https://www.uttorbangla.com',
     color: '#c0392b',
     icon: 'উ',
-    tags: 'rangpur north teesta'
+    tags: 'rangpur north teesta uttarbangla uttorbangla'
   },
   {
     id: 'rangpurchitra',
@@ -1628,15 +1628,15 @@ const newspapers = [
   },
   {
     id: 'gazipurbarta',
-    nameBn: 'গাজীপুর বার্তা',
-    nameEn: 'Gazipur Barta',
+    nameBn: 'গাজীপুর বার্তা ২৪',
+    nameEn: 'Gazipur Barta 24',
     category: 'local',
     division: 'dhaka',
     categoryLabel: 'গাজীপুর',
-    url: 'https://gazipurbarta.com',
+    url: 'https://gazipurbarta24.com',
     color: '#1b4f72',
     icon: 'গা',
-    tags: 'gazipur dhaka'
+    tags: 'gazipur dhaka gazipurbarta gazipurbarta24'
   },
   {
     id: 'tangailbarta',
@@ -2543,13 +2543,11 @@ function updateBadges() {
 
 // Known SVG banner IDs
 const SVG_LOGOS = new Set([
-  "anandaalo","bangladeshbank","barisalnews","bdcrictime","bigganchinta",
+  "anandaalo","bangladeshbank","bdcrictime","bigganchinta",
   "businesseyebd","businesshour24","businessinsiderbd","businessnewsbdnet",
-  "campuslive24","chakrirkhobor","chandpurkantha","dailycricket","dinajpurnews",
-  "dsebd","eisamay","energybangla","fenisangbad","gazipurbarta","jamalpurnews",
-  "jamunatv","kheladhula","mymensinghpratidin","narayanganjpost",
-  "pabnabarta","patuakhaliweb","pavilion","sharebarta24","sonalisangbad",
-  "sunamganjkhobor","tangailbarta","techtunes","thedailycampus","uttarbangla"
+  "campuslive24","chakrirkhobor","dailycricket","dinajpurnews",
+  "dsebd","eisamay","energybangla","jamunatv","kheladhula",
+  "pavilion","sharebarta24","techtunes","thedailycampus"
 ]);
 
 // Get banner logo URL matching screenshot
