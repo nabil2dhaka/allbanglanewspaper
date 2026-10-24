@@ -2480,9 +2480,10 @@ const newspapers = [
     category: 'kolkata',
     categoryLabel: 'কলকাতা/পশ্চিমবঙ্গ',
     url: 'https://eisamay.com',
-    color: '#d35400',
+    epaperUrl: 'https://epaper.eisamay.com',
+    color: '#c4161c',
     icon: 'এই',
-    tags: 'kolkata west bengal times'
+    tags: 'kolkata west bengal times eisamay epaper'
   },
   {
     id: 'aajkaal',
@@ -2716,7 +2717,7 @@ const SVG_LOGOS = new Set([
   "anandaalo","bdcrictime",
   "businessinsiderbd","businessnewsbdnet",
   "campuslive24","dailycricket","dhakamagazine","dinajpurnews",
-  "eisamay","kheladhula",
+  "kheladhula",
   "pavilion","techtunes","thedailycampus"
 ]);
 
