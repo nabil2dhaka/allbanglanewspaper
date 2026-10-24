@@ -317,9 +317,117 @@ const newspapers = [
     icon: 'আ',
     tags: 'dhaka national daily agamir shomoy agamirshomoy agamir somoy agamirsomoy epaper agamirshomoy.com www.agamirshomoy.com'
   },
+  {
+    id: 'dailysangram',
+    nameBn: 'দৈনিক সংগ্রাম',
+    nameEn: 'Daily Sangram',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://dailysangram.com',
+    epaperUrl: 'https://epaper.dailysangram.com',
+    color: '#1e3a8a',
+    icon: 'সং',
+    tags: 'dhaka national daily sangram dailysangram epaper'
+  },
+  {
+    id: 'banijjoprotidin',
+    nameBn: 'বাণিজ্য প্রতিদিন',
+    nameEn: 'Banijjo Pratidin',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://banijjoprotidin.com',
+    epaperUrl: 'https://epaper.banijjoprotidin.com',
+    color: '#0284c7',
+    icon: 'বা',
+    tags: 'dhaka national daily banijjo pratidin banijjoprotidin business commerce epaper'
+  },
+  {
+    id: 'dailysokalersomoy',
+    nameBn: 'দৈনিক সকালের সময়',
+    nameEn: 'Daily Sokaler Somoy',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.dailysokalersomoy.com',
+    epaperUrl: 'https://epaper.sokalersomoy.online',
+    color: '#ea580c',
+    icon: 'স',
+    tags: 'dhaka national daily sokaler somoy sokalersomoy epaper'
+  },
+  {
+    id: 'dailynabochatona',
+    nameBn: 'দৈনিক নবচেতনা',
+    nameEn: 'Daily Nabo Chatona',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://dailynabochatona.com',
+    epaperUrl: 'https://epaper.dailynabochatona.com',
+    color: '#b91c1c',
+    icon: 'নব',
+    tags: 'dhaka national daily nabo chatona nabochatona epaper'
+  },
+  {
+    id: 'ajkalerkhobor',
+    nameBn: 'আজকালের খবর',
+    nameEn: 'Ajkaler Khobor',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.ajkalerkhobor.com',
+    epaperUrl: 'https://epaper.ajkalerkhobor.net',
+    color: '#c026d3',
+    icon: 'আজ',
+    tags: 'dhaka national daily ajkaler khobor ajkalerkhobor epaper'
+  },
+  {
+    id: 'khaborerkagoj',
+    nameBn: 'খবরের কাগজ',
+    nameEn: 'Khaborer Kagoj',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.khaborerkagoj.com',
+    epaperUrl: 'https://epaper.khaborerkagoj.com',
+    color: '#dc2626',
+    icon: 'খ',
+    tags: 'dhaka national daily khaborer kagoj khaborerkagoj epaper'
+  },
+  {
+    id: 'bangladesherkhabor',
+    nameBn: 'বাংলাদেশের খবর',
+    nameEn: 'Bangladesher Khabor',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.bangladesherkhabor.net',
+    epaperUrl: 'https://epaper.bangladesherkhabor.net',
+    color: '#059669',
+    icon: 'বা',
+    tags: 'dhaka national daily bangladesher khabor bangladesherkhabor epaper'
+  },
+  {
+    id: 'dailyvorerpata',
+    nameBn: 'দৈনিক ভোরের পাতা',
+    nameEn: 'Daily Vorer Pata',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.dailyvorerpata.com',
+    epaperUrl: 'https://epaper.dailyvorerpata.com',
+    color: '#15803d',
+    icon: 'ভো',
+    tags: 'dhaka national daily vorer pata dailyvorerpata bhorer pata epaper'
+  },
+  {
+    id: 'gonokantho',
+    nameBn: 'দৈনিক গণকণ্ঠ',
+    nameEn: 'Daily Gonokantho',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.gonokantho.com',
+    epaperUrl: 'https://egonokantho.com',
+    color: '#7c2d12',
+    icon: 'গণ',
+    tags: 'dhaka national daily gonokantho ganakantha egonokantho epaper'
+  },
 
   // =========================================================================
-  // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 61 Websites)
+  // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 62 Websites)
   // =========================================================================
   {
     id: 'bdnews24',
@@ -991,6 +1099,17 @@ const newspapers = [
     color: '#059669',
     icon: 'ক্যা',
     tags: 'online portal daily campus thedailycampus thedailycampus.com education youth scholarship bcs jobs'
+  },
+  {
+    id: 'dhakastreetjournal',
+    nameBn: 'ঢাকা স্ট্রিট জার্নাল',
+    nameEn: 'Dhaka Street Journal',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.dhakastreetjournal.com',
+    color: '#0f172a',
+    icon: 'ডি',
+    tags: 'online portal dhaka street journal dhakastreetjournal street journal bangla'
   },
 
   // =========================================================================
