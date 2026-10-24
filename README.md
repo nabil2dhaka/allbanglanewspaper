@@ -78,6 +78,6 @@ Live Site: [https://nabil2dhaka.github.io/allbanglanewspaper/](https://nabil2dha
 
 ## 👨‍💻 Developer & Credits
 
-- Developed by **[nabil2dhaka](https://github.com/nabil2dhaka)**
+- Developed by **[Muhammad Nabil](https://muhammadnabil.com/)** ([@nabil2dhaka](https://github.com/nabil2dhaka))
 - Repository: [https://github.com/nabil2dhaka/allbanglanewspaper](https://github.com/nabil2dhaka/allbanglanewspaper)
 - License: MIT
