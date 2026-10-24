@@ -204,9 +204,10 @@ const newspapers = [
     category: 'daily',
     categoryLabel: 'জাতীয় দৈনিক',
     url: 'https://sangbad.net.bd',
+    epaperUrl: 'https://epaper.sangbad.net',
     color: '#78281f',
     icon: 'সং',
-    tags: 'dhaka national sangbad'
+    tags: 'dhaka national sangbad epaper sangbad.net'
   },
   {
     id: 'kholakagoj',
@@ -215,9 +216,10 @@ const newspapers = [
     category: 'daily',
     categoryLabel: 'জাতীয় দৈনিক',
     url: 'https://www.kholakagojbd.com',
+    epaperUrl: 'https://epaper.kholakagojbd.com',
     color: '#1b4f72',
     icon: 'খো',
-    tags: 'dhaka national khola kagoj'
+    tags: 'dhaka national khola kagoj epaper'
   },
   {
     id: 'manobkantha',
@@ -226,9 +228,10 @@ const newspapers = [
     category: 'daily',
     categoryLabel: 'জাতীয় দৈনিক',
     url: 'https://www.manobkantha.com.bd',
+    epaperUrl: 'https://epaperarchive.manobkantha.com.bd',
     color: '#6c3483',
     icon: 'মা',
-    tags: 'dhaka national manobkantha'
+    tags: 'dhaka national manobkantha epaper'
   },
   {
     id: 'amarsangbad',
@@ -237,9 +240,10 @@ const newspapers = [
     category: 'daily',
     categoryLabel: 'জাতীয় দৈনিক',
     url: 'https://www.amarsangbad.com',
+    epaperUrl: 'https://epaper.amarsangbad.com',
     color: '#d35400',
     icon: 'আ',
-    tags: 'dhaka national amar sangbad'
+    tags: 'dhaka national amar sangbad epaper'
   },
   {
     id: 'ajkerpatrika',
@@ -278,15 +282,28 @@ const newspapers = [
     tags: 'dhaka national shomoyer alo'
   },
   {
+    id: 'protidinersangbad',
+    nameBn: 'প্রতিদিনের সংবাদ',
+    nameEn: 'Daily Protidiner Sangbad',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://protidinersangbad.com',
+    epaperUrl: 'https://epaper.protidinersangbad.com',
+    color: '#27ae60',
+    icon: 'প্র',
+    tags: 'dhaka national pratidiner sangbad protidinersangbad epaper'
+  },
+  {
     id: 'pratidinbangladesh',
     nameBn: 'প্রতিদিনের বাংলাদেশ',
     nameEn: 'Pratidiner Bangladesh',
     category: 'daily',
     categoryLabel: 'জাতীয় দৈনিক',
-    url: 'https://protidinersangbad.com',
-    color: '#27ae60',
+    url: 'https://protidinerbangladesh.com',
+    epaperUrl: 'https://epaper.protidinerbangladesh.com',
+    color: '#1e7e34',
     icon: 'প্র',
-    tags: 'dhaka national pratidiner sangbad'
+    tags: 'dhaka national pratidiner bangladesh protidinerbangladesh epaper'
   },
   {
     id: 'agamirshomoy',
