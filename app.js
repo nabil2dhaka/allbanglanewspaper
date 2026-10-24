@@ -1997,7 +1997,7 @@ const newspapers = [
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://businesseyebd.com',
-    color: '#1e8449',
+    color: '#195b9e',
     icon: 'BE',
     tags: 'stock market business eye bd trade commerce'
   },
@@ -2714,7 +2714,7 @@ function updateBadges() {
 // Known SVG banner IDs
 const SVG_LOGOS = new Set([
   "anandaalo","bangladeshbank","bdcrictime","bigganchinta",
-  "businesseyebd","businesshour24","businessinsiderbd","businessnewsbdnet",
+  "businesshour24","businessinsiderbd","businessnewsbdnet",
   "campuslive24","chakrirkhobor","dailycricket","dhakamagazine","dinajpurnews",
   "dsebd","eisamay","energybangla","jamunatv","kheladhula",
   "pavilion","sharebarta24","techtunes","thedailycampus"
