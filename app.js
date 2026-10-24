@@ -302,7 +302,7 @@ const newspapers = [
   },
 
   // =========================================================================
-  // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 57 Websites from URL)
+  // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 61 Websites)
   // =========================================================================
   {
     id: 'bdnews24',
@@ -930,6 +930,50 @@ const newspapers = [
     color: '#e67e22',
     icon: 'হকার',
     tags: 'news aggregator hawker'
+  },
+  {
+    id: 'npbnews',
+    nameBn: 'এনপিবি নিউজ',
+    nameEn: 'NPB News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://npbnews.com',
+    color: '#0b5394',
+    icon: 'এন',
+    tags: 'online portal npb news npbnews npbnews.com bangla online satya sorasori sobar age'
+  },
+  {
+    id: 'asiapost',
+    nameBn: 'এশিয়া পোস্ট',
+    nameEn: 'Asia Post',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.asia-post.com',
+    color: '#b91c1c',
+    icon: 'এ',
+    tags: 'online portal asia post asiapost asia-post.com bangla online'
+  },
+  {
+    id: 'banglaoutlook',
+    nameBn: 'বাংলা আউটলুক',
+    nameEn: 'Bangla Outlook',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.banglaoutlook.org',
+    color: '#dc2626',
+    icon: 'বা',
+    tags: 'online portal bangla outlook banglaoutlook banglaoutlook.org sob bole dao'
+  },
+  {
+    id: 'thedailycampus',
+    nameBn: 'দ্য ডেইলি ক্যাম্পাস',
+    nameEn: 'The Daily Campus',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://thedailycampus.com',
+    color: '#059669',
+    icon: 'ক্যা',
+    tags: 'online portal daily campus thedailycampus thedailycampus.com education youth scholarship bcs jobs'
   },
 
   // =========================================================================
@@ -2488,7 +2532,7 @@ const SVG_LOGOS = new Set([
   "dsebd","eisamay","energybangla","fenisangbad","gazipurbarta","jamalpurnews",
   "jamunatv","kheladhula","mymensinghpratidin","narayanganjpost",
   "pabnabarta","patuakhaliweb","pavilion","sharebarta24","sonalisangbad",
-  "sunamganjkhobor","tangailbarta","techtunes","uttarbangla"
+  "sunamganjkhobor","tangailbarta","techtunes","thedailycampus","uttarbangla"
 ]);
 
 // Get banner logo URL matching screenshot
