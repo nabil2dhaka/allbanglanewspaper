@@ -132,9 +132,10 @@ const newspapers = [
     category: 'daily',
     categoryLabel: 'জাতীয় দৈনিক',
     url: 'https://dailyamardesh.com',
+    epaperUrl: 'https://eamardesh.com',
     color: '#d9230f',
     icon: 'আ',
-    tags: 'dhaka national daily amardesh dailyamardesh daily amardesh shadhinotar kotha bole'
+    tags: 'dhaka national daily amardesh dailyamardesh daily amardesh eamardesh eamardesh.com epaper e-paper shadhinotar kotha bole'
   },
   {
     id: 'manabzamin',
@@ -2480,19 +2481,21 @@ function getLogoUrl(paper) {
 function matchesSearchQuery(paper, query) {
   if (!query || query.trim() === '') return true;
   const q = query.toLowerCase().trim();
-  const searchTarget = `${paper.nameBn} ${paper.nameEn} ${paper.url} ${paper.categoryLabel} ${paper.division || ''} ${paper.tags || ''}`.toLowerCase();
+  const searchTarget = `${paper.nameBn} ${paper.nameEn} ${paper.url} ${paper.epaperUrl || ''} ${paper.categoryLabel} ${paper.division || ''} ${paper.tags || ''}`.toLowerCase();
   return searchTarget.includes(q);
 }
 
 // Create Card Element - Designed to match screenshot exactly
-function createCard(paper) {
+function createCard(paper, catId) {
   const isFav = favorites.includes(paper.id);
   const card = document.createElement('a');
   card.className = 'newspaper-card card-screenshot-style';
-  card.href = paper.url;
+  card.href = (catId === 'epaper' && paper.epaperUrl) ? paper.epaperUrl : paper.url;
   card.target = '_blank';
   card.rel = 'noopener noreferrer';
-  card.title = `${paper.nameBn} (${paper.nameEn})`;
+  card.title = (catId === 'epaper' && paper.epaperUrl)
+    ? `${paper.nameBn} (${paper.nameEn}) - ডিজিটাল ই-পেপার সংস্করণ`
+    : `${paper.nameBn} (${paper.nameEn})`;
 
   const logoUrl = getLogoUrl(paper);
   let domain = '';
@@ -2759,7 +2762,7 @@ function renderNewspapers() {
     const cardsGrid = document.createElement('div');
     cardsGrid.className = 'newspaper-cards-grid';
     papersInBlock.forEach(paper => {
-      cardsGrid.appendChild(createCard(paper));
+      cardsGrid.appendChild(createCard(paper, cat.id));
     });
 
     block.appendChild(cardsGrid);
