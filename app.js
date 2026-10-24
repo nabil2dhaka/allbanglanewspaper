@@ -2693,6 +2693,11 @@ function clearAllFavoritesPrompt() {
 function updateBadges() {
   if (favCountBadge) favCountBadge.textContent = favorites.length;
   if (totalCountBadge) totalCountBadge.textContent = newspapers.length;
+  const heroBadge = document.getElementById('heroBadge');
+  if (heroBadge) {
+    const toBn = n => n.toString().replace(/\d/g, d => '০১২৩৪৫৬৭৮৯'[d]);
+    heroBadge.innerHTML = `<span class="pulse-dot"></span> ${toBn(newspapers.length)}+ সংবাদ ওয়েবসাইট ও মিডিয়া পোর্টাল`;
+  }
 }
 
 // Known SVG banner IDs

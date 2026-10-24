@@ -8,7 +8,7 @@ Live Site: [https://nabil2dhaka.github.io/allbanglanewspaper/](https://nabil2dha
 
 ## 🌟 Key Features
 
-- **210+ Verified Publications:** Comprehensive coverage of National Dailies, Online Portals, Stock Market / Business media, TV Channels, E-Papers, 8 Divisions' Regional Press, English Dailies, Sports, Jobs & Tech.
+- **215+ Verified Publications:** Comprehensive coverage of National Dailies, Online Portals, Stock Market / Business media, TV Channels, E-Papers, 8 Divisions' Regional Press, English Dailies, Sports, Jobs & Tech.
 - **SEO & GEO Optimized (notfair-plugin standards):**
   - Full Meta Tag Suite (`<title>`, `<meta name="description">`, Open Graph 1200x630, Twitter Cards, Canonical URL, Robots directives).
   - Schema.org JSON-LD Structured Data (`WebSite`, `Organization`, `CollectionPage`, `ItemList`, `FAQPage`).
