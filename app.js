@@ -2074,7 +2074,7 @@ const newspapers = [
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://energybangla.com',
-    color: '#f39c12',
+    color: '#366650',
     icon: 'EB',
     tags: 'stock market energy power oil gas electricity'
   },
@@ -2085,7 +2085,7 @@ const newspapers = [
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://sharebarta24.com',
-    color: '#8e44ad',
+    color: '#009a4f',
     icon: 'বা২৪',
     tags: 'stock market share barta dse sharebarta24'
   },
@@ -2716,8 +2716,8 @@ const SVG_LOGOS = new Set([
   "anandaalo","bangladeshbank","bdcrictime","bigganchinta",
   "businesshour24","businessinsiderbd","businessnewsbdnet",
   "campuslive24","chakrirkhobor","dailycricket","dhakamagazine","dinajpurnews",
-  "dsebd","eisamay","energybangla","jamunatv","kheladhula",
-  "pavilion","sharebarta24","techtunes","thedailycampus"
+  "dsebd","eisamay","jamunatv","kheladhula",
+  "pavilion","techtunes","thedailycampus"
 ]);
 
 // Get banner logo URL matching screenshot
