@@ -2447,17 +2447,13 @@ function updateBadges() {
 
 // Known SVG banner IDs
 const SVG_LOGOS = new Set([
-  "amardesh24","anandaalo","bangladeshbank","banglainsider","banglatelegraph","barisalnews",
-  "bd24report","bdcrictime","bdview24","bigganchinta","businesseyebd","businesshour24",
-  "businessinsiderbd","businessnewsbdnet","campuslive24","chakrirkhobor","chandpurkantha",
-  "dailycricket","dailycricket_portal","dailyictnews","deshdorpon","deshebideshe","dhakanews24",
-  "dhakaprokash24","dhakatimes24","dhakatoday","dinajpurnews","doinikbarta","dsebd","eisamay",
-  "energybangla","fenisangbad","gazipurbarta","hawker","jagobangla","jamalpurnews","jamunatv",
-  "kheladhula","lankabangla","mtnews24","mymensinghpratidin","narayanganjpost","news71online",
-  "newsbangla24","onenewsbd","ournewsbd","pabnabarta","patuakhaliweb","pavilion",
-  "pirganjnewsexpress","roarmedia","shamolbangla24","sharebarta24","somoyerdhara","sonalinews",
-  "sonalisangbad","sunamganjkhobor","tangailbarta","techtunes","thebengalitimes","timewatch",
-  "uttarbangla","zoombangla"
+  "anandaalo","bangladeshbank","barisalnews","bdcrictime","bigganchinta",
+  "businesseyebd","businesshour24","businessinsiderbd","businessnewsbdnet",
+  "campuslive24","chakrirkhobor","chandpurkantha","dailycricket","dinajpurnews",
+  "dsebd","eisamay","energybangla","fenisangbad","gazipurbarta","jamalpurnews",
+  "jamunatv","kheladhula","lankabangla","mymensinghpratidin","narayanganjpost",
+  "pabnabarta","patuakhaliweb","pavilion","sharebarta24","sonalisangbad",
+  "sunamganjkhobor","tangailbarta","techtunes","uttarbangla"
 ]);
 
 // Get banner logo URL matching screenshot
