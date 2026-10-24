@@ -1145,6 +1145,17 @@ const newspapers = [
     icon: 'বাসস',
     tags: 'online portal bss news bssnews bssnews.net bangladesh sangbad sangstha basas national news agency'
   },
+  {
+    id: 'dhakamagazine',
+    nameBn: 'ঢাকা ম্যাগাজিন',
+    nameEn: 'Dhaka Magazine',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://dhakamagazine.com',
+    color: '#142841',
+    icon: 'ঢা',
+    tags: 'online portal dhaka magazine dhakamagazine breaking stories features news'
+  },
 
   // =========================================================================
   // 3. BANGLA LIVE TV & BROADCAST NEWS (টিভি ও স্যাটেলাইট চ্যানেল)
@@ -2704,7 +2715,7 @@ function updateBadges() {
 const SVG_LOGOS = new Set([
   "anandaalo","bangladeshbank","bdcrictime","bigganchinta",
   "businesseyebd","businesshour24","businessinsiderbd","businessnewsbdnet",
-  "campuslive24","chakrirkhobor","dailycricket","dinajpurnews",
+  "campuslive24","chakrirkhobor","dailycricket","dhakamagazine","dinajpurnews",
   "dsebd","eisamay","energybangla","jamunatv","kheladhula",
   "pavilion","sharebarta24","techtunes","thedailycampus"
 ]);
