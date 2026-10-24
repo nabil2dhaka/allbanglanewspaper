@@ -1178,7 +1178,7 @@ const newspapers = [
     category: 'tv',
     categoryLabel: 'টিভি নিউজ',
     url: 'https://www.jamuna.tv',
-    color: '#d35400',
+    color: '#cd181e',
     icon: 'JT',
     tags: 'live tv news jamuna'
   },
@@ -1975,7 +1975,7 @@ const newspapers = [
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://www.businesshour24.com',
-    color: '#7d3c98',
+    color: '#2e3192',
     icon: 'BH',
     tags: 'stock market business corporate commerce'
   },
@@ -2052,7 +2052,7 @@ const newspapers = [
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://sharebusiness24.com',
-    color: '#d35400',
+    color: '#2b5443',
     icon: 'SB24',
     tags: 'stock market share business'
   },
@@ -2151,7 +2151,7 @@ const newspapers = [
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://www.dsebd.org',
-    color: '#004d38',
+    color: '#107136',
     icon: 'DSE',
     tags: 'stock market dse live index share trading'
   },
@@ -2162,7 +2162,7 @@ const newspapers = [
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://www.cse.com.bd',
-    color: '#1b4f72',
+    color: '#4cba7c',
     icon: 'CSE',
     tags: 'stock market cse chittagong share trading'
   },
@@ -2714,9 +2714,9 @@ function updateBadges() {
 // Known SVG banner IDs
 const SVG_LOGOS = new Set([
   "anandaalo","bangladeshbank","bdcrictime","bigganchinta",
-  "businesshour24","businessinsiderbd","businessnewsbdnet",
+  "businessinsiderbd","businessnewsbdnet",
   "campuslive24","chakrirkhobor","dailycricket","dhakamagazine","dinajpurnews",
-  "dsebd","eisamay","jamunatv","kheladhula",
+  "eisamay","kheladhula",
   "pavilion","techtunes","thedailycampus"
 ]);
 
