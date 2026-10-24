@@ -1961,6 +1961,17 @@ const newspapers = [
     icon: 'CDBL',
     tags: 'stock market cdbl bo account depository shares'
   },
+  {
+    id: 'financialnews24',
+    nameBn: 'ফাইন্যান্সিয়াল নিউজ ২৪',
+    nameEn: 'Financial News 24',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
+    url: 'https://www.financialnews24.net',
+    color: '#0f766e',
+    icon: 'FN',
+    tags: 'stock market financial news 24 financialnews24 financialnews24.net dse cse share bazar capital market business economy'
+  },
 
   // =========================================================================
   // 7. GENERAL BUSINESS & COMMERCE (ব্যবসা ও বাণিজ্য)
