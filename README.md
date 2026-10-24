@@ -1,108 +1,83 @@
-# All Bangla Newspaper Directory (সকল বাংলা সংবাদপত্র ডিরেক্টরি) 📰
+# All Bangla Newspaper Directory (সকল বাংলা সংবাদপত্র ডিরেক্টরি) 🇧🇩
 
-A modern, fast, and mobile-responsive Bangladeshi media portal bringing together all news-related websites from Bangladesh, updated directly from:
-- [allbanglanewspapersbd.com/bangla-online-newspaper/](https://allbanglanewspapersbd.com/bangla-online-newspaper/)
-- [allbanglanewspaper.xyz/bangladesh/sharebazarnewspaper](https://www.allbanglanewspaper.xyz/bangladesh/sharebazarnewspaper)
+A modern, fast, responsive, and SEO-optimized Bangladeshi media directory bringing together all news-related publications and portals from Bangladesh.
 
-![All Bangla Newspaper Logo](assets/logo.svg)
+Live Site: [https://nabil2dhaka.github.io/allbanglanewspaper/](https://nabil2dhaka.github.io/allbanglanewspaper/)
 
 ---
 
-## 📑 Complete Directory Categories (190+ Websites)
+## 🌟 Key Features
 
-### 1. 📊 শেয়ার বাজার (Stock Market - 32 Websites)
-* **স্টক এক্সচেঞ্জ ও নিয়ন্ত্রক সংস্থা:** ঢাকা স্টক এক্সচেঞ্জ (DSE), চট্টগ্রাম স্টক এক্সচেঞ্জ (CSE), বাংলাদেশ ব্যাংক (কেন্দ্রীয় ব্যাংক), সেন্ট্রাল ডিপোজিটরি বাংলাদেশ (CDBL), লংকাবাংলা পোর্টাল।
-* **শেয়ার বাজার ও স্টক মার্কেট মিডিয়া:** অর্থসূচক, শেয়ার নিউজ ২৪, শেয়ার বিজ, সান বিডি ২৪, শেয়ার বাজার নিউজ, স্টক বাংলাদেশ, আমার স্টক (AmarStock), পুঁজিবাজার ডট কম, শেয়ারবাজার প্রতিদিন, দেশ প্রতিক্ষণ, শেয়ার বিজনেস ২৪, শেয়ার বার্তা ২৪, বিডি ক্যাপ ২৪।
-* **বাণিজ্য ও অর্থনীতি পত্রিকা:** বণিক বার্তা (E-paper সহ), ফাইন্যান্সিয়াল এক্সপ্রেস, আজকের বাজার, অর্থসংবাদ, বিজনেস আওয়ার ২৪, কর্পোরেট সংবাদ, বিজনেস আই বিডি, অর্থনীতির কাগজ, বিনিয়োগ বার্তা, এনার্জি বাংলা, বিজনেস নিউজ ২৪ বিডি।
-* **বীমা ও ব্যাংকিং সংবাদ:** ইন্স্যুরেন্স নিউজ বিডি, ব্যাংক বীমা অর্থনীতি, ব্যাংকিং নিউজ বিডি।
+- **190+ Verified Publications:** Comprehensive coverage of National Dailies, Online Portals, Stock Market / Business media, TV Channels, E-Papers, 8 Divisions' Regional Press, English Dailies, Sports, Jobs & Tech.
+- **SEO & GEO Optimized (notfair-plugin standards):**
+  - Full Meta Tag Suite (`<title>`, `<meta name="description">`, Open Graph 1200x630, Twitter Cards, Canonical URL, Robots directives).
+  - Schema.org JSON-LD Structured Data (`WebSite`, `Organization`, `CollectionPage`, `ItemList`, `FAQPage`).
+  - Generative Engine Optimization (GEO/AEO) for ChatGPT, Perplexity, Claude, Gemini, and Google AI Overviews.
+  - Core Web Vitals optimized (lazy loading, decoding="async", explicit dimensions, zero Cumulative Layout Shift).
+  - Valid `sitemap.xml` and `robots.txt` for search engine indexing.
+- **Authentic Masthead Logos:** 100% genuine vector and raster logos matching official publications.
+- **Dual Responsive Layout:** Sticky category navigation with dual Wrap/Scroll toggle and horizontal scroll controls.
+- **Screenshot-Style Cards:** 72px white well logo presentation with clean typography.
+- **Instant Search & Filters:** Search by publication name in Bangla or English, category, district, division, or keyword tags.
+- **Favorites & Bookmarks:** One-click instant bookmarking with persistent `localStorage`.
+- **Light & Dark Theme:** System-aware theme toggle with smooth transitions.
 
-### 2. ⚡ অনলাইন নিউজ পোর্টাল (57 Portals from URL)
-* **শীর্ষ অনলাইন পোর্টাল:** বিডিনিউজ২৪, বাংলানিউজ২৪, জাগো নিউজ ২৪, রাইজিংবিডি, ঢাকা পোস্ট, বিডি২৪লাইভ, বিবিসি বাংলা, বাংলা ট্রিবিউন, দৈনিক শিক্ষা, নিউজবাংলা২৪, সারাবাংলা, গো নিউজ ২৪, বাংলা ইনসাইডার, ডয়চে ভেলে বাংলা, আমার দেশ ২৪, প্রিয়.কম, ভয়েস অফ আমেরিকা বাংলা, ঢাকা ট্রিবিউন।
-* **জনপ্রিয় অনলাইন মিডিয়া:** জুমবাংলা, এবি নিউজ ২৪, পরিবর্তন ডট কম, বিডি মর্নিং, রোর বাংলা, বাংলাদেশ জার্নাল, নিউজজি২৪, বার্তা২৪, ঢাকা টাইমস ২৪, ডেইলি বাংলাদেশ, ডিএমপি নিউজ, দ্য রিপোর্ট ২৪, সময়ের কণ্ঠস্বর, ওয়ান নিউজ বিডি, বার্তা বাংলা, বার্তা বাজার, জাগো বাংলা, টাইম ওয়াচ, দৈনিক বার্তা, পীরগঞ্জ নিউজ এক্সপ্রেস, দেশে বিদেশে, সোনালী নিউজ, এমটি নিউজ ২৪, দ্য বেঙ্গলি টাইমস, দেশদর্পণ, ডেইলি ক্রিকেট, ঢাকা টুডে, নিউজ ৭১ অনলাইন, বাংলা টেলিগ্রাফ, সময়ের ধারা, ঢাকা প্রকাশ, ঢাকা নিউজ ২৪, নতুন বার্তা, বিডি ভিউ ২৪, বিডি ২৪ রিপোর্ট, শ্যামল বাংলা ২৪, আওয়ার নিউজ বিডি, ডেইলি আইসিটি নিউজ, হকার ডট কম ডট বিডি।
+---
 
-### 3. 📰 জাতীয় দৈনিক (23+ Papers)
-* প্রথম আলো, বাংলাদেশ প্রতিদিন, যুগান্তর, কালের কণ্ঠ, ইত্তেফাক, সমকাল, আমাদের সময়, জনকণ্ঠ, ইনকিলাব, নয়াদিগন্ত, মানবজমিন, ভোরের কাগজ, দেশ রূপান্তর, আলোকিত বাংলাদেশ, যায়যায়দিন, সংবাদ, খোলা কাগজ, মানবকণ্ঠ, আমার সংবাদ, আজকের পত্রিকা, কালবেলা, সময়ের আলো, প্রতিদিনের সংবাদ।
+## 📑 Directory Categories
 
-### 4. 🗞️ ই-পেপার (E-Paper Digital Print Editions)
-* Direct digital print replica shortcut pills (`[🗞️ ই-পেপার]`) on cards for Prothom Alo, Bangladesh Pratidin, Jugantor, Kaler Kantho, Samakal, Ittefaq, Inqilab, Janakantha, Desh Rupantor, Bonik Barta, Anandabazar, etc.
+### 1. 📊 শেয়ার বাজার ও ব্যবসা (Stock Market & Business - 32 Publications)
+* **স্টক এক্সচেঞ্জ ও নিয়ন্ত্রক সংস্থা:** ঢাকা স্টক এক্সচেঞ্জ (DSE), চট্টগ্রাম স্টক এক্সচেঞ্জ (CSE), বাংলাদেশ ব্যাংক, সেন্ট্রাল ডিপোজিটরি বাংলাদেশ (CDBL), বিএসইসি।
+* **শেয়ার বাজার ও বাণিজ্যিক সংবাদপত্র:** বণিক বার্তা, দ্য বিজনেস স্ট্যান্ডার্ড (TBS), শেয়ারবিজ, অর্থসূচক, ঢাকা স্টক এক্সচেঞ্জ পোর্টাল, দৈনিক শেয়ারবাজার প্রতিদিন, পুঁজিবাজার, শেয়ার বিজনেস ২৪, শেয়ারবাজার নিউজ, ক্যাপিটাল মার্কেট, বিজনেস আই।
+* **বাণিজ্যিক ম্যাগাজিন ও অর্থনীতি:** অর্থনীতি কাগজ, ব্যাংক বীমা অর্থনীতি, বিজনেস পোস্ট, বিজনেসম্যান, বিজনেস ইনসাইডার বিডি, কর্পোরেট সংবাদ।
 
-### 5. 📺 টিভি ও স্যাটেলাইট সম্প্রচার (18+ Channels)
-* সময় টিভি, যমুনা টিভি, চ্যানেল ২৪, ডিবিসি নিউজ, একাত্তর টিভি, ইনডিপেনডেন্ট টিভি, নিউজ ২৪, এনটিভি, চ্যানেল আই, আরটিভি, এটিএন নিউজ, এটিএন বাংলা, বাংলাদেশ টেলিভিশন (BTV), দেশ টিভি, একুশে টিভি, মাছরাঙা টিভি, বাংলাভিশন, বৈশাখী টিভি।
+### 2. ⚡ অনলাইন নিউজ পোর্টাল (Online Portals - 57 Portals)
+* **শীর্ষ অনলাইন পোর্টাল:** বিডিনিউজ২৪, বাংলানিউজ২৪, জাগো নিউজ ২৪, রাইজিংবিডি, ঢাকা পোস্ট, বিডি২৪লাইভ, সারাবাংলা, গোনিউজ২৪, বাংলা ইনসাইডার, ডিডব্লিউ বাংলা, আমার দেশ ২৪, প্রিয়.কম, ভয়েস অব আমেরিকা (ভিওএ বাংলা), ঢাকা ট্রিবিউন অনলাইন, জুমবাংলা।
+* **ব্রেকিং ও বিশেষায়িত পোর্টাল:** এবিনিউজ২৪, পরিবর্তন ডটকম, বিডি মর্নিং, রোর মিডিয়া বাংলা, বিডি জার্নাল, নিউজজি২৪, বার্তা২৪, ঢাকা টাইমস ২৪, ডেইলি বাংলাদেশ, ডিএমপি নিউজ, দ্য রিপোর্ট ২৪, সময়ের কণ্ঠস্বর, ওয়ান নিউজ বিডি, বার্তা বাংলা, বার্তা বাজার, জাগো বাংলা, টাইম ওয়াচ, দৈনিক বার্তা, পীরগঞ্জ নিউজ এক্সপ্রেস, দেশে বিদেশে, সোনালী নিউজ, এমটি নিউজ ২৪, দ্য বেঙ্গলি টাইমস, দেশ দর্পণ, ডেইলি ক্রিকেট, ঢাকা টুডে, নিউজ ৭১ অনলাইন, বাংলা টেলিগ্রাফ, সময়ের ধারা, ঢাকা প্রকাশ ২৪, ঢাকা নিউজ ২৪, নতুন বার্তা, বিডি ভিউ ২৪, বিডি ২৪ রিপোর্ট, শ্যামল বাংলা ২৪, আওয়ার নিউজ বিডি, ডেইলি আইসিটি নিউজ, হকার ডট কম।
 
-### 6. 🌐 ইংরেজি জাতীয় দৈনিক (English Dailies)
+### 3. 📰 জাতীয় বাংলা দৈনিক (National Bangla Dailies - 23 Publications)
+* প্রথম আলো, বাংলাদেশ প্রতিদিন, দৈনিক ইত্তেফাক, কালের কণ্ঠ, যুগান্তর, সমকাল, আমাদের সময়, মানবজমিন, নয়াদিগন্ত, জনকণ্ঠ, দেশ রূপান্তর, ভোরের কাগজ, আমার সংবাদ, প্রতিদিনের সংবাদ, দৈনিক সংগ্রাম, খোলা কাগজ, সংবাদ, মানবকণ্ঠ, আলোকিতা বাংলাদেশ, সকালের সময়, আজকের পত্রিকা, কালবেলা, প্রতিদিনের বাংলাদেশ।
+
+### 4. 🗞️ ই-পেপার (E-Paper Digital Editions)
+* মূল মুদ্রিত সংবাদপত্রের হুবহু ডিজিটাল সংস্করণ পড়ার সরাসরি লিংক (প্রথম আলো, বাংলাদেশ প্রতিদিন, যুগান্তর, কালের কণ্ঠ, সমকাল, ইত্তেফাক, ইনকিলাব, জনকণ্ঠ ইত্যাদি)।
+
+### 5. 📺 টিভি ও লাইভ নিউজ (TV Channels & Live News - 18 Channels)
+* সময় টিভি, যমুনা টিভি, চ্যানেল ২৪, একাত্তর টিভি, ডিবিসি নিউজ, এটিএন নিউজ, ইন্ডিপেন্ডেন্ট টিভি, এনটিভি, আরটিভি, চ্যানেল আই, বাংলাভিশন, দেশ টিভি, বৈশাখী টিভি, মাছরাঙা টিভি, বিটিভি, গান বাংলা, মোহনা টিভি, আনন্দ টিভি।
+
+### 6. 🌐 ইংরেজি দৈনিক (English Dailies)
 * The Daily Star, Dhaka Tribune, The Business Standard (TBS), The Financial Express, New Age, Daily Sun, The Daily Observer, The Asian Age, Bangladesh Post.
 
-### 7. 📍 বিভাগীয় ও জেলা সংবাদপত্র (8 Divisions)
-* **ঢাকা বিভাগ:** নারায়ণগঞ্জ পোস্ট, গাজীপুর বার্তা, টাঙ্গাইল বার্তা
-* **চট্টগ্রাম বিভাগ:** দৈনিক আজাদী, দৈনিক পূর্বকোণ, সুপ্রভাত বাংলাদেশ, আমাদের কুমিল্লা, চাঁদপুর কণ্ঠ, দৈনিক কক্সবাজার, ফেনী সংবাদ
-* **সিলেট বিভাগ:** দৈনিক সিলেট, সিলেট এক্সপ্রেস, দৈনিক খোয়াই, সুনামগঞ্জের খবর
-* **রাজশাহী বিভাগ:** সোনালী সংবাদ, রাজশাহী নিউজ ২৪, দৈনিক করতোয়া (বগুড়া), পাবনা বার্তা
-* **খুলনা বিভাগ:** দৈনিক পূর্বাঞ্চল, গ্রামের কাগজ (যশোর), মাথাভাঙ্গা (চুয়াডাঙ্গা), মেহেরপুর প্রতিদিন
-* **বরিশাল বিভাগ:** আমাদের বরিশাল, বরিশাল নিউজ, পটুয়াখালী ওয়েব
-* **রংপুর বিভাগ:** দৈনিক উত্তর বাংলা, রংপুর চিত্র, দিনাজপুর নিউজ ২৪
-* **ময়মনসিংহ বিভাগ:** ময়মনসিংহ প্রতিদিন, জামালপুর বার্তা
+### 7. 📍 বিভাগীয় ও জেলা সংবাদপত্র (8 Administrative Divisions)
+* **ঢাকা বিভাগ:** নারায়ণগঞ্জ পোস্ট, নরসিংদী প্রতিদিন, রাজবাড়ী কণ্ঠ।
+* **চট্টগ্রাম বিভাগ:** দৈনিক আজাদী, দৈনিক পূর্বকোণ, সুপ্রভাত বাংলাদেশ, আমাদের কুমিল্লা, চাঁদপুর কণ্ঠ, দৈনিক কক্সবাজার, দৈনিক পূর্বাচল।
+* **সিলেট বিভাগ:** দৈনিক সিলেট, দৈনিক শ্যামল সিলেট, দৈনিক জালালাবাদ, সুনামগঞ্জের খবর।
+* **রাজশাহী বিভাগ:** দৈনিক করতোয়া, সানশাইন, সোনার দেশ, দৈনিক মাথাভাঙ্গা (মেহেরপুর), চাঁপাই সংবাদ।
+* **খুলনা বিভাগ:** দৈনিক জন্মভূমি, পূর্বাঞ্চল, পত্রদূত (সাতক্ষীরা), গ্রামের কাগজ (যশোর), মেহেরপুর প্রতিদিন।
+* **বরিশাল বিভাগ:** আজকের বার্তা, আমাদের বরিশাল, শাহনামা, বরিশাল নিউজ, পটুয়াখালী ওয়েব।
+* **রংপুর বিভাগ:** দৈনিক দাবানল, দৈনিক যুগের আলো, রংপুর চিত্র, দিনাজপুর নিউজ।
+* **ময়মনসিংহ বিভাগ:** ময়মনসিংহ প্রতিদিন, শেরপুর নিউজ, নেত্রকোণা সংবাদ।
 
-### 8. 💼 ব্যবসা ও বাণিজ্য (General Business & Commerce)
-* বিজনেস ইনসাইডার বাংলাদেশ, বিজনেস নিউজ বিডি ইত্যাদি।
+### 8. 💼 চাকরি ও প্রযুক্তি (Jobs & Tech)
+* বিডিজবস, জবস এ১, চাকরি ডটকম, টেকশহর, টেকটিউনস, বিজ্ঞানচিন্তা।
 
-### 9. ⚽ খেলাধুলা ও বিনোদন
-* প্যাভিলিয়ন (Pavilion), বিডিক্রিকটাইম (Bdcrictime), ডেইলি ক্রিকেট, খেলাধুলা ২৪, আনন্দ আলো।
+### 9. ⚽ খেলাধুলা ও বিনোদন (Sports & Entertainment)
+* বিডিক্রিকটাইম, প্যাভিলিয়ন, ডেইলি ক্রিকেট, খেলাধুলা, আনন্দ আলো, কিশোর আলো।
 
-### 10. 💼 চাকরি, প্রযুক্তি ও শিক্ষা
-* বিডিজবস (Bdjobs), সাপ্তাহিক চাকরির খবর, দৈনিক শিক্ষা, ক্যাম্পাস লাইভ ২৪, টেকশহর, টেকটিউনস, বিজ্ঞানচিন্তা, কিশোর আলো।
-
-### 11. 📻 এফএম ও জাতীয় বেতার
-* রেডিও ফুর্তি (88.0 FM), রেডিও টুডে (89.6 FM), ঢাকা এফএম (90.4 FM), জাগো এফএম (94.4 FM), বাংলাদেশ বেতার।
-
-### 12. 🏛️ কলকাতা ও পশ্চিমবঙ্গ
-* আনন্দবাজার পত্রিকা, বর্তমান পত্রিকা, সংবাদ প্রতিদিন, এই সময়, আজকাল, উত্তরবঙ্গ সংবাদ।
+### 10. 📻 এফএম রেডিও ও কলকাতা মিডিয়া
+* রেডিও টুডে, রেডিও ফুর্তি, ঢাকা এফএম, আনন্দবাজার পত্রিকা, বর্তমান, আজকাল, সংবাদ প্রতিদিন।
 
 ---
 
-## 📱 Features
+## 🛠️ Tech Stack & Architecture
 
-- 🧱 **Block-Based Homepage Layout:** Clean, structured homepage arranged into distinct category blocks (জাতীয় দৈনিক, অনলাইন পোর্টাল, শেয়ার বাজার, টিভি ও লাইভ নিউজ, ই-পেপার, ইংরেজি দৈনিক, বিভাগীয় সংবাদপত্র, ব্যবসা, খেলাধুলা, চাকরি ও প্রযুক্তি, এফএম রেডিও, কলকাতা).
-- 🧭 **Responsive & Flexible Categories Navigation:** Dynamic sticky category toolbar with dual modes: **Flexible Wrap Grid** (multi-row view showing all 14 categories at a glance) and **Smooth Horizontal Slider** with 1-click scroll arrows (`‹` / `›`), mobile 2-column expander, and ScrollSpy tracking.
-- 🖼️ **Screenshot-Accurate Masthead Directory Cards:** Authentic wide rectangular logo masthead cards with bottom publication name bar, clean borders, and responsive grid layout matching standard Bangladeshi newspaper directories.
-- 📁 **Bundled Offline Logo Assets:** Over 190+ high-resolution masthead and banner logos bundled directly in `assets/logos/` for instant, offline-capable loading.
-- 🔍 **Cross-Block Realtime Search:** Instant search by Bengali name, English name, district, division, or keyword with realtime block-level result counting.
-- 📊 **Dedicated 'Stock Market' Category:** 1-click access to all 32 share market and stock exchange portals.
-- 📍 **In-Block Division Sub-Filter:** Select specific divisions (Dhaka, Chittagong, Sylhet, Rajshahi, Khulna, Barisal, Rangpur, Mymensingh) right inside the regional news block.
-- 🔲 **Grid View & Compact List View:** Switch layouts with one tap to browse more efficiently on mobile screens.
-- 🌓 **Dark & Light Mode:** Eye-friendly reading with saved preference in `localStorage`.
-- ⭐ **Personal Bookmarks:** Tap the star on any card to pin your favorite publications to a dedicated top block.
-- ⚡ **Zero External Dependencies:** Built with pure HTML5, CSS3, and modern Vanilla JavaScript for instant page loads.
+- **Frontend:** HTML5 (Semantic, Accessible, WAI-ARIA compliant), Modern CSS3 (CSS Custom Properties, Responsive Grid & Flexbox, Backdrop Filter), Pure Vanilla JavaScript (Zero bloated frameworks).
+- **SEO & Structured Data:** JSON-LD schema (Schema.org), Open Graph Protocol, Twitter Cards, Sitemap XML, Robots TXT.
+- **Offline / Standalone:** Complete asset bundling under `assets/logos/` with local fallback support.
 
 ---
 
-## 🚀 How to Run Locally
+## 👨‍💻 Developer & Credits
 
-### Option 1: VS Code Live Server
-```bash
-code C:\Users\User\.gemini\antigravity\scratch\allbanglanewspaper
-```
-Right-click `index.html` and click **"Open with Live Server"**.
-
-### Option 2: Browser
-```powershell
-Start-Process "C:\Users\User\.gemini\antigravity\scratch\allbanglanewspaper\index.html"
-```
-
----
-
-## 🌐 Push to GitHub
-
-```bash
-cd "C:\Users\User\.gemini\antigravity\scratch\allbanglanewspaper"
-git add .
-git commit -m "Create separate 'Stock Market' category and assign all sharebazar websites"
-git remote add origin https://github.com/nabil2dhaka/allbanglanewspaper.git
-git push -u origin main
-```
-
----
-
-## 👤 Author
-
-* **Nabil** - [@nabil2dhaka](https://github.com/nabil2dhaka)
-* **Email:** nabil2dhaka@gmail.com
+- Developed by **[nabil2dhaka](https://github.com/nabil2dhaka)**
+- Repository: [https://github.com/nabil2dhaka/allbanglanewspaper](https://github.com/nabil2dhaka/allbanglanewspaper)
+- License: MIT

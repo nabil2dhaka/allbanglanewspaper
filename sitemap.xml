@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9"
+        xmlns:news="http://www.google.com/schemas/sitemap-news/0.9"
+        xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
+  <url>
+    <loc>https://nabil2dhaka.github.io/allbanglanewspaper/</loc>
+    <lastmod>2026-10-24</lastmod>
+    <changefreq>daily</changefreq>
+    <priority>1.0</priority>
+    <image:image>
+      <image:loc>https://nabil2dhaka.github.io/allbanglanewspaper/assets/og-preview.png</image:loc>
+      <image:title>All Bangla Newspaper Directory - 190+ Publications</image:title>
+      <image:caption>Complete directory of all Bangladeshi newspapers, online portals, share market, and epapers</image:caption>
+    </image:image>
+  </url>
+</urlset>

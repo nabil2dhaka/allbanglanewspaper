@@ -2509,9 +2509,13 @@ function createCard(paper) {
           <div class="card-logo-box-list">
             <img 
               src="${logoUrl}" 
-              alt="${paper.nameEn}" 
+              alt="${paper.nameBn} (${paper.nameEn}) - বাংলা সংবাদপত্র লোগো" 
+              title="${paper.nameBn} (${paper.nameEn}) - অফিসিয়াল ওয়েবসাইট"
               class="card-masthead-logo" 
               loading="lazy" 
+              decoding="async"
+              width="200"
+              height="60"
               onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=${domain}&sz=128';" 
             />
           </div>
@@ -2538,9 +2542,13 @@ function createCard(paper) {
         ${favButton}
         <img 
           src="${logoUrl}" 
-          alt="${paper.nameEn}" 
+          alt="${paper.nameBn} (${paper.nameEn}) - বাংলা সংবাদপত্র লোগো" 
+          title="${paper.nameBn} (${paper.nameEn}) - অফিসিয়াল ওয়েবসাইট"
           class="card-masthead-logo" 
           loading="lazy" 
+          decoding="async"
+          width="200"
+          height="60"
           onerror="this.onerror=null; this.src='https://www.google.com/s2/favicons?domain=${domain}&sz=128';" 
         />
       </div>

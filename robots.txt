@@ -1,0 +1,8 @@
+# robots.txt for All Bangla Newspaper Directory
+# https://nabil2dhaka.github.io/allbanglanewspaper/
+
+User-agent: *
+Allow: /
+
+# Sitemap
+Sitemap: https://nabil2dhaka.github.io/allbanglanewspaper/sitemap.xml
