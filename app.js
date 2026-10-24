@@ -1156,6 +1156,17 @@ const newspapers = [
     icon: 'ঢা',
     tags: 'online portal dhaka magazine dhakamagazine breaking stories features news'
   },
+  {
+    id: 'unb',
+    nameBn: 'ইউনাইটেড নিউজ অব বাংলাদেশ (ইউএনবি)',
+    nameEn: 'UNB (United News of Bangladesh)',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://unb.com.bd/bangla',
+    color: '#ec2028',
+    icon: 'ইউএনবি',
+    tags: 'online portal unb united news of bangladesh national news agency unb.com.bd unb bangla'
+  },
 
   // =========================================================================
   // 3. BANGLA LIVE TV & BROADCAST NEWS (টিভি ও স্যাটেলাইট চ্যানেল)
@@ -1811,9 +1822,9 @@ const newspapers = [
     division: 'dhaka',
     categoryLabel: 'টাঙ্গাইল',
     url: 'https://tangailbarta24.com',
-    color: '#117a65',
+    color: '#047d4f',
     icon: 'টা',
-    tags: 'tangail dhaka'
+    tags: 'tangail dhaka tangailbarta tangailbarta24'
   },
 
   // --- ময়মনসিংহ বিভাগ ---
