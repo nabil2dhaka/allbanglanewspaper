@@ -712,7 +712,7 @@ const newspapers = [
     category: 'online',
     categoryLabel: 'অনলাইন পোর্টাল',
     url: 'https://www.newsg24.com',
-    color: '#6c3483',
+    color: '#25aae1',
     icon: 'জি২৪',
     tags: 'online portal newsg24'
   },
@@ -954,7 +954,7 @@ const newspapers = [
     category: 'online',
     categoryLabel: 'অনলাইন পোর্টাল',
     url: 'https://www.banglatelegraph.com',
-    color: '#1a5276',
+    color: '#143f61',
     icon: 'BT',
     tags: 'online portal banglatelegraph banglatelegraph.com'
   },
@@ -2173,7 +2173,7 @@ const newspapers = [
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://www.bb.org.bd',
-    color: '#006a4e',
+    color: '#0d693a',
     icon: 'BB',
     tags: 'stock market bangladesh bank central bank forex reserves dollar'
   },
@@ -2317,7 +2317,7 @@ const newspapers = [
     category: 'jobs_tech',
     categoryLabel: 'চাকরির খবর',
     url: 'https://chakrirkhobor.net',
-    color: '#c0392b',
+    color: '#8917d1',
     icon: 'চা',
     tags: 'job career govt chakri'
   },
@@ -2361,7 +2361,7 @@ const newspapers = [
     category: 'jobs_tech',
     categoryLabel: 'বিজ্ঞান সাময়িকী',
     url: 'https://www.bigganchinta.com',
-    color: '#d35400',
+    color: '#ec1b2e',
     icon: 'বি',
     tags: 'science research space biggan'
   },
@@ -2713,9 +2713,9 @@ function updateBadges() {
 
 // Known SVG banner IDs
 const SVG_LOGOS = new Set([
-  "anandaalo","bangladeshbank","bdcrictime","bigganchinta",
+  "anandaalo","bdcrictime",
   "businessinsiderbd","businessnewsbdnet",
-  "campuslive24","chakrirkhobor","dailycricket","dhakamagazine","dinajpurnews",
+  "campuslive24","dailycricket","dhakamagazine","dinajpurnews",
   "eisamay","kheladhula",
   "pavilion","techtunes","thedailycampus"
 ]);
