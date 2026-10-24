@@ -126,6 +126,17 @@ const newspapers = [
     tags: 'dhaka national naya diganta'
   },
   {
+    id: 'dailyamardesh',
+    nameBn: 'দৈনিক আমার দেশ',
+    nameEn: 'Daily Amar Desh',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://dailyamardesh.com',
+    color: '#d9230f',
+    icon: 'আ',
+    tags: 'dhaka national daily amardesh dailyamardesh daily amardesh shadhinotar kotha bole'
+  },
+  {
     id: 'manabzamin',
     nameBn: 'মানবজমিন',
     nameEn: 'Daily Manab Zamin',
