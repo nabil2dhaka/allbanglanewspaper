@@ -288,6 +288,18 @@ const newspapers = [
     icon: 'প্র',
     tags: 'dhaka national pratidiner sangbad'
   },
+  {
+    id: 'agamirshomoy',
+    nameBn: 'দৈনিক আগামীর সময়',
+    nameEn: 'Agamir Shomoy',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.agamirsomoy.com',
+    epaperUrl: 'https://www.agamirsomoy.com/epaper',
+    color: '#b91c1c',
+    icon: 'আ',
+    tags: 'dhaka national daily agamir shomoy agamirshomoy agamir somoy agamirsomoy epaper agamirshomoy.com www.agamirshomoy.com'
+  },
 
   // =========================================================================
   // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 57 Websites from URL)
@@ -2801,7 +2813,7 @@ function renderNewspapers() {
     resultsCount.innerHTML = `নির্বাচিত ক্যাটাগরি: <strong>${catName}</strong> (${totalVisibleCards} টি ওয়েবসাইট)`;
     emptyState.style.display = 'none';
   } else {
-    resultsCount.innerHTML = `মোট <strong>১২ টি ক্যাটাগরি ব্লকে ১৯৪ টি ওয়েবসাইট</strong> সাজানো রয়েছে`;
+    resultsCount.innerHTML = `মোট <strong>১২ টি ক্যাটাগরি ব্লকে ${newspapers.length} টি ওয়েবসাইট</strong> সাজানো রয়েছে`;
     emptyState.style.display = 'none';
   }
 
