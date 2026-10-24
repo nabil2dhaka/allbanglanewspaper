@@ -425,9 +425,21 @@ const newspapers = [
     icon: 'গণ',
     tags: 'dhaka national daily gonokantho ganakantha egonokantho epaper'
   },
+  {
+    id: 'dailydestiny',
+    nameBn: 'দৈনিক ডেসটিনি',
+    nameEn: 'Daily Destiny',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://dailydestinybd.com/bn',
+    epaperUrl: 'https://dailydestinybd.com/bn/e-papers/visual',
+    color: '#9333ea',
+    icon: 'ডে',
+    tags: 'dhaka national daily destiny dailydestiny dailydestinybd epaper'
+  },
 
   // =========================================================================
-  // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 62 Websites)
+  // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 64 Websites)
   // =========================================================================
   {
     id: 'bdnews24',
@@ -941,10 +953,10 @@ const newspapers = [
     nameEn: 'Bangla Telegraph',
     category: 'online',
     categoryLabel: 'অনলাইন পোর্টাল',
-    url: 'https://banglatelegraph.com',
+    url: 'https://www.banglatelegraph.com',
     color: '#1a5276',
     icon: 'BT',
-    tags: 'online portal banglatelegraph'
+    tags: 'online portal banglatelegraph banglatelegraph.com'
   },
   {
     id: 'somoyerdhara',
@@ -1110,6 +1122,28 @@ const newspapers = [
     color: '#0f172a',
     icon: 'ডি',
     tags: 'online portal dhaka street journal dhakastreetjournal street journal bangla'
+  },
+  {
+    id: 'sheershanews',
+    nameBn: 'শীর্ষ নিউজ',
+    nameEn: 'Sheersha News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://sheershanews.com',
+    color: '#b91c1c',
+    icon: 'শী',
+    tags: 'online portal sheersha news sheershanews sheershanews.com bangla'
+  },
+  {
+    id: 'bssnews',
+    nameBn: 'বাংলাদেশ সংবাদ সংস্থা (বাসস)',
+    nameEn: 'BSS News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.bssnews.net/bangla/',
+    color: '#006a4e',
+    icon: 'বাসস',
+    tags: 'online portal bss news bssnews bssnews.net bangladesh sangbad sangstha basas national news agency'
   },
 
   // =========================================================================
@@ -1453,9 +1487,10 @@ const newspapers = [
     division: 'chittagong',
     categoryLabel: 'চট্টগ্রাম',
     url: 'https://suprobhat.com',
+    epaperUrl: 'https://www.esuprobhat.com',
     color: '#138d75',
     icon: 'সু',
-    tags: 'chittagong ctg'
+    tags: 'chittagong ctg suprobhat esuprobhat epaper'
   },
   {
     id: 'amadercomilla',
