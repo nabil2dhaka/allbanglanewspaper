@@ -2469,9 +2469,10 @@ const newspapers = [
     category: 'kolkata',
     categoryLabel: 'কলকাতা/পশ্চিমবঙ্গ',
     url: 'https://www.sangbadpratidin.in',
+    epaperUrl: 'https://epaper.sangbadpratidin.in',
     color: '#78281f',
     icon: 'সং',
-    tags: 'kolkata west bengal'
+    tags: 'kolkata west bengal sangbad pratidin epaper'
   },
   {
     id: 'eisamay',
@@ -2492,9 +2493,10 @@ const newspapers = [
     category: 'kolkata',
     categoryLabel: 'কলকাতা/পশ্চিমবঙ্গ',
     url: 'https://aajkaal.in',
+    epaperUrl: 'https://www.eaajkaal.in',
     color: '#196f3d',
     icon: 'আ',
-    tags: 'kolkata west bengal'
+    tags: 'kolkata west bengal aajkaal eaajkaal epaper'
   },
   {
     id: 'uttarbangasambad',
@@ -2503,9 +2505,10 @@ const newspapers = [
     category: 'kolkata',
     categoryLabel: 'উত্তরবঙ্গ/শিলিগুড়ি',
     url: 'https://uttarbangasambad.com',
+    epaperUrl: 'https://uttarbangasambad.in',
     color: '#117a65',
     icon: 'উ',
-    tags: 'siliguri west bengal uttarbanga'
+    tags: 'siliguri west bengal uttarbanga uttarbangasambad epaper'
   }
 ];
 
