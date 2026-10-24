@@ -921,7 +921,7 @@ const newspapers = [
     category: 'online',
     categoryLabel: 'ক্রিকেট সংবাদ',
     url: 'https://dailycricket.com.bd',
-    color: '#e74c3c',
+    color: '#007a0f',
     icon: 'DC',
     tags: 'sports cricket online portal'
   },
@@ -2232,7 +2232,7 @@ const newspapers = [
     category: 'business',
     categoryLabel: 'ব্যবসা ও বাণিজ্য',
     url: 'https://businessnews-bd.net',
-    color: '#1f618d',
+    color: '#2060af',
     icon: 'BNB',
     tags: 'business commerce industry'
   },
@@ -2258,7 +2258,7 @@ const newspapers = [
     category: 'sports',
     categoryLabel: 'ক্রিকেট সংবাদ',
     url: 'https://www.bdcrictime.com',
-    color: '#e74c3c',
+    color: '#014f28',
     icon: 'BCT',
     tags: 'sports cricket tigers bpl'
   },
@@ -2269,7 +2269,7 @@ const newspapers = [
     category: 'sports',
     categoryLabel: 'ক্রিকেট সংবাদ',
     url: 'https://dailycricket.com.bd',
-    color: '#2980b9',
+    color: '#007a0f',
     icon: 'DC',
     tags: 'sports cricket live score'
   },
@@ -2280,7 +2280,7 @@ const newspapers = [
     category: 'sports',
     categoryLabel: 'খেলাধুলা সংবাদ',
     url: 'https://kheladhula24.com',
-    color: '#f39c12',
+    color: '#ed1e20',
     icon: 'খেলা',
     tags: 'sports football messi ronaldo'
   },
@@ -2291,7 +2291,7 @@ const newspapers = [
     category: 'sports',
     categoryLabel: 'বিনোদন ও সংস্কৃতি',
     url: 'https://anandaalo.com',
-    color: '#9b59b6',
+    color: '#ed1c24',
     icon: 'আ',
     tags: 'entertainment culture cinema natok'
   },
@@ -2717,10 +2717,8 @@ function updateBadges() {
 
 // Known SVG banner IDs
 const SVG_LOGOS = new Set([
-  "anandaalo","bdcrictime",
-  "businessinsiderbd","businessnewsbdnet",
-  "campuslive24","dailycricket","dhakamagazine","dinajpurnews",
-  "kheladhula",
+  "businessinsiderbd",
+  "campuslive24","dhakamagazine","dinajpurnews",
   "pavilion","techtunes","thedailycampus"
 ]);
 
