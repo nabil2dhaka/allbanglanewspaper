@@ -2801,15 +2801,75 @@ const newspapers = [
   },
   {
     id: 'jamalpurnews',
-    nameBn: 'জামালপুর বার্তা',
-    nameEn: 'Jamalpur Barta',
+    nameBn: 'জামালপুর নিউজ',
+    nameEn: 'Jamalpur News',
     category: 'local',
     division: 'mymensingh',
     categoryLabel: 'জামালপুর',
     url: 'https://jamalpurnews24.com',
     color: '#7d3c98',
     icon: 'জা',
-    tags: 'jamalpur mymensingh'
+    tags: 'jamalpur mymensingh jamalpurnews'
+  },
+  {
+    id: 'jamalpurbarta',
+    nameBn: 'জামালপুর বার্তা',
+    nameEn: 'Jamalpur Barta',
+    category: 'local',
+    division: 'mymensingh',
+    categoryLabel: 'জামালপুর',
+    url: 'https://jamalpurbarta.com',
+    color: '#27ae60',
+    icon: 'জা',
+    tags: 'jamalpur jamalpurbarta mymensingh জামালপুর বার্তা'
+  },
+  {
+    id: 'netrokonanews24',
+    nameBn: 'নেত্রকোনা নিউজ ২৪',
+    nameEn: 'Netrokona News 24',
+    category: 'local',
+    division: 'mymensingh',
+    categoryLabel: 'নেত্রকোনা/ময়মনসিংহ',
+    url: 'https://netrokonanews24.com',
+    color: '#2980b9',
+    icon: 'নে',
+    tags: 'netrokona netrokonanews24 mymensingh নেত্রকোনা নিউজ'
+  },
+  {
+    id: 'kishoreganjnews',
+    nameBn: 'কিশোরগঞ্জ নিউজ',
+    nameEn: 'Kishoreganj News',
+    category: 'local',
+    division: 'mymensingh',
+    categoryLabel: 'কিশোরগঞ্জ/ময়মনসিংহ',
+    url: 'https://kishoreganjnews.com',
+    color: '#c0392b',
+    icon: 'কি',
+    tags: 'kishoreganj kishoreganjnews mymensingh কিশোরগঞ্জ নিউজ'
+  },
+  {
+    id: 'durjoybangla',
+    nameBn: 'দুর্জয় বাংলা',
+    nameEn: 'Durjoy Bangla',
+    category: 'local',
+    division: 'mymensingh',
+    categoryLabel: 'ময়মনসিংহ',
+    url: 'https://www.durjoybangla.com',
+    color: '#8e44ad',
+    icon: 'দু',
+    tags: 'durjoybangla mymensingh local দুর্জয় বাংলা'
+  },
+  {
+    id: 'dailysabuj',
+    nameBn: 'দৈনিক সবুজ',
+    nameEn: 'Daily Sabuj',
+    category: 'local',
+    division: 'mymensingh',
+    categoryLabel: 'ময়মনসিংহ',
+    url: 'https://www.dailysabuj.com',
+    color: '#16a085',
+    icon: 'স',
+    tags: 'dailysabuj sabuj mymensingh local দৈনিক সবুজ'
   },
   {
     id: 'shamolbangla24',
