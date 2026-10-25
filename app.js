@@ -517,6 +517,18 @@ const newspapers = [
     icon: 'যু',
     tags: 'jugerchinta jugerchinta24 national daily epaper যুগের চিন্তা'
   },
+  {
+    id: 'matribhumirkhobor',
+    nameBn: 'দৈনিক মাতৃভূমির খবর',
+    nameEn: 'Dainik Matribhumir Khobor',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.matribhumirkhobor.com',
+    epaperUrl: 'https://e.matribhumirkhobor.com/',
+    color: '#006266',
+    icon: 'মা',
+    tags: 'matribhumirkhobor matribhumir khobor national daily epaper মাতৃভূমির খবর'
+  },
 
   // =========================================================================
   // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 64 Websites)
