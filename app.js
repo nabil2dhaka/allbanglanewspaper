@@ -1508,9 +1508,10 @@ const newspapers = [
     division: 'chittagong',
     categoryLabel: 'চট্টগ্রাম',
     url: 'https://dainikpurbokone.net',
+    epaperUrl: 'https://edainikpurbokone.net/',
     color: '#2471a3',
     icon: 'পূ',
-    tags: 'chittagong ctg local purbokone'
+    tags: 'chittagong ctg local purbokone edainikpurbokone epaper'
   },
   {
     id: 'suprobhat',
@@ -1569,9 +1570,10 @@ const newspapers = [
     division: 'chittagong',
     categoryLabel: 'ফেনী',
     url: 'https://doinikfeni.com',
+    epaperUrl: 'https://epaper.doinikfeni.com/',
     color: '#2e4053',
     icon: 'ফে',
-    tags: 'feni chittagong fenisangbad doinik feni'
+    tags: 'feni chittagong fenisangbad doinik feni epaper'
   },
 
   // --- সিলেট বিভাগ ---
@@ -1747,9 +1749,10 @@ const newspapers = [
     division: 'rajshahi',
     categoryLabel: 'রাজশাহী',
     url: 'https://sonalisangbad.com',
+    epaperUrl: 'https://sonalisangbad.com/epaper/',
     color: '#d4ac0d',
     icon: 'সো',
-    tags: 'rajshahi local padma'
+    tags: 'rajshahi local padma epaper'
   },
   {
     id: 'rajshahinews24',
@@ -1809,9 +1812,10 @@ const newspapers = [
     division: 'khulna',
     categoryLabel: 'যশোর/খুলনা',
     url: 'https://www.gramerkagoj.com',
+    epaperUrl: 'https://egramerkagoj.com/',
     color: '#2874a6',
     icon: 'গ্রা',
-    tags: 'jessore khulna gram'
+    tags: 'jessore khulna gram egramerkagoj epaper'
   },
   {
     id: 'mathabhanga',
@@ -1833,9 +1837,10 @@ const newspapers = [
     division: 'khulna',
     categoryLabel: 'মেহেরপুর/খুলনা',
     url: 'https://www.meherpurpratidin.com',
+    epaperUrl: 'https://www.meherpurpratidin.com/e-paper/',
     color: '#e67e22',
     icon: 'মে',
-    tags: 'meherpur khulna meherpurpratidin'
+    tags: 'meherpur khulna meherpurpratidin epaper'
   },
 
   // --- বরিশাল বিভাগ ---
