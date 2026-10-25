@@ -437,6 +437,18 @@ const newspapers = [
     icon: 'ডে',
     tags: 'dhaka national daily destiny dailydestiny dailydestinybd epaper'
   },
+  {
+    id: 'bdbulletin',
+    nameBn: 'বাংলাদেশ বুলেটিন',
+    nameEn: 'Bangladesh Bulletin',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.bd-bulletin.com',
+    epaperUrl: 'https://www.bd-bulletin.com/epaper/',
+    color: '#c0392b',
+    icon: 'বু',
+    tags: 'bangladesh bulletin bdbulletin bd-bulletin national daily epaper বাংলাদেশ বুলেটিন'
+  },
 
   // =========================================================================
   // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 64 Websites)
