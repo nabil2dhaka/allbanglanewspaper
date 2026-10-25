@@ -2419,6 +2419,103 @@ const newspapers = [
     icon: 'দি',
     tags: 'dinajpur rangpur'
   },
+  {
+    id: 'chilahatiweb',
+    nameBn: 'চিলাহাটি ওয়েব',
+    nameEn: 'Chilahati Web',
+    category: 'local',
+    division: 'rangpur',
+    categoryLabel: 'নীলফামারী/রংপুর',
+    url: 'https://www.chilahatiweb.com',
+    color: '#006a4e',
+    icon: 'চি',
+    tags: 'chilahati nilphamari rangpur local চিলাহাটি'
+  },
+  {
+    id: 'jugerkhabor',
+    nameBn: 'যুগের খবর',
+    nameEn: 'Juger Khabor',
+    category: 'local',
+    division: 'rangpur',
+    categoryLabel: 'রংপুর',
+    url: 'https://jugerkhabor.com',
+    color: '#c0392b',
+    icon: 'য',
+    tags: 'jugerkhabor rangpur local যুগের খবর'
+  },
+  {
+    id: 'dainikpanchagarh',
+    nameBn: 'দৈনিক পঞ্চগড়',
+    nameEn: 'Dainik Panchagarh',
+    category: 'local',
+    division: 'rangpur',
+    categoryLabel: 'পঞ্চগড়/রংপুর',
+    url: 'https://www.dainikpanchagarh.com',
+    color: '#1b4f72',
+    icon: 'প',
+    tags: 'panchagarh dainik panchagarh rangpur local পঞ্চগড়'
+  },
+  {
+    id: 'dinajpurnewsnet',
+    nameBn: 'দিনাজপুর নিউজ',
+    nameEn: 'Dinajpur News',
+    category: 'local',
+    division: 'rangpur',
+    categoryLabel: 'দিনাজপুর/রংপুর',
+    url: 'https://dinajpurnews.net',
+    color: '#2874a6',
+    icon: 'দি',
+    tags: 'dinajpur dinajpurnews net rangpur local দিনাজপুর'
+  },
+  {
+    id: 'dinajpurbarta24',
+    nameBn: 'দিনাজপুর বার্তা ২৪',
+    nameEn: 'Dinajpur Barta 24',
+    category: 'local',
+    division: 'rangpur',
+    categoryLabel: 'দিনাজপুর/রংপুর',
+    url: 'https://dinajpurbarta24.com',
+    color: '#117864',
+    icon: 'দি',
+    tags: 'dinajpur barta dinajpurbarta24 rangpur local দিনাজপুর বার্তা'
+  },
+  {
+    id: 'dailyghagot',
+    nameBn: 'দৈনিক ঘাঘট',
+    nameEn: 'Daily Ghagot',
+    category: 'local',
+    division: 'rangpur',
+    categoryLabel: 'গাইবান্ধা/রংপুর',
+    url: 'https://www.dailyghagot.com',
+    color: '#7d3c98',
+    icon: 'ঘা',
+    tags: 'ghagot dailyghagot gaibandha rangpur local ঘাঘট'
+  },
+  {
+    id: 'amaderprotidin',
+    nameBn: 'আমাদের প্রতিদিন',
+    nameEn: 'Amader Protidin',
+    category: 'local',
+    division: 'rangpur',
+    categoryLabel: 'রংপুর',
+    url: 'https://www.amader-protidin.com',
+    color: '#b03a2e',
+    icon: 'আ',
+    tags: 'amader protidin rangpur local আমাদের প্রতিদিন'
+  },
+  {
+    id: 'birganjpratidin',
+    nameBn: 'বীরগঞ্জ প্রতিদিন',
+    nameEn: 'Birganj Pratidin',
+    category: 'local',
+    division: 'rangpur',
+    categoryLabel: 'বীরগঞ্জ/রংপুর',
+    url: 'https://birganjpratidin.com',
+    epaperUrl: 'https://birganjpratidin.com/epaper',
+    color: '#196f3d',
+    icon: 'বী',
+    tags: 'birganj pratidin birganjpratidin dinajpur rangpur epaper বীরগঞ্জ প্রতিদিন'
+  },
 
   // --- ঢাকা জেলা ও শহরতলি ---
   {
