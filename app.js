@@ -886,17 +886,6 @@ const newspapers = [
     tags: 'online portal bartabazar'
   },
   {
-    id: 'jagobangla',
-    nameBn: 'জাগো বাংলা',
-    nameEn: 'Jago Bangla',
-    category: 'online',
-    categoryLabel: 'অনলাইন পোর্টাল',
-    url: 'https://jagobangla.com',
-    color: '#16a085',
-    icon: 'জাগো',
-    tags: 'online portal jagobangla'
-  },
-  {
     id: 'timewatch',
     nameBn: 'টাইম ওয়াচ',
     nameEn: 'Time Watch BD',
@@ -3790,6 +3779,63 @@ const newspapers = [
     color: '#117a65',
     icon: 'উ',
     tags: 'siliguri west bengal uttarbanga uttarbangasambad epaper'
+  },
+  {
+    id: 'puberkalom',
+    nameBn: 'পুবের কলম',
+    nameEn: 'Puber Kalom',
+    category: 'kolkata',
+    categoryLabel: 'কলকাতা/পশ্চিমবঙ্গ',
+    url: 'https://www.puberkalom.com',
+    epaperUrl: 'https://epaper.puberkalom.com',
+    color: '#16a085',
+    icon: 'পু',
+    tags: 'kolkata west bengal puberkalom epaper পুবের কলম'
+  },
+  {
+    id: 'jagobangla',
+    nameBn: 'জাগো বাংলা',
+    nameEn: 'Jago Bangla',
+    category: 'kolkata',
+    categoryLabel: 'কলকাতা/পশ্চিমবঙ্গ',
+    url: 'https://jagobangla.in',
+    epaperUrl: 'https://epaper.jagobangla.in',
+    color: '#006266',
+    icon: 'জা',
+    tags: 'kolkata west bengal jagobangla epaper জাগো বাংলা'
+  },
+  {
+    id: 'oneindiabengali',
+    nameBn: 'ওয়ানইন্ডিয়া বাংলা',
+    nameEn: 'Oneindia Bengali',
+    category: 'kolkata',
+    categoryLabel: 'কলকাতা/পশ্চিমবঙ্গ',
+    url: 'https://bengali.oneindia.com',
+    color: '#e74c3c',
+    icon: 'ওয়ান',
+    tags: 'kolkata west bengal oneindia oneindiabengali ওয়ানইন্ডিয়া'
+  },
+  {
+    id: 'abpananda',
+    nameBn: 'এবিপি আনন্দ',
+    nameEn: 'ABP Ananda',
+    category: 'kolkata',
+    categoryLabel: 'কলকাতা/পশ্চিমবঙ্গ',
+    url: 'https://bengali.abplive.com',
+    color: '#d63031',
+    icon: 'এবিপি',
+    tags: 'kolkata west bengal abp ananda abpananda এবিপি আনন্দ'
+  },
+  {
+    id: 'zee24ghanta',
+    nameBn: 'জি ২৪ ঘণ্টা',
+    nameEn: 'Zee 24 Ghanta',
+    category: 'kolkata',
+    categoryLabel: 'কলকাতা/পশ্চিমবঙ্গ',
+    url: 'https://zeenews.india.com/bengali',
+    color: '#f39c12',
+    icon: 'জি',
+    tags: 'kolkata west bengal zee24ghanta zee 24 ghanta জি ২৪ ঘণ্টা'
   }
 ];
 
@@ -4002,6 +4048,7 @@ const SVG_LOGOS = new Set([
   "campuslive24","dailyprobaha","desherkantha","dhakamagazine","dinajpurnews",
   "ekhontv",
   "giridarpon",
+  "oneindiabengali",
   "patrika71",
   "pavilion","techtunes","thedailycampus","tsports"
 ]);
