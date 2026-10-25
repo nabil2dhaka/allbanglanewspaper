@@ -1369,6 +1369,17 @@ const newspapers = [
     icon: 'বৈ',
     tags: 'satellite tv'
   },
+  {
+    id: 'starnews',
+    nameBn: 'স্টার নিউজ',
+    nameEn: 'Star News',
+    category: 'tv',
+    categoryLabel: 'টিভি নিউজ',
+    url: 'https://starnews.com.bd',
+    color: '#d63031',
+    icon: 'SN',
+    tags: 'live tv news star starnews satellite broadcast bangla'
+  },
 
   // =========================================================================
   // 4. BANGLADESH ENGLISH DAILIES (ইংরেজি জাতীয় দৈনিক)
@@ -1565,6 +1576,30 @@ const newspapers = [
 
   // --- সিলেট বিভাগ ---
   {
+    id: 'sylheterdak',
+    nameBn: 'দৈনিক সিলেটের ডাক',
+    nameEn: 'Daily Sylheter Dak',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'সিলেট',
+    url: 'https://sylheterdak.com.bd',
+    color: '#005b96',
+    icon: 'সি',
+    tags: 'sylhet local sylheterdak dainik surma'
+  },
+  {
+    id: 'dailyjalalabad',
+    nameBn: 'দৈনিক জালালাবাদ',
+    nameEn: 'Daily Jalalabad',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'সিলেট',
+    url: 'https://dailyjalalabad.com',
+    color: '#1b4f72',
+    icon: 'জা',
+    tags: 'sylhet jalalabad dainik local'
+  },
+  {
     id: 'dainiksylhet',
     nameBn: 'দৈনিক সিলেট',
     nameEn: 'Dainik Sylhet',
@@ -1577,6 +1612,66 @@ const newspapers = [
     tags: 'sylhet local surma'
   },
   {
+    id: 'shyamalsylhet',
+    nameBn: 'দৈনিক শ্যামল সিলেট',
+    nameEn: 'Daily Shyamal Sylhet',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'সিলেট',
+    url: 'https://www.shyamalsylhet.net',
+    color: '#00796b',
+    icon: 'শ্য',
+    tags: 'sylhet shyamalsylhet local'
+  },
+  {
+    id: 'sylhetview24',
+    nameBn: 'সিলেটভিউ২৪',
+    nameEn: 'SylhetView24',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'সিলেট',
+    url: 'https://www.sylhetview24.news',
+    color: '#c0392b',
+    icon: 'সি',
+    tags: 'sylhetview24 sylhetview sylhet online local'
+  },
+  {
+    id: 'dailysylhetmirror',
+    nameBn: 'দৈনিক সিলেট মিরর',
+    nameEn: 'Daily Sylhet Mirror',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'সিলেট',
+    url: 'https://dailysylhetmirror.com',
+    color: '#1565c0',
+    icon: 'মি',
+    tags: 'sylhetmirror sylhet mirror local'
+  },
+  {
+    id: 'jaintabarta',
+    nameBn: 'দৈনিক জৈন্তা বার্তা',
+    nameEn: 'Daily Jainta Barta',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'সিলেট',
+    url: 'https://jaintabarta.net',
+    color: '#b71c1c',
+    icon: 'জৈ',
+    tags: 'jaintabarta jainta barta sylhet local'
+  },
+  {
+    id: 'surmatimes',
+    nameBn: 'সুরমা টাইমস',
+    nameEn: 'Surma Times',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'সিলেট',
+    url: 'https://surmatimes.com',
+    color: '#0d47a1',
+    icon: 'সু',
+    tags: 'surmatimes surma times sylhet local'
+  },
+  {
     id: 'sylhetexpress',
     nameBn: 'সিলেট এক্সপ্রেস',
     nameEn: 'Sylhet Express',
@@ -1587,6 +1682,30 @@ const newspapers = [
     color: '#1b4f72',
     icon: 'সি',
     tags: 'sylhet local'
+  },
+  {
+    id: 'patakuri',
+    nameBn: 'দৈনিক পাতাকুঁড়ির দেশ',
+    nameEn: 'Daily Patakurir Desh',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'মৌলভীবাজার/সিলেট',
+    url: 'https://www.patakuri.com',
+    color: '#2e7d32',
+    icon: 'পা',
+    tags: 'patakuri moulvibazar sylhet local'
+  },
+  {
+    id: 'mkantho',
+    nameBn: 'মৌমাছি কণ্ঠ',
+    nameEn: 'Moumachi Kantho',
+    category: 'local',
+    division: 'sylhet',
+    categoryLabel: 'মৌলভীবাজার/সিলেট',
+    url: 'https://mkantho.com',
+    color: '#d35400',
+    icon: 'মৌ',
+    tags: 'mkantho moumachi kantho moulvibazar sylhet local'
   },
   {
     id: 'dailykhowai',
@@ -2445,6 +2564,17 @@ const newspapers = [
     color: '#006a4e',
     icon: '📻',
     tags: 'betar govt radio news state'
+  },
+  {
+    id: 'peoplesradio',
+    nameBn: 'পিপলস রেডিও',
+    nameEn: 'Peoples Radio (91.6 FM)',
+    category: 'radio',
+    categoryLabel: 'এফএম রেডিও',
+    url: 'https://peoplesradio.net',
+    color: '#e74c3c',
+    icon: '📻',
+    tags: 'radio live fm peoples radio 91.6 entertainment news music'
   },
 
   // =========================================================================
