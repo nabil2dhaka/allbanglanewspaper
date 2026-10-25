@@ -2785,6 +2785,18 @@ const newspapers = [
     icon: 'টা',
     tags: 'tangail dhaka tangailbarta tangailbarta24'
   },
+  {
+    id: 'kishoreganjnews',
+    nameBn: 'কিশোরগঞ্জ নিউজ',
+    nameEn: 'Kishoreganj News',
+    category: 'local',
+    division: 'dhaka',
+    categoryLabel: 'কিশোরগঞ্জ',
+    url: 'https://kishoreganjnews.com',
+    color: '#c0392b',
+    icon: 'কি',
+    tags: 'kishoreganj kishoreganjnews dhaka local কিশোরগঞ্জ নিউজ'
+  },
 
   // --- ময়মনসিংহ বিভাগ ---
   {
@@ -2834,18 +2846,6 @@ const newspapers = [
     color: '#2980b9',
     icon: 'নে',
     tags: 'netrokona netrokonanews24 mymensingh নেত্রকোনা নিউজ'
-  },
-  {
-    id: 'kishoreganjnews',
-    nameBn: 'কিশোরগঞ্জ নিউজ',
-    nameEn: 'Kishoreganj News',
-    category: 'local',
-    division: 'mymensingh',
-    categoryLabel: 'কিশোরগঞ্জ/ময়মনসিংহ',
-    url: 'https://kishoreganjnews.com',
-    color: '#c0392b',
-    icon: 'কি',
-    tags: 'kishoreganj kishoreganjnews mymensingh কিশোরগঞ্জ নিউজ'
   },
   {
     id: 'durjoybangla',
