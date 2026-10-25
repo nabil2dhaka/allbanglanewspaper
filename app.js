@@ -1595,9 +1595,10 @@ const newspapers = [
     division: 'sylhet',
     categoryLabel: 'সিলেট',
     url: 'https://dailyjalalabad.com',
+    epaperUrl: 'https://ejalalabad.com',
     color: '#1b4f72',
     icon: 'জা',
-    tags: 'sylhet jalalabad dainik local'
+    tags: 'sylhet jalalabad dainik local ejalalabad epaper'
   },
   {
     id: 'dainiksylhet',
@@ -1619,9 +1620,10 @@ const newspapers = [
     division: 'sylhet',
     categoryLabel: 'সিলেট',
     url: 'https://www.shyamalsylhet.net',
+    epaperUrl: 'https://eshyamalsylhet.com/paper/index/',
     color: '#00796b',
     icon: 'শ্য',
-    tags: 'sylhet shyamalsylhet local'
+    tags: 'sylhet shyamalsylhet eshyamalsylhet local epaper'
   },
   {
     id: 'sylhetview24',
@@ -1643,9 +1645,10 @@ const newspapers = [
     division: 'sylhet',
     categoryLabel: 'সিলেট',
     url: 'https://dailysylhetmirror.com',
+    epaperUrl: 'https://e.dailysylhetmirror.com',
     color: '#1565c0',
     icon: 'মি',
-    tags: 'sylhetmirror sylhet mirror local'
+    tags: 'sylhetmirror sylhet mirror local epaper'
   },
   {
     id: 'jaintabarta',
@@ -1655,9 +1658,10 @@ const newspapers = [
     division: 'sylhet',
     categoryLabel: 'সিলেট',
     url: 'https://jaintabarta.net',
+    epaperUrl: 'https://e.jaintabarta.net',
     color: '#b71c1c',
     icon: 'জৈ',
-    tags: 'jaintabarta jainta barta sylhet local'
+    tags: 'jaintabarta jainta barta sylhet local epaper'
   },
   {
     id: 'surmatimes',
@@ -1727,9 +1731,10 @@ const newspapers = [
     division: 'sylhet',
     categoryLabel: 'সুনামগঞ্জ',
     url: 'https://sunamganjerkhobor.com',
+    epaperUrl: 'https://esunamganjerkhobor.com/paper/index/',
     color: '#d35400',
     icon: 'সু',
-    tags: 'sunamganj sylhet haor'
+    tags: 'sunamganj sylhet haor esunamganjerkhobor epaper'
   },
 
   // --- রাজশাহী বিভাগ ---
