@@ -2886,7 +2886,7 @@ const newspapers = [
     categoryLabel: 'গাজীপুর/ঢাকা',
     url: 'https://dailysaatkahon.com',
     epaperUrl: 'https://dailysaatkahon.com/epaper',
-    color: '#c0392b',
+    color: '#003466',
     icon: 'সা',
     tags: 'saatkahon gazipur dhaka saat kahon সাতকাহন'
   },
