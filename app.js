@@ -1038,17 +1038,6 @@ const newspapers = [
     tags: 'online portal bd24report'
   },
   {
-    id: 'shamolbangla24',
-    nameBn: 'শ্যামল বাংলা ২৪',
-    nameEn: 'Shamol Bangla 24',
-    category: 'online',
-    categoryLabel: 'অনলাইন পোর্টাল',
-    url: 'https://shamolbangla24.com',
-    color: '#16a085',
-    icon: 'শ্যাম',
-    tags: 'online portal shamolbangla'
-  },
-  {
     id: 'ournewsbd',
     nameBn: 'আওয়ার নিউজ বিডি',
     nameEn: 'Our News BD',
@@ -2821,6 +2810,18 @@ const newspapers = [
     color: '#7d3c98',
     icon: 'জা',
     tags: 'jamalpur mymensingh'
+  },
+  {
+    id: 'shamolbangla24',
+    nameBn: 'শ্যামল বাংলা ২৪',
+    nameEn: 'Shamol Bangla 24',
+    category: 'local',
+    division: 'mymensingh',
+    categoryLabel: 'ময়মনসিংহ',
+    url: 'https://shamolbangla24.com',
+    color: '#16a085',
+    icon: 'শ্যাম',
+    tags: 'sherpur mymensingh local shamolbangla shamol bangla শ্যামল বাংলা'
   },
 
   // =========================================================================
