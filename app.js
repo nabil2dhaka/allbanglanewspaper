@@ -449,6 +449,74 @@ const newspapers = [
     icon: 'বু',
     tags: 'bangladesh bulletin bdbulletin bd-bulletin national daily epaper বাংলাদেশ বুলেটিন'
   },
+  {
+    id: 'somoyerprotyasha',
+    nameBn: 'সময়ের প্রত্যাশা',
+    nameEn: 'Somoyer Protyasha',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://somoyerprotyasha.com',
+    color: '#1b4f72',
+    icon: 'স',
+    tags: 'somoyerprotyasha somoyer protyasha national daily সময়ের প্রত্যাশা'
+  },
+  {
+    id: 'amarbangladesh24',
+    nameBn: 'দৈনিক আমার বাংলাদেশ',
+    nameEn: 'Daily Amar Bangladesh',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.amarbangladesh24.com',
+    color: '#006266',
+    icon: 'আ',
+    tags: 'amarbangladesh amarbangladesh24 daily national আমার বাংলাদেশ'
+  },
+  {
+    id: 'dainikanandabazar',
+    nameBn: 'দৈনিক আনন্দবাজার',
+    nameEn: 'Dainik Anandabazar',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.dainikanandabazar.com',
+    color: '#c0392b',
+    icon: 'আ',
+    tags: 'anandabazar dainikanandabazar national daily আনন্দবাজার'
+  },
+  {
+    id: 'dailykalersrot',
+    nameBn: 'দৈনিক কালের স্রোত',
+    nameEn: 'Daily Kaler Srot',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://dailykalersrot.com',
+    epaperUrl: 'https://dailykalersrot.com/epaper/',
+    color: '#2980b9',
+    icon: 'কা',
+    tags: 'kalersrot dailykalersrot national daily epaper কালের স্রোত'
+  },
+  {
+    id: 'sangbad71',
+    nameBn: '৭১ সংবাদ',
+    nameEn: '71 Sangbad',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.71sangbad.com',
+    color: '#b71540',
+    icon: '৭১',
+    tags: '71sangbad sangbad71 ekattor sangbad national daily ৭১ সংবাদ'
+  },
+  {
+    id: 'jugerchinta24',
+    nameBn: 'যুগের চিন্তা',
+    nameEn: 'Juger Chinta',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.jugerchinta24.com',
+    epaperUrl: 'https://www.jugerchinta24.com/epaper',
+    color: '#27ae60',
+    icon: 'যু',
+    tags: 'jugerchinta jugerchinta24 national daily epaper যুগের চিন্তা'
+  },
 
   // =========================================================================
   // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 64 Websites)
