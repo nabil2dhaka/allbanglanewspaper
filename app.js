@@ -1393,6 +1393,139 @@ const newspapers = [
     icon: 'SN',
     tags: 'live tv news star starnews satellite broadcast bangla'
   },
+  {
+    id: 'greentv',
+    nameBn: 'গ্রিন টিভি',
+    nameEn: 'Green TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://greenbd.tv',
+    color: '#27ae60',
+    icon: 'গ্রি',
+    tags: 'green tv greentv satellite broadcast গ্রিন টিভি'
+  },
+  {
+    id: 'banglatv',
+    nameBn: 'বাংলা টিভি',
+    nameEn: 'Bangla TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://banglatv.tv',
+    color: '#c0392b',
+    icon: 'বাং',
+    tags: 'banglatv bangla tv satellite broadcast বাংলা টিভি'
+  },
+  {
+    id: 'bijoytv',
+    nameBn: 'বিজয় টিভি',
+    nameEn: 'Bijoy TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://bijoy.tv',
+    color: '#b03a2e',
+    icon: 'বি',
+    tags: 'bijoytv bijoy tv satellite broadcast বিজয় টিভি'
+  },
+  {
+    id: 'globaltv',
+    nameBn: 'গ্লোবাল টিভি',
+    nameEn: 'Global TV BD',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://www.globaltvbd.com',
+    color: '#1f618d',
+    icon: 'গ্লো',
+    tags: 'globaltv global tv hd broadcast গ্লোবাল টিভি'
+  },
+  {
+    id: 'ekhontv',
+    nameBn: 'এখন টিভি',
+    nameEn: 'Ekhon TV',
+    category: 'tv',
+    categoryLabel: 'বিজনেস টিভি',
+    url: 'https://ekhon.tv',
+    logo: 'assets/logos/ekhontv.webp',
+    color: '#d35400',
+    icon: 'এ',
+    tags: 'ekhontv ekhon tv business broadcast এখন টিভি'
+  },
+  {
+    id: 'durontotv',
+    nameBn: 'দুরন্ত টিভি',
+    nameEn: 'Duronto TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://duronto.tv',
+    color: '#e67e22',
+    icon: 'দু',
+    tags: 'duronto durontotv kids children satellite broadcast দুরন্ত টিভি'
+  },
+  {
+    id: 'satv',
+    nameBn: 'এসএ টিভি',
+    nameEn: 'SA TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://www.satv.tv',
+    color: '#117864',
+    icon: 'SA',
+    tags: 'satv sa tv satellite broadcast এসএ টিভি'
+  },
+  {
+    id: 'mohonatv',
+    nameBn: 'মোহনা টিভি',
+    nameEn: 'Mohona TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://mohona.tv',
+    color: '#7d3c98',
+    icon: 'মো',
+    tags: 'mohonatv mohona tv satellite broadcast মোহনা টিভি'
+  },
+  {
+    id: 'gazitv',
+    nameBn: 'গাজী টিভি (GTV)',
+    nameEn: 'Gazi TV (GTV)',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://gazitv.com',
+    color: '#b9770e',
+    icon: 'GTV',
+    tags: 'gazitv gazi tv gtv cricket satellite broadcast গাজী টিভি'
+  },
+  {
+    id: 'tsports',
+    nameBn: 'টি স্পোর্টস',
+    nameEn: 'T Sports',
+    category: 'tv',
+    categoryLabel: 'স্পোর্টস টিভি',
+    url: 'https://www.tsports.com',
+    color: '#c0392b',
+    icon: 'TS',
+    tags: 'tsports t sports bashundhara sports cricket football live টি স্পোর্টস'
+  },
+  {
+    id: 'nagoriktv',
+    nameBn: 'নাগরিক টিভি',
+    nameEn: 'Nagorik TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://nagorik.com',
+    color: '#2e4053',
+    icon: 'না',
+    tags: 'nagorik nagoriktv satellite broadcast নাগরিক টিভি'
+  },
+  {
+    id: 'mytv',
+    nameBn: 'মাই টিভি',
+    nameEn: 'My TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://mytvbd.tv',
+    color: '#16a085',
+    icon: 'মাই',
+    tags: 'mytv my tv mytvbd satellite broadcast মাই টিভি'
+  },
 
   // =========================================================================
   // 4. BANGLADESH ENGLISH DAILIES (ইংরেজি জাতীয় দৈনিক)
@@ -3482,8 +3615,9 @@ function updateBadges() {
 const SVG_LOGOS = new Set([
   "businessinsiderbd",
   "campuslive24","dailyprobaha","dhakamagazine","dinajpurnews",
+  "ekhontv",
   "patrika71",
-  "pavilion","techtunes","thedailycampus"
+  "pavilion","techtunes","thedailycampus","tsports"
 ]);
 
 // Get banner logo URL matching screenshot
