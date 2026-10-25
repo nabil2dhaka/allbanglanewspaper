@@ -1701,15 +1701,15 @@ const newspapers = [
   },
   {
     id: 'mkantho',
-    nameBn: 'মৌমাছি কণ্ঠ',
-    nameEn: 'Moumachi Kantho',
+    nameBn: 'দৈনিক মৌমাছি কণ্ঠ',
+    nameEn: 'Daily Moumachi Kantho',
     category: 'local',
     division: 'sylhet',
     categoryLabel: 'মৌলভীবাজার/সিলেট',
     url: 'https://mkantho.com',
-    color: '#d35400',
+    color: '#a32626',
     icon: 'মৌ',
-    tags: 'mkantho moumachi kantho moulvibazar sylhet local'
+    tags: 'mkantho moumachi kantho dainik moulvibazar sylhet local daily moumachi kantho'
   },
   {
     id: 'dailykhowai',
