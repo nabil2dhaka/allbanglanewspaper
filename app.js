@@ -1890,9 +1890,10 @@ const newspapers = [
     division: 'rajshahi',
     categoryLabel: 'বগুড়া/রাজশাহী',
     url: 'https://www.karatoa.com.bd',
+    epaperUrl: 'https://www.ekaratoa.com/',
     color: '#6c3483',
     icon: 'ক',
-    tags: 'bogra bogura rajshahi north'
+    tags: 'bogra bogura rajshahi north karatoa ekaratoa epaper'
   },
   {
     id: 'pabnabarta',
