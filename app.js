@@ -495,29 +495,6 @@ const newspapers = [
     tags: 'kalersrot dailykalersrot national daily epaper কালের স্রোত'
   },
   {
-    id: 'sangbad71',
-    nameBn: '৭১ সংবাদ',
-    nameEn: '71 Sangbad',
-    category: 'daily',
-    categoryLabel: 'জাতীয় দৈনিক',
-    url: 'https://www.71sangbad.com',
-    color: '#b71540',
-    icon: '৭১',
-    tags: '71sangbad sangbad71 ekattor sangbad national daily ৭১ সংবাদ'
-  },
-  {
-    id: 'jugerchinta24',
-    nameBn: 'যুগের চিন্তা',
-    nameEn: 'Juger Chinta',
-    category: 'daily',
-    categoryLabel: 'জাতীয় দৈনিক',
-    url: 'https://www.jugerchinta24.com',
-    epaperUrl: 'https://www.jugerchinta24.com/epaper',
-    color: '#27ae60',
-    icon: 'যু',
-    tags: 'jugerchinta jugerchinta24 national daily epaper যুগের চিন্তা'
-  },
-  {
     id: 'matribhumirkhobor',
     nameBn: 'দৈনিক মাতৃভূমির খবর',
     nameEn: 'Dainik Matribhumir Khobor',
@@ -1248,6 +1225,29 @@ const newspapers = [
     color: '#ec2028',
     icon: 'ইউএনবি',
     tags: 'online portal unb united news of bangladesh national news agency unb.com.bd unb bangla'
+  },
+  {
+    id: 'sangbad71',
+    nameBn: '৭১ সংবাদ',
+    nameEn: '71 Sangbad',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.71sangbad.com',
+    color: '#b71540',
+    icon: '৭১',
+    tags: '71sangbad sangbad71 online portal ৭১ সংবাদ'
+  },
+  {
+    id: 'jugerchinta24',
+    nameBn: 'যুগের চিন্তা',
+    nameEn: 'Juger Chinta',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.jugerchinta24.com',
+    epaperUrl: 'https://www.jugerchinta24.com/epaper',
+    color: '#27ae60',
+    icon: 'যু',
+    tags: 'jugerchinta jugerchinta24 online portal epaper যুগের চিন্তা'
   },
 
   // =========================================================================
