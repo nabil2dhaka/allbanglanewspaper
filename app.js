@@ -2011,6 +2011,203 @@ const newspapers = [
     icon: 'মে',
     tags: 'meherpur khulna meherpurpratidin epaper'
   },
+  {
+    id: 'maguranews',
+    nameBn: 'মাগুরা নিউজ',
+    nameEn: 'Magura News',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'মাগুরা/খুলনা',
+    url: 'https://www.maguranews.com',
+    color: '#006a4e',
+    icon: 'মা',
+    tags: 'magura maguranews khulna local মাগুরা'
+  },
+  {
+    id: 'loksamaj',
+    nameBn: 'দৈনিক লোকসমাজ',
+    nameEn: 'Dainik Lok Samaj',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'যশোর/খুলনা',
+    url: 'https://loksamaj.com',
+    color: '#c0392b',
+    icon: 'লো',
+    tags: 'loksamaj jessore khulna dainik lok samaj লোকসমাজ'
+  },
+  {
+    id: 'narailkantho',
+    nameBn: 'নড়াইল কণ্ঠ',
+    nameEn: 'Narail Kantho',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'নড়াইল/খুলনা',
+    url: 'https://narailkantho.com',
+    color: '#2980b9',
+    icon: 'ন',
+    tags: 'narail narailkantho kantho khulna local নড়াইল কণ্ঠ'
+  },
+  {
+    id: 'prothombhor',
+    nameBn: 'দৈনিক প্রথম ভোর',
+    nameEn: 'Daily Prothom Bhor',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'চুয়াডাঙ্গা/খুলনা',
+    url: 'https://prothombhor.net',
+    epaperUrl: 'https://epaper.prothombhor.net',
+    color: '#d35400',
+    icon: 'প্র',
+    tags: 'prothombhor chuadanga khulna epaper প্রথম ভোর'
+  },
+  {
+    id: 'satkhiranews',
+    nameBn: 'সাতক্ষীরা নিউজ',
+    nameEn: 'Satkhira News',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'সাতক্ষীরা/খুলনা',
+    url: 'https://www.satkhiranews.com',
+    color: '#16a085',
+    icon: 'সা',
+    tags: 'satkhira satkhiranews khulna local সাতক্ষীরা নিউজ'
+  },
+  {
+    id: 'somoyerkagoj',
+    nameBn: 'সময়ের কাগজ',
+    nameEn: 'Somoyer Kagoj',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'কুষ্টিয়া/খুলনা',
+    url: 'https://somoyerkagoj.com',
+    epaperUrl: 'https://epaper.somoyerkagoj.com',
+    color: '#8e44ad',
+    icon: 'স',
+    tags: 'somoyerkagoj kushtia khulna epaper সময়ের কাগজ'
+  },
+  {
+    id: 'dainikdristipat',
+    nameBn: 'দৈনিক দৃষ্টিপাত',
+    nameEn: 'Dainik Dristipat',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'সাতক্ষীরা/খুলনা',
+    url: 'https://dainikdristipat.com',
+    color: '#b03a2e',
+    icon: 'দৃ',
+    tags: 'dristipat dainik dristipat satkhira khulna দৃষ্টিপাত'
+  },
+  {
+    id: 'dailyprobaha',
+    nameBn: 'দৈনিক প্রবাহ',
+    nameEn: 'Daily Probaha',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'খুলনা',
+    url: 'https://dailyprobaha.com.bd',
+    epaperUrl: 'https://dailyprobaha.com.bd/article/e-paper/',
+    logo: 'assets/logos/dailyprobaha.webp',
+    color: '#1b4f72',
+    icon: 'প্র',
+    tags: 'probaha dailyprobaha khulna epaper প্রবাহ'
+  },
+  {
+    id: 'dainikkalyan',
+    nameBn: 'দৈনিক কল্যাণ',
+    nameEn: 'Dainik Kalyan',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'যশোর/খুলনা',
+    url: 'https://dainikkalyan.com',
+    color: '#196f3d',
+    icon: 'ক',
+    tags: 'kalyan dainikkalyan jessore khulna কল্যাণ'
+  },
+  {
+    id: 'dailyspandan',
+    nameBn: 'দৈনিক স্পন্দন',
+    nameEn: 'Daily Spandan',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'যশোর/খুলনা',
+    url: 'https://dailyspandan.com',
+    color: '#7d3c98',
+    icon: 'স্প',
+    tags: 'spandan dailyspandan jessore khulna স্পন্দন'
+  },
+  {
+    id: 'dainiktathya',
+    nameBn: 'দৈনিক তথ্য',
+    nameEn: 'Dainik Tathya',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'খুলনা',
+    url: 'https://dainiktathya.com',
+    epaperUrl: 'http://epaper.dainiktathya.com',
+    color: '#922b21',
+    icon: 'ত',
+    tags: 'tathya dainiktathya khulna epaper তথ্য'
+  },
+  {
+    id: 'dakhinanchalkhulna',
+    nameBn: 'দক্ষিণাঞ্চল প্রতিদিন',
+    nameEn: 'Dakhinanchal Protidin',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'খুলনা',
+    url: 'https://dakhinanchal.com',
+    color: '#117864',
+    icon: 'দ',
+    tags: 'dakhinanchal protidin khulna dakhinanchal দক্ষিণাঞ্চল'
+  },
+  {
+    id: 'sundarbontimes',
+    nameBn: 'সুন্দরবন টাইমস',
+    nameEn: 'Sundarbon Times',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'সুন্দরবন/খুলনা',
+    url: 'https://www.sundarbontimes.com',
+    color: '#145a32',
+    icon: 'সু',
+    tags: 'sundarbon times sundarbontimes khulna সুন্দরবন'
+  },
+  {
+    id: 'dailybanglarchokh',
+    nameBn: 'দৈনিক বাংলার চোখ',
+    nameEn: 'Daily Banglar Chokh',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'কুষ্টিয়া/খুলনা',
+    url: 'https://dailybanglarchokh.com',
+    color: '#b9770e',
+    icon: 'চো',
+    tags: 'banglarchokh kushtia khulna বাংলার চোখ'
+  },
+  {
+    id: 'dailyamaderchuadanga',
+    nameBn: 'দৈনিক আমাদের চুয়াডাঙ্গা',
+    nameEn: 'Daily Amader Chuadanga',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'চুয়াডাঙ্গা/খুলনা',
+    url: 'https://dailyamaderchuadanga.com',
+    color: '#2471a3',
+    icon: 'চু',
+    tags: 'amaderchuadanga chuadanga khulna আমাদের চুয়াডাঙ্গা'
+  },
+  {
+    id: 'dailynabochitro',
+    nameBn: 'দৈনিক নবচিত্র',
+    nameEn: 'Daily Nabochitro',
+    category: 'local',
+    division: 'khulna',
+    categoryLabel: 'ঝিনাইদহ/খুলনা',
+    url: 'https://www.dailynabochitro.com',
+    color: '#6c3483',
+    icon: 'ন',
+    tags: 'nabochitro dailynabochitro jhenaidah khulna নবচিত্র'
+  },
 
   // --- বরিশাল বিভাগ ---
   {
@@ -3174,7 +3371,7 @@ function updateBadges() {
 // Known SVG banner IDs
 const SVG_LOGOS = new Set([
   "businessinsiderbd",
-  "campuslive24","dhakamagazine","dinajpurnews",
+  "campuslive24","dailyprobaha","dhakamagazine","dinajpurnews",
   "patrika71",
   "pavilion","techtunes","thedailycampus"
 ]);
