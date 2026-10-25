@@ -2131,9 +2131,10 @@ const newspapers = [
     division: 'khulna',
     categoryLabel: 'যশোর/খুলনা',
     url: 'https://dailyspandan.com',
+    epaperUrl: 'https://edailyspandan.com',
     color: '#7d3c98',
     icon: 'স্প',
-    tags: 'spandan dailyspandan jessore khulna স্পন্দন'
+    tags: 'spandan dailyspandan jessore khulna epaper স্পন্দন'
   },
   {
     id: 'dainiktathya',
