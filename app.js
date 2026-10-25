@@ -1836,6 +1836,103 @@ const newspapers = [
     icon: 'ফে',
     tags: 'feni chittagong fenisangbad doinik feni epaper'
   },
+  {
+    id: 'giridarpon',
+    nameBn: 'দৈনিক গিরিদর্পণ',
+    nameEn: 'Dainik Giri Darpan',
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'রাঙ্গামাটি/চট্টগ্রাম',
+    url: 'https://giridarpon.com',
+    color: '#1b4d3e',
+    icon: 'গি',
+    tags: 'giridarpon rangamati cht chittagong পাহাড়ি গিরিদর্পণ'
+  },
+  {
+    id: 'desherkantha',
+    nameBn: 'দৈনিক দেশের কণ্ঠ',
+    nameEn: 'Dainik Desher Kantha',
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'চট্টগ্রাম',
+    url: 'https://desherkantha.com',
+    epaperUrl: 'https://desherkantha.com/epaper',
+    color: '#c0392b',
+    icon: 'দে',
+    tags: 'desherkantha chittagong local দেশের কণ্ঠ'
+  },
+  {
+    id: 'deshjanatarbani',
+    nameBn: 'দেশ জনতার বাণী',
+    nameEn: 'Desh Janatar Bani',
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'চট্টগ্রাম',
+    url: 'https://deshjanatarbani.net',
+    color: '#006266',
+    icon: 'দে',
+    tags: 'deshjanatarbani chittagong local দেশ জনতার বাণী'
+  },
+  {
+    id: 'coxsbazarnews',
+    nameBn: 'কক্সবাজার নিউজ',
+    nameEn: "Cox's Bazar News",
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'কক্সবাজার/চট্টগ্রাম',
+    url: 'https://www.coxsbazarnews.com',
+    color: '#0097e6',
+    icon: 'কক্স',
+    tags: 'coxsbazar cbn coxsbazarnews chittagong কক্সবাজার নিউজ'
+  },
+  {
+    id: 'ctgtimes',
+    nameBn: 'সিটিজি টাইমস',
+    nameEn: 'Ctg Times',
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'চট্টগ্রাম',
+    url: 'https://ctgtimes.com',
+    color: '#d63031',
+    icon: 'সি',
+    tags: 'ctgtimes ctg times chittagong সিটিজি টাইমস'
+  },
+  {
+    id: 'ctgkhobor',
+    nameBn: 'সিটিজি খবর',
+    nameEn: 'Ctg Khobor',
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'চট্টগ্রাম',
+    url: 'https://ctgkhobor.com',
+    color: '#e84118',
+    icon: 'সি',
+    tags: 'ctgkhobor ctg khobor chittagong সিটিজি খবর'
+  },
+  {
+    id: 'daynikdesherkotha',
+    nameBn: 'দৈনিক দেশের কথা',
+    nameEn: 'Dainik Desher Kotha',
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'চট্টগ্রাম',
+    url: 'https://daynikdesherkotha.com',
+    color: '#16a085',
+    icon: 'দে',
+    tags: 'daynikdesherkotha desher kotha chittagong দেশের কথা'
+  },
+  {
+    id: 'ctgpratidin',
+    nameBn: 'সিটিজি প্রতিদিন',
+    nameEn: 'Ctg Pratidin',
+    category: 'local',
+    division: 'chittagong',
+    categoryLabel: 'চট্টগ্রাম',
+    url: 'https://ctgpratidin.com',
+    color: '#27ae60',
+    icon: 'সি',
+    tags: 'ctgpratidin ctg pratidin chittagong সিটিজি প্রতিদিন'
+  },
 
   // --- সিলেট বিভাগ ---
   {
@@ -3614,8 +3711,9 @@ function updateBadges() {
 // Known SVG banner IDs
 const SVG_LOGOS = new Set([
   "businessinsiderbd",
-  "campuslive24","dailyprobaha","dhakamagazine","dinajpurnews",
+  "campuslive24","dailyprobaha","desherkantha","dhakamagazine","dinajpurnews",
   "ekhontv",
+  "giridarpon",
   "patrika71",
   "pavilion","techtunes","thedailycampus","tsports"
 ]);
