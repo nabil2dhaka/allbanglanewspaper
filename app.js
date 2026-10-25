@@ -2049,6 +2049,140 @@ const newspapers = [
     icon: 'প',
     tags: 'patuakhali barisal kuakata amader patuakhali patuakhaliweb'
   },
+  {
+    id: 'pirojpurkantho',
+    nameBn: 'পিরোজপুর কণ্ঠ',
+    nameEn: 'Pirojpur Kantha',
+    category: 'local',
+    division: 'barisal',
+    categoryLabel: 'পিরোজপুর/বরিশাল',
+    url: 'https://pirojpurkantho.com',
+    color: '#006a4e',
+    icon: 'প',
+    tags: 'pirojpur barisal local pirojpurkantho পিরোজপুর কণ্ঠ'
+  },
+  {
+    id: 'dokkhinancol',
+    nameBn: 'দৈনিক দক্ষিণাঞ্চল',
+    nameEn: 'Daily Dokkhinanchal',
+    category: 'local',
+    division: 'barisal',
+    categoryLabel: 'বরিশাল',
+    url: 'https://dokkhinancol.com',
+    color: '#b03a2e',
+    icon: 'দ',
+    tags: 'dokkhinancol barisal dainik dokkhinanchal দক্ষিণাঞ্চল'
+  },
+  {
+    id: 'barishaltimes',
+    nameBn: 'বরিশাল টাইমস',
+    nameEn: 'Barishal Times',
+    category: 'local',
+    division: 'barisal',
+    categoryLabel: 'বরিশাল',
+    url: 'https://www.barishaltimes.com',
+    color: '#2874a6',
+    icon: 'ব',
+    tags: 'barishal barisal times barishaltimes বরিশাল টাইমস'
+  },
+  {
+    id: 'barisalbani',
+    nameBn: 'বরিশাল বাণী',
+    nameEn: 'Barisal Bani',
+    category: 'local',
+    division: 'barisal',
+    categoryLabel: 'বরিশাল',
+    url: 'https://barisalbani.com',
+    color: '#117864',
+    icon: 'ব',
+    tags: 'barisal barisalbani bani বরিশাল বাণী'
+  },
+  {
+    id: 'dailyajkerbarishal',
+    nameBn: 'দৈনিক আজকের বরিশাল',
+    nameEn: 'Daily Ajker Barishal',
+    category: 'local',
+    division: 'barisal',
+    categoryLabel: 'বরিশাল',
+    url: 'https://dailyajkerbarishal.com',
+    color: '#c0392b',
+    icon: 'আ',
+    tags: 'barisal ajker barishal dailyajkerbarishal আজকের বরিশাল'
+  },
+  {
+    id: 'patrika71',
+    nameBn: 'দৈনিক পত্রিকা ৭১',
+    nameEn: 'Daily Patrika 71',
+    category: 'local',
+    division: 'barisal',
+    categoryLabel: 'বরিশাল',
+    url: 'https://patrika71.com',
+    epaperUrl: 'https://patrika71.com/epaper',
+    logo: 'assets/logos/patrika71.webp',
+    color: '#1e8449',
+    icon: 'প',
+    tags: 'patrika71 barisal epaper patrika 71 ৭১ পত্রিকা'
+  },
+  {
+    id: 'ajkerbhola',
+    nameBn: 'দৈনিক আজকের ভোলা',
+    nameEn: 'Dainik Ajker Bhola',
+    category: 'local',
+    division: 'barisal',
+    categoryLabel: 'ভোলা/বরিশাল',
+    url: 'https://www.ajkerbhola.com',
+    color: '#884ea0',
+    icon: 'ভো',
+    tags: 'bhola barisal ajker bhola ajkerbhola আজকের ভোলা'
+  },
+  {
+    id: 'bholarbani',
+    nameBn: 'ভোলার বাণী',
+    nameEn: 'Bholar Bani',
+    category: 'local',
+    division: 'barisal',
+    categoryLabel: 'ভোলা/বরিশাল',
+    url: 'https://bholarbani.com',
+    color: '#2e4053',
+    icon: 'ভো',
+    tags: 'bhola barisal bholarbani bani ভোলার বাণী'
+  },
+  {
+    id: 'dailybanglarkantha',
+    nameBn: 'দৈনিক বাংলার কণ্ঠ',
+    nameEn: 'Daily Banglar Kantha',
+    category: 'local',
+    division: 'barisal',
+    categoryLabel: 'ভোলা/বরিশাল',
+    url: 'https://dailybanglarkantha.com',
+    color: '#b9770e',
+    icon: 'বা',
+    tags: 'bhola barisal banglar kantha dailybanglarkantha বাংলার কণ্ঠ'
+  },
+  {
+    id: 'bholanews',
+    nameBn: 'ভোলা নিউজ',
+    nameEn: 'Bhola News',
+    category: 'local',
+    division: 'barisal',
+    categoryLabel: 'ভোলা/বরিশাল',
+    url: 'https://bholanews.com',
+    color: '#d35400',
+    icon: 'ভো',
+    tags: 'bhola barisal bholanews ভোলা নিউজ'
+  },
+  {
+    id: 'bholarsangbad',
+    nameBn: 'ভোলার সংবাদ',
+    nameEn: 'Bholar Sangbad',
+    category: 'local',
+    division: 'barisal',
+    categoryLabel: 'ভোলা/বরিশাল',
+    url: 'https://www.bholarsangbad.com',
+    color: '#138d75',
+    icon: 'ভো',
+    tags: 'bhola barisal bholarsangbad ভোলার সংবাদ'
+  },
 
   // --- রংপুর বিভাগ ---
   {
@@ -3041,6 +3175,7 @@ function updateBadges() {
 const SVG_LOGOS = new Set([
   "businessinsiderbd",
   "campuslive24","dhakamagazine","dinajpurnews",
+  "patrika71",
   "pavilion","techtunes","thedailycampus"
 ]);
 
