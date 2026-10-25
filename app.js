@@ -635,9 +635,10 @@ const newspapers = [
     category: 'online',
     categoryLabel: 'অনলাইন পোর্টাল',
     url: 'https://www.dhakatribune.com',
+    epaperUrl: 'https://epaper.dhakatribune.com',
     color: '#d9230f',
     icon: 'DT',
-    tags: 'online portal tribune'
+    tags: 'online portal tribune epaper'
   },
   {
     id: 'zoombangla',
@@ -1402,9 +1403,10 @@ const newspapers = [
     category: 'english',
     categoryLabel: 'English Daily',
     url: 'https://www.dhakatribune.com',
+    epaperUrl: 'https://epaper.dhakatribune.com',
     color: '#d9230f',
     icon: 'DT',
-    tags: 'english bangladesh tribune'
+    tags: 'english bangladesh tribune epaper'
   },
   {
     id: 'tbsnews',
@@ -1424,9 +1426,10 @@ const newspapers = [
     category: 'english',
     categoryLabel: 'Financial Daily',
     url: 'https://thefinancialexpress.com.bd',
+    epaperUrl: 'https://epaper.thefinancialexpress.com.bd',
     color: '#1a5276',
     icon: 'FE',
-    tags: 'english financial business fe'
+    tags: 'english financial business fe epaper'
   },
   {
     id: 'newage',
@@ -1435,9 +1438,10 @@ const newspapers = [
     category: 'english',
     categoryLabel: 'English Daily',
     url: 'https://www.newagebd.net',
+    epaperUrl: 'https://epaper.newagebd.net',
     color: '#4a235a',
     icon: 'NA',
-    tags: 'english bangladesh'
+    tags: 'english bangladesh newage epaper'
   },
   {
     id: 'dailysun',
@@ -1446,9 +1450,10 @@ const newspapers = [
     category: 'english',
     categoryLabel: 'English Daily',
     url: 'https://www.daily-sun.com',
+    epaperUrl: 'https://epaper.daily-sun.com',
     color: '#f39c12',
     icon: 'DS',
-    tags: 'english bangladesh sun'
+    tags: 'english bangladesh sun epaper'
   },
   {
     id: 'dailyobserver',
@@ -1457,9 +1462,10 @@ const newspapers = [
     category: 'english',
     categoryLabel: 'English Daily',
     url: 'https://www.observerbd.com',
+    epaperUrl: 'https://epaper.observerbd.com',
     color: '#117864',
     icon: 'OB',
-    tags: 'english bangladesh'
+    tags: 'english bangladesh observer observerbd epaper'
   },
   {
     id: 'asianage',
@@ -1468,9 +1474,10 @@ const newspapers = [
     category: 'english',
     categoryLabel: 'English Daily',
     url: 'https://dailyasianage.com',
+    epaperUrl: 'https://dailyasianage.com/ep/',
     color: '#922b21',
     icon: 'AA',
-    tags: 'english bangladesh'
+    tags: 'english bangladesh asian age asianage epaper'
   },
   {
     id: 'bangladeshpost',
@@ -1479,9 +1486,10 @@ const newspapers = [
     category: 'english',
     categoryLabel: 'English Daily',
     url: 'https://bangladeshpost.net',
+    epaperUrl: 'https://bangladeshpost.net/epaper',
     color: '#1f618d',
     icon: 'BP',
-    tags: 'english bangladesh'
+    tags: 'english bangladesh bangladeshpost epaper'
   },
 
   // =========================================================================
@@ -2061,9 +2069,10 @@ const newspapers = [
     category: 'stock',
     categoryLabel: 'Stock Market',
     url: 'https://thefinancialexpress.com.bd',
+    epaperUrl: 'https://epaper.thefinancialexpress.com.bd',
     color: '#1a5276',
     icon: 'FE',
-    tags: 'stock market share dse financial express'
+    tags: 'stock market share dse financial express epaper'
   },
   {
     id: 'stockbangladesh',
