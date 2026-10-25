@@ -1614,7 +1614,7 @@ const newspapers = [
     division: 'chittagong',
     categoryLabel: 'চাঁদপুর',
     url: 'https://dailyshapoth.com',
-    color: '#117864',
+    color: '#007a3d',
     icon: 'শ',
     tags: 'chandpur shapoth dailyshapoth chittagong local'
   },
