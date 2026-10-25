@@ -1907,6 +1907,58 @@ const newspapers = [
     icon: 'পা',
     tags: 'pabna rajshahi pabnabarta pabnatimes24'
   },
+  {
+    id: 'dailysunshine',
+    nameBn: 'ডেইলি সানশাইন',
+    nameEn: 'Daily Sunshine',
+    category: 'local',
+    division: 'rajshahi',
+    categoryLabel: 'রাজশাহী',
+    url: 'https://www.dailysunshine.com.bd',
+    epaperUrl: 'https://epaper.dailysunshine.com.bd',
+    color: '#e67e22',
+    icon: 'সান',
+    tags: 'dailysunshine sunshine rajshahi local north epaper'
+  },
+  {
+    id: 'gonodhoniprotidin',
+    nameBn: 'গণধ্বনি প্রতিদিন',
+    nameEn: 'Gonodhoni Protidin',
+    category: 'local',
+    division: 'rajshahi',
+    categoryLabel: 'রাজশাহী',
+    url: 'https://gd-protidin.com',
+    epaperUrl: 'https://gonodhoniprotidin.com',
+    color: '#c0392b',
+    icon: 'গণ',
+    tags: 'gonodhoniprotidin gd protidin rajshahi local epaper'
+  },
+  {
+    id: 'dailysonardesh',
+    nameBn: 'দৈনিক সোনার দেশ',
+    nameEn: 'Daily Sonar Desh',
+    category: 'local',
+    division: 'rajshahi',
+    categoryLabel: 'রাজশাহী',
+    url: 'https://dailysonardesh.com',
+    epaperUrl: 'https://dailysonardesh.com/epaper',
+    color: '#d4ac0d',
+    icon: 'সো',
+    tags: 'dailysonardesh sonar desh rajshahi local padma epaper'
+  },
+  {
+    id: 'muktoprovat',
+    nameBn: 'দৈনিক মুক্ত প্রভাত',
+    nameEn: 'Daily Mukto Provat',
+    category: 'local',
+    division: 'rajshahi',
+    categoryLabel: 'রাজশাহী',
+    url: 'https://muktoprovat.com.bd',
+    epaperUrl: 'https://muktoprovat.com.bd/epaper',
+    color: '#2471a3',
+    icon: 'মুক্ত',
+    tags: 'muktoprovat mukto provat rajshahi local epaper'
+  },
 
   // --- খুলনা বিভাগ ---
   {
