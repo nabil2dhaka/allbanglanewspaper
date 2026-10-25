@@ -1583,9 +1583,10 @@ const newspapers = [
     division: 'sylhet',
     categoryLabel: 'সিলেট',
     url: 'https://sylheterdak.com.bd',
+    epaperUrl: 'https://esylheterdak.com',
     color: '#005b96',
     icon: 'সি',
-    tags: 'sylhet local sylheterdak dainik surma'
+    tags: 'sylhet local sylheterdak dainik surma esylheterdak epaper'
   },
   {
     id: 'dailyjalalabad',
