@@ -72,7 +72,7 @@
             <div>
               <div class="contact-label">ইমেইল ঠিকানা</div>
               <div class="contact-value">
-                <a href="mailto:info@allbanglanewspaper.org">info@allbanglanewspaper.org</a>
+                <a href="mailto:me@muhammadnabil.com">me@muhammadnabil.com</a>
               </div>
             </div>
           </div>
@@ -111,46 +111,55 @@
         <!-- Right: Interactive Contact Form -->
         <div class="page-card">
           <h2 style="font-size: 1.35rem; font-weight: 700; color: var(--text-primary); margin: 0 0 1.25rem 0;">✍️ বার্তা পাঠান</h2>
-          <form id="contactForm" onsubmit="handleContactSubmit(event)">
+          <form id="contactForm" action="https://formsubmit.co/me@muhammadnabil.com" method="POST" onsubmit="handleContactSubmit(event)">
+            <!-- FormSubmit Configurations -->
+            <input type="hidden" name="_subject" value="New message from All Bangla Newspaper Directory">
+            <input type="hidden" name="_template" value="table">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="text" name="_honey" style="display:none">
+
             <div class="form-group">
               <label for="userName" class="form-label">আপনার পূর্ণ নাম <span style="color: var(--accent-red);">*</span></label>
-              <input type="text" id="userName" class="form-control" placeholder="যেমন: আব্দুর রহমান" required>
+              <input type="text" id="userName" name="name" class="form-control" placeholder="যেমন: আব্দুর রহমান" required>
             </div>
 
             <div class="form-group">
               <label for="userEmail" class="form-label">আপনার ইমেইল <span style="color: var(--accent-red);">*</span></label>
-              <input type="email" id="userEmail" class="form-control" placeholder="যেমন: name@example.com" required>
+              <input type="email" id="userEmail" name="email" class="form-control" placeholder="যেমন: name@example.com" required>
             </div>
 
             <div class="form-group">
               <label for="subjectSelect" class="form-label">বার্তার বিষয় <span style="color: var(--accent-red);">*</span></label>
-              <select id="subjectSelect" class="form-control" required>
+              <select id="subjectSelect" name="subject" class="form-control" required>
                 <option value="" disabled selected>বিষয় নির্বাচন করুন...</option>
-                <option value="add_paper">নতুন সংবাদপত্র / পোর্টাল সংযোজনের আবেদন</option>
-                <option value="fix_link">ভুল বা অচল লিংক সংশোধন</option>
-                <option value="update_logo">লোগো বা তথ্যের আধুনিকায়ন</option>
-                <option value="feedback">পরামর্শ বা সাধারণ মতামত</option>
-                <option value="other">অন্যান্য অনুসন্ধান</option>
+                <option value="নতুন সংবাদপত্র / পোর্টাল সংযোজনের আবেদন">নতুন সংবাদপত্র / পোর্টাল সংযোজনের আবেদন</option>
+                <option value="ভুল বা অচল লিংক সংশোধন">ভুল বা অচল লিংক সংশোধন</option>
+                <option value="লোগো বা তথ্যের আধুনিকায়ন">লোগো বা তথ্যের আধুনিকায়ন</option>
+                <option value="পরামর্শ বা সাধারণ মতামত">পরামর্শ বা সাধারণ মতামত</option>
+                <option value="অন্যান্য অনুসন্ধান">অন্যান্য অনুসন্ধান</option>
               </select>
             </div>
 
             <div class="form-group">
               <label for="paperDetails" class="form-label">সংবাদপত্রের নাম ও ওয়েবসাইট লিংক (প্রযোজ্য ক্ষেত্রে)</label>
-              <input type="text" id="paperDetails" class="form-control" placeholder="যেমন: দৈনিক উদাহরণ (https://example.com)">
+              <input type="text" id="paperDetails" name="newspaper_details" class="form-control" placeholder="যেমন: দৈনিক উদাহরণ (https://example.com)">
             </div>
 
             <div class="form-group">
               <label for="userMessage" class="form-label">আপনার বার্তা বা মন্তব্য <span style="color: var(--accent-red);">*</span></label>
-              <textarea id="userMessage" class="form-control form-textarea" placeholder="আপনার বার্তাটি বিস্তারিত লিখুন..." required></textarea>
+              <textarea id="userMessage" name="message" class="form-control form-textarea" placeholder="আপনার বার্তাটি বিস্তারিত লিখুন..." required></textarea>
             </div>
 
             <button type="submit" id="btnSubmit" class="btn-submit">
               <span>🚀</span> বার্তা পাঠিয়ে দিন
             </button>
 
-            <!-- Success Alert Feedback -->
+            <!-- Success & Error Alert Feedback -->
             <div id="formAlert" class="form-alert form-alert-success">
-              ✅ <strong>ধন্যবাদ!</strong> আপনার বার্তাটি সফলভাবে গৃহীত হয়েছে। আমাদের টিম পর্যালোচনা করে দ্রুত আপনার সাথে যোগাযোগ করবে।
+              ✅ <strong>ধন্যবাদ!</strong> আপনার বার্তাটি সফলভাবে পাঠানো হয়েছে। আমাদের টিম পর্যালোচনা করে দ্রুত আপনার সাথে যোগাযোগ করবে।
+            </div>
+            <div id="formErrorAlert" class="form-alert highlight-box-warning" style="display: none; margin-top: 1rem;">
+              ⚠️ দুঃখিত, বার্তা পাঠাতে সমস্যা হয়েছে। অনুগ্রহ করে সরাসরি <a href="mailto:me@muhammadnabil.com" style="color: inherit; text-decoration: underline; font-weight: 600;">me@muhammadnabil.com</a> ঠিকানায় ইমেইল করুন।
             </div>
           </form>
         </div>
@@ -211,22 +220,44 @@
 
     function handleContactSubmit(e) {
       e.preventDefault();
-      const btn = document.getElementById('btnSubmit');
-      const alert = document.getElementById('formAlert');
       const form = document.getElementById('contactForm');
-      
+      const btn = document.getElementById('btnSubmit');
+      const successAlert = document.getElementById('formAlert');
+      const errorAlert = document.getElementById('formErrorAlert');
+
+      successAlert.style.display = 'none';
+      if (errorAlert) errorAlert.style.display = 'none';
+
       btn.disabled = true;
       btn.innerHTML = '<span>⏳</span> পাঠানো হচ্ছে...';
-      
-      setTimeout(function() {
+
+      const formData = new FormData(form);
+
+      fetch('https://formsubmit.co/ajax/me@muhammadnabil.com', {
+        method: 'POST',
+        headers: {
+          'Accept': 'application/json'
+        },
+        body: formData
+      })
+      .then(function(res) {
+        if (res.ok) return res.json();
+        throw new Error('Network response error');
+      })
+      .then(function() {
         btn.disabled = false;
         btn.innerHTML = '<span>✓</span> পাঠানো সম্পন্ন হয়েছে';
-        alert.style.display = 'block';
+        successAlert.style.display = 'block';
         form.reset();
         setTimeout(function() {
           btn.innerHTML = '<span>🚀</span> বার্তা পাঠিয়ে দিন';
-        }, 4000);
-      }, 700);
+        }, 4500);
+      })
+      .catch(function(err) {
+        console.warn('AJAX submit failed, falling back to standard submit:', err);
+        // Fallback to standard form submission
+        form.submit();
+      });
     }
   </script>
 </body>
