@@ -4,13 +4,37 @@
         xmlns:image="http://www.google.com/schemas/sitemap-image/1.1">
   <url>
     <loc>https://nabil2dhaka.github.io/allbanglanewspaper/</loc>
-    <lastmod>2026-10-24</lastmod>
+    <lastmod>2026-10-26</lastmod>
     <changefreq>daily</changefreq>
     <priority>1.0</priority>
     <image:image>
       <image:loc>https://nabil2dhaka.github.io/allbanglanewspaper/assets/og-preview.png</image:loc>
-      <image:title>All Bangla Newspaper Directory - 215+ Publications</image:title>
+      <image:title>All Bangla Newspaper Directory - 335+ Publications</image:title>
       <image:caption>Complete directory of all Bangladeshi newspapers, online portals, share market, and epapers</image:caption>
     </image:image>
+  </url>
+  <url>
+    <loc>https://nabil2dhaka.github.io/allbanglanewspaper/about.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
+  </url>
+  <url>
+    <loc>https://nabil2dhaka.github.io/allbanglanewspaper/disclaimer.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nabil2dhaka.github.io/allbanglanewspaper/privacy.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.7</priority>
+  </url>
+  <url>
+    <loc>https://nabil2dhaka.github.io/allbanglanewspaper/contact.html</loc>
+    <lastmod>2026-10-26</lastmod>
+    <changefreq>monthly</changefreq>
+    <priority>0.8</priority>
   </url>
 </urlset>

@@ -21,6 +21,7 @@ Live Site: [https://nabil2dhaka.github.io/allbanglanewspaper/](https://nabil2dha
 - **Instant Search & Filters:** Search by publication name in Bangla or English, category, district, division, or keyword tags.
 - **Favorites & Bookmarks:** One-click instant bookmarking with persistent `localStorage`.
 - **Light & Dark Theme:** System-aware theme toggle with smooth transitions.
+- **Dedicated Information & Legal Pages:** Full Bangla pages for About Us ([about.html](https://nabil2dhaka.github.io/allbanglanewspaper/about.html)), Disclaimer ([disclaimer.html](https://nabil2dhaka.github.io/allbanglanewspaper/disclaimer.html)), Privacy Policy ([privacy.html](https://nabil2dhaka.github.io/allbanglanewspaper/privacy.html)), and Contact Us ([contact.html](https://nabil2dhaka.github.io/allbanglanewspaper/contact.html)).
 
 ---
 
