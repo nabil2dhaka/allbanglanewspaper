@@ -506,6 +506,30 @@ const newspapers = [
     icon: 'মা',
     tags: 'matribhumirkhobor matribhumir khobor national daily epaper মাতৃভূমির খবর'
   },
+  {
+    id: 'dainikbangla',
+    nameBn: 'দৈনিক বাংলা',
+    nameEn: 'Dainik Bangla',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://www.dainikbangla.com.bd',
+    epaperUrl: 'https://epaper.dainikbangla.com.bd',
+    color: '#c0392b',
+    icon: 'বাং',
+    tags: 'dainikbangla dainik bangla national daily epaper দৈনিক বাংলা'
+  },
+  {
+    id: 'sorejominbarta',
+    nameBn: 'দৈনিক সরেজমিন বার্তা',
+    nameEn: 'Dainik Sorejomin Barta',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://sorejominbarta.com',
+    epaperUrl: 'https://epaper.sorejominbarta.com',
+    color: '#006266',
+    icon: 'সরে',
+    tags: 'sorejominbarta sorejomin barta national daily epaper সরেজমিন বার্তা'
+  },
 
   // =========================================================================
   // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 64 Websites)
@@ -1237,6 +1261,17 @@ const newspapers = [
     color: '#27ae60',
     icon: 'যু',
     tags: 'jugerchinta jugerchinta24 online portal epaper যুগের চিন্তা'
+  },
+  {
+    id: 'ourislam24',
+    nameBn: 'আওয়ার ইসলাম',
+    nameEn: 'Our Islam 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.ourislam24.com',
+    color: '#1b8a5a',
+    icon: 'আই',
+    tags: 'ourislam ourislam24 islamic online news portal আওয়ার ইসলাম'
   },
 
   // =========================================================================
