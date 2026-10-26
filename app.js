@@ -1738,6 +1738,51 @@ const newspapers = [
     icon: 'BP',
     tags: 'english bangladesh bangladeshpost epaper'
   },
+  {
+    id: 'energybangla',
+    nameBn: 'এনার্জি বাংলা',
+    nameEn: 'Energy Bangla',
+    category: 'english',
+    categoryLabel: 'Energy & Business',
+    url: 'https://energybangla.com',
+    color: '#366650',
+    icon: 'EB',
+    tags: 'english bangladesh energy power oil gas electricity energybangla'
+  },
+  {
+    id: 'dailycitizentimes',
+    nameBn: 'দ্য ডেইলি সিটিজেন টাইমস',
+    nameEn: 'The Daily Citizen Times',
+    category: 'english',
+    categoryLabel: 'English Daily',
+    url: 'https://dailycitizentimes.com',
+    epaperUrl: 'https://epaper.dailycitizentimes.com/epaper',
+    color: '#004080',
+    icon: 'CT',
+    tags: 'english bangladesh citizen times dailycitizentimes epaper'
+  },
+  {
+    id: 'dailynewnation',
+    nameBn: 'দ্য নিউ নেশন',
+    nameEn: 'The New Nation',
+    category: 'english',
+    categoryLabel: 'English Daily',
+    url: 'https://dailynewnation.com',
+    color: '#1a5276',
+    icon: 'NN',
+    tags: 'english bangladesh new nation dailynewnation daily newspaper'
+  },
+  {
+    id: 'weeklyholiday',
+    nameBn: 'উইকলি হলিডে',
+    nameEn: 'Weekly Holiday',
+    category: 'english',
+    categoryLabel: 'English Weekly',
+    url: 'https://www.weeklyholiday.net',
+    color: '#922b21',
+    icon: 'WH',
+    tags: 'english bangladesh holiday weeklyholiday news weekly'
+  },
 
   // =========================================================================
   // 5. DIVISION & DISTRICT NEWSPAPERS (বিভাগীয় ও জেলা সংবাদপত্র)
@@ -3369,17 +3414,6 @@ const newspapers = [
     color: '#27ae60',
     icon: 'বিনি',
     tags: 'stock market investment biniog barta capital'
-  },
-  {
-    id: 'energybangla',
-    nameBn: 'এনার্জি বাংলা',
-    nameEn: 'Energy Bangla',
-    category: 'stock',
-    categoryLabel: 'Stock Market',
-    url: 'https://energybangla.com',
-    color: '#366650',
-    icon: 'EB',
-    tags: 'stock market energy power oil gas electricity'
   },
   {
     id: 'sharebarta24',
