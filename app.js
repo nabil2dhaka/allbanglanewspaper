@@ -1584,6 +1584,50 @@ const newspapers = [
     icon: 'মাই',
     tags: 'mytv my tv mytvbd satellite broadcast মাই টিভি'
   },
+  {
+    id: 'channelone',
+    nameBn: 'চ্যানেল ওয়ান',
+    nameEn: 'Channel One',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://channelone.news',
+    color: '#0068b5',
+    icon: '১',
+    tags: 'channelone channel one live tv news broadcast স্যাটেলাইট চ্যানেল ওয়ান'
+  },
+  {
+    id: 'islamictv',
+    nameBn: 'ইসলামিক টিভি',
+    nameEn: 'Islamic TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://islamictv.news',
+    color: '#0b3ebb',
+    icon: 'আই',
+    tags: 'islamictv islamic tv live broadcast islam স্যাটেলাইট ইসলামিক টিভি'
+  },
+  {
+    id: 'asiantv',
+    nameBn: 'এশিয়ান টিভি',
+    nameEn: 'Asian TV',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://www.asiantvonline.com',
+    color: '#db0000',
+    icon: 'এ',
+    tags: 'asiantv asian tv asiantvonline broadcast স্যাটেলাইট এশিয়ান টিভি'
+  },
+  {
+    id: 'channelnine',
+    nameBn: 'চ্যানেল নাইন',
+    nameEn: 'Channel Nine',
+    category: 'tv',
+    categoryLabel: 'স্যাটেলাইট টিভি',
+    url: 'https://www.channelninebd.tv',
+    color: '#7e2883',
+    icon: '৯',
+    tags: 'channelnine channel 9 bd cricket broadcast স্যাটেলাইট চ্যানেল নাইন'
+  },
 
   // =========================================================================
   // 4. BANGLADESH ENGLISH DAILIES (ইংরেজি জাতীয় দৈনিক)
