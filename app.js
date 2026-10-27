@@ -3678,17 +3678,6 @@ const newspapers = [
     icon: 'খেলা',
     tags: 'sports football messi ronaldo'
   },
-  {
-    id: 'anandaalo',
-    nameBn: 'আনন্দ আলো',
-    nameEn: 'Ananda Alo',
-    category: 'sports',
-    categoryLabel: 'বিনোদন ও সংস্কৃতি',
-    url: 'https://anandaalo.com',
-    color: '#ed1c24',
-    icon: 'আ',
-    tags: 'entertainment culture cinema natok'
-  },
 
   // =========================================================================
   // 9. JOBS, TECH & EDUCATION (চাকরি, প্রযুক্তি ও শিক্ষা)
@@ -4184,6 +4173,17 @@ const newspapers = [
     color: '#ec1b2e',
     icon: 'বি',
     tags: 'science research space biggan magazine বিজ্ঞানচিন্তা বিজ্ঞান সাময়িকী ম্যাগাজিন'
+  },
+  {
+    id: 'anandaalo',
+    nameBn: 'আনন্দ আলো',
+    nameEn: 'Ananda Alo',
+    category: 'magazine',
+    categoryLabel: 'বিনোদন সাময়িকী',
+    url: 'https://anandaalo.com',
+    color: '#ed1c24',
+    icon: 'আ',
+    tags: 'anandaalo ananda alo entertainment magazine cinema showbiz natok আনন্দ আলো বিনোদন সাময়িকী ম্যাগাজিন'
   }
 ];
 
