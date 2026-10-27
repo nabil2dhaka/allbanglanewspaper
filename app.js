@@ -3961,7 +3961,7 @@ const newspapers = [
     category: 'magazine',
     categoryLabel: 'ইসলামিক ম্যাগাজিন',
     url: 'https://www.at-tahreek.com',
-    color: '#1b5e20',
+    color: '#3da13f',
     icon: 'তাহ',
     tags: 'attahreek at-tahreek monthly islamic magazine মাসিক আত তাহরীক আত-তাহরীক'
   },
