@@ -1273,6 +1273,17 @@ const newspapers = [
     icon: 'আই',
     tags: 'ourislam ourislam24 islamic online news portal আওয়ার ইসলাম'
   },
+  {
+    id: 'bdtoday',
+    nameBn: 'বিডি টুডে',
+    nameEn: 'BD Today',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://bdtoday.net',
+    color: '#a00000',
+    icon: 'বিডি',
+    tags: 'bdtoday bd today online news portal বিডি টুডে'
+  },
 
   // =========================================================================
   // 3. BANGLA LIVE TV & BROADCAST NEWS (টিভি ও স্যাটেলাইট চ্যানেল)
