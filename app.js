@@ -998,17 +998,6 @@ const newspapers = [
     tags: 'online portal deshdorpon'
   },
   {
-    id: 'dailycricket_portal',
-    nameBn: 'ডেইলি ক্রিকেট',
-    nameEn: 'Daily Cricket BD',
-    category: 'online',
-    categoryLabel: 'ক্রিকেট সংবাদ',
-    url: 'https://dailycricket.com.bd',
-    color: '#007a0f',
-    icon: 'DC',
-    tags: 'sports cricket online portal'
-  },
-  {
     id: 'dhakatoday',
     nameBn: 'ঢাকা টুডে',
     nameEn: 'Dhaka Today',
