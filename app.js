@@ -3983,7 +3983,7 @@ const newspapers = [
     category: 'magazine',
     categoryLabel: 'সাহিত্য ও সংস্কৃতি',
     url: 'https://abasar.net',
-    color: '#2c3e50',
+    color: '#36185b',
     icon: 'অব',
     tags: 'abasar web magazine bangla literature অবসর সাহিত্য সংস্কৃতি'
   },
@@ -3994,7 +3994,7 @@ const newspapers = [
     category: 'magazine',
     categoryLabel: 'ম্যাগাজিন',
     url: 'https://www.akhonsamoy.com',
-    color: '#c0392b',
+    color: '#000000',
     icon: 'এস',
     tags: 'akhonsamoy akhon samoy news magazine এখন সময়'
   },
