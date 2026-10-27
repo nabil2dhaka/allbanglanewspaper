@@ -4005,9 +4005,10 @@ const newspapers = [
     category: 'magazine',
     categoryLabel: 'ম্যাগাজিন',
     url: 'https://weeklysonarbangla.net',
+    epaperUrl: 'https://epaper.weeklysonarbangla.net',
     color: '#006a4e',
     icon: 'সোবা',
-    tags: 'weekly sonarbangla weeklysonarbangla magazine সাপ্তাহিক সোনার বাংলা ম্যাগাজিন'
+    tags: 'weekly sonarbangla weeklysonarbangla epaper magazine সাপ্তাহিক সোনার বাংলা ম্যাগাজিন ই-পেপার'
   },
   {
     id: 'attahreek',
