@@ -1246,10 +1246,9 @@ const newspapers = [
     category: 'online',
     categoryLabel: 'অনলাইন পোর্টাল',
     url: 'https://www.jugerchinta24.com',
-    epaperUrl: 'https://www.jugerchinta24.com/epaper',
     color: '#27ae60',
     icon: 'যু',
-    tags: 'jugerchinta jugerchinta24 online portal epaper যুগের চিন্তা'
+    tags: 'jugerchinta jugerchinta24 online portal যুগের চিন্তা'
   },
   {
     id: 'ourislam24',
