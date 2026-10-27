@@ -705,7 +705,7 @@ const newspapers = [
     nameEn: 'Priyo.com',
     category: 'online',
     categoryLabel: 'অনলাইন পোর্টাল',
-    url: 'https://www.priyo.com',
+    url: 'https://news.priyo.com',
     color: '#d35400',
     icon: 'প্রি',
     tags: 'online portal priyo'
