@@ -1295,6 +1295,17 @@ const newspapers = [
     icon: 'জেএন',
     tags: 'justnews justnewsbd online portal জাস্ট নিউজ বিডি'
   },
+  {
+    id: 'energybangla',
+    nameBn: 'এনার্জি বাংলা',
+    nameEn: 'Energy Bangla',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://energybangla.com',
+    color: '#366650',
+    icon: 'EB',
+    tags: 'energy bangla energybangla power oil gas electricity এনার্জি বাংলা অনলাইন পোর্টাল'
+  },
 
   // =========================================================================
   // 3. BANGLA LIVE TV & BROADCAST NEWS (টিভি ও স্যাটেলাইট চ্যানেল)
@@ -1794,17 +1805,6 @@ const newspapers = [
     color: '#1f618d',
     icon: 'BP',
     tags: 'english bangladesh bangladeshpost epaper'
-  },
-  {
-    id: 'energybangla',
-    nameBn: 'এনার্জি বাংলা',
-    nameEn: 'Energy Bangla',
-    category: 'english',
-    categoryLabel: 'Energy & Business',
-    url: 'https://energybangla.com',
-    color: '#366650',
-    icon: 'EB',
-    tags: 'english bangladesh energy power oil gas electricity energybangla'
   },
   {
     id: 'dailycitizentimes',
