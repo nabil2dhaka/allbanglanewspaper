@@ -530,6 +530,17 @@ const newspapers = [
     icon: 'সরে',
     tags: 'sorejominbarta sorejomin barta national daily epaper সরেজমিন বার্তা'
   },
+  {
+    id: 'odhikar',
+    nameBn: 'দৈনিক অধিকার',
+    nameEn: 'Dainik Odhikar',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://odhikar.news',
+    color: '#e11f27',
+    icon: 'অ',
+    tags: 'odhikar dainik odhikar national daily দৈনিক অধিকার অধিকার'
+  },
 
   // =========================================================================
   // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 64 Websites)
@@ -1283,6 +1294,17 @@ const newspapers = [
     color: '#00a651',
     icon: 'আ',
     tags: 'amadershomoy amadershomoy.com online news portal আমাদের সময় আমাদের সময়.কম'
+  },
+  {
+    id: 'justnewsbd',
+    nameBn: 'জাস্ট নিউজ বিডি',
+    nameEn: 'Just News BD',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.justnewsbd.com',
+    color: '#0b4199',
+    icon: 'জেএন',
+    tags: 'justnews justnewsbd online portal জাস্ট নিউজ বিডি'
   },
 
   // =========================================================================
