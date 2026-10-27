@@ -1273,6 +1273,17 @@ const newspapers = [
     icon: 'বিডি',
     tags: 'bdtoday bd today online news portal বিডি টুডে'
   },
+  {
+    id: 'amadershomoy_com',
+    nameBn: 'আমাদের সময়.কম',
+    nameEn: 'Amadershomoy.com',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.amadershomoy.com',
+    color: '#00a651',
+    icon: 'আ',
+    tags: 'amadershomoy amadershomoy.com online news portal আমাদের সময় আমাদের সময়.কম'
+  },
 
   // =========================================================================
   // 3. BANGLA LIVE TV & BROADCAST NEWS (টিভি ও স্যাটেলাইট চ্যানেল)
