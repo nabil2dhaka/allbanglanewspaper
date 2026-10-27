@@ -987,17 +987,6 @@ const newspapers = [
     tags: 'online portal mtnews24'
   },
   {
-    id: 'thebengalitimes',
-    nameBn: 'দ্য বেঙ্গলি টাইমস',
-    nameEn: 'The Bengali Times',
-    category: 'online',
-    categoryLabel: 'অনলাইন পোর্টাল',
-    url: 'https://thebengalitimes.com',
-    color: '#2980b9',
-    icon: 'TBT',
-    tags: 'online portal thebengalitimes'
-  },
-  {
     id: 'deshdorpon',
     nameBn: 'দেশদর্পণ',
     nameEn: 'Desh Dorpon',
@@ -3759,28 +3748,6 @@ const newspapers = [
     icon: 'টিটি',
     tags: 'technology blog tech tutorial'
   },
-  {
-    id: 'bigganchinta',
-    nameBn: 'বিজ্ঞানচিন্তা',
-    nameEn: 'Biggan Chinta',
-    category: 'jobs_tech',
-    categoryLabel: 'বিজ্ঞান সাময়িকী',
-    url: 'https://www.bigganchinta.com',
-    color: '#ec1b2e',
-    icon: 'বি',
-    tags: 'science research space biggan'
-  },
-  {
-    id: 'kishorealo',
-    nameBn: 'কিশোর আলো',
-    nameEn: 'Kishor Alo',
-    category: 'jobs_tech',
-    categoryLabel: 'ম্যাগাজিন ও কিশোর',
-    url: 'https://www.kishoralo.com',
-    color: '#f39c12',
-    icon: 'কি',
-    tags: 'magazine youth kishor literature'
-  },
 
   // =========================================================================
   // 10. BANGLA FM RADIO (এফএম রেডিও)
@@ -4184,6 +4151,39 @@ const newspapers = [
     color: '#e11d48',
     icon: 'আআ',
     tags: 'aaroananda aaro ananda abp anandamela desh sananda anandalok আরো আনন্দ'
+  },
+  {
+    id: 'thebengalitimes',
+    nameBn: 'দ্য বেঙ্গলি টাইমস',
+    nameEn: 'The Bengali Times',
+    category: 'magazine',
+    categoryLabel: 'ম্যাগাজিন ও সাময়িকী',
+    url: 'https://thebengalitimes.com',
+    color: '#2980b9',
+    icon: 'TBT',
+    tags: 'thebengalitimes bengali times magazine online the bengali times দ্য বেঙ্গলি টাইমস ম্যাগাজিন'
+  },
+  {
+    id: 'kishorealo',
+    nameBn: 'কিশোর আলো',
+    nameEn: 'Kishor Alo',
+    category: 'magazine',
+    categoryLabel: 'কিশোর সাময়িকী',
+    url: 'https://www.kishoralo.com',
+    color: '#f39c12',
+    icon: 'কি',
+    tags: 'magazine youth kishor literature kishore alo কিশোর আলো ম্যাগাজিন'
+  },
+  {
+    id: 'bigganchinta',
+    nameBn: 'বিজ্ঞানচিন্তা',
+    nameEn: 'Biggan Chinta',
+    category: 'magazine',
+    categoryLabel: 'বিজ্ঞান সাময়িকী',
+    url: 'https://www.bigganchinta.com',
+    color: '#ec1b2e',
+    icon: 'বি',
+    tags: 'science research space biggan magazine বিজ্ঞানচিন্তা বিজ্ঞান সাময়িকী ম্যাগাজিন'
   }
 ];
 
