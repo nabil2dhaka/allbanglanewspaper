@@ -1840,6 +1840,39 @@ const newspapers = [
     icon: 'WH',
     tags: 'english bangladesh holiday weeklyholiday news weekly'
   },
+  {
+    id: 'energypower',
+    nameBn: 'এনার্জি অ্যান্ড পাওয়ার',
+    nameEn: 'Energy & Power Magazine',
+    category: 'english',
+    categoryLabel: 'Energy & Economy',
+    url: 'https://ep-bd.com',
+    color: '#c0392b',
+    icon: 'EP',
+    tags: 'english bangladesh energy power magazine oil gas electricity ep-bd ep bd'
+  },
+  {
+    id: 'dhakacourier',
+    nameBn: 'ঢাকা কুরিয়ার',
+    nameEn: 'Dhaka Courier',
+    category: 'english',
+    categoryLabel: 'English Weekly',
+    url: 'https://www.dhakacourier.com.bd',
+    color: '#d63031',
+    icon: 'DC',
+    tags: 'english bangladesh dhaka courier dhakacourier news analysis'
+  },
+  {
+    id: 'comjagat',
+    nameBn: 'কমজগৎ (Comjagat)',
+    nameEn: 'Comjagat (CEAF)',
+    category: 'english',
+    categoryLabel: 'English Publication',
+    url: 'https://www.comjagat.com',
+    color: '#1b4f89',
+    icon: 'CJ',
+    tags: 'english comjagat ceaf rising asia east asia foundation bangladesh'
+  },
 
   // =========================================================================
   // 5. DIVISION & DISTRICT NEWSPAPERS (বিভাগীয় ও জেলা সংবাদপত্র)
@@ -3603,6 +3636,28 @@ const newspapers = [
     color: '#0f766e',
     icon: 'FN',
     tags: 'stock market financial news 24 financialnews24 financialnews24.net dse cse share bazar capital market business economy'
+  },
+  {
+    id: 'dailysharenews',
+    nameBn: 'ডেইলি শেয়ার নিউজ',
+    nameEn: 'Daily Share News',
+    category: 'stock',
+    categoryLabel: 'Stock Market',
+    url: 'https://dailysharenews.com',
+    color: '#d63031',
+    icon: 'DSN',
+    tags: 'dailysharenews share market stock dse cse business share bazar ডেইলি শেয়ার নিউজ'
+  },
+  {
+    id: 'economistpost',
+    nameBn: 'ইকোনমিস্ট পোস্ট',
+    nameEn: 'The Economist Post',
+    category: 'stock',
+    categoryLabel: 'Stock & Economy',
+    url: 'https://bn.economistpost.com',
+    color: '#e74c3c',
+    icon: 'EP',
+    tags: 'economistpost economist post stock market business finance economy ইকোনমিস্ট পোস্ট'
   },
 
   // =========================================================================
