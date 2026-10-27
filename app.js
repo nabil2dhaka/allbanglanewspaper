@@ -3982,6 +3982,208 @@ const newspapers = [
     color: '#f39c12',
     icon: 'জি',
     tags: 'kolkata west bengal zee24ghanta zee 24 ghanta জি ২৪ ঘণ্টা'
+  },
+
+  // =========================================================================
+  // 11. MAGAZINES & PERIODICALS (ম্যাগাজিন ও সাময়িকী)
+  // =========================================================================
+  {
+    id: 'weeklysonarbangla',
+    nameBn: 'সাপ্তাহিক সোনার বাংলা',
+    nameEn: 'Weekly Sonar Bangla',
+    category: 'magazine',
+    categoryLabel: 'ম্যাগাজিন',
+    url: 'https://weeklysonarbangla.net',
+    color: '#006a4e',
+    icon: 'সোবা',
+    tags: 'weekly sonarbangla weeklysonarbangla magazine সাপ্তাহিক সোনার বাংলা ম্যাগাজিন'
+  },
+  {
+    id: 'attahreek',
+    nameBn: 'মাসিক আত-তাহরীক',
+    nameEn: 'Monthly At-Tahreek',
+    category: 'magazine',
+    categoryLabel: 'ইসলামিক ম্যাগাজিন',
+    url: 'https://www.at-tahreek.com',
+    color: '#1b5e20',
+    icon: 'তাহ',
+    tags: 'attahreek at-tahreek monthly islamic magazine মাসিক আত তাহরীক আত-তাহরীক'
+  },
+  {
+    id: 'abasar',
+    nameBn: 'অবসর',
+    nameEn: 'Abasar',
+    category: 'magazine',
+    categoryLabel: 'সাহিত্য ও সংস্কৃতি',
+    url: 'https://abasar.net',
+    color: '#2c3e50',
+    icon: 'অব',
+    tags: 'abasar web magazine bangla literature অবসর সাহিত্য সংস্কৃতি'
+  },
+  {
+    id: 'akhonsamoy',
+    nameBn: 'এখন সময়',
+    nameEn: 'Akhon Samoy',
+    category: 'magazine',
+    categoryLabel: 'ম্যাগাজিন',
+    url: 'https://www.akhonsamoy.com',
+    color: '#c0392b',
+    icon: 'এস',
+    tags: 'akhonsamoy akhon samoy news magazine এখন সময়'
+  },
+  {
+    id: 'parabaas',
+    nameBn: 'পরবাস',
+    nameEn: 'Parabaas',
+    category: 'magazine',
+    categoryLabel: 'সাহিত্য সাময়িকী',
+    url: 'https://www.parabaas.com',
+    color: '#8e44ad',
+    icon: 'পর',
+    tags: 'parabaas webzine bangla magazine পরবাস সাহিত্য সাময়িকী'
+  },
+  {
+    id: 'parjatanbichitra',
+    nameBn: 'পর্যটন বিচিত্রা',
+    nameEn: 'Parjatan Bichitra',
+    category: 'magazine',
+    categoryLabel: 'ভ্রমণ ম্যাগাজিন',
+    url: 'https://www.parjatanbichitra.com',
+    color: '#16a085',
+    icon: 'পবি',
+    tags: 'parjatan bichitra tourism travel magazine পর্যটন বিচিত্রা ভ্রমণ'
+  },
+  {
+    id: 'mashikmadina',
+    nameBn: 'মাসিক মদীনা',
+    nameEn: 'Monthly Madina',
+    category: 'magazine',
+    categoryLabel: 'ইসলামিক ম্যাগাজিন',
+    url: 'https://www.mashikmadina.com',
+    color: '#006266',
+    icon: 'মদী',
+    tags: 'mashikmadina mashik madina monthly islamic magazine মাসিক মদীনা'
+  },
+  {
+    id: 'alkawsar',
+    nameBn: 'মাসিক আলকাউসার',
+    nameEn: 'Monthly Alkawsar',
+    category: 'magazine',
+    categoryLabel: 'ইসলামিক ম্যাগাজিন',
+    url: 'https://www.alkawsar.com/bn/',
+    color: '#1e3a8a',
+    icon: 'আল',
+    tags: 'alkawsar al kawsar islamic magazine মাসিক আলকাউসার'
+  },
+  {
+    id: 'adarshanari',
+    nameBn: 'আদর্শ নারী',
+    nameEn: 'Adarsha Nari',
+    category: 'magazine',
+    categoryLabel: 'নারী ও পরিবার',
+    url: 'https://adarshanari.com',
+    color: '#9d174d',
+    icon: 'আনা',
+    tags: 'adarshanari adarsha nari women family magazine আদর্শ নারী'
+  },
+  {
+    id: 'albaiyinaat',
+    nameBn: 'মাসিক আল বাইয়্যিনাত',
+    nameEn: 'Monthly Al-Baiyinaat',
+    category: 'magazine',
+    categoryLabel: 'ইসলামিক ম্যাগাজিন',
+    url: 'https://www.al-baiyinaat.net',
+    color: '#0f766e',
+    icon: 'বাই',
+    tags: 'al-baiyinaat albaiyinaat islamic monthly magazine মাসিক আল বাইয়্যিনাত'
+  },
+  {
+    id: 'doshdik',
+    nameBn: 'দশদিক',
+    nameEn: 'Doshdik',
+    category: 'magazine',
+    categoryLabel: 'ম্যাগাজিন ও ফিচার',
+    url: 'https://doshdik.com',
+    color: '#b91c1c',
+    icon: 'দশ',
+    tags: 'doshdik dosh dik magazine feature দশদিক'
+  },
+  {
+    id: 'kaliokalam',
+    nameBn: 'কালি ও কলম',
+    nameEn: 'Kali O Kalam',
+    category: 'magazine',
+    categoryLabel: 'সাহিত্য ও শিল্প',
+    url: 'https://www.kaliokalam.com',
+    color: '#1f2937',
+    icon: 'কাক',
+    tags: 'kaliokalam kali o kalam literature art culture কালি ও কলম সাহিত্য'
+  },
+  {
+    id: 'weeklybangladesh',
+    nameBn: 'সাপ্তাহিক বাংলাদেশ (যুক্তরাষ্ট্র)',
+    nameEn: 'Weekly Bangladesh USA',
+    category: 'magazine',
+    categoryLabel: 'প্রবাসী সাপ্তাহিক',
+    url: 'https://weeklybangladeshusa.com',
+    color: '#b45309',
+    icon: 'সাব',
+    tags: 'weekly bangladesh weeklybangladesh usa new york সাপ্তাহিক বাংলাদেশ যুক্তরাষ্ট্র'
+  },
+  {
+    id: 'careerintelligence',
+    nameBn: 'ক্যারিয়ার ইন্টেলিজেন্স',
+    nameEn: 'Career Intelligence BD',
+    category: 'magazine',
+    categoryLabel: 'ক্যারিয়ার ম্যাগাজিন',
+    url: 'https://www.careerintelligencebd.com',
+    color: '#2563eb',
+    icon: 'সিআই',
+    tags: 'careerintelligence career intelligence jobs study tips ক্যারিয়ার ইন্টেলিজেন্স'
+  },
+  {
+    id: 'computerjagat',
+    nameBn: 'কম্পিউটার জগৎ',
+    nameEn: 'Computer Jagat',
+    category: 'magazine',
+    categoryLabel: 'তথ্যপ্রযুক্তি ম্যাগাজিন',
+    url: 'https://www.computerjagat.com.bd',
+    color: '#0284c7',
+    icon: 'কজ',
+    tags: 'computerjagat computer jagat ict tech magazine কম্পিউটার জগৎ'
+  },
+  {
+    id: 'anannya',
+    nameBn: 'অনন্যা',
+    nameEn: 'Anannya Magazine',
+    category: 'magazine',
+    categoryLabel: 'পাক্ষিক অনন্যা',
+    url: 'https://anannya.com.bd',
+    color: '#ec4899',
+    icon: 'অন',
+    tags: 'anannya anannya magazine women fortnightly অনন্যা পাক্ষিক ম্যাগাজিন'
+  },
+  {
+    id: 'canvasmagazine',
+    nameBn: 'ক্যানভাস ম্যাগাজিন',
+    nameEn: 'Canvas Magazine',
+    category: 'magazine',
+    categoryLabel: 'লাইফস্টাইল ও ফ্যাশন',
+    url: 'https://canvasmagazine.com.bd',
+    color: '#18181b',
+    icon: 'ক্যা',
+    tags: 'canvas canvasmagazine lifestyle fashion food ক্যানভাস ম্যাগাজিন'
+  },
+  {
+    id: 'aaroananda',
+    nameBn: 'আরো আনন্দ (ABP)',
+    nameEn: 'Aaro Ananda',
+    category: 'magazine',
+    categoryLabel: 'ডিজিটাল ম্যাগাজিন',
+    url: 'https://www.aaroananda.com',
+    color: '#e11d48',
+    icon: 'আআ',
+    tags: 'aaroananda aaro ananda abp anandamela desh sananda anandalok আরো আনন্দ'
   }
 ];
 
@@ -4116,6 +4318,15 @@ const CATEGORY_CONFIG = [
     color: '#9333EA',
     bgColor: 'rgba(147, 51, 234, 0.09)',
     filter: (p) => p.category === 'kolkata'
+  },
+  {
+    id: 'magazine',
+    nameBn: 'ম্যাগাজিন ও সাময়িকী',
+    nameEn: 'Bangla Magazines, Literature & Periodicals',
+    icon: '📖',
+    color: '#0891B2',
+    bgColor: 'rgba(8, 145, 178, 0.09)',
+    filter: (p) => p.category === 'magazine'
   }
 ];
 
