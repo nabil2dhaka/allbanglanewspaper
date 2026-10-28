@@ -1312,7 +1312,7 @@ const newspapers = [
     category: 'online',
     categoryLabel: 'অনলাইন পোর্টাল',
     url: 'https://banglastream.net',
-    color: '#0084ff',
+    color: '#6d2d2d',
     icon: 'বা',
     tags: 'banglastream online portal বাংলা স্ট্রিম'
   },
@@ -1356,7 +1356,7 @@ const newspapers = [
     category: 'online',
     categoryLabel: 'অনলাইন পোর্টাল',
     url: 'https://durbinnews.com',
-    color: '#2980b9',
+    color: '#c1121c',
     icon: 'দু',
     tags: 'durbinnews durbin news online portal দুরবীন নিউজ'
   },
@@ -1642,7 +1642,7 @@ const newspapers = [
     category: 'online',
     categoryLabel: 'অনলাইন পোর্টাল',
     url: 'https://sarakhon.com',
-    color: '#27ae60',
+    color: '#1e244d',
     icon: 'সা',
     tags: 'sarakhon sarakkhon online portal সারাক্ষণ'
   },
@@ -4973,10 +4973,8 @@ function updateBadges() {
 
 // Known SVG banner IDs
 const SVG_LOGOS = new Set([
-  "banglastream",
   "businessinsiderbd",
   "campuslive24","dailyprobaha","desherkantha","dhakamagazine","dinajpurnews",
-  "durbinnews",
   "ekhontv",
   "giridarpon",
   "khoborsangjog",
