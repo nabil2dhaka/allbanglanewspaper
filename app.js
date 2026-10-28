@@ -541,6 +541,29 @@ const newspapers = [
     icon: 'অ',
     tags: 'odhikar dainik odhikar national daily দৈনিক অধিকার অধিকার'
   },
+  {
+    id: 'sahos24',
+    nameBn: 'দৈনিক সাহস',
+    nameEn: 'Daily Sahos',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://sahos24.com',
+    epaperUrl: 'https://sahos24.com/epaper-sub/index',
+    color: '#c0392b',
+    icon: 'সা',
+    tags: 'sahos sahos24 daily sahos epaper national daily দৈনিক সাহস ই-পেপার'
+  },
+  {
+    id: 'alihsan',
+    nameBn: 'দৈনিক আল ইহসান',
+    nameEn: 'Daily Al-Ihsan',
+    category: 'daily',
+    categoryLabel: 'জাতীয় দৈনিক',
+    url: 'https://al-ihsan.net',
+    color: '#0f766e',
+    icon: 'ইহ',
+    tags: 'al-ihsan alihsan daily al ihsan national daily islamic দৈনিক আল ইহসান'
+  },
 
   // =========================================================================
   // 2. ONLINE BANGLA NEWSPAPERS (অনলাইন নিউজ পোর্টাল - 64 Websites)
@@ -1799,6 +1822,61 @@ const newspapers = [
     color: '#e74c3c',
     icon: 'HN',
     tags: 'hotnews hotnews24 hotnews24bd online portal হট নিউজ'
+  },
+  {
+    id: 'nirapadnews',
+    nameBn: 'নিরাপদ নিউজ',
+    nameEn: 'Nirapad News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.nirapadnews.com',
+    color: '#27ae60',
+    icon: 'নি',
+    tags: 'nirapadnews nirapad news ilias kanchan road safety online portal নিরাপদ নিউজ'
+  },
+  {
+    id: 'insaf24',
+    nameBn: 'ইনসাফ২৪',
+    nameEn: 'Insaf 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://insaf24.com',
+    color: '#16a085',
+    icon: 'ইন',
+    tags: 'insaf insaf24 islamic news online portal ইনসাফ ইনসাফ২৪'
+  },
+  {
+    id: 'shikshabarta',
+    nameBn: 'শিক্ষাবার্তা',
+    nameEn: 'Shiksha Barta',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://shikshabarta.com',
+    color: '#2980b9',
+    icon: 'শি',
+    tags: 'shikshabarta shiksha barta education online portal শিক্ষাবার্তা'
+  },
+  {
+    id: 'medivoicebd',
+    nameBn: 'মেডিভয়েস',
+    nameEn: 'MediVoice',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://medivoicebd.com',
+    color: '#0284c7',
+    icon: 'মে',
+    tags: 'medivoice medivoicebd health medical doctor online portal মেডিভয়েস'
+  },
+  {
+    id: 'agaminews',
+    nameBn: 'আগামী নিউজ',
+    nameEn: 'Agami News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.agaminews.com',
+    color: '#e74c3c',
+    icon: 'আ',
+    tags: 'agaminews agami news multimedia online portal আগামী নিউজ'
   },
 
   // =========================================================================
