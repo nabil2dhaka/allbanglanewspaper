@@ -1305,6 +1305,501 @@ const newspapers = [
     icon: 'EB',
     tags: 'energy bangla energybangla power oil gas electricity এনার্জি বাংলা অনলাইন পোর্টাল'
   },
+  {
+    id: 'banglastream',
+    nameBn: 'বাংলা স্ট্রিম',
+    nameEn: 'Bangla Stream',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://banglastream.net',
+    color: '#0084ff',
+    icon: 'বা',
+    tags: 'banglastream online portal বাংলা স্ট্রিম'
+  },
+  {
+    id: 'dhakamail',
+    nameBn: 'ঢাকা মেইল',
+    nameEn: 'Dhaka Mail',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://dhakamail.com',
+    color: '#e74c3c',
+    icon: 'মে',
+    tags: 'dhakamail online portal ঢাকা মেইল'
+  },
+  {
+    id: 'facethepeople',
+    nameBn: 'ফেস দ্য পিপল',
+    nameEn: 'Face The People',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://facethepeople.com.bd',
+    color: '#d32f2f',
+    icon: 'ফে',
+    tags: 'facethepeople online portal ফেস দ্য পিপল'
+  },
+  {
+    id: 'railnews24',
+    nameBn: 'রেল নিউজ ২৪',
+    nameEn: 'Rail News 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.railnews24.com',
+    color: '#16a085',
+    icon: 'রে',
+    tags: 'railnews railnews24 railway online portal রেল নিউজ'
+  },
+  {
+    id: 'durbinnews',
+    nameBn: 'দুরবীন নিউজ',
+    nameEn: 'Durbin News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://durbinnews.com',
+    color: '#2980b9',
+    icon: 'দু',
+    tags: 'durbinnews durbin news online portal দুরবীন নিউজ'
+  },
+  {
+    id: 'newszonebd',
+    nameBn: 'নিউজ জোন বিডি',
+    nameEn: 'Newszonebd',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.newszonebd.com',
+    color: '#c0392b',
+    icon: 'NZ',
+    tags: 'newszonebd news zone bd online portal নিউজ জোন বিডি'
+  },
+  {
+    id: 'nuktamedia',
+    nameBn: 'নুকতা মিডিয়া',
+    nameEn: 'Nukta Media',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://nukta.media',
+    color: '#2c3e50',
+    icon: 'নু',
+    tags: 'nukta nuktamedia media online portal নুকতা'
+  },
+  {
+    id: 'visionnews24',
+    nameBn: 'ভিশন নিউজ ২৪',
+    nameEn: 'Vision News 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://visionnews24.com',
+    color: '#27ae60',
+    icon: 'VN',
+    tags: 'visionnews visionnews24 online portal ভিশন নিউজ'
+  },
+  {
+    id: 'khoborsangjog',
+    nameBn: 'খবর সংযোগ',
+    nameEn: 'Khobor Sangjog',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.khoborsangjog.com',
+    color: '#e67e22',
+    icon: 'খ',
+    tags: 'khoborsangjog khobor sangjog online portal খবর সংযোগ'
+  },
+  {
+    id: 'digibanglatech',
+    nameBn: 'ডিজি বাংলা টেক',
+    nameEn: 'Digi Bangla Tech',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.digibanglatech.news',
+    color: '#1abc9c',
+    icon: 'DBT',
+    tags: 'digibanglatech digibangla tech online portal ডিজি বাংলা টেক'
+  },
+  {
+    id: 'bangalirkhobor',
+    nameBn: 'বাঙ্গালীর খবর',
+    nameEn: 'Bangalir Khobor',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://bangalirkhobor.com',
+    color: '#8e44ad',
+    icon: 'বা',
+    tags: 'bangalirkhobor bangalir khobor online portal বাঙ্গালীর খবর'
+  },
+  {
+    id: 'bangladeshtimes',
+    nameBn: 'বাংলাদেশ টাইমস',
+    nameEn: 'Bangladesh Times',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://bangladeshtimes.com',
+    color: '#c0392b',
+    icon: 'বা',
+    tags: 'bangladeshtimes bangladesh times online portal বাংলাদেশ টাইমস'
+  },
+  {
+    id: 'simecnews',
+    nameBn: 'সিমেক নিউজ',
+    nameEn: 'Simec News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.simecnews.com',
+    color: '#2980b9',
+    icon: 'সি',
+    tags: 'simecnews simec news online portal সিমেক নিউজ'
+  },
+  {
+    id: 'rajneete',
+    nameBn: 'রাজনীতি ডটকম',
+    nameEn: 'Rajneete',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.rajneete.com',
+    color: '#e74c3c',
+    icon: 'রা',
+    tags: 'rajneete politics online portal রাজনীতি'
+  },
+  {
+    id: 'desherkhobor',
+    nameBn: 'দেশের খবর',
+    nameEn: 'Desher Khobor',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://desherkhobor.net',
+    color: '#27ae60',
+    icon: 'দে',
+    tags: 'desherkhobor desher khobor online portal দেশের খবর'
+  },
+  {
+    id: 'banglarchithi',
+    nameBn: 'বাংলার চিঠি',
+    nameEn: 'Banglar Chithi',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://banglarchithi.com',
+    color: '#d35400',
+    icon: 'বা',
+    tags: 'banglarchithi banglar chithi online portal বাংলার চিঠি'
+  },
+  {
+    id: 'tajakhabor',
+    nameBn: 'তাজা খবর',
+    nameEn: 'Taja Khabor',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://tajakhabor.com',
+    color: '#e74c3c',
+    icon: 'তা',
+    tags: 'tajakhabor taja khabor online portal তাজা খবর'
+  },
+  {
+    id: 'satyakantho',
+    nameBn: 'সত্যকণ্ঠ',
+    nameEn: 'Satya Kantho',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://satyakantho.com',
+    color: '#2c3e50',
+    icon: 'স',
+    tags: 'satyakantho satya kantho online portal সত্যকণ্ঠ'
+  },
+  {
+    id: 'ajkerarban',
+    nameBn: 'আজকের আরবান',
+    nameEn: 'Ajker Arban',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.ajkerarban.com',
+    color: '#3498db',
+    icon: 'আ',
+    tags: 'ajkerarban ajker arban online portal আজকের আরবান'
+  },
+  {
+    id: 'oporazoya24',
+    nameBn: 'অপরাজয়া ২৪',
+    nameEn: 'Oporazoya 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.oporazoya24.com',
+    color: '#59318A',
+    icon: 'অ',
+    tags: 'oporazoya oporazoya24 online portal অপরাজয়া'
+  },
+  {
+    id: 'aparadhchokh24',
+    nameBn: 'অপরাধ চোখ ২৪',
+    nameEn: 'Aparadh Chokh 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.aparadhchokh24.com',
+    color: '#c0392b',
+    icon: 'অ',
+    tags: 'aparadhchokh aparadh chokh online portal অপরাধ চোখ'
+  },
+  {
+    id: 'somoyerkotha24',
+    nameBn: 'সময়ের কথা ২৪',
+    nameEn: 'Somoyer Kotha 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://somoyerkotha24.com',
+    color: '#27ae60',
+    icon: 'স',
+    tags: 'somoyerkotha somoyer kotha online portal সময়ের কথা'
+  },
+  {
+    id: 'odhikarpatra',
+    nameBn: 'অধিকার পত্র',
+    nameEn: 'Odhikar Patra',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'http://www.odhikarpatra.com',
+    color: '#e67e22',
+    icon: 'অ',
+    tags: 'odhikarpatra odhikar patra online portal অধিকার পত্র'
+  },
+  {
+    id: 'bdsomoy24',
+    nameBn: 'বিডি সময় ২৪',
+    nameEn: 'BD Somoy 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.bdsomoy24.com',
+    color: '#16a085',
+    icon: 'বি',
+    tags: 'bdsomoy bdsomoy24 bd somoy online portal বিডি সময়'
+  },
+  {
+    id: 'shadhinbanglanews',
+    nameBn: 'স্বাধীন বাংলা নিউজ',
+    nameEn: 'Shadhin Bangla News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.shadhinbanglanews.com',
+    color: '#2980b9',
+    icon: 'স্বা',
+    tags: 'shadhinbanglanews shadhin bangla online portal স্বাধীন বাংলা নিউজ'
+  },
+  {
+    id: 'kingsnews24',
+    nameBn: 'কিংস নিউজ ২৪',
+    nameEn: 'Kings News 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.kingsnews24.com',
+    color: '#d35400',
+    icon: 'KN',
+    tags: 'kingsnews kingsnews24 kings news online portal কিংস নিউজ'
+  },
+  {
+    id: 'newsnow24',
+    nameBn: 'নিউজনাও২৪',
+    nameEn: 'NewsNow24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.newsnow24.com',
+    color: '#c0392b',
+    icon: 'NN',
+    tags: 'newsnow newsnow24 news now online portal নিউজনাও২৪'
+  },
+  {
+    id: 'deeptoonline',
+    nameBn: 'দীপ্ত অনলাইন',
+    nameEn: 'Deepto Online',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.deeptoonline.com',
+    color: '#C8102E',
+    icon: 'দী',
+    tags: 'deepto deeptotv deeptoonline online portal দীপ্ত টিভি দীপ্ত সংবাদ'
+  },
+  {
+    id: 'dhakawatch24',
+    nameBn: 'ঢাকা ওয়াচ ২৪',
+    nameEn: 'Dhaka Watch 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.dhakawatch24.com',
+    color: '#2c3e50',
+    icon: 'DW',
+    tags: 'dhakawatch dhakawatch24 online portal ঢাকা ওয়াচ'
+  },
+  {
+    id: 'slogannews',
+    nameBn: 'স্লোগান নিউজ',
+    nameEn: 'Slogan News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://slogannews.com',
+    color: '#16a085',
+    icon: 'স্লো',
+    tags: 'slogannews slogan news chattogram online portal স্লোগান নিউজ'
+  },
+  {
+    id: 'sarakhon',
+    nameBn: 'সারাক্ষণ',
+    nameEn: 'Sarakhon',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://sarakhon.com',
+    color: '#27ae60',
+    icon: 'সা',
+    tags: 'sarakhon sarakkhon online portal সারাক্ষণ'
+  },
+  {
+    id: 'dainikajkerbangla',
+    nameBn: 'দৈনিক আজকের বাংলা',
+    nameEn: 'Dainik Ajker Bangla',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://dainikajkerbangla.net',
+    color: '#e74c3c',
+    icon: 'বা',
+    tags: 'ajkerbangla dainik ajker bangla online portal আজকের বাংলা'
+  },
+  {
+    id: 'dailychakori',
+    nameBn: 'চকোরী',
+    nameEn: 'Daily Chakori',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://dailychakori.com',
+    color: '#3498db',
+    icon: 'চ',
+    tags: 'chakori dailychakori daily chakori online portal চকোরী'
+  },
+  {
+    id: 'bahumatrik',
+    nameBn: 'বহুমাত্রিক',
+    nameEn: 'Bahumatrik',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.bahumatrik.com',
+    color: '#8e44ad',
+    icon: 'বহু',
+    tags: 'bahumatrik online portal বহুমাত্রিক'
+  },
+  {
+    id: 'banglahour',
+    nameBn: 'বাংলা আওয়ার',
+    nameEn: 'Bangla Hour',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.banglahour.com',
+    color: '#2c3e50',
+    icon: 'বা',
+    tags: 'banglahour bangla hour online portal বাংলা আওয়ার'
+  },
+  {
+    id: 'politicsnews24',
+    nameBn: 'পলিটিক্স নিউজ ২৪',
+    nameEn: 'Politics News 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.politicsnews24.com',
+    color: '#c0392b',
+    icon: 'PN',
+    tags: 'politicsnews politicsnews24 politics online portal পলিটিক্স নিউজ'
+  },
+  {
+    id: 'dhakareport24',
+    nameBn: 'ঢাকা রিপোর্ট ২৪',
+    nameEn: 'Dhaka Report 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.dhakareport24.com',
+    color: '#16a085',
+    icon: 'ডি',
+    tags: 'dhakareport dhakareport24 online portal ঢাকা রিপোর্ট'
+  },
+  {
+    id: 'bangladhara',
+    nameBn: 'বাংলাধারা',
+    nameEn: 'Bangla Dhara',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://bangladhara.com',
+    color: '#27ae60',
+    icon: 'বা',
+    tags: 'bangladhara bangla dhara online portal বাংলাধারা'
+  },
+  {
+    id: 'lawyersclubbangladesh',
+    nameBn: 'লয়ার্স ক্লাব বাংলাদেশ',
+    nameEn: 'Lawyers Club Bangladesh',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://lawyersclubbangladesh.com',
+    color: '#1b4f72',
+    icon: 'LC',
+    tags: 'lawyersclub lawyersclubbangladesh law court online portal লয়ার্স ক্লাব'
+  },
+  {
+    id: 'ekusheypatrika',
+    nameBn: 'একুশে পত্রিকা',
+    nameEn: 'Ekushey Patrika',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.ekusheypatrika.com',
+    color: '#c0392b',
+    icon: 'একু',
+    tags: 'ekusheypatrika ekushey patrika online portal একুশে পত্রিকা'
+  },
+  {
+    id: 'eyenews',
+    nameBn: 'আই নিউজ',
+    nameEn: 'Eye News',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.eyenews.news',
+    color: '#2980b9',
+    icon: 'আই',
+    tags: 'eyenews eye news sylhet moulovibazar online portal আই নিউজ'
+  },
+  {
+    id: 'sukhabor',
+    nameBn: 'সুখবর ডটকম',
+    nameEn: 'Sukhabor',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://sukhabor.com',
+    color: '#27ae60',
+    icon: 'সু',
+    tags: 'sukhabor com sukhabor su-khabor online portal সুখবর'
+  },
+  {
+    id: 'banglarkhabar24',
+    nameBn: 'বাংলার খবর ২৪',
+    nameEn: 'Banglar Khabar 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.banglarkhabar24.com',
+    color: '#d35400',
+    icon: 'বা',
+    tags: 'banglarkhabar banglarkhabar24 online portal বাংলার খবর'
+  },
+  {
+    id: 'bbarta24',
+    nameBn: 'বিবার্তা ২৪',
+    nameEn: 'Bbarta 24',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://www.bbarta24.net',
+    color: '#c0392b',
+    icon: 'বিবি',
+    tags: 'bbarta bbarta24 online portal বিবার্তা'
+  },
+  {
+    id: 'hotnews24bd',
+    nameBn: 'হট নিউজ ২৪',
+    nameEn: 'Hot News 24 BD',
+    category: 'online',
+    categoryLabel: 'অনলাইন পোর্টাল',
+    url: 'https://hotnews24bd.com',
+    color: '#e74c3c',
+    icon: 'HN',
+    tags: 'hotnews hotnews24 hotnews24bd online portal হট নিউজ'
+  },
 
   // =========================================================================
   // 3. BANGLA LIVE TV & BROADCAST NEWS (টিভি ও স্যাটেলাইট চ্যানেল)
@@ -3417,17 +3912,6 @@ const newspapers = [
     tags: 'stock market business corporate commerce'
   },
   {
-    id: 'corporatesangbad',
-    nameBn: 'কর্পোরেট সংবাদ',
-    nameEn: 'Corporate Sangbad',
-    category: 'stock',
-    categoryLabel: 'Stock Market',
-    url: 'https://corporatesangbad.com',
-    color: '#1b4f72',
-    icon: 'কর্পো',
-    tags: 'stock market corporate business sangbad company'
-  },
-  {
     id: 'businesseyebd',
     nameBn: 'বিজনেস আই বিডি',
     nameEn: 'Business Eye BD',
@@ -3683,6 +4167,39 @@ const newspapers = [
     color: '#2060af',
     icon: 'BNB',
     tags: 'business commerce industry'
+  },
+  {
+    id: 'corporatesangbad',
+    nameBn: 'কর্পোরেট সংবাদ',
+    nameEn: 'Corporate Sangbad',
+    category: 'business',
+    categoryLabel: 'ব্যবসা ও বাণিজ্য',
+    url: 'https://www.corporatesangbad.com',
+    color: '#1b4f72',
+    icon: 'কর্পো',
+    tags: 'business commerce corporate sangbad company stock market'
+  },
+  {
+    id: 'dhakaorthoniti',
+    nameBn: 'ঢাকা অর্থনীতি',
+    nameEn: 'Dhaka Orthoniti',
+    category: 'business',
+    categoryLabel: 'ব্যবসা ও বাণিজ্য',
+    url: 'https://dhakaorthoniti.com',
+    color: '#1b4f72',
+    icon: 'অর্থ',
+    tags: 'dhakaorthoniti dhaka orthoniti business economy ঢাকা অর্থনীতি ব্যবসা ও বাণিজ্য'
+  },
+  {
+    id: 'udyognews',
+    nameBn: 'উদ্যোগ নিউজ',
+    nameEn: 'Udyog News',
+    category: 'business',
+    categoryLabel: 'ব্যবসা ও বাণিজ্য',
+    url: 'https://www.udyognews.com',
+    color: '#27ae60',
+    icon: 'উ',
+    tags: 'udyog udyognews udyog news business entrepreneurship উদ্যোগ নিউজ ব্যবসা ও বাণিজ্য'
   },
 
   // =========================================================================
@@ -4456,13 +4973,19 @@ function updateBadges() {
 
 // Known SVG banner IDs
 const SVG_LOGOS = new Set([
+  "banglastream",
   "businessinsiderbd",
   "campuslive24","dailyprobaha","desherkantha","dhakamagazine","dinajpurnews",
+  "durbinnews",
   "ekhontv",
   "giridarpon",
+  "khoborsangjog",
   "oneindiabengali",
+  "oporazoya24",
   "patrika71",
-  "pavilion","techtunes","thedailycampus","tsports"
+  "pavilion",
+  "politicsnews24",
+  "techtunes","thedailycampus","tsports"
 ]);
 
 // Get banner logo URL matching screenshot
